@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34190220-54A6-4C36-863E-91BE2DE632FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETMS.Components.QS.Implement</RootNamespace>
+    <AssemblyName>ETMS.Components.QS.Implement</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\QS_QueryAreaLogic.auto.cs" />
+    <Compile Include="BLL\QS_QueryAreaLogic.cs" />
+    <Compile Include="BLL\QS_QueryLogic.auto.cs" />
+    <Compile Include="BLL\QS_QueryLogic.cs" />
+    <Compile Include="BLL\QS_QueryResultAnswerLogic.auto.cs" />
+    <Compile Include="BLL\QS_QueryResultAnswerLogic.cs" />
+    <Compile Include="BLL\QS_QueryResultLogic.auto.cs" />
+    <Compile Include="BLL\QS_QueryResultLogic.cs" />
+    <Compile Include="BLL\QS_QueryResultOptionLogic.auto.cs" />
+    <Compile Include="BLL\QS_QueryResultOptionLogic.cs" />
+    <Compile Include="BLL\QS_QueryTitleLogic.auto.cs" />
+    <Compile Include="BLL\QS_QueryTitleLogic.cs" />
+    <Compile Include="BLL\QS_QueryTitleOptionLogic.auto.cs" />
+    <Compile Include="BLL\QS_QueryTitleOptionLogic.cs" />
+    <Compile Include="DAL\ConnectionString.cs" />
+    <Compile Include="DAL\QS_QueryAreaDataAccess.auto.cs" />
+    <Compile Include="DAL\QS_QueryDataAccess.auto.cs" />
+    <Compile Include="DAL\QS_QueryAreaDataAccess.cs" />
+    <Compile Include="DAL\QS_QueryDataAccess.cs" />
+    <Compile Include="DAL\QS_QueryResultAnswerDataAccess.auto.cs" />
+    <Compile Include="DAL\QS_QueryResultDataAccess.auto.cs" />
+    <Compile Include="DAL\QS_QueryResultOptionDataAccess.auto.cs" />
+    <Compile Include="DAL\QS_QueryTitleDataAccess.auto.cs" />
+    <Compile Include="DAL\QS_QueryTitleOptionDataAccess.auto.cs" />
+    <Compile Include="DAL\QS_QueryTitleDataAccess.cs" />
+    <Compile Include="DAL\QS_QueryTitleOptionDataAccess.cs" />
+    <Compile Include="DAL\QS_QueryResultDataAccess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETMS.AppContext\ETMS.AppContext.csproj">
+      <Project>{9B71CEF6-8D67-4714-8CE3-29CBEE5B7975}</Project>
+      <Name>ETMS.AppContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.QS.API\ETMS.Components.QS.API.csproj">
+      <Project>{5C1C29E6-C138-4D33-9D67-648456119B79}</Project>
+      <Name>ETMS.Components.QS.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Utility\ETMS.Utility.csproj">
+      <Project>{92D62B7C-B9EB-4086-9D18-11CD36F1CA28}</Project>
+      <Name>ETMS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DAL\Procedures\Procedure_QS_Query.sql" />
+    <Content Include="DAL\Procedures\Procedure_QS_QueryArea.sql" />
+    <Content Include="DAL\Procedures\Procedure_QS_QueryResult.sql" />
+    <Content Include="DAL\Procedures\Procedure_QS_QueryResultAnswer.sql" />
+    <Content Include="DAL\Procedures\Procedure_QS_QueryResultOption.sql" />
+    <Content Include="DAL\Procedures\Procedure_QS_QueryTitle.sql" />
+    <Content Include="DAL\Procedures\Procedure_QS_QueryTitleOption.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

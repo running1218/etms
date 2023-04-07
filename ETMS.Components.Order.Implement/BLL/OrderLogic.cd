@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ETMS.Components.Order.Implement.BLL.OrderLogic">
+    <Position X="0.5" Y="1" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAIAAAAAAAAAAAAAAAAAAAAAAAAgAAQAAAAAAA=</HashCode>
+      <FileName>BLL\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>

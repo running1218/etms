@@ -1,0 +1,8 @@
+项目名称：ETMS.Components.Courseware.API
+项目描述：仅定义组件包对外公开的API,供外部模块引用并调用！
+API包括三部分
+1、业务实体定义
+
+2、业务异常定义
+
+3、门面接口定义（Facade模式）

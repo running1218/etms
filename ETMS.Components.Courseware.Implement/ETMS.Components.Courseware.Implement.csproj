@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E433D2C0-1F47-49E8-9206-79337B9E31A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETMS.Components.Courseware.Implement</RootNamespace>
+    <AssemblyName>ETMS.Components.Courseware.Implement</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="remark.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Res_CoursewareLogic.auto.cs" />
+    <Compile Include="BLL\Res_CoursewareLogic.cs" />
+    <Compile Include="BLL\Res_ItemCourse_CoursewareLogic.cs" />
+    <Compile Include="BLL\Res_Student_CoursewareLogic.cs" />
+    <Compile Include="BLL\Sty_StudentCourseDuration.cs" />
+    <Compile Include="DAL\ConnectionString.cs" />
+    <Compile Include="DAL\Res_CoursewareDataAccess.auto.cs" />
+    <Compile Include="DAL\CourseCoursewareDataAccess.auto.cs" />
+    <Compile Include="DAL\Res_CoursewareDataAccess.cs" />
+    <Compile Include="DAL\Res_ItemCourse_CoursewareDataAccess.cs" />
+    <Compile Include="DAL\Res_Student_CoursewareDataAccess.cs" />
+    <Compile Include="DAL\Sty_StudentCourseDuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DefaultExampleFacade.cs" />
+    <Compile Include="CourseCoursewareFacade.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETMS.AppContext\ETMS.AppContext.csproj">
+      <Project>{9B71CEF6-8D67-4714-8CE3-29CBEE5B7975}</Project>
+      <Name>ETMS.AppContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Basic.API\ETMS.Components.Basic.API.csproj">
+      <Project>{3D9C3CD3-FD0A-420C-9B59-4352CF173D6F}</Project>
+      <Name>ETMS.Components.Basic.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Basic.Implement\ETMS.Components.Basic.Implement.csproj">
+      <Project>{4248FE86-6D0E-4250-8B1A-3A110E0FCD0C}</Project>
+      <Name>ETMS.Components.Basic.Implement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Courseware.API\ETMS.Components.Courseware.API.csproj">
+      <Project>{2C8BDD39-8996-43B2-BC4D-69D70FFB1C0E}</Project>
+      <Name>ETMS.Components.Courseware.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Utility\ETMS.Utility.csproj">
+      <Project>{92D62B7C-B9EB-4086-9D18-11CD36F1CA28}</Project>
+      <Name>ETMS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

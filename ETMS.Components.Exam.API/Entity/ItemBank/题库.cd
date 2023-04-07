@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.TreeCategory" Collapsed="true">
+    <Position X="20.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAACAAQACAAEAAAACAAAACAAQAAgAgAAgAAEAAA=</HashCode>
+      <FileName>Entity\ItemBank\TreeCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.AnswerBase" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACCBAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\AnswerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.ExtendedTextAnswer" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>Entity\ItemBank\ExtendedTextAnswer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.ExtendedTextQuestion" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\ExtendedTextQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.GroupAnswer" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\GroupAnswer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.OptionGroupItemAnswer" Collapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAQAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Entity\ItemBank\GroupAnswer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.GroupQuestion" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\GroupQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.JudgementAnswer" Collapsed="true">
+    <Position X="9.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\JudgementAnswer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.JudgementQuestion" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAA=</HashCode>
+      <FileName>Entity\ItemBank\JudgementQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.MatchAnswer" Collapsed="true">
+    <Position X="5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\MatchAnswer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.MatchQuestion" Collapsed="true">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\MatchQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.MultipleChoiceAnswer" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAACAAAQAAAAAAAAAAAAAAAAAACkgAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\MultipleChoiceAnswer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.MultipleChoiceQuestion" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAA=</HashCode>
+      <FileName>Entity\ItemBank\MultipleChoiceQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.OptionFeedback" Collapsed="true">
+    <Position X="20.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAABgAAAAAAAAAAAAAQAAAAAAAAAgAAAQJEAAA=</HashCode>
+      <FileName>Entity\ItemBank\OptionFeedback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.OptionGroup" Collapsed="true">
+    <Position X="22" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAgAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\OptionGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.OptionGroupItem" Collapsed="true">
+    <Position X="23.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Entity\ItemBank\OptionGroupItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.Question" Collapsed="true">
+    <Position X="18.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABAAAEABAAAAQAARIAAAAAICAQAACAEYgAAAIIEBAA=</HashCode>
+      <FileName>Entity\ItemBank\Question.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.CommonQuestion" Collapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIABAAAAQAAAAAACAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\Question.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.QuestionBank" Collapsed="true">
+    <Position X="20.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAARAEABAAACAIEAAAACAAAAAAAAAQgIgAAAAAEAAA=</HashCode>
+      <FileName>Entity\ItemBank\QuestionBank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.QuestionBase" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\QuestionBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.QuestionExtend" Collapsed="true">
+    <Position X="22" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\QuestionExtend.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.QuestionFeedback" Collapsed="true">
+    <Position X="23.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIAAAABAQAAAgAAAAAAAAAAAAAAAAAAgAAAQIEAAA=</HashCode>
+      <FileName>Entity\ItemBank\QuestionFeedback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.QuestionOption" Collapsed="true">
+    <Position X="16.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAQABAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\QuestionOption.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.QuestionResource" Collapsed="true">
+    <Position X="18.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAgAIAAABAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Entity\ItemBank\QuestionResource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.QuestionSearch" Collapsed="true">
+    <Position X="20.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAEAAgAAAQAAQIAAAAAAAAQAAAAEAQAAAIAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\QuestionSearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.QuestionSearchResult" Collapsed="true">
+    <Position X="22" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABAAAAAIAAACSAEQIAAAAAACgQAAAAEAhAAAIIEAAA=</HashCode>
+      <FileName>Entity\ItemBank\QuestionSearchResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.QuestionTypeHelper" Collapsed="true">
+    <Position X="23.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\QuestionType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.SingleChoiceAnswer" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQABAAAAAAAAAAAAAAAQCEgAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\SingleChoiceAnswer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.OptionAnswer" Collapsed="true">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\SingleChoiceAnswer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.SingleChoiceQuestion" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAA=</HashCode>
+      <FileName>Entity\ItemBank\SingleChoiceQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.TestToQuestion" Collapsed="true">
+    <Position X="16.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAAAgACAAAEAAA=</HashCode>
+      <FileName>Entity\ItemBank\TestToQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.TextEntryAnswer" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAgAABAI=</HashCode>
+      <FileName>Entity\ItemBank\TextEntryAnswer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.TextEntry" Collapsed="true">
+    <Position X="18.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\TextEntryAnswer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETMS.Components.Exam.API.Entity.ItemBank.TextEntryQuestion" Collapsed="true">
+    <Position X="13.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\TextEntryQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ETMS.Components.Exam.API.Entity.ItemBank.TreeCategoryType" Collapsed="true">
+    <Position X="16.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAQAAAA=</HashCode>
+      <FileName>Entity\ItemBank\TreeCategory.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ETMS.Components.Exam.API.Entity.ItemBank.EnumQuestionSource" Collapsed="true">
+    <Position X="22" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAQAA=</HashCode>
+      <FileName>Entity\ItemBank\Question.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ETMS.Components.Exam.API.Entity.ItemBank.EnumDifficulty" Collapsed="true">
+    <Position X="18.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQgAAgAAA=</HashCode>
+      <FileName>Entity\ItemBank\Question.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ETMS.Components.Exam.API.Entity.ItemBank.EnumContainerType" Collapsed="true">
+    <Position X="16.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAIAAAAAAAA=</HashCode>
+      <FileName>Entity\ItemBank\QuestionResource.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ETMS.Components.Exam.API.Entity.ItemBank.EnumPosition" Collapsed="true">
+    <Position X="20.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAABAAAABAACAAAAAACAAAAAAAAAAAIAAAAAAQA=</HashCode>
+      <FileName>Entity\ItemBank\QuestionResource.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ETMS.Components.Exam.API.Entity.ItemBank.QuestionType" Collapsed="true">
+    <Position X="23.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAkAAABAAAAAAAEAAAAAAAQAAAAAAAAIAAAASAAA=</HashCode>
+      <FileName>Entity\ItemBank\QuestionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

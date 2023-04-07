@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D9C3CD3-FD0A-420C-9B59-4352CF173D6F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETMS.Components.Basic.API</RootNamespace>
+    <AssemblyName>ETMS.Components.Basic.API</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizErrorDefine.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BizErrorDefine.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Bulletin\BulletinEnum.cs" />
+    <Compile Include="Entity\Bulletin\Inf_Bulletin.auto.cs" />
+    <Compile Include="Entity\Bulletin\Inf_BulletinObject.auto.cs" />
+    <Compile Include="Entity\Bulletin\Inf_BulletinRead.auto.cs" />
+    <Compile Include="Entity\Bulletin\Inf_dic_InfoLevel.auto.cs" />
+    <Compile Include="Entity\Bulletin\Tr_ItemCourseMentorData.auto.cs" />
+    <Compile Include="Entity\Bulletin\Inf_Bulletin.cs" />
+    <Compile Include="Entity\ClassRoom\Res_ClassRoom.cs" />
+    <Compile Include="Entity\Common\DictionaryParm.cs" />
+    <Compile Include="Entity\Common\Node.cs" />
+    <Compile Include="Entity\Course\ContentProgress.cs" />
+    <Compile Include="Entity\Course\CourseOpenResource.cs" />
+    <Compile Include="Entity\Course\JobProgress.cs" />
+    <Compile Include="Entity\Course\Sty_UserStudyProgress.cs" />
+    <Compile Include="Entity\Course\ResContentMore.cs" />
+    <Compile Include="Entity\Course\Resources\CourseResource.cs" />
+    <Compile Include="Entity\Course\Resources\Res_TranscodingQueue.cs" />
+    <Compile Include="Entity\Course\Rec_Course.auto.cs" />
+    <Compile Include="Entity\Course\Res_Catalog.cs" />
+    <Compile Include="Entity\Course\Res_CatalogContentRelation.cs" />
+    <Compile Include="Entity\Course\Res_Content.auto.cs" />
+    <Compile Include="Entity\Course\Resources\Res_CourseRes.auto.cs" />
+    <Compile Include="Entity\Course\Res_ContentVideo.cs" />
+    <Compile Include="Entity\Course\Res_Course.auto.cs" />
+    <Compile Include="Entity\Course\Res_CourseOpenRange.cs" />
+    <Compile Include="Entity\Course\Res_VideoQueue.cs" />
+    <Compile Include="Entity\Course\TestProgress.cs" />
+    <Compile Include="Entity\Course\Transcoding.cs" />
+    <Compile Include="Entity\Dictionary\SysDicionaryTypeEnum.cs" />
+    <Compile Include="Entity\Dictionary\Dic_Post.auto.cs" />
+    <Compile Include="Entity\ELearningMap\Dic_Sys_ELearningMapType.auto.cs" />
+    <Compile Include="Entity\ELearningMap\Res_StudyMap.auto.cs" />
+    <Compile Include="Entity\ELearningMap\Res_StudyMapReferCourse.auto.cs" />
+    <Compile Include="Entity\Course\TeacherCourse\Res_TeacherCourse.auto.cs" />
+    <Compile Include="Entity\ELearningMap\Res_StudyMapCourse.cs" />
+    <Compile Include="Entity\ELearningMap\Res_StudyMapReferIDP.auto.cs" />
+    <Compile Include="Entity\ELearningMap\Res_StudyMapReferIDP.cs" />
+    <Compile Include="Entity\ELearningMap\Res_StudyMap.cs" />
+    <Compile Include="Entity\EnumResourcesType.cs" />
+    <Compile Include="Entity\Import\ImportType.cs" />
+    <Compile Include="Entity\Import\Import_Detail_Student.auto.cs" />
+    <Compile Include="Entity\Import\Import_StudentCourseGrade.auto.cs" />
+    <Compile Include="Entity\Import\Import_StudentSignup.auto.cs" />
+    <Compile Include="Entity\Import\Import_SurveyArea.auto.cs" />
+    <Compile Include="Entity\Import\Import_Task.auto.cs" />
+    <Compile Include="Entity\JsonMessage.cs" />
+    <Compile Include="Entity\Media\Res_Media.auto.cs" />
+    <Compile Include="Entity\Media\Res_MediaUser.auto.cs" />
+    <Compile Include="Entity\Notify\Notify_Message.auto.cs" />
+    <Compile Include="Entity\Notify\Notify_MessageClass.auto.cs" />
+    <Compile Include="Entity\Notify\Notify_MessageConfig.auto.cs" />
+    <Compile Include="Entity\Notify\Notify_MessageType.auto.cs" />
+    <Compile Include="Entity\Notify\Notify_MessageType.cs" />
+    <Compile Include="Entity\Notify\Notify_MessageClass.cs" />
+    <Compile Include="Entity\Notify\Notify_Message.cs" />
+    <Compile Include="Entity\Operation\BannerSpread.cs" />
+    <Compile Include="Entity\Orders\ChooseProductStatus.auto.cs" />
+    <Compile Include="Entity\Orders\Order.auto.cs" />
+    <Compile Include="Entity\Orders\OrderDetail.auto.cs" />
+    <Compile Include="Entity\Orders\Pay_PaymentMode.auto.cs" />
+    <Compile Include="Entity\Security\AccountStrategy.cs" />
+    <Compile Include="Entity\Security\GroupFunction.cs" />
+    <Compile Include="Entity\Security\Log_SystemInfo.auto.cs" />
+    <Compile Include="Entity\Security\OrganizationLimits.cs" />
+    <Compile Include="Entity\Security\PassportVistor.cs" />
+    <Compile Include="Entity\Security\Site_Agency.cs" />
+    <Compile Include="Entity\Security\Site_AgencyProduct.cs" />
+    <Compile Include="Entity\Security\Student.cs" />
+    <Compile Include="Entity\Security\Log_BusinessOperate.auto.cs" />
+    <Compile Include="Entity\Security\Log_SystemException.auto.cs" />
+    <Compile Include="Entity\Security\Site_SysConfig.auto.cs" />
+    <Compile Include="Entity\Security\Site_SysConfigGroup.auto.cs" />
+    <Compile Include="Entity\Security\Site_SysConfigGroup.cs" />
+    <Compile Include="Entity\Teacher\Rec_Teacher.auto.cs" />
+    <Compile Include="Entity\TrainingItem\Course\Hours\Student\Tr_ItemCourseHoursStudent.auto.cs" />
+    <Compile Include="Entity\TrainingItem\Course\Hours\Tr_ItemCourseHours.auto.cs" />
+    <Compile Include="Entity\TrainingItem\Course\Teacher\Tr_ItemCourseTeacher.cs" />
+    <Compile Include="Entity\TrainingItem\Course\TrainItemCourseStudyAnalysis.cs" />
+    <Compile Include="Entity\TrainingItem\StudentCourse\StandardCalulate.cs" />
+    <Compile Include="Entity\TrainingItem\StudentCourse\Sty_StudentCourse.auto.cs" />
+    <Compile Include="Entity\Teacher\Site_Teacher.auto.cs" />
+    <Compile Include="Entity\Teacher\Site_Teacher.cs" />
+    <Compile Include="Entity\TrainingItem\Course\Resources\ItemCourseResource.cs" />
+    <Compile Include="Entity\TrainingItem\Course\Resources\Tr_ItemCourseRes.auto.cs" />
+    <Compile Include="Entity\Security\PassportSignInInfo.cs" />
+    <Compile Include="Entity\Security\PassportTicket.cs" />
+    <Compile Include="Entity\Security\Site_Student.auto.cs" />
+    <Compile Include="Entity\Security\Site_Student.cs" />
+    <Compile Include="Entity\TrainingItem\Course\Teacher\Tr_ItemCourseTeacher.auto.cs" />
+    <Compile Include="Entity\TrainingItem\Course\Tr_ItemCourse.auto.cs" />
+    <Compile Include="Entity\TrainingItem\Course\Tr_ItemCourse.cs" />
+    <Compile Include="Entity\TrainingItem\Student\SignupModeEnum.cs" />
+    <Compile Include="Entity\TrainingItem\Student\Sty_StudentSignup.auto.cs" />
+    <Compile Include="Entity\TrainingItem\Tr_Appraise.cs" />
+    <Compile Include="Entity\TrainingItem\Tr_Item.auto.cs" />
+    <Compile Include="Entity\TrainingItem\Tr_Item.cs" />
+    <Compile Include="Entity\TrainingPlan\Course\Tr_PlanCourse.auto.cs" />
+    <Compile Include="Entity\TrainingPlan\Tr_Plan.auto.cs" />
+    <Compile Include="Entity\TraningOrgnization\Course\Tr_OuterOrgCourse.auto.cs" />
+    <Compile Include="Entity\TraningOrgnization\Tr_OuterOrg.auto.cs" />
+    <Compile Include="Entity\TraningOrgnization\Tr_OuterOrg.cs" />
+    <Compile Include="ICourseResourcesFacade.cs" />
+    <Compile Include="IExampleFacade.cs" />
+    <Compile Include="Entity\Security\Department.cs" />
+    <Compile Include="Entity\Security\Function.cs" />
+    <Compile Include="Entity\Security\FunctionGroup.cs" />
+    <Compile Include="Entity\Security\IEnvironment.cs" />
+    <Compile Include="Entity\Security\IManageUser.cs" />
+    <Compile Include="Entity\Security\IRole.cs" />
+    <Compile Include="Entity\Security\IUser.cs" />
+    <Compile Include="Entity\Security\Organiztion.cs" />
+    <Compile Include="Entity\Security\PageUrl.cs" />
+    <Compile Include="Entity\Security\Role.cs" />
+    <Compile Include="Entity\Security\RoleEnvironment.cs" />
+    <Compile Include="Entity\Security\RoleFuncion.cs" />
+    <Compile Include="Entity\Security\User.cs" />
+    <Compile Include="Entity\Security\UserFunction.cs" />
+    <Compile Include="Entity\Security\UserRole.cs" />
+    <Compile Include="IFeeFacade.cs" />
+    <Compile Include="IPassportFacade.cs" />
+    <Compile Include="IPublicFacade.cs" />
+    <Compile Include="ITrainingItem.cs" />
+    <Compile Include="ITrainingItemCourseResourcesFacade.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="项目说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BizErrorDefine.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BizErrorDefine.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETMS.AppContext\ETMS.AppContext.csproj">
+      <Project>{9B71CEF6-8D67-4714-8CE3-29CBEE5B7975}</Project>
+      <Name>ETMS.AppContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Courseware.API\ETMS.Components.Courseware.API.csproj">
+      <Project>{2C8BDD39-8996-43B2-BC4D-69D70FFB1C0E}</Project>
+      <Name>ETMS.Components.Courseware.API</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entity\TraningImplement\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

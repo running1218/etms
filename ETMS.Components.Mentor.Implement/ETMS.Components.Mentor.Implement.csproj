@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{077753A6-2B7F-4B22-922D-818E43CAADBD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETMS.Components.Mentor.Implement</RootNamespace>
+    <AssemblyName>ETMS.Components.Mentor.Implement</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\Mentor\Procedures\Procedure_Site_Mentor.sql" />
+    <Content Include="remark.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Mentor\Site_MentorLogic.auto.cs" />
+    <Compile Include="BLL\Mentor\Site_MentorLogic.cs" />
+    <Compile Include="DAL\ConnectionString.cs" />
+    <Compile Include="DAL\Mentor\Site_MentorDataAccess.auto.cs" />
+    <Compile Include="DAL\Mentor\Site_MentorDataAccess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DefaultExampleFacade.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETMS.AppContext\ETMS.AppContext.csproj">
+      <Project>{9B71CEF6-8D67-4714-8CE3-29CBEE5B7975}</Project>
+      <Name>ETMS.AppContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Basic.API\ETMS.Components.Basic.API.csproj">
+      <Project>{3D9C3CD3-FD0A-420C-9B59-4352CF173D6F}</Project>
+      <Name>ETMS.Components.Basic.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Mentor.API\ETMS.Components.Mentor.API.csproj">
+      <Project>{C9BABB06-5AD4-4AEA-8A96-47A44D89340D}</Project>
+      <Name>ETMS.Components.Mentor.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Utility\ETMS.Utility.csproj">
+      <Project>{92D62B7C-B9EB-4086-9D18-11CD36F1CA28}</Project>
+      <Name>ETMS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

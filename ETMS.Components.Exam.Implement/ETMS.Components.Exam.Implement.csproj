@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CBE8566C-018B-430F-9D63-B1F1AAB8EF09}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETMS.Components.Exam.Implement</RootNamespace>
+    <AssemblyName>ETMS.Components.Exam.Implement</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Apache.Ibatis.Common">
+      <HintPath>..\Reference\Apache.Ibatis.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Apache.Ibatis.DataMapper">
+      <HintPath>..\Reference\Apache.Ibatis.DataMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Autumn.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Autumn.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Autumn.Data">
+      <HintPath>..\Reference\Autumn.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Autumn.Data.ORM">
+      <HintPath>..\Reference\Autumn.Data.ORM.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net">
+      <HintPath>..\Reference\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\Exam.config" />
+    <EmbeddedResource Include="Config\Exam.Dao.config" />
+    <None Include="Config\IBatis\Common\Paging.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\ItemBank\OptionFeedback.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\ItemBank\OptionGroup.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\ItemBank\Question.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\ItemBank\QuestionBank.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\ItemBank\QuestionExtend.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\ItemBank\QuestionFeedback.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\ItemBank\QuestionOption.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\ItemBank\QuestionSearch.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\ItemBank\TestToQuestion.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\ItemBank\TreeCategory.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\Test\ExamResource.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\Test\PaperQuestion.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\Test\TestFeedback.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\Test\TestPaper.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\Test\TestPaperRule.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\Test\UserExam.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\Test\UserExamResult.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\IBatis\Test\UserQuestion.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Config\规则说明.txt" />
+    <Content Include="remark.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\ItemBank\ExtendedTextQuestionLogic.cs" />
+    <Compile Include="BLL\ItemBank\GroupQuestionLogic.cs" />
+    <Compile Include="BLL\ItemBank\JudgementQuestionLogic.cs" />
+    <Compile Include="BLL\ItemBank\MatchQuestionLogic.cs" />
+    <Compile Include="BLL\ItemBank\MultipleChoiceQuestionLogic.cs" />
+    <Compile Include="BLL\ItemBank\OptionFeedbackLogic.cs" />
+    <Compile Include="BLL\ItemBank\OptionGroupLogic.cs" />
+    <Compile Include="BLL\ItemBank\OptionGroupServiceLogic.cs" />
+    <Compile Include="BLL\ItemBank\OptionServiceLogic.cs" />
+    <Compile Include="BLL\ItemBank\QuestionBankLogic.cs" />
+    <Compile Include="BLL\ItemBank\QuestionBaseLogic.cs" />
+    <Compile Include="BLL\ItemBank\QuestionExtendLogic.cs" />
+    <Compile Include="BLL\ItemBank\QuestionFeedbackLogic.cs" />
+    <Compile Include="BLL\ItemBank\QuestionLogic.cs" />
+    <Compile Include="BLL\ItemBank\QuestionOptionLogic.cs" />
+    <Compile Include="BLL\ItemBank\QuestionSearchLogic.cs" />
+    <Compile Include="BLL\ItemBank\QuestionServiceLogic.cs" />
+    <Compile Include="BLL\ItemBank\SingleChoiceQuestionLogic.cs" />
+    <Compile Include="BLL\ItemBank\TestToQuestionLogic.cs" />
+    <Compile Include="BLL\ItemBank\TextEntryQuestionLogic.cs" />
+    <Compile Include="BLL\ItemBank\TreeCategoryLogic.cs" />
+    <Compile Include="BLL\NewTestPaper\AExamHomework.cs" />
+    <Compile Include="BLL\NewTestPaper\ExamLogic.cs" />
+    <Compile Include="BLL\NewTestPaper\ExamSimpleFactory.cs" />
+    <Compile Include="BLL\NewTestPaper\HomeworkLogic.cs" />
+    <Compile Include="BLL\Test\ExamQuestionsLogic.cs" />
+    <Compile Include="BLL\Test\ExamResourceLogic.cs" />
+    <Compile Include="BLL\Test\PaperQuestionLogic.cs" />
+    <Compile Include="BLL\Test\TestFeedbackLogic.cs" />
+    <Compile Include="BLL\Test\TestFeedbackServiceLogic.cs" />
+    <Compile Include="BLL\Test\TestPaperLogic.cs" />
+    <Compile Include="BLL\Test\TestPaperRuleLogic.cs" />
+    <Compile Include="BLL\Test\UserExamLogic.cs" />
+    <Compile Include="BLL\Test\UserExamPaperLogic.cs" />
+    <Compile Include="BLL\Test\UserExamResultLogic.cs" />
+    <Compile Include="BLL\Test\UserTestLogic.cs" />
+    <Compile Include="BLL\Test\UserTestStatusLogic.cs" />
+    <Compile Include="DAL\ConnectionString.cs" />
+    <Compile Include="DAL\ItemBank\IOptionFeedbackDao.cs" />
+    <Compile Include="DAL\ItemBank\IOptionGroupDao.cs" />
+    <Compile Include="DAL\ItemBank\IQuestionBankDao.cs" />
+    <Compile Include="DAL\ItemBank\IQuestionDao.cs" />
+    <Compile Include="DAL\ItemBank\IQuestionExtendDao.cs" />
+    <Compile Include="DAL\ItemBank\IQuestionFeedbackDao.cs" />
+    <Compile Include="DAL\ItemBank\IQuestionOptionDao.cs" />
+    <Compile Include="DAL\ItemBank\IQuestionSearchDao.cs" />
+    <Compile Include="DAL\ItemBank\ITestToQuestionDao.cs" />
+    <Compile Include="DAL\ItemBank\ITreeCategoryDao.cs" />
+    <Compile Include="DAL\ItemBank\OptionFeedbackIBatisDao.cs" />
+    <Compile Include="DAL\ItemBank\OptionGroupIBatisDao.cs" />
+    <Compile Include="DAL\ItemBank\QuestionBankIBatisDao.cs" />
+    <Compile Include="DAL\ItemBank\QuestionExtendIBatisDao.cs" />
+    <Compile Include="DAL\ItemBank\QuestionFeedbackIBatisDao.cs" />
+    <Compile Include="DAL\ItemBank\QuestionIBatisDao.cs" />
+    <Compile Include="DAL\ItemBank\QuestionOptionIBatisDao.cs" />
+    <Compile Include="DAL\ItemBank\QuestionSearchIBatisDao.cs" />
+    <Compile Include="DAL\ItemBank\TestToQuestionIBatisDao.cs" />
+    <Compile Include="DAL\ItemBank\TreeCategoryIBatisDao.cs" />
+    <Compile Include="DAL\NewTestPaper\AExamHomeWorkData.cs" />
+    <Compile Include="DAL\NewTestPaper\ExamDataAccess.cs" />
+    <Compile Include="DAL\NewTestPaper\HomeworkDataAccess.cs" />
+    <Compile Include="DAL\Test\ExamQuestionsIBatisDao.cs" />
+    <Compile Include="DAL\Test\ExamResourceIBatisDao.cs" />
+    <Compile Include="DAL\Test\IExamQuestionsDao.cs" />
+    <Compile Include="DAL\Test\IExamResourceDao.cs" />
+    <Compile Include="DAL\Test\IPaperQuestionDao.cs" />
+    <Compile Include="DAL\Test\ITestFeedbackDao.cs" />
+    <Compile Include="DAL\Test\ITestPaperDao.cs" />
+    <Compile Include="DAL\Test\ITestPaperRuleDao.cs" />
+    <Compile Include="DAL\Test\ITestToQuestionDao.cs" />
+    <Compile Include="DAL\Test\IUserExamDao.cs" />
+    <Compile Include="DAL\Test\IUserExamResultDao.cs" />
+    <Compile Include="DAL\Test\IUserQuestionDao.cs" />
+    <Compile Include="DAL\Test\IUserTestPaperDao.cs" />
+    <Compile Include="DAL\Test\IUserTPQuestionDao.cs" />
+    <Compile Include="DAL\Test\PaperQuestionIBatisDao.cs" />
+    <Compile Include="DAL\Test\TestFeedbackIBatisDao.cs" />
+    <Compile Include="DAL\Test\TestPaperIBatisDao.cs" />
+    <Compile Include="DAL\Test\TestPaperRuleIBatisDao.cs" />
+    <Compile Include="DAL\Test\TestToQuestionIBatisDao.cs" />
+    <Compile Include="DAL\Test\UserExamIBatisDao.cs" />
+    <Compile Include="DAL\Test\UserExamResultIBatisDao.cs" />
+    <Compile Include="DAL\Test\UserQuestionIBatisDao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DefaultExampleFacade.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETMS.AppContext\ETMS.AppContext.csproj">
+      <Project>{9B71CEF6-8D67-4714-8CE3-29CBEE5B7975}</Project>
+      <Name>ETMS.AppContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Exam.API\ETMS.Components.Exam.API.csproj">
+      <Project>{90FA7A74-4FC6-40BA-88A1-A885F1F4A8BF}</Project>
+      <Name>ETMS.Components.Exam.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Utility\ETMS.Utility.csproj">
+      <Project>{92D62B7C-B9EB-4086-9D18-11CD36F1CA28}</Project>
+      <Name>ETMS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\IBatis\providers.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Config\IBatis\SqlMap.Exam.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>eco "remove files readonly attrib"
+attrib -r "..\..\..\ManageSite\Config\*.*"  /s 
+md "..\..\..\ManageSite\Config\IBatis"
+xcopy "$(ProjectDir)Config\IBatis\*.*" "..\..\..\ManageSite\Config\IBatis" /S /Y /R
+attrib -r "..\..\..\LearnSite\Config\*.*"  /s 
+md "..\..\..\LearnSite\Config\IBatis"
+xcopy "$(ProjectDir)Config\IBatis\*.*" "..\..\..\LearnSite\Config\IBatis" /S /Y /R</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

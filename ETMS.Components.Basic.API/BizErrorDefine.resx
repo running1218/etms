@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Application.SystemInnerException" xml:space="preserve">
+    <value>对不起，系统内部异常，请与管理员联系！</value>
+  </data>
+  <data name="Authenticate.AnonymousUserAccessForbid" xml:space="preserve">
+    <value>匿名用户禁止访问！</value>
+  </data>
+  <data name="Authenticate.FailedInLocking" xml:space="preserve">
+    <value>由于短时间内多次登录失败，账户已锁定！</value>
+  </data>
+  <data name="Authenticate.InValidParams" xml:space="preserve">
+    <value>非法登录请求！</value>
+  </data>
+  <data name="Authenticate.UserNameOrPasswordEmpty" xml:space="preserve">
+    <value>用户名或密码为空！</value>
+  </data>
+  <data name="Authenticate.UserNameOrPasswordError" xml:space="preserve">
+    <value>用户名或密码错误！</value>
+  </data>
+  <data name="Authenticate.UserStatus.Disable" xml:space="preserve">
+    <value>账户已禁用！</value>
+  </data>
+  <data name="Dictionary.Dic_Post.CodeExists" xml:space="preserve">
+    <value>岗位编码已经存在！</value>
+  </data>
+  <data name="Dictionary.Dic_Post.DisableFaild" xml:space="preserve">
+    <value>岗位已经使用，无法停用！</value>
+  </data>
+  <data name="Dictionary.Dic_Post.IsUsing" xml:space="preserve">
+    <value>岗位已经使用，不能删除！</value>
+  </data>
+  <data name="Dictionary.Dic_Post.NameExists" xml:space="preserve">
+    <value>岗位名称已经存在！</value>
+  </data>
+  <data name="ElearningMap_FK_RES_STUD_REFERENCE_RES_STUD" xml:space="preserve">
+    <value>请先删除该学习地图下关联的所有课程！</value>
+  </data>
+  <data name="ElearningMap_OrgDepPostRank" xml:space="preserve">
+    <value>同一组织机构下的学习地图纬度的选择不允许重复！</value>
+  </data>
+  <data name="ElearningMap_StudyMapNameOrgID" xml:space="preserve">
+    <value>同一组织机构下的学习地图名称不允许重复！</value>
+  </data>
+  <data name="FileUploadService.InvalidCardID" xml:space="preserve">
+    <value>无效的文件上传标识！</value>
+  </data>
+  <data name="FileUploadService.OutMaxFileCount" xml:space="preserve">
+    <value>超出最大附件数！</value>
+  </data>
+  <data name="FileUploadService.OutMaxFileSize" xml:space="preserve">
+    <value>附件超大！</value>
+  </data>
+  <data name="FileUploadService.UnSupportFileType" xml:space="preserve">
+    <value>不支持的附件类型！</value>
+  </data>
+  <data name="Notify.Email.Body.Empty" xml:space="preserve">
+    <value>邮件提醒中正文内容不能为空！</value>
+  </data>
+  <data name="Notify.Email.Revicever.Empty" xml:space="preserve">
+    <value>邮件提醒中接收人不能为空！</value>
+  </data>
+  <data name="Notify.Email.Subject.Empty" xml:space="preserve">
+    <value>邮件提醒中标题不能为空！</value>
+  </data>
+  <data name="Notify.SMS.Body.Empty" xml:space="preserve">
+    <value>短信提醒中正文内容不能为空！</value>
+  </data>
+  <data name="Notify.SMS.Revicever.Empty" xml:space="preserve">
+    <value>短信提醒中接收人不能为空！</value>
+  </data>
+  <data name="Resource.Course.AddFailed.CouseCodeExists" xml:space="preserve">
+    <value>该课程编码已存在！</value>
+  </data>
+  <data name="Resource.Course.AddFailed.CouseNameExists" xml:space="preserve">
+    <value>该课程名称已存在！</value>
+  </data>
+  <data name="Resource.Course.DeleteFailed.IsUsing" xml:space="preserve">
+    <value>该课程[{0}]已使用，不能删除！</value>
+  </data>
+  <data name="Res_ClassRoom.Res_ClassRoom.CodeExists" xml:space="preserve">
+    <value>教室编码已经存在！</value>
+  </data>
+  <data name="Res_ClassRoom.Res_ClassRoom.DataUsed" xml:space="preserve">
+    <value>教室[{0}]已经使用，不能删除！</value>
+  </data>
+  <data name="Res_ClassRoom.Res_ClassRoom.NameExists" xml:space="preserve">
+    <value>教室名称已经存在！</value>
+  </data>
+  <data name="Security.Deparetment.DisableDepartmentFaild" xml:space="preserve">
+    <value>当前部门有启用的下级部门，不能停用！</value>
+  </data>
+  <data name="Security.Deparetment.DisableDepartmentFaildHasStudent" xml:space="preserve">
+    <value>部门下有学员，不能停用！</value>
+  </data>
+  <data name="Security.Department.CodeExists" xml:space="preserve">
+    <value>部门编码已经存在！</value>
+  </data>
+  <data name="Security.Department.ForbiddenDeleteDepartmentWhenHasSubDepartment" xml:space="preserve">
+    <value>当前部门有下级部门，不能删除！</value>
+  </data>
+  <data name="Security.Department.NameExists" xml:space="preserve">
+    <value>部门名称已经存在！</value>
+  </data>
+  <data name="Security.Department.NotFoundDepartmentByID" xml:space="preserve">
+    <value>未找到部门！部门ID={0}</value>
+  </data>
+  <data name="Security.Department.NotFoundDepartmentByPath" xml:space="preserve">
+    <value>未找到部门！部门Path={0}</value>
+  </data>
+  <data name="Security.Department.PathExists" xml:space="preserve">
+    <value>多人同时添加部门，冲突！</value>
+  </data>
+  <data name="Security.Organization.CodeExists" xml:space="preserve">
+    <value>机构编码已经存在！</value>
+  </data>
+  <data name="Security.Organization.DisableOrganizationFaild" xml:space="preserve">
+    <value>当前机构有启用的下级机构，不能停用！</value>
+  </data>
+  <data name="Security.Organization.ForbiddenDeleteOrganizationWhenHasSubOrganization" xml:space="preserve">
+    <value>当前机构有下级机构，不能删除！</value>
+  </data>
+  <data name="Security.Organization.NameExists" xml:space="preserve">
+    <value>机构名称已经存在！</value>
+  </data>
+  <data name="Security.Organization.NotFoundOrganizationByID" xml:space="preserve">
+    <value>未找到机构！机构ID={0}</value>
+  </data>
+  <data name="Security.Organization.NotFoundOrganizationByPath" xml:space="preserve">
+    <value>未找到机构！机构Path={0}</value>
+  </data>
+  <data name="Security.Organization.PathExists" xml:space="preserve">
+    <value>多人同时添加机构，冲突！</value>
+  </data>
+  <data name="Security.Role.ExistsRoleName" xml:space="preserve">
+    <value>该角色名称已经存在！</value>
+  </data>
+  <data name="Security.Site_Student.IsUsing" xml:space="preserve">
+    <value>学员已经使用，不允许删除！</value>
+  </data>
+  <data name="Security.Site_Student.WorkerNoExists" xml:space="preserve">
+    <value>工号已经存在！</value>
+  </data>
+  <data name="Security.User.AddFailed.UserIsExists" xml:space="preserve">
+    <value>用户名[{0}]已经存在，请选择其它用户名！</value>
+  </data>
+  <data name="Security.User.DeleteFailed.UserIsUsing" xml:space="preserve">
+    <value>用户已经使用,不允许删除!</value>
+  </data>
+  <data name="Teacher.AddFailed.TeacherCodeIsExists" xml:space="preserve">
+    <value>讲师编号[{0}]已经存在！</value>
+  </data>
+  <data name="Teacher.DeleteFailed.TeacherIsUsing" xml:space="preserve">
+    <value>讲师[{0}]已使用，不能删除！！</value>
+  </data>
+  <data name="TraningImplement.Item.ItemCodeExists" xml:space="preserve">
+    <value>该项目编码已经存在！</value>
+  </data>
+  <data name="TraningImplement.Item.ItemNameExists" xml:space="preserve">
+    <value>该项目名称已经存在！</value>
+  </data>
+  <data name="TraningOrgnization.Tr_OuterOrg.CodeExists" xml:space="preserve">
+    <value>培训机构编码已经存在！</value>
+  </data>
+  <data name="TraningOrgnization.Tr_OuterOrg.NameExists" xml:space="preserve">
+    <value>培训机构名称已经存在！</value>
+  </data>
+  <data name="TraningOrgnization_FK_TR_ITEMC_REFERENCE_TR_OUTER" xml:space="preserve">
+    <value>请先删除项目课程与机构的关联！</value>
+  </data>
+  <data name="Notify.Notify_MessageClass.NotFoundByClassName" xml:space="preserve">
+    <value>未找到名为{0}的消息类别项！</value>
+  </data>
+  <data name="Notify.SendEmailFailed" xml:space="preserve">
+    <value>邮件发送失败！</value>
+  </data>
+  <data name="IDP.IDP_Plan.DataUsed" xml:space="preserve">
+    <value>该IDP下有评价与反馈信息，不允许删除！</value>
+  </data>
+  <data name="IDP.IDP_PlanObject.DataUsed" xml:space="preserve">
+    <value>该发展目标下有评价与反馈信息，不允许删除！</value>
+  </data>
+  <data name="TraningOrgnization_Course_Tr_OuterOrgCourse_CodeExists" xml:space="preserve">
+    <value>课程代码[{0}]已经存在，请重新输入！</value>
+  </data>
+  <data name="Security.Department.ForbiddenDeleteDepartmentWhenHasUser" xml:space="preserve">
+    <value>部门下有用户，不允许删除！</value>
+  </data>
+  <data name="Security.UserLogin.OldPasswordError" xml:space="preserve">
+    <value>原始密码错误！</value>
+  </data>
+  <data name="Authenticate.OrgnizationStatus.Disable" xml:space="preserve">
+    <value>当前用户所在机构已禁用！</value>
+  </data>
+</root>

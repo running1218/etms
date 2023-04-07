@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4248FE86-6D0E-4250-8B1A-3A110E0FCD0C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETMS.Components.Basic.Implement</RootNamespace>
+    <AssemblyName>ETMS.Components.Basic.Implement</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Apache.Ibatis.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=ed781d9fc396c6ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Apache.Ibatis.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Apache.Ibatis.DataMapper, Version=3.0.0.0, Culture=neutral, PublicKeyToken=ed781d9fc396c6ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Apache.Ibatis.DataMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Autumn.Core">
+      <HintPath>..\Reference\Autumn.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="ETMS.Components.Order.API">
+      <HintPath>..\ETMS.Components.Order.Implement\bin\Debug\ETMS.Components.Order.API.dll</HintPath>
+    </Reference>
+    <Reference Include="ETMS.Components.Order.Implement">
+      <HintPath>..\ETMS.Components.Order.Implement\bin\Debug\ETMS.Components.Order.Implement.dll</HintPath>
+    </Reference>
+    <Reference Include="OES.ExecuteUnit">
+      <HintPath>..\Reference\OES.ExecuteUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="OES.Logger">
+      <HintPath>..\Reference\OES.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BizCacheItemEnum.cs" />
+    <Compile Include="BLL\BizDataSourceEnum.cs" />
+    <Compile Include="BLL\BizLogTest.cs" />
+    <Compile Include="BLL\Bulletin\Inf_BulletinLogic.auto.cs" />
+    <Compile Include="BLL\Bulletin\Inf_BulletinObjectLogic.auto.cs" />
+    <Compile Include="BLL\Bulletin\Inf_BulletinReadLogic.auto.cs" />
+    <Compile Include="BLL\Bulletin\Inf_dic_InfoLevelLogic.auto.cs" />
+    <Compile Include="BLL\Bulletin\Tr_ItemCourseMentorDataLogic.auto.cs" />
+    <Compile Include="BLL\Bulletin\Inf_BulletinLogic.cs" />
+    <Compile Include="BLL\Bulletin\Tr_ItemCourseMentorDataLogic.cs" />
+    <Compile Include="BLL\Bulletin\Inf_BulletinObjectLogic.cs" />
+    <Compile Include="BLL\ClassRoom\Res_ClassRoomLogic.auto.cs" />
+    <Compile Include="BLL\ClassRoom\Res_ClassRoomLogic.cs" />
+    <Compile Include="BLL\Common\DefaultManager.cs" />
+    <Compile Include="BLL\Common\DictionaryLogic.cs" />
+    <Compile Include="BLL\Common\IManager.cs" />
+    <Compile Include="BLL\Common\NodeLogic.cs" />
+    <Compile Include="BLL\Course\CourseOpenRangeLogic.cs" />
+    <Compile Include="BLL\Course\Dic_CourseTypeLogic.cs" />
+    <Compile Include="BLL\Course\Resources\Res_ContentVideoLogic.cs" />
+    <Compile Include="BLL\Course\Resources\Res_TranscodingQueueLogic.auto.cs" />
+    <Compile Include="BLL\Course\Res_ContentLogic.auto.cs" />
+    <Compile Include="BLL\Course\Resources\Res_CourseResLogic.auto.cs" />
+    <Compile Include="BLL\Course\Resources\Res_CourseResLogic.cs" />
+    <Compile Include="BLL\Course\Rec_CourseLogic.auto.cs" />
+    <Compile Include="BLL\Course\Res_CourseLogic.auto.cs" />
+    <Compile Include="BLL\Course\Res_CourseLogic.cs" />
+    <Compile Include="BLL\Course\Sty_UserStudyProgressLogic.cs" />
+    <Compile Include="BLL\Dictionarys.cs" />
+    <Compile Include="BLL\Dictionary\Dic_PostLogic.auto.cs" />
+    <Compile Include="BLL\Dictionary\Dic_PostLogic.cs" />
+    <Compile Include="BLL\Dictionary\ActivityDirectoryLogic.cs" />
+    <Compile Include="BLL\Dictionary\SysDict.cs" />
+    <Compile Include="BLL\ELearningMap\Dic_Sys_ELearningMapTypeLogic.auto.cs" />
+    <Compile Include="BLL\ELearningMap\Res_StudyMapLogic.auto.cs" />
+    <Compile Include="BLL\ELearningMap\Res_StudyMapLogic.cs" />
+    <Compile Include="BLL\ELearningMap\Res_StudyMapReferCourseLogic.auto.cs" />
+    <Compile Include="BLL\ELearningMap\Res_StudyMapReferCourseLogic.cs" />
+    <Compile Include="BLL\Course\TeacherCourse\Res_TeacherCourseLogic.auto.cs" />
+    <Compile Include="BLL\Course\TeacherCourse\Res_TeacherCourseLogic.cs" />
+    <Compile Include="BLL\ELearningMap\Res_StudyMapReferIDPLogic.auto.cs" />
+    <Compile Include="BLL\ELearningMap\Res_StudyMapReferIDPLogic.cs" />
+    <Compile Include="BLL\Import\Import_AQuestion.cs" />
+    <Compile Include="BLL\Import\Import_Detail_StudentLogic.auto.cs" />
+    <Compile Include="BLL\Import\Import_Detail_StudentLogic.cs" />
+    <Compile Include="BLL\Import\Import_PollStudentLogic.cs" />
+    <Compile Include="BLL\Import\Import_QuestionLogic.cs" />
+    <Compile Include="BLL\Import\Import_StudentCourseGradeLogic.auto.cs" />
+    <Compile Include="BLL\Import\Import_StudentCourseGradeLogic.cs" />
+    <Compile Include="BLL\Import\Import_StudentSignupLogic.auto.cs" />
+    <Compile Include="BLL\Import\Import_StudentSignupLogic.cs" />
+    <Compile Include="BLL\Import\Import_SurveyAreaLogic.auto.cs" />
+    <Compile Include="BLL\Import\Import_SurveyAreaLogic.cs" />
+    <Compile Include="BLL\Import\Import_TaskLogic.auto.cs" />
+    <Compile Include="BLL\Import\Import_TaskLogic.cs" />
+    <Compile Include="BLL\Import\IQuestion.cs" />
+    <Compile Include="BLL\Import\JudgeQuestion.cs" />
+    <Compile Include="BLL\Import\MuiltpleQuestion.cs" />
+    <Compile Include="BLL\Import\SingleQuestion.cs" />
+    <Compile Include="BLL\JobService\AppPoolActiveJob.cs" />
+    <Compile Include="BLL\JobService\IJobService.cs" />
+    <Compile Include="BLL\JobService\OESLoggerAdapter.cs" />
+    <Compile Include="BLL\JobService\QuestionnaireUnSubmitNotifyJob.cs" />
+    <Compile Include="BLL\JobService\QuestionnaireUnSubmitSendNotifyJob.cs" />
+    <Compile Include="BLL\JobService\SendEmailJob.cs" />
+    <Compile Include="BLL\JobService\ServiceHost.cs" />
+    <Compile Include="BLL\JobService\ResetEmailStatusJob.cs" />
+    <Compile Include="BLL\JobService\DayBizTriggerJob.cs" />
+    <Compile Include="BLL\JobService\TrainingItemBeginNotifyJob.cs" />
+    <Compile Include="BLL\JobService\TrainingItemBeginNotifyJobTeacher.cs" />
+    <Compile Include="BLL\JobService\TrainingItemPublishNotifyJob.cs" />
+    <Compile Include="BLL\JobService\TrainingItemPublishNotifyJobTeacher.cs" />
+    <Compile Include="BLL\LearningManagement\LearnProcessControl\ItemCourseControlLogic.cs" />
+    <Compile Include="BLL\Media\Res_MediaLogic.auto.cs" />
+    <Compile Include="BLL\Media\Res_MediaLogic.cs" />
+    <Compile Include="BLL\Media\Res_MediaUserLogic.auto.cs" />
+    <Compile Include="BLL\Media\Res_MediaUserLogic.cs" />
+    <Compile Include="BLL\Notify\NotifyService.cs" />
+    <Compile Include="BLL\Notify\Notify_MessageClassLogic.auto.cs" />
+    <Compile Include="BLL\Notify\Notify_MessageClassLogic.cs" />
+    <Compile Include="BLL\Notify\Notify_MessageConfigLogic.auto.cs" />
+    <Compile Include="BLL\Notify\Notify_MessageConfigLogic.cs" />
+    <Compile Include="BLL\Notify\Notify_MessageLogic.auto.cs" />
+    <Compile Include="BLL\Notify\Notify_MessageLogic.cs" />
+    <Compile Include="BLL\Notify\Notify_MessageTypeLogic.auto.cs" />
+    <Compile Include="BLL\Notify\Notify_MessageTypeLogic.cs" />
+    <Compile Include="BLL\Notify\OrganizationEmailNotifyQueue.cs" />
+    <Compile Include="BLL\Operation\BannerSpreadLogic.cs" />
+    <Compile Include="BLL\Security\AccountStrategyLogic.cs" />
+    <Compile Include="BLL\Security\Log_BusinessOperateLogic.auto.cs" />
+    <Compile Include="BLL\Security\Log_BusinessOperateLogic.cs" />
+    <Compile Include="BLL\Security\Log_SystemExceptionLogic.auto.cs" />
+    <Compile Include="BLL\Security\Log_SystemExceptionLogic.cs" />
+    <Compile Include="BLL\Security\Log_SystemInfoLogic.auto.cs" />
+    <Compile Include="BLL\Security\Log_SystemInfoLogic.cs" />
+    <Compile Include="BLL\Security\PassportVistorLogic.cs" />
+    <Compile Include="BLL\Security\Site_AgencyLogic.cs" />
+    <Compile Include="BLL\Security\Site_AgencyProductLogic.cs" />
+    <Compile Include="BLL\Security\Site_SysConfigLogic.auto.cs" />
+    <Compile Include="BLL\Security\Site_SysConfigLogic.cs" />
+    <Compile Include="BLL\Security\Site_SysConfigGroupLogic.auto.cs" />
+    <Compile Include="BLL\Security\Site_SysConfigGroupLogic.cs" />
+    <Compile Include="BLL\Teacher\Rec_TeacherLogic.auto.cs" />
+    <Compile Include="BLL\TrainingItem\Course\Hours\Student\Tr_ItemCourseHoursStudentLogic.auto.cs" />
+    <Compile Include="BLL\TrainingItem\Course\Hours\Student\Tr_ItemCourseHoursStudentLogic.cs" />
+    <Compile Include="BLL\TrainingItem\Course\Hours\Tr_ItemCourseHoursLogic.auto.cs" />
+    <Compile Include="BLL\TrainingItem\Course\Hours\Tr_ItemCourseHoursLogic.cs" />
+    <Compile Include="BLL\TrainingItem\StudentCourse\Sty_StudentCourseLogic.auto.cs" />
+    <Compile Include="BLL\Teacher\Site_TeacherLogic.auto.cs" />
+    <Compile Include="BLL\Teacher\Site_TeacherLogic.cs" />
+    <Compile Include="BLL\TrainingItem\Course\Resources\Tr_ItemCourseResLogic.cs" />
+    <Compile Include="BLL\TrainingItem\Course\Teacher\Tr_ItemCourseTeacherLogic.auto.cs" />
+    <Compile Include="BLL\TrainingItem\Course\Teacher\Tr_ItemCourseTeacherLogic.cs" />
+    <Compile Include="BLL\TrainingItem\Course\Tr_ItemCourseLogic.auto.cs" />
+    <Compile Include="BLL\TrainingItem\Course\Tr_ItemCourseLogic.cs" />
+    <Compile Include="BLL\TrainingItem\Course\Resources\Tr_ItemCourseResLogic.auto.cs" />
+    <Compile Include="BLL\QuestionDB\QuestionInfo.cs" />
+    <Compile Include="BLL\Security\DepartmentLogic.cs" />
+    <Compile Include="BLL\Security\FunctionGroupFunctionRelationLogic.cs" />
+    <Compile Include="BLL\Security\FunctionGroupLogic.cs" />
+    <Compile Include="BLL\Security\FunctionLogic.cs" />
+    <Compile Include="BLL\Security\FunctionPageUrlRelationLogic.cs" />
+    <Compile Include="BLL\Security\OrganizationLogic.cs" />
+    <Compile Include="BLL\Security\PageUrlLogic.cs" />
+    <Compile Include="BLL\Security\PassportAuthenticateLogic.cs" />
+    <Compile Include="BLL\Security\RoleEnvironmentRelationLogic.cs" />
+    <Compile Include="BLL\Security\RoleFunctionRelationLogic.cs" />
+    <Compile Include="BLL\Security\RoleLogic.cs" />
+    <Compile Include="BLL\Security\Site_StudentLogic.auto.cs" />
+    <Compile Include="BLL\Security\Site_StudentLogic.cs" />
+    <Compile Include="BLL\Security\UserFunctionRelationLogic.cs" />
+    <Compile Include="BLL\Security\UserLogic.cs" />
+    <Compile Include="BLL\Security\UserRoleRelationLogic.cs" />
+    <Compile Include="BLL\StudentStudy\Sty_StudentCourse.cs" />
+    <Compile Include="BLL\TrainingItem\StudentCourse\Sty_StudentCourseLogic.cs" />
+    <Compile Include="BLL\TrainingItem\Student\Sty_StudentSignupLogic.auto.cs" />
+    <Compile Include="BLL\TrainingItem\Tr_AppraiseLogic.cs" />
+    <Compile Include="BLL\TrainingPlan\Course\Tr_PlanCourseLogic.auto.cs" />
+    <Compile Include="BLL\TrainingPlan\Course\Tr_PlanCourseLogic.cs" />
+    <Compile Include="BLL\TrainingPlan\Tr_PlanLogic.auto.cs" />
+    <Compile Include="BLL\TrainingPlan\Tr_PlanLogic.cs" />
+    <Compile Include="BLL\TraningOrgnization\Course\Tr_OuterOrgCourseLogic.auto.cs" />
+    <Compile Include="BLL\TraningOrgnization\Course\Tr_OuterOrgCourseLogic.cs" />
+    <Compile Include="DAL\ClassRoom\Res_ClassRoomDataAccess.auto.cs" />
+    <Compile Include="DAL\Common\GetData.cs" />
+    <Compile Include="DAL\Course\CourseOpenRangeDataAccess.cs" />
+    <Compile Include="DAL\Course\Resources\Res_ContentVideoDataAccess.cs" />
+    <Compile Include="DAL\Course\Resources\Res_TranscodingQueueDataAccess.cs" />
+    <Compile Include="DAL\Course\Res_ContentDataAccess.auto.cs" />
+    <Compile Include="DAL\Course\Rec_CourseDataAccess.auto.cs" />
+    <Compile Include="DAL\Course\Sty_UserStudyProgressDataAccess.cs" />
+    <Compile Include="DAL\Dictionary\ActivityDirectoryDataAccess.cs" />
+    <Compile Include="DAL\ELearningMap\Res_StudyMapDataAccess.cs" />
+    <Compile Include="DAL\ELearningMap\Res_StudyMapReferIDPDataAccess.auto.cs" />
+    <Compile Include="DAL\ELearningMap\Res_StudyMapReferIDPDataAccess.cs" />
+    <Compile Include="DAL\Import\Import_PollStudentDataAccess.auto.cs" />
+    <Compile Include="DAL\Import\Import_StudentCourseGradeDataAccess.auto.cs" />
+    <Compile Include="DAL\Import\Import_StudentCourseGradeDataAccess.cs" />
+    <Compile Include="DAL\Import\Import_StudentSignupDataAccess.auto.cs" />
+    <Compile Include="DAL\Import\Import_StudentSignupDataAccess.cs" />
+    <Compile Include="DAL\Import\Import_SurveyAreaDataAccess.auto.cs" />
+    <Compile Include="DAL\Import\Import_SurveyAreaDataAccess.cs" />
+    <Compile Include="DAL\LearningManagement\LearnProcessControl\ItemCourseControlDataAccess.cs" />
+    <Compile Include="DAL\Media\Res_MediaDataAccess.auto.cs" />
+    <Compile Include="DAL\Media\Res_MediaUserDataAccess.auto.cs" />
+    <Compile Include="DAL\Notify\Notify_MessageClassDataAccess.auto.cs" />
+    <Compile Include="DAL\Notify\Notify_MessageConfigDataAccess.auto.cs" />
+    <Compile Include="DAL\Notify\Notify_MessageDataAccess.auto.cs" />
+    <Compile Include="DAL\Notify\Notify_MessageTypeDataAccess.auto.cs" />
+    <Compile Include="DAL\Operation\BannerSpreadDataAccess.cs" />
+    <Compile Include="DAL\Security\Log_BusinessOperateDataAccess.auto.cs" />
+    <Compile Include="DAL\Security\Log_SystemExceptionDataAccess.auto.cs" />
+    <Compile Include="DAL\Security\Log_SystemInfoDataAccess.auto.cs" />
+    <Compile Include="DAL\Security\PassportVistorDataAccess.cs" />
+    <Compile Include="DAL\Security\Site_AgencyDataAccess.cs" />
+    <Compile Include="DAL\Security\Site_AgencyProductDataAccess.cs" />
+    <Compile Include="DAL\Security\Site_SysConfigDataAccess.auto.cs" />
+    <Compile Include="DAL\Security\Site_SysConfigGroupDataAccess.auto.cs" />
+    <Compile Include="DAL\Security\Site_SysConfigDataAccess.cs" />
+    <Compile Include="DAL\Teacher\Rec_TeacherDataAccess.auto.cs" />
+    <Compile Include="DAL\TrainingItem\Course\Hours\Student\Tr_ItemCourseHoursStudentDataAccess.auto.cs" />
+    <Compile Include="DAL\TrainingItem\Course\Hours\Student\Tr_ItemCourseHoursStudentDataAccess.cs" />
+    <Compile Include="DAL\TrainingItem\Course\Hours\Tr_ItemCourseHoursDataAccess.auto.cs" />
+    <Compile Include="DAL\TrainingItem\Course\Hours\Tr_ItemCourseHoursDataAccess.cs" />
+    <Compile Include="DAL\Teacher\Site_TeacherDataAccess.auto.cs" />
+    <Compile Include="DAL\Teacher\Site_TeacherDataAccess.cs" />
+    <Compile Include="DAL\TrainingItem\Course\Resources\Tr_ItemCourseResDataAccess.cs" />
+    <Compile Include="DAL\TrainingItem\Course\Teacher\Tr_ItemCourseTeacherDataAccess.auto.cs" />
+    <Compile Include="DAL\TrainingItem\Course\Teacher\Tr_ItemCourseTeacherDataAccess.cs" />
+    <Compile Include="DAL\TrainingItem\Course\Tr_ItemCourseDataAccess.auto.cs" />
+    <Compile Include="DAL\TrainingItem\StudentCourse\Sty_StudentCourseDataAccess.auto.cs" />
+    <Compile Include="DAL\TrainingItem\StudentCourse\Sty_StudentCourseDataAccess.cs" />
+    <Compile Include="DAL\TrainingItem\Student\Sty_StudentSignupDataAccess.auto.cs" />
+    <Compile Include="BLL\TrainingItem\Student\Sty_StudentSignupLogic.cs" />
+    <Compile Include="BLL\TrainingItem\Tr_ItemLogic.auto.cs" />
+    <Compile Include="BLL\TrainingItem\Tr_ItemLogic.cs" />
+    <Compile Include="BLL\TraningOrgnization\Tr_OuterOrgLogic.auto.cs" />
+    <Compile Include="BLL\TraningOrgnization\Tr_OuterOrgLogic.cs" />
+    <Compile Include="DAL\Bulletin\Inf_BulletinDataAccess.auto.cs" />
+    <Compile Include="DAL\Bulletin\Inf_BulletinObjectDataAccess.auto.cs" />
+    <Compile Include="DAL\Bulletin\Inf_BulletinReadDataAccess.auto.cs" />
+    <Compile Include="DAL\Bulletin\Inf_dic_InfoLevelDataAccess.auto.cs" />
+    <Compile Include="DAL\Bulletin\Tr_ItemCourseMentorDataDataAccess.auto.cs" />
+    <Compile Include="DAL\Bulletin\Inf_BulletinDataAccess.cs" />
+    <Compile Include="DAL\Bulletin\Tr_ItemCourseMentorDataDataAccess.cs" />
+    <Compile Include="DAL\Bulletin\Inf_BulletinObjectDataAccess.cs" />
+    <Compile Include="DAL\Common\DictionaryDataAccess.cs" />
+    <Compile Include="DAL\Common\IDataAccess.cs" />
+    <Compile Include="DAL\ConnectionString.cs" />
+    <Compile Include="DAL\Course\Dic_CourseTypeDataAccess.cs" />
+    <Compile Include="DAL\Course\Resources\Res_CourseResDataAccess.auto.cs" />
+    <Compile Include="DAL\Course\Resources\Res_CourseResDataAccess.cs" />
+    <Compile Include="DAL\Course\Res_CourseDataAccess.auto.cs" />
+    <Compile Include="DAL\Course\Res_CourseDataAccess.cs" />
+    <Compile Include="DAL\Course\TeacherCourse\Res_TeacherCourseDataAccess.cs" />
+    <Compile Include="DAL\Dictionary\Dic_PostDataAccess.auto.cs" />
+    <Compile Include="DAL\Dictionary\SysDictionaryDataAccess.cs" />
+    <Compile Include="DAL\Dictionary\Dic_PostDataAccess.cs" />
+    <Compile Include="DAL\ELearningMap\Dic_Sys_ELearningMapTypeDataAccess.auto.cs" />
+    <Compile Include="DAL\ELearningMap\Res_StudyMapDataAccess.auto.cs" />
+    <Compile Include="DAL\ELearningMap\Res_StudyMapReferCourseDataAccess.auto.cs" />
+    <Compile Include="DAL\ELearningMap\Res_StudyMapReferCourseDataAccess.cs" />
+    <Compile Include="DAL\Course\TeacherCourse\Res_TeacherCourseDataAccess.auto.cs" />
+    <Compile Include="DAL\Import\Import_Detail_StudentDataAccess.auto.cs" />
+    <Compile Include="DAL\Import\Import_TaskDataAccess.auto.cs" />
+    <Compile Include="DAL\Import\Import_Detail_StudentDataAccess.cs" />
+    <Compile Include="DAL\QuestionDB\QuestionDataAccess.cs" />
+    <Compile Include="DAL\TrainingItem\Course\Tr_ItemCourseDataAccess.cs" />
+    <Compile Include="DAL\TrainingItem\Course\Resources\Tr_ItemCourseResDataAccess.auto.cs" />
+    <Compile Include="DAL\Security\DepartmentDataAccess.cs" />
+    <Compile Include="DAL\Security\FunctionDataAccess.cs" />
+    <Compile Include="DAL\Security\FunctionGroupDataAccess.cs" />
+    <Compile Include="DAL\Security\OrganizationDataAccess.cs" />
+    <Compile Include="DAL\Security\PageUrlDataAccess.cs" />
+    <Compile Include="DAL\Security\PassportAuthenticateDao.cs" />
+    <Compile Include="DAL\Security\RoleDataAccess.cs" />
+    <Compile Include="DAL\Security\RoleEnvironmentDataAccess.cs" />
+    <Compile Include="DAL\Security\RoleFunctionDataAccess.cs" />
+    <Compile Include="DAL\Security\Site_StudentDataAccess.auto.cs" />
+    <Compile Include="DAL\Security\UserDataAccess.cs" />
+    <Compile Include="DAL\Security\UserFunctionDataAccess.cs" />
+    <Compile Include="DAL\Security\UserRoleDataAccess.cs" />
+    <Compile Include="DAL\Security\Site_StudentDataAccess.cs" />
+    <Compile Include="DAL\StudentStudy\Sty_StudentCourseAccess.cs" />
+    <Compile Include="DAL\TrainingItem\Student\Sty_StudentSignupDataAccess.cs" />
+    <Compile Include="DAL\TrainingItem\Tr_AppraiseDataAccess.cs" />
+    <Compile Include="DAL\TrainingItem\Tr_ItemDataAccess.auto.cs" />
+    <Compile Include="DAL\TrainingItem\Tr_ItemDataAccess.cs" />
+    <Compile Include="DAL\TrainingPlan\Course\Tr_PlanCourseDataAccess.auto.cs" />
+    <Compile Include="DAL\TrainingPlan\Course\Tr_PlanCourseDataAccess.cs" />
+    <Compile Include="DAL\TrainingPlan\Tr_PlanDataAccess.auto.cs" />
+    <Compile Include="DAL\TrainingPlan\Tr_PlanDataAccess.cs" />
+    <Compile Include="DAL\TraningOrgnization\Course\Tr_OuterOrgCourseDataAccess.auto.cs" />
+    <Compile Include="DAL\TraningOrgnization\Tr_OuterOrgDataAccess.auto.cs" />
+    <Compile Include="DAL\TraningOrgnization\Tr_OuterOrgDataAccess.cs" />
+    <Compile Include="DefaultPassportFacade.cs" />
+    <Compile Include="ItemCourseGuidanceFacade.cs" />
+    <Compile Include="ItemCourseMentorFacade.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicFacade.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETMS.AppContext\ETMS.AppContext.csproj">
+      <Project>{9B71CEF6-8D67-4714-8CE3-29CBEE5B7975}</Project>
+      <Name>ETMS.AppContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Basic.API\ETMS.Components.Basic.API.csproj">
+      <Project>{3D9C3CD3-FD0A-420C-9B59-4352CF173D6F}</Project>
+      <Name>ETMS.Components.Basic.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Courseware.API\ETMS.Components.Courseware.API.csproj">
+      <Project>{2C8BDD39-8996-43B2-BC4D-69D70FFB1C0E}</Project>
+      <Name>ETMS.Components.Courseware.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Exam.API\ETMS.Components.Exam.API.csproj">
+      <Project>{90FA7A74-4FC6-40BA-88A1-A885F1F4A8BF}</Project>
+      <Name>ETMS.Components.Exam.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Exam.Implement\ETMS.Components.Exam.Implement.csproj">
+      <Project>{CBE8566C-018B-430F-9D63-B1F1AAB8EF09}</Project>
+      <Name>ETMS.Components.Exam.Implement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Fee.API\ETMS.Components.Fee.API.csproj">
+      <Project>{32D9DA92-590D-4360-8A43-FACAEAEE1461}</Project>
+      <Name>ETMS.Components.Fee.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Poll.API\ETMS.Components.Poll.API.csproj">
+      <Project>{8FD43AE4-1371-467F-8D1C-2BDE3E567320}</Project>
+      <Name>ETMS.Components.Poll.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Poll.Implement\ETMS.Components.Poll.Implement.csproj">
+      <Project>{63DC920D-AA79-4944-8FDE-88A9FA5E0892}</Project>
+      <Name>ETMS.Components.Poll.Implement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.QS.API\ETMS.Components.QS.API.csproj">
+      <Project>{5C1C29E6-C138-4D33-9D67-648456119B79}</Project>
+      <Name>ETMS.Components.QS.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.QS.Implement\ETMS.Components.QS.Implement.csproj">
+      <Project>{34190220-54A6-4C36-863E-91BE2DE632FF}</Project>
+      <Name>ETMS.Components.QS.Implement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Utility\ETMS.Utility.csproj">
+      <Project>{92d62b7c-b9eb-4086-9d18-11cd36f1ca28}</Project>
+      <Name>ETMS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BLL\JobService\DayBizTriggerJobs.xml" />
+    <Content Include="DAL\Bulletin\Procedures\Procedure_Inf_Bulletin.sql" />
+    <Content Include="DAL\Bulletin\Procedures\Procedure_Inf_BulletinObject.sql" />
+    <Content Include="DAL\Bulletin\Procedures\Procedure_Inf_BulletinRead.sql" />
+    <Content Include="DAL\Bulletin\Procedures\Procedure_Inf_dic_InfoLevel.sql" />
+    <Content Include="DAL\Bulletin\Procedures\Procedure_Tr_ItemCourseMentorData.sql" />
+    <Content Include="DAL\Dictionary\Procedures\Procedure_Dic_Post.sql" />
+    <Content Include="DAL\ELearningMap\Procedures\Procedure_Dic_Sys_ELearningMapType.sql" />
+    <Content Include="DAL\ELearningMap\Procedures\Procedure_Res_StudyMap.sql" />
+    <Content Include="DAL\ELearningMap\Procedures\Procedure_Res_StudyMapReferCourse.sql" />
+    <Content Include="DAL\Course\TeacherCourse\Procedures\Procedure_Res_TeacherCourse.sql" />
+    <Content Include="DAL\Import\Procedures\Procedure_Import_Detail_Student.sql" />
+    <Content Include="DAL\Import\Procedures\Procedure_Import_StudentCourseGrade.sql" />
+    <Content Include="DAL\Import\Procedures\Procedure_Import_StudentSignup.sql" />
+    <Content Include="DAL\Import\Procedures\Procedure_Import_Task.sql" />
+    <Content Include="DAL\Import\Procedures\Procedure_Import_Detail_Student_Import.sql" />
+    <Content Include="DAL\Notify\Procedures\Procedure_Notify_Message.sql" />
+    <Content Include="DAL\Notify\Procedures\Procedure_Notify_MessageClass.sql" />
+    <Content Include="DAL\Notify\Procedures\Procedure_Notify_MessageConfig.sql" />
+    <Content Include="DAL\Notify\Procedures\Procedure_Notify_MessageType.sql" />
+    <Content Include="DAL\Security\Procedures\Procedure_Log_BusinessOperate.sql" />
+    <Content Include="DAL\Security\Procedures\Procedure_Log_SystemException.sql" />
+    <Content Include="DAL\Security\Procedures\Procedure_Site_SysConfig.sql" />
+    <Content Include="DAL\Security\Procedures\Procedure_Site_SysConfigGroup.sql" />
+    <Content Include="DAL\Teacher\procedures\Procedure_Res_Teacher.sql" />
+    <Content Include="DAL\TrainingItem\Course\Hours\Procedures\Procedure_Tr_ItemCourseHours.sql" />
+    <Content Include="DAL\TrainingItem\Course\Procedures\Procedure_Tr_ItemCourse.sql" />
+    <Content Include="DAL\TrainingItem\Procedures\Procedure_Tr_Item.sql" />
+    <Content Include="DAL\TrainingPlan\Course\Procedures\Procedure_Tr_PlanCourse.sql" />
+    <Content Include="DAL\TrainingPlan\Procedures\Procedure_Tr_Plan.sql" />
+    <Content Include="DAL\TraningOrgnization\procedures\Procedure_Tr_OuterOrg.sql" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

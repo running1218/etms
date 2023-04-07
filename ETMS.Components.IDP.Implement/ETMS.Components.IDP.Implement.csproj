@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3EBCC856-8A7B-4A73-9BFD-AFB930ECD3FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETMS.Components.IDP.Implement</RootNamespace>
+    <AssemblyName>ETMS.Components.IDP.Implement</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\IDP_PlanContentDetailLogic.auto.cs" />
+    <Compile Include="BLL\IDP_PlanContentDetailLogic.cs" />
+    <Compile Include="BLL\IDP_PlanContentLogic.auto.cs" />
+    <Compile Include="BLL\IDP_PlanContentLogic.cs" />
+    <Compile Include="BLL\IDP_PlanLogic.auto.cs" />
+    <Compile Include="BLL\IDP_PlanLogic.cs" />
+    <Compile Include="BLL\IDP_PlanObjectFeedbackLogic.auto.cs" />
+    <Compile Include="BLL\IDP_PlanObjectFeedbackLogic.cs" />
+    <Compile Include="BLL\IDP_PlanObjectLogic.auto.cs" />
+    <Compile Include="BLL\IDP_PlanObjectLogic.cs" />
+    <Compile Include="BLL\NotCourseData\IDP_NotCourseDataLogic.auto.cs" />
+    <Compile Include="BLL\NotCourseData\IDP_NotCourseDataLogic.cs" />
+    <Compile Include="DAL\ConnectionString.cs" />
+    <Compile Include="DAL\IDP_PlanContentDataAccess.auto.cs" />
+    <Compile Include="DAL\IDP_PlanContentDetailDataAccess.auto.cs" />
+    <Compile Include="DAL\IDP_PlanDataAccess.auto.cs" />
+    <Compile Include="DAL\IDP_PlanObjectDataAccess.auto.cs" />
+    <Compile Include="DAL\IDP_PlanObjectFeedbackDataAccess.auto.cs" />
+    <Compile Include="DAL\NotCourseData\IDP_NotCourseDataDataAccess.auto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\Procedures\Procedure_IDP_NotCourseData.sql" />
+    <Content Include="DAL\Procedures\Procedure_IDP_Plan.sql" />
+    <Content Include="DAL\Procedures\Procedure_IDP_PlanContent.sql" />
+    <Content Include="DAL\Procedures\Procedure_IDP_PlanContentDetail.sql" />
+    <Content Include="DAL\Procedures\Procedure_IDP_PlanObject.sql" />
+    <Content Include="DAL\Procedures\Procedure_IDP_PlanObjectFeedback.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETMS.AppContext\ETMS.AppContext.csproj">
+      <Project>{9B71CEF6-8D67-4714-8CE3-29CBEE5B7975}</Project>
+      <Name>ETMS.AppContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Basic.API\ETMS.Components.Basic.API.csproj">
+      <Project>{3D9C3CD3-FD0A-420C-9B59-4352CF173D6F}</Project>
+      <Name>ETMS.Components.Basic.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Basic.Implement\ETMS.Components.Basic.Implement.csproj">
+      <Project>{4248FE86-6D0E-4250-8B1A-3A110E0FCD0C}</Project>
+      <Name>ETMS.Components.Basic.Implement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.IDP.API\ETMS.Components.IDP.API.csproj">
+      <Project>{E6C6DE86-37F9-4B7E-A3C9-BC0B59538509}</Project>
+      <Name>ETMS.Components.IDP.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Utility\ETMS.Utility.csproj">
+      <Project>{92D62B7C-B9EB-4086-9D18-11CD36F1CA28}</Project>
+      <Name>ETMS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

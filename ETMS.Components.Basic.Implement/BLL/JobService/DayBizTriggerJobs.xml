@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+
+<objects xmlns="http://www.autumnframework.net" default-lazy-init="true">
+  <description>
+    每天触发的业务提醒Job集合
+  </description>
+
+  <!-- 培训项目（已发布，且还未开始，并且（开始日期-当前日期）等于7天时触发 -->
+  <object id="TrainingItemBeginBefore7DayNotifyJob"
+          type="ETMS.Components.Basic.Implement.BLL.JobService.TrainingItemBeginNotifyJob,ETMS.Components.Basic.Implement">
+    <!-- 课程到期前3天提醒 -->
+    <property name="BeforeDay" value="7"/>
+  </object>
+
+  <!-- 培训项目（已发布，且还未开始，并且（开始日期-当前日期）等于1天时触发 -->
+  <object id="TrainingItemBeginBefore1DayNotifyJob"
+          type="ETMS.Components.Basic.Implement.BLL.JobService.TrainingItemBeginNotifyJob,ETMS.Components.Basic.Implement">
+    <!-- 课程到期前3天提醒 -->
+    <property name="BeforeDay" value="1"/>
+  </object>
+  
+</objects>

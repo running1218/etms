@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90FA7A74-4FC6-40BA-88A1-A885F1F4A8BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETMS.Components.Exam.API</RootNamespace>
+    <AssemblyName>ETMS.Components.Exam.API</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ETMS.Components.Exam.API.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autumn.Core">
+      <HintPath>..\Reference\Autumn.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizErrorDefine.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BizErrorDefine.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\EnumReviewStatus.cs" />
+    <Compile Include="Entity\EnumShareStatus.cs" />
+    <Compile Include="Entity\ExamResource.cs" />
+    <Compile Include="Entity\IDName.cs" />
+    <Compile Include="Entity\ImportQuestion\QuestionBasic.cs" />
+    <Compile Include="Entity\ImportQuestion\QuestionExpansion.cs" />
+    <Compile Include="Entity\ItemBank\AnswerBase.cs" />
+    <Compile Include="Entity\CommonEnum.cs" />
+    <Compile Include="Entity\ItemBank\ExtendedTextAnswer.cs" />
+    <Compile Include="Entity\ItemBank\ExtendedTextQuestion.cs" />
+    <Compile Include="Entity\ItemBank\GroupAnswer.cs" />
+    <Compile Include="Entity\ItemBank\GroupQuestion.cs" />
+    <Compile Include="Entity\ItemBank\JudgementAnswer.cs" />
+    <Compile Include="Entity\ItemBank\JudgementQuestion.cs" />
+    <Compile Include="Entity\ItemBank\MatchAnswer.cs" />
+    <Compile Include="Entity\ItemBank\MatchQuestion.cs" />
+    <Compile Include="Entity\ItemBank\MultipleChoiceAnswer.cs" />
+    <Compile Include="Entity\ItemBank\MultipleChoiceQuestion.cs" />
+    <Compile Include="Entity\ItemBank\OptionFeedback.cs" />
+    <Compile Include="Entity\ItemBank\OptionGroup.cs" />
+    <Compile Include="Entity\ItemBank\OptionGroupItem.cs" />
+    <Compile Include="Entity\ItemBank\Question.cs" />
+    <Compile Include="Entity\ItemBank\QuestionBank.cs" />
+    <Compile Include="Entity\ItemBank\QuestionBase.cs" />
+    <Compile Include="Entity\ItemBank\QuestionExtend.cs" />
+    <Compile Include="Entity\ItemBank\QuestionFeedback.cs" />
+    <Compile Include="Entity\ItemBank\QuestionOption.cs" />
+    <Compile Include="Entity\ItemBank\QuestionResource.cs" />
+    <Compile Include="Entity\ItemBank\QuestionSearch.cs" />
+    <Compile Include="Entity\ItemBank\QuestionSearchResult.cs" />
+    <Compile Include="Entity\ItemBank\QuestionType.cs" />
+    <Compile Include="Entity\ItemBank\SingleChoiceAnswer.cs" />
+    <Compile Include="Entity\ItemBank\SingleChoiceQuestion.cs" />
+    <Compile Include="Entity\ItemBank\TestToQuestion.cs" />
+    <Compile Include="Entity\ItemBank\TextEntryAnswer.cs" />
+    <Compile Include="Entity\ItemBank\TextEntryQuestion.cs" />
+    <Compile Include="Entity\ItemBank\TreeCategory.cs" />
+    <Compile Include="Entity\NewTestPaper\Option.cs" />
+    <Compile Include="Entity\NewTestPaper\Paper.cs" />
+    <Compile Include="Entity\NewTestPaper\Question.cs" />
+    <Compile Include="Entity\NewTestPaper\QuestionResult.cs" />
+    <Compile Include="Entity\NewTestPaper\QuestionTypeHelper.cs" />
+    <Compile Include="Entity\Test\ExamPaperSchema.cs" />
+    <Compile Include="Entity\Test\ExamResult.cs" />
+    <Compile Include="Entity\Test\ExamStatusType.cs" />
+    <Compile Include="Entity\Test\OwnerType.cs" />
+    <Compile Include="Entity\Test\PaperQuestion.cs" />
+    <Compile Include="Entity\Test\PaperQuestionView.cs" />
+    <Compile Include="Entity\Test\QuestionStat.cs" />
+    <Compile Include="Entity\Test\QuestionTypeCnt.cs" />
+    <Compile Include="Entity\Test\StudentTestView.cs" />
+    <Compile Include="Entity\Test\TestFeedback.cs" />
+    <Compile Include="Entity\Test\TestPaper.cs" />
+    <Compile Include="Entity\Test\TestPaperPriview.cs" />
+    <Compile Include="Entity\Test\TestPaperRule.cs" />
+    <Compile Include="Entity\Test\TestPaperSchema.cs" />
+    <Compile Include="Entity\Test\TestPaperToQuestion.cs" />
+    <Compile Include="Entity\Test\TestPaperType.cs" />
+    <Compile Include="Entity\Test\TestQuestionBase.cs" />
+    <Compile Include="Entity\Test\TestSearch.cs" />
+    <Compile Include="Entity\Test\TestSearchResult.cs" />
+    <Compile Include="Entity\Test\UserExam.cs" />
+    <Compile Include="Entity\Test\UserExamResult.cs" />
+    <Compile Include="Entity\Test\UserQuestion.cs" />
+    <Compile Include="Entity\Test\UserTestPaper.cs" />
+    <Compile Include="Entity\Test\UserTestResult.cs" />
+    <Compile Include="Entity\Test\UserTestResultStat.cs" />
+    <Compile Include="Entity\Test\UserTestStatusType.cs" />
+    <Compile Include="Entity\Test\UserTPQuestion.cs" />
+    <Compile Include="Interface\ItemBank\ICommonQuestionLogic.cs" />
+    <Compile Include="Interface\ItemBank\IOptionFeedbackLogic.cs" />
+    <Compile Include="Interface\ItemBank\IOptionGroupLogic.cs" />
+    <Compile Include="Interface\ItemBank\IOptionGroupServiceLogic.cs" />
+    <Compile Include="Interface\ItemBank\IOptionLogic.cs" />
+    <Compile Include="Interface\ItemBank\IQuestionBankLogic.cs" />
+    <Compile Include="Interface\ItemBank\IQuestionExtendLogic.cs" />
+    <Compile Include="Interface\ItemBank\IQuestionFeedbackLogic.cs" />
+    <Compile Include="Interface\ItemBank\IQuestionLogic.cs" />
+    <Compile Include="Interface\ItemBank\IQuestionOptionLogic.cs" />
+    <Compile Include="Interface\ItemBank\IQuestionSearchLogic.cs" />
+    <Compile Include="Interface\ItemBank\IQuestionServiceLogic.cs" />
+    <Compile Include="Interface\ItemBank\IQuestionTempLogic.cs" />
+    <Compile Include="Interface\ItemBank\ITestToQuestionLogic.cs" />
+    <Compile Include="Interface\ItemBank\ITreeCategoryLogic.cs" />
+    <Compile Include="Interface\Test\IExamResourceLogic.cs" />
+    <Compile Include="Interface\Test\IPaperQuestionLogic.cs" />
+    <Compile Include="Interface\Test\ITestFeedbackLogic.cs" />
+    <Compile Include="Interface\Test\ITestFeedbackServiceLogic.cs" />
+    <Compile Include="Interface\Test\ITestPaperLogic.cs" />
+    <Compile Include="Interface\Test\ITestPaperRuleLogic.cs" />
+    <Compile Include="Interface\Test\IUserTestLogic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IExampleFacade.cs" />
+    <Compile Include="ServiceRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="remark.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BizErrorDefine.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BizErrorDefine.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETMS.AppContext\ETMS.AppContext.csproj">
+      <Project>{9B71CEF6-8D67-4714-8CE3-29CBEE5B7975}</Project>
+      <Name>ETMS.AppContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Basic.API\ETMS.Components.Basic.API.csproj">
+      <Project>{3D9C3CD3-FD0A-420C-9B59-4352CF173D6F}</Project>
+      <Name>ETMS.Components.Basic.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Utility\ETMS.Utility.csproj">
+      <Project>{92D62B7C-B9EB-4086-9D18-11CD36F1CA28}</Project>
+      <Name>ETMS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Entity\ItemBank\题库.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

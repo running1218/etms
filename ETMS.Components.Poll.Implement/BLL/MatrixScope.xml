@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<scopes>
+	<scope id="1" name="类型A：从0至10">
+		<value>0</value>
+		<value>1</value>
+		<value>2</value>
+		<value>3</value>
+		<value>4</value>
+		<value>5</value>
+		<value>6</value>
+		<value>7</value>
+		<value>8</value>
+		<value>9</value>
+		<value>10</value>
+	</scope>
+	<scope id="2" name="类型B：从1至10">
+		<value>1</value>
+		<value>2</value>
+		<value>3</value>
+		<value>4</value>
+		<value>5</value>
+		<value>6</value>
+		<value>7</value>
+		<value>8</value>
+		<value>9</value>
+		<value>10</value>
+	</scope>
+	<scope id="3" name="类型C：从-5至+5">
+		<value>-5</value>
+		<value>-4</value>
+		<value>-3</value>
+		<value>-2</value>
+		<value>-1</value>
+		<value>0</value>
+		<value>1</value>
+		<value>2</value>
+		<value>3</value>
+		<value>4</value>
+		<value>5</value>
+	</scope>
+	<scope id="4" name="类型D：喜欢程度">
+		<value>很不喜欢</value>
+		<value>不喜欢</value>
+		<value>一般</value>
+		<value>喜欢</value>
+		<value>非常喜欢</value>
+	</scope>
+	<scope id="5" name="类型E：满意程度">
+		<value>很不满意</value>
+		<value>不满意</value>
+		<value>一般</value>
+		<value>满意</value>
+		<value>非常满意</value>
+	</scope>
+	<scope id="6" name="类型F：了解程度">
+		<value>很不了解</value>
+		<value>不了解</value>
+		<value>一般</value>
+		<value>基本了解</value>
+		<value>非常了解</value>
+	</scope>
+	<scope id="7" name="类型G：重要程度">
+		<value>无足轻重</value>
+		<value>不重要</value>
+		<value>一般</value>
+		<value>比较重要</value>
+		<value>非常重要</value>
+	</scope>
+	<scope id="8" name="类型H：使用程度">
+		<value>从未听说</value>
+		<value>从未使用</value>
+		<value>基本不用</value>
+		<value>偶尔使用</value>
+		<value>一直使用</value>
+	</scope>
+	<scope id="9" name="类型I：满足程度">
+		<value>完全不满足</value>
+		<value>基本不满足</value>
+		<value>一般</value>
+		<value>基本满足</value>
+		<value>完全满足</value>
+	</scope>
+	<scope id="10" name="类型J：符合程度">
+		<value>非常符合</value>
+		<value>符合</value>
+		<value>一般</value>
+		<value>不符合</value>
+		<value>非常不符合</value>
+	</scope>
+	<scope id="11" name="类型K：赞同程度">
+		<value>很赞同</value>
+		<value>赞同</value>
+		<value>不确定</value>
+		<value>不赞同</value>
+		<value>很不赞同</value>
+	</scope>
+</scopes>

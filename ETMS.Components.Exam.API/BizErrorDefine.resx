@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ItemBank.CatAddIndent" xml:space="preserve">
+    <value>该节点缩进后超过三层，不能添加缩进！</value>
+  </data>
+  <data name="ItemBank.CatReduceIndent" xml:space="preserve">
+    <value>该节点是第一层，不能减少缩进！</value>
+  </data>
+  <data name="ItemBank.JudgementQuestion.Invalid.Data" xml:space="preserve">
+    <value>判断题信息有误，请检查题目、选项和答案信息是否填写正确。</value>
+  </data>
+  <data name="ItemBank.JudgementQuestion.Invalid.Type" xml:space="preserve">
+    <value>试题类型非判断题</value>
+  </data>
+  <data name="ItemBank.JudgementQuestion.Not.Found" xml:space="preserve">
+    <value>试题已不存在，无法更新</value>
+  </data>
+  <data name="ItemBank.MultipleChoiceQuestion.Invalid.Data" xml:space="preserve">
+    <value>多选题信息有误，请检查题目、选项和答案信息是否填写正确。</value>
+  </data>
+  <data name="ItemBank.MultipleChoiceQuestion.Invalid.Type" xml:space="preserve">
+    <value>试题类型非多选题</value>
+  </data>
+  <data name="ItemBank.MultipleChoiceQuestion.Not.Found" xml:space="preserve">
+    <value>试题已不存在，无法更新</value>
+  </data>
+  <data name="ItemBank.OptionGroup.Data.Invalid" xml:space="preserve">
+    <value>选项组中数据错误</value>
+  </data>
+  <data name="ItemBank.OptionGroup.Instance.Invalid" xml:space="preserve">
+    <value>未正确加载试题选项组实例数据</value>
+  </data>
+  <data name="ItemBank.OptionGroup.New.Invalid" xml:space="preserve">
+    <value>新增加的选项组中数据不正确</value>
+  </data>
+  <data name="ItemBank.OptionGroup.Not.Found" xml:space="preserve">
+    <value>没有找到指定选项组</value>
+  </data>
+  <data name="ItemBank.OptionGroupService.Not.Found" xml:space="preserve">
+    <value>指定的试题选项组已不存在</value>
+  </data>
+  <data name="ItemBank.OptionService.Not.Found" xml:space="preserve">
+    <value>指定的试题选项已不存在</value>
+  </data>
+  <data name="ItemBank.Question.LessOptionGroups" xml:space="preserve">
+    <value>选项分组不能少于两组，请添加选项分组！</value>
+  </data>
+  <data name="ItemBank.Question.OptionGroupsInvalid" xml:space="preserve">
+    <value>归类题应该有两个选项分组，请查看！</value>
+  </data>
+  <data name="ItemBank.Question.WithoutGroups" xml:space="preserve">
+    <value>选项组下不能没有选项，请查看！</value>
+  </data>
+  <data name="ItemBank.QuestionBaseLogic.Invalid.Parameter" xml:space="preserve">
+    <value>参数错误</value>
+  </data>
+  <data name="ItemBank.QuestionBaseLogic.Not.Found" xml:space="preserve">
+    <value>试题不存在</value>
+  </data>
+  <data name="ItemBank.QuestionOption.New.Invalid" xml:space="preserve">
+    <value>要增加的选项的数据不正确</value>
+  </data>
+  <data name="ItemBank.QuestionService.Invalid.Data" xml:space="preserve">
+    <value>试题数据不合法，请检查</value>
+  </data>
+  <data name="ItemBank.SelectedNodeIsInvalid" xml:space="preserve">
+    <value>选中的节点无效！</value>
+  </data>
+  <data name="ItemBank.SingleChoiceQuestion.Invalid.Data" xml:space="preserve">
+    <value>单选题信息有误，请检查题目、选项和答案信息是否填写正确。</value>
+  </data>
+  <data name="ItemBank.SingleChoiceQuestion.Invalid.Type" xml:space="preserve">
+    <value>试题类型非单选题</value>
+  </data>
+  <data name="ItemBank.SingleChoiceQuestion.Not.Found" xml:space="preserve">
+    <value>试题已不存在，无法更新</value>
+  </data>
+  <data name="Test.Exam.NotTestOver" xml:space="preserve">
+    <value>未交卷，无法得到试卷反馈</value>
+  </data>
+  <data name="Test.UserExam.ExamCompleted" xml:space="preserve">
+    <value>试卷已提交，无法再进入考试</value>
+  </data>
+  <data name="Test.UserExam.ExamNotExist" xml:space="preserve">
+    <value>指定的考试不存在，无法得到结果</value>
+  </data>
+  <data name="Test.UserExam.ExamStarted" xml:space="preserve">
+    <value>答卷已开始做答，不再允许此操作</value>
+  </data>
+  <data name="Test.UserExam.Instance.Invalid" xml:space="preserve">
+    <value>未正确加载数据，请正确加载试题选项数据加载</value>
+  </data>
+  <data name="Test.UserExam.NotExistQuestion" xml:space="preserve">
+    <value>试题不在该答卷中，请确认是否正确</value>
+  </data>
+  <data name="Test.UserExam.NotStart" xml:space="preserve">
+    <value>答卷还没有开始作答</value>
+  </data>
+  <data name="Test.UserExam.OverExamTimes" xml:space="preserve">
+    <value>超过试卷允许最大考试次数，无法进行该考试。</value>
+  </data>
+  <data name="Test.UserExam.PaperNotExist" xml:space="preserve">
+    <value>指定的试卷定义不存在，无法进行该考试</value>
+  </data>
+  <data name="Test.UserExam.QuestionAnswerTypeErr" xml:space="preserve">
+    <value>试题答案与试题类型不匹配</value>
+  </data>
+  <data name="Test.UserExam.QuestionExisted" xml:space="preserve">
+    <value>要添加的试题已存在于试卷中，不允许添加重复的试题</value>
+  </data>
+</root>

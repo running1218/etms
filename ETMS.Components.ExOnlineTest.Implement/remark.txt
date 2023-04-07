@@ -1,0 +1,8 @@
+项目名称：ETMS.Components.ExOnlineTest.Implement
+项目描述：提供了ETMS.Components.ExOnlineTest.API默认实现，不允许外部模块之间引用！
+Implement包括三部分
+1、数据访问层实现(DAL)
+
+2、业务逻辑层实现(BLL)
+
+3、API门面接口实现
