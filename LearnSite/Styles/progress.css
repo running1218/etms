@@ -1,0 +1,113 @@
+﻿
+
+.view-area{
+    margin: 30px auto;
+    width:1200px;
+}
+.chart{
+    padding:15px;
+    background:#fefcf7;
+}
+#chart1{
+    width:300px;
+    height:160px;
+    vertical-align: middle;
+    display:inline-block;
+}
+#chart2{
+    width:800px;
+    height:260px;
+    vertical-align: middle;
+    display:inline-block;
+}
+.notes p{
+    display:inline-block;
+    margin-right:2%;
+}
+.notes img{
+    width:14px;
+    display:inline-block;
+    vertical-align:middle;
+}
+.study_content{
+    position:relative;
+    margin-bottom:20px;
+    
+}
+.study_content .title{
+    padding-left:15px;
+    font-size:17px;
+    display:inline-block;
+    vertical-align:middle;
+    font-weight:bold;
+}
+.study_content .title img{
+    width:12px;
+}
+.progress_list{
+    margin-top:30px;
+    margin-left: 6px;
+    border-left:2px solid  #d6d6d6;
+}
+.status_icon{
+    width:22px;
+    height:22px;
+    position:absolute;
+    display:block;
+    left: -8px;
+    top: 0;
+}
+.all{
+    background:url('../Styles/images/common/all_icon.jpg') no-repeat;
+}
+.study_end{
+    background:url('../Styles/images/common/study_end.jpg') no-repeat;
+}
+.studying{
+    background:url('../Styles/images/common/studying.jpg') no-repeat;
+}
+.default{
+    background:url('../Styles/images/common/circle.png') no-repeat;
+    left: -12px;
+    top: 0px;
+}
+
+.cont_list{
+    margin-top:10px;
+}
+.cont_list li{
+    border-bottom:1px solid #e2e2e2;
+    height:35px;
+    line-height:35px;
+    margin-left:35px;
+    padding:0 5px;
+}
+.cont_list li:hover{
+    background:#737373;
+}
+.cont_list li:hover p,.cont_list li:hover a{
+    color:#fff;
+}
+.cont_list li p{
+    display:inline-block;
+}
+.cont_list li p:nth-child(1){
+       width: 55%;
+}
+.cont_list li p:nth-child(2){
+    width:15%;
+}
+.cont_list li p:nth-child(3){
+    width: 10%;
+    text-align: center;
+}
+.cont_list li p:nth-child(4){
+    width: 15%;
+    text-align: right;
+}
+.cont_list li p a{
+    color: #3984ea;
+    border: 1px solid #f1f1f1;
+    padding: 2px 11px;
+    cursor: pointer;
+}

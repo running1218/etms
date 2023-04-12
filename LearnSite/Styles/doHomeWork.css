@@ -1,0 +1,301 @@
+﻿.header-container{
+    position:inherit;
+}
+.content-container{
+    background:#F6F6F6;
+    margin-top:0;
+}
+.workontop {
+    width: 68%;
+    height:140px;
+    background-color: #f0fafb;
+    margin:0 auto;
+    margin-bottom: 20px;
+    border: 1px solid #b9e0db;
+    margin-top: 20px;
+}
+.homework_info{
+    display:inline-block;
+    margin-left:25px;
+}
+.worktitle{
+    font-size: 22px;
+    color: #313131;
+    line-height: 75px;
+    padding-top: 14px;
+}
+.marginr30{
+    margin-right:30px;
+}
+.stunews-right{
+    font-size: 15px;
+    margin-top: 20px;
+    float:right;
+    margin-right:25px;
+}
+.stunews-right .ftsanswer {
+    font-size: 14pt;
+    color: #f37125;
+    padding-top: 31px;
+    text-align: center;
+}
+/*试卷*/
+.test_mainContent{
+     width: 68%;
+     margin:0 auto;
+     margin-top:20px;
+}
+/*左侧试题主体*/
+.left_content{
+    width:68%;
+    display:inline-block;
+    vertical-align:top;
+    position:relative;
+}
+.question-type {
+    line-height: 62px;
+    background: #F9F9F9;
+    padding-left: 34px;
+    color: #404040;
+    font-size: 16px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.quesnum {
+    font-size: 14px;
+    color: #747474;
+    margin-left: 8px;
+}
+
+.question-cont {
+    padding: 25px 18px 25px 30px;
+    position: relative;
+    background:#fff;
+}
+.question-cont-left {
+    width: 54px;
+    float: left;
+    text-align: center;
+}
+.question-num {
+    width: 54px;
+    display: block;
+    text-align: center;
+    color: #505050;
+    font: normal 28px/44px 'arial';
+    background: #EBEBEB;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.question-score {
+    margin: 12px 0;
+    color: #279EC9;
+    display: block;
+    font-size: 16px;
+}
+.question-mark {
+    position: absolute;
+    left: 45px;
+    bottom: 30px;
+    background: #fff;
+}
+.question-mark i{
+    width:17px;
+    height:25px;
+    display:block;
+    margin:0 auto;
+    
+}
+.question-mark .mark{
+    background:url('/Styles/images/common/mark.png') no-repeat;
+}
+.question-mark .marked{
+    background:url('/Styles/images/common/marked.png') no-repeat;
+}
+.question-cont img {
+    width:17px;
+    height:25px;
+}
+.question-cont-right {
+    min-height: 140px;
+    margin-left: 54px;
+    border-left: 1px solid #ECECEC;
+    padding-left: 26px;
+    color: #505050;
+}
+.question-text {
+    font-size: 16px;
+    line-height: 25px;
+    word-break: break-all;
+    position: relative;
+}
+.question-options {
+    margin-top: 10px;
+}
+.question-options li {
+    margin-bottom: 13px;
+    padding: 5px;
+}
+.question-options li a {
+    color: #505050;
+    word-break: break-all;
+}
+.question-options li a i{
+    /*float:left;*/
+}
+.options {
+    width: 20px;
+    height: 20px;
+    border: solid 1px #898989;
+    text-align: center;
+    color: #707070;
+    font: normal 12px/18px 'arial';
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+.options-more {
+    width: 20px;
+    height: 20px;
+    border: solid 1px #898989;
+    text-align: center;
+    color: #707070;
+    font: normal 12px/18px 'arial';
+    display: inline-block;
+    margin-right: 13px;
+}
+.question-options .cur {
+    background: #E8F6E5;
+    padding: 5px;
+}
+.question-options .cur a {
+    color: #F03C07;
+}
+.question-options .cur i{
+    color: #fff;
+    border: solid 1px #F03C07;
+    background: #F03C07;
+}
+.question-options .cur  span, .question-options .cur  span p{
+    color: #F03C07;
+}
+/*右侧答题进度*/
+.right_content{
+    width: 28%;
+    padding: 0 10px;
+    display:inline-block;
+    float:right;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position:relative;
+    top:0;
+}
+.resultshow .chioce-btn{
+    max-height: 600px;
+    overflow: auto;
+}
+.resultshow .question-resul-title {
+    line-height: 40px;
+    font-weight: normal;
+}
+.resultshow .question-resul-tab a {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: solid 2px #EBEBEB;
+    border-radius: 2px;
+    background: #EBEBEB;
+    display: inline-block;
+    margin: 0 3px 3px 0;
+    color: #404040;
+    font: normal 16px/28px 'arial';
+}
+.resultshow .question-resul-tab a.doing {
+    background: #EBEBEB;
+    border: solid 2px #64BF58;
+    color: #404040;
+}
+ .resultshow .question-resul-tab a.done {
+    background: #62BF55;
+    border: solid 2px #62BF55;
+    color: #fff;
+}
+
+.resultshow .question-resul-tab a.mark_btn {
+    background: #FC711E;
+    border: solid 2px #FC711E;
+    color: #fff;
+    padding: 0;
+}
+/*图例注释*/
+.resultshow .question-result-explain {
+    padding: 50px 0 20px;
+    height: 16px;
+    line-height: 16px;
+}
+.resultshow .question-result-explain li {
+    float: left;
+    margin-right: 10px;
+}
+.resultshow .question-result-explain .icon-explain {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+.resultshow .question-result-explain .marki {
+    background: #FC711C;
+    border: solid 1px #FC711C;
+}
+.resultshow .question-result-explain .donei {
+    background: #63C058;
+    border: solid 1px #63C058;
+}
+.resultshow .question-result-explain .errori {
+    background: #FC711C;
+    border: solid 1px #FC711C;
+}
+.resultshow .question-result-explain .doingi {
+    background: #ECECEC;
+    border: solid 1px #67C259;
+}
+.resultshow .question-result-explain .undo {
+    background: #EBEBEB;
+    border: solid 1px #EBEBEB;
+}
+/*按钮*/
+.right-bottom {
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+.hm_btn_orange {
+    background: #fd833a;
+    padding: 8px 23px;
+    border: 1px solid #d7671f;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+.hm_btn_ash {
+    background: #eee;
+    padding: 8px 3px;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #333;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+/*倒计时*/
+.countdown_time{
+    font-size:20px;
+    padding-top:10px;
+    color:#64da68;
+}
+.countdown_time .passtimes{
+    color:#636363;
+}

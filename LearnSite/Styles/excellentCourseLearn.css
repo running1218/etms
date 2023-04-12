@@ -1,0 +1,90 @@
+﻿.view-area{
+    width:1200px;
+    margin: 0 auto;
+    margin-top:100px;
+    font-size:16px;
+}
+.learn_obj{
+    margin-bottom:15px;
+}
+.excellentcourse_info{
+    height:180px;
+    padding-bottom:15px;
+    border-bottom:1px dashed #ebebeb;
+}
+.excellentcourse_img{
+    width:160px;
+    display:inline-block;
+    height:160px;
+}
+.excellentcourse_introduce{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
+    margin-left: 15px;
+}
+.excellentcourse_introduce h3{
+    font-size:20px;
+    font-weight:normal;
+    color:#333;
+    line-height:45px;
+}
+.excellentcourse_introduce p{
+    font-size:18px;
+    color:#333;
+    line-height:28px;
+}
+
+
+.chapter_information{
+    margin:15px auto;
+    padding: 0 10px;
+}
+.chapter_status{
+    text-align: right;
+     cursor:pointer;
+}
+.chapter_status span{
+    width:15px;
+    height:15px;
+    display:inline-block;
+    margin:0 10px;
+}
+.chapter_status span.bottom{
+    background:url('images/b.png') no-repeat center center;
+}
+.chapter_status span.top{
+    background:url('images/t.png') no-repeat center center;
+}
+.chapter_list{
+    display:none;
+    border-bottom:1px solid #ebebeb;
+}
+.chapter_information li{
+    line-height:35px;
+    font-size:16px;
+}
+.chapter_information li span {
+    line-height:35px;
+    display:inline-block;
+}
+.chapter_information li .name{
+    width:45%;
+}
+.chapter_information li .time{
+    width:20%;
+}
+.chapter_information li .teacher{
+    width:25%;
+}
+.chapter_information li .enter{
+    width:10%;
+}
+    .chapter_information li .enter a {
+        color:#333;
+        padding:2px 12px;
+        background:#ebebeb;
+    }
+        .chapter_information li .enter a:hover {
+            color:blue;
+        }

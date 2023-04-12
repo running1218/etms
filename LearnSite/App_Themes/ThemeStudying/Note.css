@@ -1,0 +1,267 @@
+﻿.note_tab{
+    height:45px;
+    line-height:45px;
+    margin:0 auto;
+}
+.note_tab span{
+    text-align:center;
+    width:50%;
+    float:left;
+    cursor:pointer;
+}
+.note_tab .cur{
+    color:#3e87ee;
+}
+
+.note-more {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.note-more input {
+    background-color: #eee;
+    background-image: linear-gradient(to bottom, #f5f5f5, #eee);
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+    cursor: pointer;
+    margin: 6px 25px 10px 0;
+    padding: 8px 22px;
+} 
+
+.u-studying-note-new {
+    background: #f2f2f2;
+    border-bottom: 1px #c8c8c8 solid;
+    padding: 10px;
+    margin-top: -1px;
+}
+
+.u-studying-note-new span {
+    background: url('../../Styles/images/common/u-studying-faq-new.png') no-repeat;
+    width: 290px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    line-height: 35px;
+    text-indent: 130px;
+    cursor: pointer;
+}
+
+.u-studying-note-box {
+    padding: 8px;
+    line-height: 25px;
+    background: #f9f9f9;
+    margin: 10px 0px;
+}
+
+.u-studying-note-box:hover {
+    background: #F3FCF1;
+}
+
+.u-studying-note-text span {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.u-studying-note-text-title {
+    color: #444;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.u-studying-note-top {
+    font-size: 12px;
+    overflow: auto;
+}
+
+.u-studying-note-bottom1 ul {
+    overflow: auto;
+    height: 20px;
+}
+
+.u-studying-note-bottom1 ul li {
+    float: right;
+    height: 14px;
+    border-right: 1px #c8c8c8 solid;
+    padding: 0px 10px 0px 10px;
+}
+
+.u-studying-note-bottom1 ul .u-studying-note-noborder {
+    border: 0px;
+    padding-right: 0px;
+}
+
+.u-studying-note-bottom1 ul li span {
+    background: url('../../Styles/images/common/u-answer.png') no-repeat;
+    display: block;
+    width: 15px;
+    cursor: pointer;
+    height: 15px;
+    font-size: 12px;
+}
+
+.u-studying-note-time {
+    font-size: 12px;
+    float: right;
+}
+
+.u-studying-note-bottom1 ul .u-studying-note-delete {
+    background-position: 0px -245px;
+}
+
+
+.u-studying-note-bottom1 ul .u-studying-note-editor {
+    background-position: 0px -557px;
+}
+
+.u-studying-note-bottom1 ul .u-studying-note-share {
+    background-position: 0px -653px;
+}
+
+.u-studying-note-bottom1 ul .u-studying-note-share-cancel {
+    background-position: 0px -615px;
+}
+
+.u-studying-note-bottom1 ul .good-cancel {
+    background-position: 0px -102px;
+}
+
+.u-studying-note-bottom1 ul .u-studying-note-praise {
+    background-position: 0px -370px;
+    padding-left: 20px;
+    line-height: 15px;
+}
+
+.u-studying-note-one-reply {
+    border-top: 1px #e0e0e0 dashed;
+    margin: 15px 0px;
+    padding: 10px 5px 0px 0;
+}
+
+.u-studying-note-new-title {
+    border: 1px #d1d1d1 solid;
+    margin: 10px 0px 10px 0px;
+    background: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #444;
+}
+
+.u-studying-note-new-title input {
+    border: 1px;
+    background: none;
+    color: #444;
+    font-size: 14px;
+}
+
+.u-studying-note-new-submit {
+    float: right;
+}
+
+.u-studying-note-new-submit button {
+    background-color: #eee;
+    background-image: linear-gradient(to bottom, #f5f5f5, #eee);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+    margin: 6px 10px 0px 0px;
+    padding: 4px 20px;
+    cursor: pointer;
+}
+
+.u-studying-note-text-editor {
+    /*background: #E8F9E3;*/
+    /*border: 1px #B7D3A9 solid;*/
+    border: 1px #d9d9d9 solid;
+    padding: 5px 3px;
+    overflow: auto;
+}
+
+.u-studying-note-text-editor .u-studying-note-text-title {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #d1d1d1;
+    color: #444;
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+    padding: 2px 10px;
+    width: 310px;
+}
+
+.u-studying-note-new-box {
+    overflow: hidden;
+}
+
+.u-studying-note-new-box-share {
+    line-height: 35px;
+}
+
+.u-studying-note-new-box-share input {
+    margin: 0px 8px;
+    vertical-align: middle;
+}
+
+.u-studying-note-text-content {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+.u-studying-note-text-content-show {
+    overflow: hidden;
+    position: relative;
+}
+.u-studying-note-text-content-show p{
+    font-size:12px;
+    line-height:23px;
+    padding:3px 0px;
+    }
+.u-studying-note-text-content p{
+    font-size:12px;
+    line-height:23px;
+    padding:3px 0px;
+    }
+
+    
+
+.u-studying-note-btn {
+    background-color: #eee;
+    background-image: linear-gradient(to bottom, #f5f5f5, #eee);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+    cursor: pointer;
+    margin: 6px 10px 0 0;
+    padding: 4px 20px;
+}
+
+.u-studying-note-bottom1 {
+    overflow: auto;
+}
+
+.u-studying-note-bottom-time {
+    float: left;
+    padding: 0px;
+    border: #b7b7b7 1px solid;
+    cursor: pointer;
+    background: url('/Styles/images/common/u-studying-note-bottom-time.png')  7px  5px  no-repeat #b7b7b7;
+}
+.u-studying-note-bottom-time:hover {
+    background: url('/Styles/images/common/u-studying-note-bottom-time.png')  7px  5px  no-repeat #FF833C;
+    border: #FF833C 1px solid;
+}
+.u-studying-note-bottom-time span {
+    font-size: 12px;
+    color: #555;
+    margin-left: 20px;
+    line-height: 12px;
+    padding: 4px 7px;
+    display: block;
+    background: #fff;
+}
+.u_note_none {
+    background: url(../../Styles/images/common/u-note-none.png) no-repeat bottom;
+    width: 228px;
+    height: 179px;
+    margin-left:70px;
+    margin-top:50px;
+}

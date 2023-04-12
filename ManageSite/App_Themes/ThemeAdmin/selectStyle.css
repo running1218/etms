@@ -1,0 +1,65 @@
+
+.dropdown {display:inline-block; margin:0 4px;zoom:1;border:solid 1px #AAA;background:#DDD url(Images/selectBg.png) repeat-x left top; vertical-align:middle}
+.dropdown h4{cursor:default; text-indent:5px; margin:0; padding:0;text-align:left;color:#313131;}
+.dropdown * {-moz-user-select:none;}
+.dropdown h4.over {}
+.dropdown div {display:block;}
+.dropdown ul{position:absolute;display:none;margin:0;padding:0;clear:both;overflow:auto;left:0px;padding-bottom:14px; white-space:nowrap;word-break:keep-all;}
+.dropdown ul li{text-indent:5px;margin:0;padding:0;list-style:none;display:block;cursor:default;}
+.dropdown ul li.over{}
+.dropselectbox {display:inline;}
+.dropdown div.over {background:url(Images/droparrowover.gif) right 10px no-repeat;}
+.dropselectbox {height:21px;background:url(Images/droparrow.gif) no-repeat right 10px;}
+.dropdown h4{height:21px; overflow:hidden;display:inline-block;font-weight:normal;float:left;text-overflow:ellipsis;white-space:nowrap;line-height:21px;}
+.hover{border-color:#ee5603;background:white; }
+.current{border-color:#8A8A8A;}
+.dropdown ul{border:1px solid #AAA; background:#FFF;left:-1px;}
+.dropdown ul li{background:#FFF;height:22px;font:400 12px/19px Arial, Helvetica, sans-serif;text-align:left;white-space:nowrap; word-break:keep-all;display:table;width:100%;color:#313131;line-height:22px;}
+.dropdown ul li.over{background:#ffffcc; color:#313131;}
+
+
+.radioSlectedstyle
+{ background:url(Images/radio.png) no-repeat -29px -1px;
+  display:inline-block;
+  overflow:hidden;
+  width:19px;
+  height:19px;
+  vertical-align:middle;/*¶ÔÆë*/
+}
+.radiostyle
+{ background:url(Images/radio.png) no-repeat -6px -1px;
+  display:inline-block;  
+  overflow:hidden;
+  width:19px;
+  height:19px; 
+  vertical-align:middle;/*¶ÔÆë*/
+}
+.checkboxSelectedStyle
+{ background:url(Images/radio.png) no-repeat -54px 1px;
+  display:inline-block; 
+  width:19px;
+  height:19px;
+  float:left;
+}
+.checkboxStyle
+{ background:url(Images/radio.png) no-repeat -79px 1px;
+  display:inline-block; 
+  overflow:hidden;
+   width:19px;
+   height:19px;
+   float:left;
+}
+.checkboxDisableStyle
+{
+  background:url(Images/radio.png) no-repeat -103px 1px;
+  display:inline-block;
+  overflow:hidden;
+  width:19px;
+  height:19px;
+  float:left;
+}
+.radioSlectedstyle input ,.radiostyle input,.checkboxSelectedStyle input,.checkboxStyle input
+{ display:inline-block;
+  height:19px;
+}
+.valign-m{ vertical-align:middle}

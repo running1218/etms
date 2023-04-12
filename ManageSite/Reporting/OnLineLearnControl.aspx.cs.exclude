@@ -1,0 +1,78 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using ETMS.Components.Basic.Implement.BLL.Security;
+using ETMS.Components.Basic.Implement.BLL.Dictionary;
+using System.Data;
+using ETMS.Components.Reporting.API.Entity;
+using ETMS.Utility;
+
+public partial class Reporting_OnLineLearnControl : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            ddl_OrganizationID_SelectedIndexChanged(sender, e);//触发Selected事件
+            //单机构版本隐藏机构查询条件
+            if (ETMS.Product.ProductDefine.IsSingleOrganizationVersion)
+            {
+                this.trOrg.Visible = false;
+                ddl_OrganizationID.SelectedValue = ETMS.AppContext.UserContext.Current.OrganizationID.ToString();
+            }
+        }
+    }
+
+    #region 机构 部门 岗位
+
+    /// <summary>
+    /// 机构选中事件
+    /// </summary>
+    protected void ddl_OrganizationID_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        DepartmentLogic DepamentLogic = new DepartmentLogic();
+        Dic_PostLogic PostLogic = new Dic_PostLogic();
+        //载入选中机构下部门，岗位数据
+        int orgID = int.Parse(this.ddl_OrganizationID.SelectedValue);
+        DataTable dt = DepamentLogic.GetAllEnableDepartmentsByOrganizationID(orgID);
+        this.ddl_DepartmentID.DataSource = dt;
+        this.ddl_DepartmentID.DataTextField = "ColumnNameValue";
+        this.ddl_DepartmentID.DataValueField = "ColumnCodeValue";
+        this.ddl_DepartmentID.DataBind();
+        this.ddl_DepartmentID.Items.Insert(0, new ListItem("全部", ""));
+        this.ddl_DepartmentID.SelectedIndex = 0;
+
+        dt = PostLogic.GetAllEnablePostByOrgID(orgID);
+        this.ddl_PostID.DataSource = dt;
+        this.ddl_PostID.DataTextField = "ColumnNameValue";
+        this.ddl_PostID.DataValueField = "ColumnCodeValue";
+        this.ddl_PostID.DataBind();
+        this.ddl_PostID.Items.Insert(0, new ListItem("全部", ""));
+        this.ddl_PostID.SelectedIndex = 0;
+    }
+    #endregion
+
+    protected void btnSearch_Click(object sender, EventArgs e)
+    {
+        OnlineItemCourse itemCourse = new OnlineItemCourse();
+        itemCourse.ItemCode = txtItemNameCode.Text.Trim();
+        itemCourse.ItemName = txtItemNameCode.Text.Trim();
+        itemCourse.ItemCourseCode = txtCourseNameCode.Text.Trim();
+        itemCourse.ItemCourseName = txtCourseNameCode.Text.Trim();
+        itemCourse.ItemCourseAttrID = ddlCourseAttrID.SelectedValue.ToInt();
+        itemCourse.ItemCourseTypeID = ddl_CourseTypeID.SelectedValue.ToInt();
+        itemCourse.ItemCourseBeginTime = ttbCourseBeginTime.Text.Trim() == "" ? DateTime.MinValue : ttbCourseBeginTime.Text.ToDateTime();
+        itemCourse.ItemCourseEndTime = ttbCourseEndTime.Text.Trim() == "" ? DateTime.MaxValue : ttbCourseEndTime.Text.ToDateTime();
+        itemCourse.ItemCourseScoreStatus=ddlItemCourseScoreStatus.SelectedValue.ToInt();
+        itemCourse.OrganizationID = ddl_OrganizationID.SelectedValue.ToInt();
+        itemCourse.DepartmentID = ddl_DepartmentID.SelectedValue.ToInt();
+        itemCourse.PostID = ddl_PostID.SelectedValue.ToInt();
+        itemCourse.PostTypeID = ddlPostType.SelectedValue.ToInt();
+        itemCourse.RankID = ddlRank.SelectedValue.ToInt();
+        itemCourse.RankName = txtRankName.Text.Trim();
+    }
+
+}

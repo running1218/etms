@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Columns>
+  
+  <Column FieldName="LoginName" TitleName="学员账户" CellIndex="0"></Column>
+  <Column FieldName="RealName" TitleName="姓名" CellIndex="1"></Column>
+  <Column FieldName="WorkerNo" TitleName="工号" CellIndex="2"></Column>
+  <Column FieldName="DepartmentName" TitleName="部门" CellIndex="3"></Column>
+  <Column FieldName="PostName" TitleName="岗位" CellIndex="4"></Column>
+  <Column FieldName="TitleName" TitleName="职务" CellIndex="5"></Column>
+  <Column FieldName="ItemName" TitleName="项目名称" CellIndex="6"></Column>
+  <Column FieldName="CourseCode" TitleName="课程编码" CellIndex="7"></Column>
+  <Column FieldName="CourseName" TitleName="课程名称" CellIndex="8"></Column>
+  <Column FieldName="CourseTypeName" TitleName="课程类别" CellIndex="9"></Column>
+  <Column FieldName="TeachModelName" TitleName="授课方式" CellIndex="10"></Column>
+  <Column FieldName="CourseHours" TitleName="课时(小时)" CellIndex="11"></Column>
+  <Column FieldName="SumGrade" TitleName="考试成绩" CellIndex="12"></Column>
+  <Column FieldName="TeacherName" TitleName="培训讲师" CellIndex="13"></Column>
+  <Column FieldName="TrainingDate" TitleName="培训日期" CellIndex="14"></Column>
+  <Column FieldName="TimePart" TitleName="培训时段" CellIndex="15"></Column>
+  <Column FieldName="ClassRoomName" TitleName="培训地点" CellIndex="16"></Column>
+  <Column FieldName="SigninTypeName" TitleName="签到信息" CellIndex="17"></Column>
+  <Column FieldName="number" TitleName="序号" CellIndex="18"></Column>
+  
+</Columns>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

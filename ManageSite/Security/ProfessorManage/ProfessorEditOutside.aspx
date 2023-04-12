@@ -1,0 +1,5 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/MPagePop.Master" AutoEventWireup="true" CodeFile="ProfessorEditOutside.aspx.cs" Inherits="ETMS.WebApp.Manage.Resource.ProfessorManage.ProfessorEditOutside" %>
+<%@ Register src="Controls/ProfessorInfoOutside.ascx" tagname="ProfessorInfoOutside" tagprefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <uc1:ProfessorInfoOutside ID="ProfessorInfoOutside1" runat="server" />
+</asp:Content>

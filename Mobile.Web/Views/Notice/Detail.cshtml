@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "优博";
+}
+@section head{
+    <link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Style/notice/main.css" />
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/notice/detail.js"></script>
+}
+<body>
+    <section class="main_content noticeDetail">
+    </section>
+</body>
+<script id="tmpl_NoticeDetail" type="text/x-handlebars-template">
+    {{#Data}}
+    <div class="notice_detail">
+        <h2 class="title">{{{MainHead}}}</h2>
+        <p class="time">{{CreateTime}}</p>
+        <div class="content">{{{ArticleContent}}}</div>
+    </div>
+    {{/Data}}
+</script>

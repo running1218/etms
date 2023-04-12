@@ -1,0 +1,86 @@
+﻿footer{
+    display:none;
+} 
+
+ .testTitle{
+padding:1rem 1.5rem 2rem;
+ }
+.testTitle .test-name {
+    float:left;
+}
+.testTitle .test-score{
+    float:right;
+    color:#4185ff;
+}
+.testTitle .test-score span,.QuestionScore{
+    color:#4185ff;
+}
+ .typeName{
+     width:100%;
+     text-align:center;
+ }
+.workbody {
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+.exercisetypename {
+    font-size: 1.3rem;
+}
+
+.worktitle {
+    padding: 1rem 0;
+    border-bottom: 1px dotted #cccccc;
+    margin-bottom: 20px;
+    line-height: 30px;
+    width: 90%;
+    margin: 0px auto;
+    font-size:1.2rem;
+}
+
+.workoption {
+    width: 90%;
+    margin:0px auto;
+    margin-bottom: 20px;
+    margin-top:20px;
+    clear: both;
+    font-size:1.2rem;
+}
+
+.optionletter,.optionblank {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #aeaeae;
+    text-align: center;
+    line-height: 20px;
+    color: #666666;
+    float: left;
+    margin-right: 7px;
+}
+ 
+
+.optiontxt {
+    line-height: 20px;
+}
+
+.blue {
+    background: #4185ff;
+    color: #fff;
+    border-color: #4185ff;
+}
+ 
+.answer{
+    font-size:1.3rem;
+    background-color:#eeefd0;
+    padding:10px 2rem;
+    margin-bottom:1rem;
+}
+.answer  span{
+    color:#4185ff;
+    padding-left:5px;
+}
+.multitopic .optionletter{
+    border-radius:2px;
+}
+

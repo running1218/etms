@@ -1,0 +1,66 @@
+﻿*{
+	margin:0px;
+	padding:0px;
+}
+.video_body{
+	font-size:12px;
+	color:#333333;
+	background:url(images/JwPlayer/vidoe_bj.gif) repeat-x;
+	height:79px;
+}
+.video_mainbox{
+	width:980px;
+	margin:0 auto;
+}
+.video_top{
+	margin-bottom:20px;
+	overflow:hidden;
+	_margin-bottom:90px;
+}
+.video_logo{
+	background:url(images/JwPlayer/web_logo.gif) no-repeat;
+	height:66px;
+	width:218px;
+	float:left;
+	text-indent:-1000px;
+}
+.video_bj{
+	background:url(images/JwPlayer/video_bj.gif) no-repeat 0 bottom;
+	height:30px;
+	width:919px;
+	margin-bottom:10px;
+	padding:26px 0 0 41px;
+	
+}
+.video_bj span{
+	font-size:16px;
+}
+.video_top ul{
+	float:right;
+	list-style-type:none;
+	margin-right:20px;
+	padding-top:15px;
+
+}
+.video_top ul li{
+	float:left;
+	margin-right:15px;
+	line-height:55px;
+}
+.video_top ul li a{
+	color:#fff;
+	text-decoration:none;
+}
+.video_top ul li a:hover{
+	color:#FF9000;
+	text-decoration:none;
+}
+.video_footer{
+	height:62px;
+	background-color:#fbf9f8;
+	text-align:center;
+	line-height:65px;
+
+}
+	
+

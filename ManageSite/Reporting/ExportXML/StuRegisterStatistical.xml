@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Columns>
+  <Column FieldName="DisplayPath" TitleName="上级组织机构" CellIndex="0"></Column>
+  <Column FieldName="OrganizationName" TitleName="组织机构" CellIndex="1"></Column>
+  <Column FieldName="UserCount" TitleName="注册人数" CellIndex="2"></Column>
+</Columns>

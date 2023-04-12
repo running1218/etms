@@ -1,0 +1,1025 @@
+﻿/*----上边框架的广告图片样式--------*/
+.header{height:60px;width:100%;background:url(Images/footer-bg.gif) repeat-x 0 -189px;overflow:hidden;position:fixed;z-index:100;min-width:1000px; border-bottom:2px solid #ee5907; _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1000?"1000px":"100%");}
+.log{width:172px;height:60px;float:left;}
+.log img{ max-height:50px; margin:5px 0px 0px 5px; max-width:150px;}
+.headeright{background:url(Images/banner-2.gif)  cneter center no-repeat ;overflow:hidden;min-width:750px;height:60px; }
+    .headeright ul
+    {
+        margin-top:30px;
+    }
+    .headeright ul li
+    {
+        overflow:hidden;
+        float:left;
+        color:#fff;
+        min-width:60px;
+        text-align:center;
+        margin-right:5px;
+        line-height:29px;
+        border:1px solid #515151;
+        cursor:pointer;
+        padding:0px 5px 0px 20px;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+    }
+        .headeright ul li:hover
+        {
+            background-color:#ee5907;  
+            border-bottom:#ee5907;         
+        }
+    .headeright .active-module
+    {
+        background-color:#ee5907;  
+        border-bottom:#ee5907;
+    }
+#header
+{ overflow:hidden;
+}
+/*----左边框架样式--------*/
+.lefttreeTitle{background:url(Images/treetitle.gif) no-repeat;width:206px;height:36px;text-indent:55px;color: #47669d;font-size:14px;font-weight:bold;line-height:36px;}
+.bgsplit{background:url(Images/split.gif) repeat-y;width:7px;}
+.dv_userPannel
+{
+ background:url(Images/top_bj.gif) repeat-x;
+ height:24px;
+ text-align:right;
+ line-height:24px;
+ overflow:hidden;
+ color:White; 
+}
+.dv_exitPannel
+{  
+  overflow:hidden; 
+  position:absolute;
+  right:5px;
+  top:32px;
+}
+.header .dv_courseState
+{ color:White;
+}
+.header .dv_courseState em
+{ margin-right:8px;
+  font-weight:bold;
+}
+.hello
+{ margin-right:10px;
+  background-image:url(Images/icon-tree.png);
+  _background-image:url(Images/icon-tree-ie6.png);
+  background-repeat:no-repeat;
+  background-position:6px -286px;
+  float:left;  
+  display:inline-block;
+  color:White;
+  line-height:28px;
+  width:28px; 
+  height:28px; 
+}
+
+.hello:hover
+{ 
+    background-color:#333;
+    border-radius:5px;
+}
+.bgsplit td
+{ padding:0px;
+  margin:0px;
+}
+.dv_main
+{ overflow:hidden;   
+  width:100%;
+  padding-top:60px;
+  _padding-top:0px;  
+  min-width:1000px;
+  _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1000?"1000px":"100%");
+
+}
+.dv_allExercise
+{ overflow:hidden;   
+  width:100%;  
+  min-width:1000px;
+  _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1000?"1000px":"100%");
+}
+.dv_left
+{ width:172px; 
+  background:#35363a/*url(Images/left-bj.gif)  repeat*/;
+  float:left;   
+  height:auto!important;
+  height:300px;
+  min-height:300px;  
+  position:relative;
+  z-index:1;
+}
+.dv_allExercise  .dv_lefttree
+{ height:760px;
+  overflow:auto;
+  overflow-x:hidden;
+  width:172px; 
+  background:url(Images/left-bj.gif)  repeat;
+  float:left;    
+  position:relative;
+  z-index:1;
+}
+.dv_right 
+{
+  overflow:hidden;
+  position:relative;
+  _float:left;  
+ 
+}
+#myframe{  
+  overflow:hidden;   
+}
+/*----右边框架样式--------*/
+.copyright
+{
+	background:#35363a/*url(Images/copyright-bj.gif) repeat-x*/;
+	width:100%;
+	height:25px;
+	overflow:hidden;
+	text-align:center;
+	color:white;
+	line-height:25px;
+	clear:both;
+	/*border-top:2px solid #d12610*/;
+}
+
+.dv_searchlist .dv_treeView
+{ background:#f2f2f2;
+  text-align:left;
+  border:1px solid #ddd;
+  padding:10px 0px;
+}
+.dv_searchlist .dv_treeView table
+{ width:auto;
+  margin:0px;
+  padding:0px;
+}
+.dv_information1 .GridviewGray th
+{ background:#f1f1f1;
+}
+.dv_searchlist .dv_treeView table td,.dv_searchlist .dv_treeView table th
+{ padding:0px;
+  margin:0px;
+  height:18px;
+  line-height:18px;
+}
+.dv_searchlist .dv_treeView table td
+{ text-align:left;
+}
+table.GridviewGray .radiotable 
+{ border:0px;
+}
+table.GridviewGray .radiotable td
+{ border:80px;
+}
+table td a,table td a:active,table td a:visited
+{ margin-right:2px;
+  margin-left:2px;
+}
+.dv_treeView table td a,.dv_treeView table td a:active,.dv_treeView  table td a:visited
+{ margin:0;  
+  text-decoration:none;
+}
+ table.GridviewGray td a, table.GridviewGray td a:active,table.GridviewGray td a:visited
+{
+ color:#ff9900;
+}
+table.GridviewGray td a:hover
+{ color:#ff6600;
+  
+}
+ table.GridviewGray td a.link_colorGray, table.GridviewGray td a.link_colorGray:active,table.GridviewGray td a.link_colorGray:visited
+{
+ color:#999;
+}
+.dv_welcome
+{ background:url(Images/default.jpg) center center no-repeat;
+  width:1024px;
+  height:602px;
+  overflow:hidden;
+}
+.dropdownico 
+{ background:url(Images/ico-find-down.gif) right center no-repeat;
+  padding-right:10px;
+  padding-top:3px;
+  display:inline-block;
+  padding-left:4px;
+  
+}
+.dropdownico:hover
+{ background:url(Images/ico-find-downhover.gif) right center no-repeat;
+  padding-right:10px;
+  padding-top:3px;
+  display:inline-block;
+  padding-left:4px;
+}
+.dropupico
+{ background:url(Images/ico-find-up.gif) right center no-repeat;
+  padding-right:10px;
+}
+.dropupico:hover
+{ background:url(Images/ico-find-uphover.gif) right center no-repeat;
+  padding-right:10px;
+}
+.dv_splitLine
+{height:2px;
+ background:#FF8A2B;
+ margin:12px 0px;
+ overflow:hidden;
+}
+.dv_hormain
+{
+ /*background:url(Images/pinpu.gif)  repeat-x;*/
+ margin-bottom:20px;
+ height:35px;
+ 
+}
+.dv_welcomebg
+{ 
+	background:url(Images/welcom-s.gif) 30px 0px no-repeat;
+	height:630px;	
+	overflow:hidden;
+}
+
+.login_bj
+{ background:url(Images/login-red.jpg)  center center  no-repeat;
+  height:587px;
+  width:712px;
+  margin:0 auto;
+  position:relative;
+  overflow:hidden;
+  
+}
+.login_bj .input_username
+{ border: none;
+  height: 18px;
+  left: 157px;
+  line-height: 18px;
+  position: absolute;
+  top: 80px;
+  width: 232px;
+  background:none;
+}
+.login_bj .input_password
+{ position:absolute;
+  left:157px;
+  top:127px;
+  height:18px;
+  background:none;
+  border:none;
+  line-height:18px;
+  width: 232px;
+}
+.login_bj .input_repassword
+{ position:absolute;
+  left:157px;
+  top:172px;
+  height:18px;
+  background:none;
+  border:none;
+  line-height:18px;
+  width:104px;
+}
+.btn_login
+{ display:inline-block;
+  width:93px;
+  height:22px;
+  position:absolute;
+  left:315px;
+  top:212px;
+}
+.imgValidate
+{ position:absolute;
+  top:172px;
+  left:269px;
+}
+a.nextValidNumber
+{ position:absolute;
+  top:176px;
+  left:342px;
+  color:black;
+}
+a.nextValidNumber:hover
+{ color:Red;
+}
+.dv_questionTitle
+{ background:url(Images/top_header.gif) repeat-x;
+  height:53px;
+  line-height:53px;
+  color:White;
+  font-weight:bold;
+  text-indent:15px;
+  margin-bottom:20px;
+}
+.cltlKeyword
+{ text-align:center;
+  color:#515151;
+}
+.lastAuthor
+{ text-align:right; 
+}
+.lastAuthor em
+{ margin-right:10px;
+  color:#515151;
+}
+.dv_CousreInformation
+{ width:90%;
+  margin:20px auto;
+}
+.boderDashed
+{ border-top:1px dashed #8e8e8e;
+  padding-top:10px;
+  text-align:right; 
+  margin-top:20px;
+}
+.dv_thright 
+{ width:70%;
+  margin:0 auto;
+  margin-bottom:10px;
+  overflow:hidden;
+}
+.dv_thright table.GridviewGray th
+{ text-align:right;
+  border:1px solid #ddd;
+}
+.dv_thright table.GridviewGray td
+{
+ border:1px solid #ddd;
+}
+.dv_pageInformation
+{ width:89%;
+  margin:0 auto;
+}
+.dv_pageInformation table.GridviewGray th
+{ text-align:right;
+  background:#f1f1f1;
+  width:120px;
+}
+.dv_pageInformation table.GridviewGray th.widthauto ,.dv_pageInformation table.GridviewGray td.widthauto ,.dv_information table.GridviewGray td.widthauto,.dv_information table.GridviewGray th.widthauto
+{ width:auto;
+}
+.dv_pageInformation table.GridviewPay th
+{ width:100px;
+}
+.GridviewPay  table.GridviewGray th
+{ text-align:center;
+}
+.dv_pageInformation table.GridviewGray td
+{  
+  width:auto;
+}
+.News_title
+{ text-align:center; 
+  font-size:18px;
+  font-weight:bold;
+  clear:both;
+  margin-bottom:15px;
+}
+.News_sendTime
+{ text-align:center;
+  margin-bottom:20px;  
+  line-height:30px;
+  
+}
+.News_content
+{ text-indent:20px;
+  font-size:14px;
+  line-height:30px; 
+}
+.News_Img
+{ clear:both;
+  margin:0 auto;	 
+}
+.imgCourseLogo
+{ margin-bottom:5px;
+  height:100px;
+  width:100px;
+  float:left;
+  margin-right:5px;
+}
+.dv_allExercise .dv_MenuTitle
+{ background:url(Images/kejian.gif) no-repeat;
+  width:172px;
+  height:35px;
+  overflow:hidden;
+}
+span.dv_checked {
+    background: url("Images/checkIcon.gif") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    float: right;
+    height: 17px;
+    margin-left: 4px;
+    position: absolute;
+    width: 17px;
+    z-index: 1;
+}
+.tree #tvChapterList table 
+{ margin:0px;
+  width:auto;  
+}
+.tree #tvChapterList table td
+{ height:auto;
+  line-height:normal;
+  padding:0 2px;
+  margin:0px;
+  overflow:hidden;  
+}
+
+#tvChapterList {
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+span.span_overflow {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 120px;
+    cursor:pointer;
+}
+
+.flashContent
+{ background:url(Images/kano.gif) 0 0 repeat-x;
+  height:479px;
+  margin-top:70px;
+}
+.flashContent .dv_al
+{ background:url(Images/scrom-welecomebj.gif) no-repeat;
+  height:479px;
+}
+.grabjdot
+{
+ background:url("Images/grabjdot.gif") repeat ;
+}
+.dv_searchlist .dv_courseList
+{ overflow:hidden;
+  height:130px;
+  padding:0 5px;
+}
+.dv_searchlist .dv_courseList .dv_userphoto
+{ background:#eee url("Images/scrorm-photo.gif") no-repeat ;
+  width:98px;
+  height:98px;
+  overflow:hidden;
+  float:left;
+  margin-right:16px;
+  padding:3px;
+border:1px solid #e0e0e0;outline: 0;margin-bottom:10px;
+/*outline: thin dotted \9; IE6-9 */
+-moz-box-shadow:2px 2px 3px  rgba(0, 0, 0, 0.12);             /* For Firefox3.6+ */
+	-webkit-box-shadow:2px 2px 3px  rgba(0, 0, 0, 0.12);          /* For Chrome5+, Safari5+ */
+	box-shadow:2px 2px 3px  rgba(0, 0, 0, 0.12);                  /* For Latest Opera */
+}
+.dv_searchlist .dv_courseList .dv_userphoto img
+{
+    height: 98px;
+    width: 98px;
+}
+.dv_searchlist .dv_curseInformation
+{ _float:left;
+  overflow:hidden;
+  height:105px;
+  border:1px solid #e0e0e0;outline: 0;
+  background:#f6f6f6;
+/*outline: thin dotted \9; IE6-9 */
+-moz-box-shadow:2px 2px 3px  rgba(0, 0, 0, 0.1);             /* For Firefox3.6+ */
+	-webkit-box-shadow:2px 2px 3px  rgba(0, 0, 0, 0.1);          /* For Chrome5+, Safari5+ */
+	box-shadow:2px 2px 3px  rgba(0, 0, 0, 0.1);                  /* For Latest Opera */
+}
+.dv_searchlist .dv_curseInformation .dv_lcoleft
+{ 
+  width:14px;
+  height:137px;
+  float:left;
+}
+.dv_searchlist .dv_curseInformation .dv_lcorepeat
+{ _float:left;
+  overflow:hidden;
+  
+  height:137px;
+}
+.dv_searchlist .dv_curseInformation  .dv_lcoright
+{ float:right;
+  overflow:hidden;
+ 
+  width:12px;
+  height:137px;
+}
+.dv_searchlist table td.courseName ,.dv_searchlist table th.courseName
+{ font-weight:bold;
+  padding-bottom:4px;
+  text-align:left;
+  border-bottom:1px dashed #313131;
+}
+.dv_job_item_ResourceNum {
+    
+    color: #FF8A2B;
+}
+.dv_searchlist table td.notline ,.dv_searchlist table th.notline
+{
+  border-bottom:0px;
+}
+.dv_searchlist table td.courseName a, .dv_searchlist table th.courseName a{
+  color:#FF8A2B;
+}
+.dv_searchlist table td.courseName 
+{ font-weight:normal;  
+}.dv_searchlist table td.courseName a
+{
+  color:#FF8A2B;
+}
+.dv_lcorepeat table
+{ margin-top:5px;
+  width:98%;
+  table-layout:fixed;
+}
+.dv_searchlist .dv_curseInformation table th
+{ text-align:right;
+  padding:2px 0px;
+  white-space:nowrap;
+  word-break:keep-all;
+}
+.dv_searchlist .dv_curseInformation table td
+{ text-align:left;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  word-break:keep-all;
+}
+.dv_searchlist .dv_curseInformation table td a
+{ /*color:#313131;*/
+  font-weight:bold;
+}
+.dv_searchlist .dv_curseInformation table td a:hover
+{ color:#007eff;
+}
+.dv_information .h4_title
+{
+  text-indent:4px;
+}
+.dv_information .h4_title a
+{ font-weight:bold;
+  color:#C03219;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+/*********出错页面css定义***********/
+.errorbodybj
+{ background:url(Images/errorepeat.gif) repeat;
+}
+.dv_showerror
+{ width:444px;
+  height:256px;
+  margin:0 auto;
+  margin-top:70px;
+  background:url(Images/error_title.gif) no-repeat;
+  position:relative;
+  color:#ca0000;
+  font-weight:bold;
+  font-size:14px;
+  overflow:hidden;
+}
+.dv_showerror .icoerror
+{ width:99px;
+  height:100px;    
+  background:url(Images/error-s.gif) no-repeat;
+  overflow:hidden;
+}
+.btn_errorReturn
+{ background:none;
+  border:1px solid #ca0000;
+  text-align:center;
+  color:#ca0000;  
+  position:absolute;
+  right:35px;
+  bottom:25px;  
+  width:60px;
+  height:20px;
+  line-height:20px;
+}
+.dv_showerror  table
+{ margin:0 auto;
+  width:72%;
+  margin-top:60px;
+}
+
+.dv_CourseContent
+{ width:89%;
+  margin:0 auto;
+  margin-bottom:15px;
+}
+.dv_CourseContent .dv_Coursetitle
+{ margin-bottom:10px;
+  padding-bottom:5px;
+  border-bottom:1px solid #ddd;
+  font-weight:bold;
+}
+.dv_CourseContent  img
+{  float:left;
+   width:90px;
+   height:90px;  
+   border:none;
+}
+.dv_courseBox
+{
+  border:1px solid #ddd;
+  overflow:hidden;
+  display:inline-block;
+  width:100%;
+  overflow:hidden;
+}
+.dv_areaMark
+{ 
+  _float:left;
+  margin-left:10px;
+  margin-top:5px;
+}
+.dv_courseBox .good_score
+{ font-weight:bold;
+  font-size:30px;
+  color:#E26500;
+  font:arial;
+  margin-bottom:10px;
+}
+
+.dv_areaMark h2
+{ font-weight:normal;
+  font-size:12px;
+}
+.dv_courseBox .dv_rake
+{ border-right:1px solid #ddd;
+  width:100px;
+  float:left;
+  text-align:center;
+  padding:15px 0;
+}
+.dv_rangeList
+{ float:left;
+  margin-left:30px;
+  margin-top:6px;
+}
+.dv_courseBox .dv_progessbar
+{ background:url(Images/progressbar.png) left -14px no-repeat;
+  width:118px;
+  height:10px;
+  overflow:hidden;
+  float:left;
+  margin-right:8px;
+} 
+.dv_courseBox .dv_progessbar .progressCell
+{ width:10px;
+  background:url(Images/progressbar.png) left -2px no-repeat;
+  display:inline-block;
+  height:10px;
+  overflow:hidden;
+  margin-top:1px;
+}
+.dv_courseBox dl
+{ clear:both;
+}
+.dv_courseBox dt
+{ float:left;
+}
+.dv_courseBox dd
+{ float:left;
+  margin-top:4px;
+}
+.dv_courseBox .progressValue
+{ 
+  float:left; 
+  margin:0px;
+  line-height:16px;
+}
+#Div_CourseInfo_0 ,#Div_CourseInfo_1
+{ border-top:2px solid #FF8A2B;
+  padding-top:8px;
+}
+.splitLine
+{ border-top:1px dashed #ccc;
+  height:1px;
+  overflow:hidden;
+  padding:5px 0px;
+}
+/****-------------明细表的样式-----------***/
+#pnlReport
+{ 
+  width:98%;
+  margin:0 auto;
+}
+#pnlReport .dv_TableHeader
+{ 
+  border-top:2px solid #FF8A2B;
+  border-bottom:2px solid #FF8A2B;
+  width:100%;  
+  overflow:hidden;  
+  background:#f1f1f1; 
+}
+table.tab_header
+{ margin-bottom:0px;
+  
+}
+.tab_header th
+{ text-align:center;
+  white-space:nowrap;
+  word-break:keep-all;
+  text-overflow:ellipsis;
+  overflow:hidden; 
+}
+.reporting-list td, .reporting-list th
+{
+    border:1px solid #515151;
+    border-collapse:collapse;
+    margin:0;
+    padding:0;   
+    text-align:center; 
+    word-break:break-all;
+    word-wrap:break-word;
+}
+#pnlReport .dv_Datareport
+{  height:600px;
+   overflow-y:auto;
+   overflow-x:auto;  
+   width:100%;  
+}
+
+#pnlReport .dv_Datareport table td
+{ word-break:break-all;
+  word-wrap:break-word;
+}
+.dv_courseProject 
+{ float:left; 
+  border-bottom:1px solid #515151; 
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+.rolspan table
+{ margin:0px;
+}
+
+.dv_ImgReportlist
+{ 
+ margin-left:40px;
+ margin-top:20px;
+}
+.dv_ImgReportlist  a,.dv_ImgReportlist  a:active,.dv_ImgReportlist  a:visited
+{ float:left;
+  display:inline-block;
+  width:133px;
+  height:107px;
+  position:relative;
+  margin-right:48px;
+  text-decoration:none;
+}
+
+.dv_ImgReportlist a.imgReport_1
+{
+  background:url(Images/search-ico-1.gif) no-repeat;
+  text-decoration:none;
+}
+.dv_ImgReportlist a.imgReport_2
+{
+  background:url(Images/search-ico-2.gif) no-repeat;
+  text-decoration:none;
+}
+.dv_ImgReportlist a.imgReport_3
+{
+  background:url(Images/search-ico-4.gif) no-repeat;
+  text-decoration:none;
+}
+.dv_ImgReportlist a.imgReport_4
+{
+  background:url(Images/search-ico-4-1.gif) no-repeat;
+  text-decoration:none;
+}
+.dv_ImgReportlist a.imgReport_5
+{
+  background:url(Images/search-ico-5.gif) no-repeat;
+  text-decoration:none;
+}
+.dv_ImgReportlist  a span.text_title
+{ position:absolute;
+  bottom:8px;
+  text-align:center;
+  display:inline-block;
+  width:100%;
+  color:White;
+  text-decoration:none;
+}
+.dv_ImgReportlist  span.text_title:hover
+{ color:#620000;
+  cursor:pointer;
+  text-decoration:none;
+}
+.dv_HeaderTitle
+{ background:url(Images/report-bj-repeat.gif) repeat-x;
+  height:35px;
+  overflow:hidden;
+  line-height:30px;
+  margin-bottom:20px;
+}
+.dv_HeaderTitle  h2.h_titleName1
+{ display:inline-block;
+  background:url(Images/report_ico_1.gif) left center no-repeat;
+  padding-left:35px;
+  color:White;
+  font-size:12px;
+  font-family:宋体;  
+  margin-left:15px;
+}
+.dv_HeaderTitle  h2.h_titleName2
+{ display:inline-block;
+  background:url(Images/report_ico_2.gif) left center no-repeat;
+  padding-left:35px;
+  color:White;
+  font-size:12px;
+  font-family:宋体;  
+  margin-left:15px;
+}
+.dv_HeaderTitle  h2.h_titleName3
+{ display:inline-block;
+  background:url(Images/report_ico_3.gif) left center no-repeat;
+  padding-left:35px;
+  color:White;
+  font-size:12px;
+  font-family:宋体;  
+  margin-left:15px;
+}
+.dv_reports .dv_searchbox
+{ width:98%;
+}
+.dv_reports
+{ width:100%;
+  min-width:1000px;
+  _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1000?"1000px":"100%");
+  overflow:hidden;  
+}
+ 
+ .dv_SystemerrorTextbox
+ {
+ border: solid 1px #515151; 
+ margin:5px auto;
+ height: 78px; 
+ overflow-x: hidden; 
+ overflow-y: auto;
+ text-align:left;
+ padding-left:5px;
+ color:#313131;
+ background:url("Images/text-gray.gif") repeat-x scroll 0 0 white;
+ white-space:normal;
+  word-break:break-all;
+  word-wrap:break-word;
+ }
+
+ 
+ 
+
+ }
+ .dv_description
+ { width:89%;
+   margin:10px auto;
+ }
+ a.studyhover
+ { display:inline-block;
+   position:relative;
+   cursor:pointer;
+   text-decoration:none;
+ }
+ a.studyhover:hover
+ { text-decoration:none;
+ }
+ .studymessgebox
+{ position:absolute;
+  border:1px solid #FF8A2B;
+  background:#f8f8f8;
+  width:300px;
+  height:100px;
+  color:#313131; 
+  overflow:auto;
+  padding:5px;
+  display:inline-block;
+  text-align:left;
+  white-space:normal;
+  word-break:break-all;
+  word-wrap:break-word;
+  text-decoration:none;
+}
+ a.studyhover .studymessgebox 
+ {  text-decoration:none;
+ } 
+ .info .dv_searchlist .dv_pageInformation
+ { width:100%;
+ }
+ .info .dv_searchlist  table.GridviewPay th
+ { background:#F1F1F1;
+   border:1px solid #CCCCCC;
+ }
+.info .dv_searchlist  table.GridviewPay td
+  { background:white;
+    border:1px solid #CCCCCC;
+    text-align:left;
+  }
+a.btn_savedata
+{ background:#b81e00;
+  padding:0px 5px;
+  display:inline-block;
+  color:White;
+  text-decoration:none;
+}
+
+table.GridviewGray td a.btn_savedata,table.GridviewGray td a.btn_savedata:active,table.GridviewGray td a.btn_savedata:visited
+{ color:White;
+  text-decoration:none;
+}
+table.GridviewGray td a.btn_savedata:hover
+{color:White;
+}
+
+table.GridviewGray td a.btn_canceldata ,table.GridviewGray td a.btn_canceldata:active,table.GridviewGray td a.btn_canceldata:visited
+{ background:#333;
+  color:white;
+  padding:0px 5px;
+  text-decoration:none;
+  display:inline-block;
+}
+table.GridviewGray td a.btn_canceldata:hover
+{
+    color:White;
+}
+.dv_pageInformation table
+{ table-layout:fixed;
+}
+.info .dv_pageInformation table
+{ table-layout:fixed;
+}
+.dv_pageInformation table th
+{ white-space:nowrap;  
+}
+
+.dv_searchlist table.GridviewGray tr td.visibleT
+{ overflow:visible;
+}
+
+.dv_information .dv_searchlist table.GridviewGray tr td
+{
+  word-break:normal;
+  word-wrap:normal;
+}
+.dv_tabinfor table.GridviewGray th
+{
+    background:none;
+}
+
+.info .dv_description
+{ width:89%;
+  margin:0 auto;
+  margin-bottom:4px;
+}
+table.tablePassword
+{ float:left;
+  width:90px;
+}
+table.tablePassword td
+{ padding:0px 8px;
+  height:20px;
+  line-height:20px;
+}
+.tree-object {width:97%;}
+.tree-root-node{color:#FDCA1A;}
+.tree-parent-node{font-weight:normal;}
+.tree-node {font-family:宋体; font-size:12px; color:White;}
+.tree-hover-node {background-color:#7E6B5A; color:#FDCA1A;}        
+.tree-selected-node {color:White;font-weight:700;}
+
+.shadowBj
+{ position:absolute;
+  z-index:1;
+  background-color:white;
+  filter:alpha(Opacity=40);-moz-opacity:0.5;opacity: 0.5;z-index:100; background-color:#ddd;
+  width:100%;
+  left:0px;
+  top:0px;
+}
+.loadfile
+{
+  padding:10px 20px;
+  left:40%;
+  top:40%;
+  position:absolute;
+  z-index:100; 
+  font-weight:bold;
+  background:#eee;
+  border:1px solid #ddd;
+  color:#515151;
+ 
+}
+.loadfile img
+{ margin-right:10px;
+}
+.upload-img-standard {
+    color:#777;
+}
+

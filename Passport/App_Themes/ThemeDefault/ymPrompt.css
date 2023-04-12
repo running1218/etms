@@ -1,0 +1,79 @@
+﻿/*container*/
+#ym-window{
+	overflow:hidden;
+	font-size:12px;
+	font-family:'宋体';	
+	background:#fff;
+	border:1px solid #666;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);border-radius:6px 6px 0 0;
+}
+
+.ym-tl{}
+.ym-tr{}
+.ym-tc{background:url(Images/aui.png) repeat-x 0 -181px;line-height:28px;position:relative;height:33px; border-bottom:1px solid #ccc;}
+.ym-ttc{height:3px}
+.ym-header-text{font-size:12px;font-weight:bold;color:#333;margin-left:5px;float:left;margin-top:4px; padding-left:5px;}
+.ym-header-tools{float:right;margin-top:2px}
+.ym-header-tools strong{display:none}
+
+/*body*/
+.ym-ml{padding:0px; }
+.ym-mr{}
+.ym-mc{background:#FFFFFF ;padding:0}
+.ym-body{overflow:hidden;padding:0;font-size:12px;}
+
+/*button*/
+.ym-btn{text-align:center;background:white;padding-bottom:10px;}
+.ym-redArrow{background:url(Images/popwindow_arrow.gif) no-repeat;position:absolute;top:38px;left:9px;width:29px;height:20px;display:none;}
+/*footer*/
+.ym-bl{background:url(Images/popwindow_b1.png) no-repeat 0 0;padding-left:13px; display:none}
+.ym-br{background:url(Images/popwindow_b4.png) no-repeat right 0;padding-right:13px}
+.ym-bc{background:url(Images/popwindow_b2.png) repeat-x 0 0;height:14px;}
+
+.ymPrompt_alert{
+	padding-left:80px;
+	background:url(Images/msg-alert.gif) no-repeat 10px center;
+}
+.ymPrompt_succeed{
+	padding-left:80px;
+	background:url(Images/msg-success.gif) no-repeat 10px center;
+}
+.ymPrompt_error{
+	padding-left:80px;
+	background:url(Images/msg-failed.gif) no-repeat 10px center;
+}
+.ymPrompt_confirm{
+	padding-left:80px;
+	background:url(Images/msg-question.gif) no-repeat 10px center;
+}
+.ymPrompt_alert .ym-content,.ymPrompt_succeed .ym-content,.ymPrompt_error .ym-content,.ymPrompt_confirm .ym-content{padding:70px 3px 0}
+/*图标公共定义*/
+.ym-header-tools div.ymPrompt_close a
+{
+	background: url(images/aui.png) 6px -12px no-repeat;
+	width:22px;
+	height:23px;
+	display:inline-block;
+	color:White;
+	text-align:center;
+	line-height:23px;
+}
+.ym-header-tools div.ymPrompt_close a:hover
+{
+background: url(images/aui.png) 6px -31px no-repeat;
+}
+
+/*取消确认按钮样式*/
+input.btnStyle
+{
+  background:url(Images/btns.png) -138px -69px no-repeat;
+  color:#333;
+  width:60px;
+  height:23px;
+  line-height:22px;
+  border:none;  
+  margin-right:10px;
+  cursor:pointer;
+  text-align:center;
+  display:inline-block;
+}

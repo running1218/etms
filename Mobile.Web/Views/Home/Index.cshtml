@@ -1,0 +1,65 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "优博";
+}
+
+@section head{
+    <link  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/swiper/dist/css/swiper.css" rel="stylesheet" />
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/swiper/dist/js/swiper.js"></script>
+    <link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Style/home/main.css" />
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/home/main.js"></script>
+
+}
+ 
+    <article class="main_content">
+        <!-- 轮播banner图 -->
+        <section class="swiper-container">
+            <div class="swiper-wrapper">
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+        <!-- 搜索框 -->
+        <a class="search" href= "@ETMS.Utility.WebUtility.AppPath/Course/Index"><i class="search-icon icon iconfont icon-iconfont-Mag"></i>&nbsp;请输入您想搜索的关键字</a>
+        @*日常公告*@
+        <section class="new-notice hide">
+            <a href="@ETMS.Utility.WebUtility.AppPath/Notice/Index"><h2 class="title">日常公告 &nbsp;<i class="icon iconfont icon-iconfont-jt"></i></h2></a>
+            <ul class="notice-list clearfix">
+            </ul>
+        </section>
+        <!-- 推荐课程 -->
+        <section class="recommend_class" hidden>
+            <a style="line-height:5rem;height:5rem;width:100%;display:inline-block;" href="@ETMS.Utility.WebUtility.AppPath/Course/Index"><p style="width:100%;"><h2 style="float:left;" class="title">好课推荐 &nbsp;</h2><h2 style="float:right;font-size:1.8rem;color:#a1a1a1;">更多<i style="float:right;padding-left:0.8rem;" class="icon iconfont icon-iconfont-jt"></i></h2></p></a>
+            <ul class="object_list"></ul>
+        </section>
+    </article>
+ 
+@* 加载banner图 *@
+<script id="tmpl_BannerSpread" type="text/x-handlebars-template">
+    {{#each Data}}
+    <div class="swiper-slide"><a href="{{Link}}"><div class="box"><img src="{{ImageUrl}}"></div></a></div>
+    {{/each}}
+</script>
+@* 最新资讯 *@
+<script id="tmpl_NewNotice" type="text/x-handlebars-template">
+    {{#each Data}}
+    <li>
+        <a href="@ETMS.Utility.WebUtility.AppPath/Notice/Detail?ArticleID={{ArticleID}}">
+            <div class="img-box"><img src="{{ImageUrl}}" onerror="this.src='@ETMS.Utility.WebUtility.AppPath/Images/error_pic.jpg'" /></div>
+            <p>{{MainHead}}</p>
+            <span class="time">{{CreateTime}}</span>
+        </a>
+    </li>
+    {{/each}}
+</script>
+@* 推荐课程 *@
+<script id="tmpl_CourseRecommend" type="text/x-handlebars-template">
+    {{#each Data}}
+    <li>
+        <a href="@ETMS.Utility.WebUtility.AppPath/Course/Detail?CourseID={{CourseID}}">
+            <div class="course_img"><img src="{{ThumbnailURL}}" onerror="this.src='@ETMS.Utility.WebUtility.AppPath/Images/error_pic.jpg'" /></div>
+            <p>{{CourseName}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+ 

@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "答题卡";
+}
+@section head{
+<link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Style/Paper/answerSheet.css" />
+}
+
+<article >
+    @*答题卡*@
+    <section class="answerSheet" id="answerSheet">
+        <div>
+            <h2>单选题</h2>
+            <ul class="clearfix" id="answerSheet_single"></ul>
+        </div>
+        <div>
+            <h2>多选题</h2>
+            <ul class="clearfix" id="answerSheet_multi"></ul>
+        </div>
+        <div>
+            <h2>判断题</h2>
+            <ul class="clearfix" id="answerSheet_judge"></ul>
+        </div>
+    </section>
+    <section>
+        <div class="commit"id="commitbtn">交卷</div>
+    </section>
+</article>
+<script src="@ETMS.Utility.WebUtility.AppPath/Scripts/Paper/answerSheet.js"></script>

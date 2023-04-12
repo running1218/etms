@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MPageAdmin.master.cs" Inherits="ETMS.WebApp.Manage.MasterPages.MPageAdmin" %>
+<%@ Register Assembly="ETMS.Controls" Namespace="ETMS.Controls" TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>   
+    <%--<style>
+       body
+       { height:auto;
+       }
+    </style>--%>
+</head>
+<body>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/jquery-1.7.2.js'></script>    
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/layer.min.js'></script> 
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/jquery.cookie.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/json2.js'></script>
+       <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/jQueryCache.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/jquery.Hashtable.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/jQueryCache.js'></script>   
+    <script language="javascript" type="text/javascript" src="<%=ETMS.Utility.WebUtility.AppPath%>/JScript/jsfunction.js"></script>
+    <script language="javascript" type="text/javascript" src="<%=ETMS.Utility.WebUtility.AppPath%>/JScript/png.js"></script>
+    <script src="<%=ETMS.Utility.WebUtility.AppPath%>/JScript/ymPromptYuan.js" type="text/javascript"></script>
+    <script src="<%=ETMS.Utility.WebUtility.AppPath%>/Tools/DateControl/WdatePicker.js"
+        type="text/javascript"></script>
+    <script src="<%=ETMS.Utility.WebUtility.AppPath%>/JScript/ajaxfileupload.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/jquery.ui.core.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/jquery.ui.widget.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/jquery.ui.mouse.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/jquery.ui.position.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/jquery.ui.draggable.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/jquery.ui.dialog.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/tablecloth.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/selectdropdown.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/radioSetstyle.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/Exam.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/jquery.easyui.min.js'></script>
+    <script type="text/javascript" language="javascript" src='<%=ETMS.Utility.WebUtility.AppPath%>/JScript/footable.js'></script>    
+    <!--加上会造成上传弹出层失效，请在单独页面加-->
+    <script type="text/javascript" language="javascript">
+        $(function () {
+            autoLoadHideGridview();
+            setFrameHeight();
+            createPageControl();
+            $("select").SelectStyle();
+            $("input").radioStyle();
+            showTabinfor();
+            $(".dv_submit").css("background", "none");     
+        })
+        function radioStyleInstance() {
+            $("input").radioStyle();
+            $("select").SelectStyle();
+        }
+    </script>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div>
+        <div class="dv_nav_layer">
+            <!--导航路径-->
+            <div class="dv_nav">
+                <cc1:SitePath ID="sitePath" runat="server" PreTitle="当前位置：" />
+            </div>
+            <div class="dv_back_area">  
+                <!--返回按钮-->            
+               <asp:ContentPlaceHolder ID="cphBack" runat="server">
+                
+               </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
+<script language="javascript" type="text/javascript">
+    Sys.WebForms.PageRequestManager.getInstance().add_endRequest(createPageControl);
+    Sys.WebForms.PageRequestManager.getInstance().add_endRequest(tablecloth);
+    Sys.WebForms.PageRequestManager.getInstance().add_endRequest(radioStyleInstance);
+</script>
+

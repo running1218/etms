@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "优博";
+}
+@section head{
+<link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/iscroll.css" />
+<link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/pullToRefresh.css" />
+<script type="text/javascript" src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/iscroll2.js"></script>
+<script type="text/javascript" src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/pullToRefresh.js"></script>
+ <link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Style/course/main.css" />
+ <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/course/main.js"></script>
+
+}
+    <article class="main_content">
+        <!-- 搜索框 -->
+        <section class="search-box">
+            <i class="search-icon icon iconfont icon-iconfont-Mag"id="search_icon"></i>
+            <input type="text"class="search"placeholder="请输入您想搜索的关键字"/>
+        </section>
+        <!-- 课程分类 -->
+        <section class="course_type"hidden>
+            <ul class="type_list  clearfix"></ul>
+            <div></div>
+        </section>
+        <!-- 课程列表 -->
+        <section class="course_list"hidden>
+           <div class="object_listBox"id="wrapper">
+               <ul class="object_list" ></ul>
+           </div>
+        </section>
+
+    </article>
+
+@* 课程分类 *@
+<script id="tmpl_TypeList" type="text/x-handlebars-template">
+    <li data-CourseTypeID="0"class="on">
+       全部 
+    </li>
+    {{#each Data}}
+    <li data-CourseTypeID="{{CourseTypeID}}">
+        {{CourseTypeName}}
+    </li>
+    {{/each}}
+</script>
+@* 课程列表 *@
+<script id="tmpl_CourseList" type="text/x-handlebars-template">
+        {{#each Data}}
+        <li>
+            <a href="@ETMS.Utility.WebUtility.AppPath/Course/Detail?CourseID={{CourseID}}">
+                <div class="course_img"><img src="{{ThumbnailURL}}" onerror="this.src='@ETMS.Utility.WebUtility.AppPath/Images/error_pic.jpg'" /></div>
+                <p>{{CourseName}}</p>
+            </a>
+        </li>
+        {{/each}}
+    </script>

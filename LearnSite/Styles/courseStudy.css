@@ -1,0 +1,69 @@
+﻿.view-area{
+    width:1200px;
+    margin:0 auto;
+}
+.resources_list{
+    margin-top:30px;
+    border-left: 2px solid #d6d6d6;
+}
+.resources_list li{
+    padding-left:35px;
+    margin-bottom:20px;
+    position:relative;
+}
+.resources_list li:hover .resources_info{
+    background:#e8f2fe;
+}
+.resources_info a{
+    width:70px;
+    height:22px;
+    color:#fff;
+    border-radius:5px;
+    margin-top:4px;
+    margin-left:100%;
+    text-align:center;
+    line-height:22px;
+    display:inline-block;
+    background:#3086eb;
+}
+.resources_list li .status_icon{
+    width:14px;
+    height:14px;
+    display:inline-block;
+    background:url('../Styles/images/common/circle.png') no-repeat center;
+    position:absolute;
+    top:5px;
+    left: -8px;
+}
+
+.resources_list .studying i{
+    background:url('../Styles/images/common/studying.jpg') no-repeat center;
+}
+.resources_list .study_end i{
+    background:url('../Styles/images/common/study_end.jpg') no-repeat center;
+}
+.resources_info{
+    padding:0 30px;
+    height:30px;
+    line-height:30px;
+    background:#f5f5f5;
+}
+.resources_info p{
+    display:inline-block;
+}
+.resources_info p:nth-child(1){
+    width:40%;
+    text-align:left;
+}
+.resources_info p:nth-child(2){
+    width:30%;
+    text-align:center;
+}
+.resources_info p:nth-child(3){
+    width:22%;
+    text-align:center;
+}
+.resources_info p:nth-child(4){
+    width:30px;
+    text-align:center;
+}

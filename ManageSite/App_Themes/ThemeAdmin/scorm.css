@@ -1,0 +1,96 @@
+﻿.dv_topMenu  .dv_scromWebLogo
+{ float:left;
+  width:193px;
+  height:127px;
+  overflow:hidden;
+  background:url(Images/scorm/scrom_webLog.gif)  no-repeat;
+}
+
+.dv_topMenu .dv_courseState
+{ 
+   float:right;
+   margin-right:10px;
+   margin-top:30px;  
+}
+.dv_topMenu .dv_scromRepeat
+{ background:url(Images/scorm/scrom_topbj.gif) repeat-x;
+  height:127px;  
+  _float:left;
+}
+.dv_topMenu .dv_courseState em
+{ color:#F0B792;
+  margin-right:10px;
+  font-weight:bold;
+  font-style:normal;
+}
+.dv_topMenu .dv_courseState a
+{ color:#ffe478;
+  font-weight:bold;
+  text-decoration:none;
+}
+.dv_copyright p
+{ text-align:center;
+  margin-top:30px;
+}
+.dv_copyrightscorm
+{ 
+  height:28px;
+  overflow:hidden;
+  text-align:center;
+  color:#2a1200;
+  clear:both;
+  min-width:1030px;  
+}
+.dv_copyrightscorm p
+{ line-height:38px;  
+  text-align:center;
+}
+.dv_copyrightscorm .dv_copright-1
+{ float:left;
+  width:176px;
+  height:28px;
+  background:url(Images/scorm/copyright_2.gif) no-repeat;
+}
+.dv_copyrightscorm .dv_copright-2
+{ _float:left;
+  background:url(Images/scorm/copright-repeat.gif) repeat-x;
+  height:28px;
+}
+.dv_MenuTree
+{ 
+  width:193px;  
+  float:left;  
+  background:url(Images/scorm/scrom_lefbj.gif) repeat-y;
+}
+.dv_MenuTree .dv_MenuTitle
+{ background:url(Images/scorm/scrom_title.gif) no-repeat;
+  width:193px;
+  height:48px;
+  overflow:hidden;
+}
+.dv_MenuTree .tree
+{ width:180px; 
+}
+.flashContent
+{ background:url(Images/scorm/kano.gif) 0 0 repeat-x;
+  height:479px;
+  margin-top:10px;
+}
+.flashContent .dv_al
+{ background:url(Images/scorm/scrom-welecomebj.gif) no-repeat;
+  height:479px;
+}
+.dv_flashcontent
+{ 
+  width:1088px;  
+  height:912px;  
+  margin:0 auto;
+  clear:both; 
+  position:relative;
+}
+.dv_topMenu
+{ 
+  height:124px; 
+  width:100%; 
+  min-width:1030px; 
+}

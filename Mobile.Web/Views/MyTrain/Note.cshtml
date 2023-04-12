@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "笔记详细";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section head{
+    <script>
+        var NoteID = '@ViewBag.NoteID';
+    </script>
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/myTrain/note.js"></script>
+}
+<div style="padding: 0 2vw;padding-bottom: 2vh;">
+    <h2 class="note_title" style="text-align: left;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;padding-top: 4vh;margin: 0px;margin-bottom: 4vh;"></h2>
+    <p class="note_content"></p>
+</div>

@@ -1,0 +1,78 @@
+﻿.view-area{
+    margin: 30px auto;
+    width:1200px;
+}
+.text_list li{
+    padding:15px;
+    border-bottom:1px solid #cbcbcb; 
+    margin-top:10px;
+}
+.text_list li .text_info{
+    width:90%;
+    display:inline-block;
+}
+.text_list li .text_info .text_name{
+    font-size:17px;
+    font-weight:bold;
+}
+.text_list li .text_info .text_name i{
+    width:30px;
+    height:30px;
+    border-radius:100%;
+    display:inline-block;
+    text-align:center;
+    line-height:30px;
+    color:#fff;
+    font-size:12px;
+    font-weight:initial;
+    margin-right:10px;
+}
+.text_list li .text_info .text_name .evaluation{
+    background:#d9a812;
+}
+.text_list li .text_info .text_name .homework{
+    background:#94ae66;
+}
+
+.text_list li .text_info .additional_info{
+    padding-left:40px;
+}
+.text_list li .text_info .additional_info p{
+    margin-right:5%;
+    line-height:35px;
+    display:inline-block;
+    color:#999;
+}
+.text_list li .text_info .additional_info p span{
+    color:#333;
+}
+.text_list li .text_btn{
+    width:75px;
+    height:28px;
+    text-align:center;
+    line-height:28px;
+    border:1px solid #3988fb;
+    color:#3988fb;
+    display:inline-block;
+    vertical-align:middle;
+}
+.off_line_oper {
+    margin-left: 40px;
+    line-height: 28px;
+}
+.offline_title {
+    color:#999;
+}
+.padding_left_50{
+    margin-left:50px;
+}
+.off_line_inst {
+    text-indent:28px;
+}
+.off_line_oper .text_info a {
+    text-decoration:underline;
+    color:#4877fa;
+}
+.text_info .offlinejob {
+    background: #3988fb;
+}

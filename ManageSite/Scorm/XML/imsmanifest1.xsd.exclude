@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.adlnet.org/xsd/adlcp_rootv1p2" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:attribute name="scormtype" type="xs:string" />
+</xs:schema>

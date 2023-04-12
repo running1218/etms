@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<titleItem>
+  <item indexNumber="0" titleKey="OrganizationName" titleValue="组织机构"></item>
+  <item indexNumber="1" titleKey="DepartmentName" titleValue="部门"></item>
+  <item indexNumber="2" titleKey="RealName" titleValue="学员姓名"></item>
+  <item indexNumber="3" titleKey="WorkNo" titleValue="工号"></item>
+  <item indexNumber="4" titleKey="PostName" titleValue="岗位"></item>
+  <item indexNumber="5" titleKey="PostTypeName" titleValue="岗位类别"></item>
+  <item indexNumber="6" titleKey="RankName" titleValue="职级"></item>
+  <item indexNumber="7" titleKey="ItemName" titleValue="项目名称"></item>
+  <item indexNumber="8" titleKey="ItemCourseCode" titleValue="课程编码"></item>
+  <item indexNumber="9" titleKey="ItemCourseName" titleValue="课程名称"></item>
+  <item indexNumber="10" titleKey="ItemCourseTypeName" titleValue="课程类型"></item>
+  <item indexNumber="11" titleKey="ItemCourseAttrName" titleValue="课程属性"></item>  
+  <item indexNumber="12" titleKey="ItemCourseTeacher" titleValue="课程讲师"></item>
+  <item indexNumber="13" titleKey="ItemCourseTrainingModelName" titleValue="培训方式"></item>
+  <item indexNumber="14" titleKey="ItemCourseBeginTime" titleValue="课程开始时间"></item>
+  <item indexNumber="15" titleKey="ItemCourseEndTime" titleValue="课程结束时间"></item>  
+  <item indexNumber="16" titleKey="ItemCourseTeachModelName" titleValue="授课方式"></item>
+  <item indexNumber="17" titleKey="DisScormStandardTime" titleValue="非SCORM课件标准课时（小时）"></item>
+  <item indexNumber="18" titleKey="ScormStandardTime" titleValue="SCORM课件标准课时（小时）"></item>
+  <item indexNumber="19" titleKey="ScormActualTime" titleValue="SCORM课件实际学习课时（小时）"></item>
+  <item indexNumber="20" titleKey="ScormFinishRate" titleValue="SCORM课件完成率（％）"></item>
+  <item indexNumber="21" titleKey="FaceTrainingPlanTime" titleValue="计划面授时长（小时）"></item>
+  <item indexNumber="22" titleKey="FaceTrainingActualTime" titleValue="实际参加面授时长（小时）"></item>  
+  <item indexNumber="23" titleKey="FaceTrainingFinishRate" titleValue="学员面授完成率（％）"></item>
+  <item indexNumber="24" titleKey="AvalableTotalStandardTime" titleValue="可计算总时长（小时）"></item>
+  <item indexNumber="25" titleKey="AvalableTotalActualTime" titleValue="可计算实际完成时长（小时）"></item>
+  <item indexNumber="26" titleKey="AvalableTotalFinishRate" titleValue="可计算总完成率（％）"></item>
+  <item indexNumber="27" titleKey="ItemStudentCourseFinishStatus" titleValue="课程完成状态"></item>
+  <item indexNumber="28" titleKey="ItemCourseSumGrade" titleValue="课程成绩"></item>
+  <item indexNumber="29" titleKey="ItemCourseTestName" titleValue="在线测试名称"></item>
+  <item indexNumber="30" titleKey="ItemCourseTestScore" titleValue="在线测试成绩"></item>
+</titleItem>

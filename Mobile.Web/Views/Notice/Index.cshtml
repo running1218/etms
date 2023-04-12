@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "优博";
+}
+@section head{
+<link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/iscroll.css" />
+<link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/pullToRefresh.css" />
+<script type="text/javascript" src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/iscroll2.js"></script>
+<script type="text/javascript" src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/pullToRefresh.js"></script>
+<link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Style/notice/main.css" />
+<script src="@ETMS.Utility.WebUtility.AppPath/Scripts/notice/main.js"></script>
+ }
+    <article class="main_content">
+            <section id="wrapper">
+                <ul class="notice_con show" id="listDiv"></ul>
+            </section>
+    </article>
+ 
+<script id="tmpl_NoticeList" type="text/x-handlebars-template">
+    {{#each Data}}
+    <li>
+        <a class="notice_info" href="@ETMS.Utility.WebUtility.AppPath/Notice/Detail?ArticleID={{ArticleID}}">
+            <img class='notice_img"' src="{{ImageUrl}}" onerror="this.src='@ETMS.Utility.WebUtility.AppPath/Images/error_pic.jpg'" />
+            <div class="notice_supplement">
+                <h2 class="notice_title">{{{MainHead}}}</h2>
+                <p class="notice_content">{{{ArticleContent}}}</p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>

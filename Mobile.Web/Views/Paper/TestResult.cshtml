@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "优博";
+}
+@section head{
+<link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Style/Paper/testResult.css" />
+<script src="@ETMS.Utility.WebUtility.AppPath/Scripts/Paper/testResult.js"></script>
+}
+<section class="testTitle clearfix">
+    <span class="test-name"></span><div  class="test-score"><span id="UserScore"></span>分</div>
+</section>
+<section class="workbody">
+    <div class="">
+        <div class="exerciselist">
+        </div>
+    </div>
+</section>
+<script id="testResult_templ" type="text/x-handlebars-template">
+    {{#each Data}}
+    <div class="{{tfTopicType QuestionType}}" topicid="{{QuestionID}}">
+       <div class="typeName"><span class="exercisetypename">{{typeName QuestionType}}</span></div>
+        <div class="worktitle">
+           {{topicIndex @@index}}、{{{QuestionTitle}}}<span class="QuestionScore">({{QuestionScore}}分)</span>
+        </div>
+        {{#each QuestionOption}}
+        <div class="workoption"><div class="{{#answerClass ../UserAnswer OptionID @@index}}{{/answerClass}}" data-OptionID="{{OptionID}}">{{OptionCode}}</div><div class="optiontxt">{{{OptionContent}}}</div></div>
+        {{/each}}
+        <div class="answer">
+           正确答案:<span>{{jsonObj QuestionAnswer}}</span>
+        </div>
+    </div>
+    {{/each}}
+</script>
+ 

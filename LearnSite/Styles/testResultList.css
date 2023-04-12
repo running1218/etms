@@ -1,0 +1,31 @@
+﻿.view-area{
+    width:1200px;
+    margin:0 auto;
+}
+.title{
+    height:45px;
+    line-height:45px;
+    border-bottom:1px solid #dcdcdc;
+    padding-left:20px;
+    font-size:16px;
+}
+
+table{
+    width:100%;
+    border:none;
+}
+table tr{
+    height:40px;
+    line-height:40px;
+}
+table thead tr td{
+    font-size:16px;
+    font-weight:bold;
+}
+table  tr td{
+    padding:0 10px;
+    text-align:center;
+}
+table tbody tr:nth-child(2n-1){
+    background:#f8f8f8;
+}

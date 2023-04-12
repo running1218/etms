@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* Header */
+div.header{margin:10px auto 0 auto;width:960px;height:87px;background:#fff url(../images/HeaderBg.gif) repeat-x;}
+
+/* Index AD*/
+div.ad_area{padding-bottom:10px;height:180px;}
+
+/* 主内容区 */
+div.main{margin:auto;padding:10px;background:#fff;width:940px;}
+
+/* 
+#main{margin:auto;padding:10px;background:#fff;
+width:940px;
++width:940px;
+_width:934px;
+}
+ */
+
+
+/* 系统管理员 - 主内容区 */
+div.sys_main{width:929px;background:#fff; margin:0;}
+
+
+/* 通用 左右布局 */
+div.left_div{float:left;width:200px;}/* left */
+
+div.left_div_jn{/* left */
+float:left;
+width:100%;
+border-bottom:2px solid #CCCCD4;
+}
+
+div.left_div3{/* left */
+float:left;
+border:1px solid #ddd;
+padding:4px;
+overflow:auto;
+height:153px;
+background:#eee;
+}
+
+div.right_div{float:left;margin-left:10px;width:730px;/* right */}
+iframe.mainiframe{width:100%;height:100%;overflow:hidden;border:0;}
+
+/* 证书 */
+div.zsmain{margin:40px auto;width:800px;background:#fff;}
+
+/* TanChuChuangKou 弹出Div窗口 */
+div.popdivmain{margin:10px;text-align:center;}
+
+/* footer */
+div.footer{
+margin:0 auto 10px auto;
+padding:10px 10px;
+clear:both;
+overflow:hidden;
+height:20px;
+width:940px;
+background:#f5f5f5 url(../images/FooterBg.gif) no-repeat;
+}

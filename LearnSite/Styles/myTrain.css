@@ -1,0 +1,263 @@
+﻿.view-area{
+    width:1200px;
+    margin:0 auto;
+    padding-top:20px;
+}
+.iteam{
+    background:#f5f5f5;
+    padding:20px;
+}
+.iteam select{
+    width:210px;
+    height:28px;
+    border:1px solid #d4d4d4;
+    display: inline-block;
+}
+.iteam .time{
+    display: inline-block;
+    float: right;
+    color:#999;
+}
+.iteam .time span{
+    color:#333;
+}
+/*.itemoption_check {
+   
+   
+}*/
+    .itemoption_check ul {
+        height:60px;
+        line-height:60px;
+        border-bottom:1px solid #cbcbcb;
+    }
+    .itemoption_check ul li {
+        display:inline-block;
+        font-size:20px;
+        padding-left:20px;
+        line-height:60px;
+        cursor:pointer;
+    }
+    .itemoption_check ul .cur{
+        color:#3786ef;
+        font-weight:bold;
+    }
+        .itemoption_check ul li span {
+            padding-left:10px;
+            font-size:14px;
+            display:none;
+            color: #666;
+            font-weight:normal;
+        }
+.option_check ul{
+    height:60px;
+    padding-left:20px;
+    border-bottom:1px solid #cbcbcb;
+    line-height:60px;
+}
+.option_check ul li{
+    display:inline-block;
+    margin-right:25px;
+    line-height:23px;
+    cursor:pointer;
+}
+.option_check ul .cur{
+    color:#3786ef;
+    border-bottom:3px solid #3786ef;
+}
+
+
+.myCourse_block{
+    border-bottom: none;
+    padding: 12px 0;
+    padding-bottom:20px;
+    margin: 20px 0;
+    border-bottom:1px solid #cbcbcb;
+}
+.myCourse_block .course_img{
+    width: 220px;
+    height: 124px;
+    display:inline-block;
+}
+.course_info{
+    width: 75%;
+    padding: 0 15px;
+    display:inline-block;
+    vertical-align: top;
+}
+.course_info h1{
+    font-size:17px;
+}
+.course_info .teacherBox{
+    padding-top:5px;
+      position: relative;
+}
+.course_info .teacher{
+    margin:5px 0;
+    min-height: 45px;
+    display:inline-block;
+    width:850px;
+    float:right;
+}
+.course_info .teacher li{
+    margin-right: 5px;
+    text-align: center;
+    display:inline-block;
+}
+.course_info .teacherName{
+    display:inline-block;
+    color:#999;
+    position: absolute;
+    top: 10px;
+}
+.course_info .teacher li img{
+    width:30px;
+    height:30px;
+    display:block;
+    margin:0 auto;
+    border-radius:100%;
+}
+.course_info .study_time p{
+    display:inline-block;
+    margin-right:10px;
+    color:#999;
+}
+.course_info .study_time p span {
+    color: #333;
+}
+.course_info .progress{
+    display:inline-block;
+    margin-top:5px;
+}
+.course_info .progress .scaleBox{
+    display: inline-block;
+    width: 169px;
+    height: 4px;
+    background: #e5e5e5;
+    position: relative;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+.course_info .progress .scale{
+    display: inline-block;
+    height: 4px;
+    background: #3988fb;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.course_info .study{
+    width: 70px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    display:inline-block;
+    float:right;
+}
+.course_info .allow{
+    color: #3988fb;
+    border: 1px solid #3685ef;
+    cursor: pointer;
+}
+.course_info .allow:hover{
+    background:#3786ef;
+    color:#fff;
+}
+.course_info .prohibit{
+    color: #dedede;
+    border: 1px solid #ededed;
+    cursor: not-allowed;
+}
+.course_info .prohibit:hover{
+    color: #dedede;
+    border: 1px solid #ededed;
+    cursor: not-allowed;
+    background:#ffffff;
+}
+/*实践*/
+.upload_file{
+    padding:20px;
+    padding-left:0;
+}
+.upload_file h1{
+    font-size:17px;
+    margin-bottom: 20px;
+}
+.upload_file .answer_file{
+    margin-top:15px;
+}
+.upload_file .answer_file .file_name{
+    color:#3685ef;
+    display:inline-block;
+}
+.upload_btn{
+    width: 78px;
+    height: 22px;
+    border: 1px solid #3685ef;
+    background:#3685ef;
+    text-align:center;
+    line-height:22px;
+    color:#fff;
+    margin: 0px auto;
+    margin-top: 20px;
+    cursor:pointer;
+    display: block;
+}
+
+.relevant_info{
+    margin-top:10px;
+    padding-bottom:10px;
+    border-bottom:1px solid #cbcbcb;
+}
+.relevant_info p{
+    line-height:25px;
+    color:#999;
+}
+.relevant_info span{
+    color:#333;
+}
+/*评分*/
+.score{
+    padding:20px;
+    padding-left:0;
+    margin-top:20px;
+    border-top:1px solid #cbcbcb;
+    border-bottom:1px solid #cbcbcb;
+}
+.score_courseName span{
+    width:30px;
+    height:30px;
+    background:#f25e5e;
+    border-radius:100%;
+    text-align:center;
+    line-height:30px;
+    display:inline-block;
+    font-size:12px;
+    color:#fff;
+}
+.score_courseName h1{
+    display:inline-block;
+    font-size:17px;
+    margin-left:10px;
+}
+
+.score .mark span{
+    font-size:30px;
+    font-weight:bold;
+    color:#7cd082;
+    margin-right:3px;
+    margin-left:15px;
+}
+.comment{
+    margin-left:43px;
+    color:#999;
+    line-height:30px;
+}
+.comment p{
+    padding-left:70px;
+}
+.comment span{
+    color:#333;
+}

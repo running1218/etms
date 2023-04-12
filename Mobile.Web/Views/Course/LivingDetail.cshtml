@@ -1,0 +1,49 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = ETMS.Utility.WebUtility.PlatTitle;
+}
+@section head{
+    <link rel="stylesheet" href="@ETMS.Utility.WebUtility.AppPath/Style/course/livingdetail.css" />
+    <link href="@ETMS.Utility.WebUtility.AppPath/Style/font/iconfont.css" rel="stylesheet" />
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/course/livingdetail.js?v=@ETMS.Utility.WebUtility.Version"></script>
+    <script>
+        UrlRoot = '@System.Configuration.ConfigurationManager.AppSettings["UrlRoot"]/CourseLogo/';
+    </script>
+}
+<article>
+    <section class="coursebox">
+        <div class="title-box">
+            <div class="living-left">
+                <img id="bgimg" src="" />
+            </div>
+            <div class="living-right">
+                <p id="p1"></p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+            </div>
+        </div>
+    </section>
+    <section class="courseContent">
+        <ul class="tab-living">
+            <li>详情</li>
+            <li class="living-active">目录</li>
+        </ul>
+        <div class="content-description content-block unchoose">
+            <h1>--课程介绍--</h1>
+            <div class="description-content"></div>
+        </div>
+        <div class="catalog-box content-block">
+            <ul class="object_list"></ul>
+        </div>       
+    </section>
+</article>
+<script id="tmpl_CourseDetailNoneUser" type="text/x-handlebars-template">
+    {{#each Data}}
+        <li data-ContentID="{{LivingID}}" data-IsOpen="{{IsOpen}}" onclick="toLivingRoom('{{LivingID}}', {{IsOpen}})">
+            <p><i class="icon iconfont {{IsOpenJudge IsOpen 1}}"></i>{{LivingName}}</p>
+            <p class="living-time-teacher">{{Date}} {{SHHMM}}~{{EHHMM}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{TeacherName}}</p>
+        </li>
+    {{/each}}
+</script>
+
+

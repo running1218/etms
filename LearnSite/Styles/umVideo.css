@@ -1,0 +1,336 @@
+﻿#videoContainer
+{
+    /*width: 900px;
+    height: 505px;*/
+    background-color: #000;
+    position: relative;
+    /*padding:10px 0px;*/
+}
+.videologo {
+width:60px;height:45px;position:absolute;right:8px;top:8px;
+}
+.videologo img{
+    width:100%;
+}
+.controlsContainer
+{
+    width: 100%;
+    height: 35px;
+    background: url('Images/umVideo/video_controls_container.png') repeat-x;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.controlButton
+{
+    width: 100%;
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+.controlButton li
+{
+    /*float:left;*/
+    /*display: block;*/
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 6px;
+    background: url('Images/umVideo/video_controls.png') no-repeat;
+    cursor:pointer;
+}
+
+.controlButton #durationContainer
+{
+    background-image:none;
+    width:90px;
+    right:115px;
+    top: 7px;
+}
+
+.controlButton #durationContainer span
+{
+    color: #ccc;
+    font-family: 'Arial';
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    float:left;
+    display: block;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.controlButton #durationContainer #currentTimeSpan
+{
+    text-align: right;
+    width: 40px;
+}
+
+.controlButton #durationContainer #splitSpan
+{
+    text-align: center;
+    width: 8px;
+}
+
+.controlButton #durationContainer #durationSpan
+{
+    text-align: left;
+    width: 40px;
+}
+
+.controlButton li.play
+{
+    background-position: 0px 0px;
+    left:6px;
+}
+
+.controlButton li.play:hover
+{
+    background-position: 0px -48px;
+}
+
+.controlButton li.pause
+{
+    background-position: -24px 0px;
+    left:6px;
+}
+
+.controlButton li.pause:hover
+{
+    background-position: -24px -48px;
+}
+
+.controlButton li.volume
+{
+    background-position: -48px 0px;
+    right: 91px;
+}
+
+.controlButton li.volume:hover
+{
+    background-position: -48px -48px;
+}
+
+.controlButton li.mute
+{
+    background-position: -72px 0px;
+    right: 91px;
+}
+
+.controlButton li.mute:hover
+{
+    background-position: -72px -48px;
+}
+
+.controlButton li.fullscreenV
+{
+    background-position: -96px 0px;
+    right: 6px;
+}
+
+.controlButton li.fullscreenV:hover
+{
+    background-position: -96px -48px;
+}
+
+.controlButton li.fullscreenVDisbled
+{
+    background-position: -96px 0px;
+    right: 6px;
+}
+
+.controlButton li.normalscreen
+{
+    background-position: -120px 0px;
+    right: 6px;
+}
+
+.controlButton li.normalscreen:hover
+{
+    background-position: -120px -48px;
+}
+
+#progressBarContainer
+{
+    width: 600px;
+    left:34px;
+    background-image:none;
+}
+
+#progressBarContainer #progressBar
+{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    height: 4px;
+    width: 100%;
+    background-color: #cfcfcf;
+    
+}
+
+#progressBarContainer #progressBlock
+{
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    height: 9px;
+    width: 9px;
+    background: url('Images/umVideo/video_scrub_tab.png') no-repeat;
+}
+
+#progressBarContainer #progressBar #timeBar
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: #00bbfc;
+}
+
+#progressBarContainer #progressBar #bufferBar
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #888888;
+}
+
+#volumeContainer
+{
+    width:50px;
+    right:40px;
+    background-image:none;
+}
+
+#volumeControl
+{
+    width: 50px;
+    height: 6px;
+    position: absolute;
+    top: 9px;
+    background: url('Images/umVideo/video_volume_back.png') no-repeat;
+}
+
+#volumeControl #volumeBar
+{
+    max-width: 50px;
+    height: 6px;
+    position: absolute;
+    left:0px;
+    top:0px;
+    background: url('Images/umVideo/video_volume_scrub.png');
+}
+
+#volumeControl #volumeBlock
+{
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    left:0px;
+    top:-3px;
+    background: url('Images/umVideo/video_scroll_normal.png') no-repeat;
+}
+
+#volumeControl #volumeBlock:hover 
+{
+    background: url('Images/umVideo/video_scroll_over.png') no-repeat;
+}
+
+.loadingVideo
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Images/umVideo/loading.gif') no-repeat 50% 50%;
+    z-index: 3;
+}
+
+.readyPlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.readyPlay table
+{
+    width:100%;
+    height:100%;
+}
+
+.readyPlay a.playOverlayed
+{
+    display: block;
+    width: 116px;
+    height: 107px;
+    margin:0px auto;
+    background: url('Images/umVideo/video_play_overlayed_normal.png') no-repeat;
+}
+
+.readyPlay a.playOverlayed:hover
+{
+    background: url('Images/umVideo/video_play_overlayed_over.png') no-repeat;
+}
+
+.controlButton .cuePointContainer
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+}
+
+.controlButton .cuePointContainer .cuepoint
+{
+    position: absolute;
+    top: 0px;
+    width:6px;
+    height:4px;
+    display:block;
+    background-color: #ffffff;
+    cursor:pointer;
+    margin:0px;
+}
+
+.cuePointTipPanel
+{
+    position:absolute;
+    bottom:35px;
+    width:160px;
+    height:90px;
+    background:url('Images/umVideo/video_cuepoint_tip.png') no-repeat;
+    display:none;
+    font-size:12px;
+    color:#fff;
+}
+
+.cuePointTipPanel #cuePointTimeSpan
+{
+    margin: 7px 10px 0px 10px;
+    line-height:16px;
+    font-size:12px;
+    color:#fff;
+}
+
+.cuePointTipPanel #cuePointTipSpan
+{
+    margin: 2px 10px 10px 10px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    height:48px;
+    line-height:16px;
+    font-size:12px;
+    color:#fff;
+}

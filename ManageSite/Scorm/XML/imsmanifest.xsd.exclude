@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.adlnet.org/xsd/adlcp_rootv1p2" />
+  <xs:element name="manifest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="organizations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="organization">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="title" type="xs:string" />
+                    <xs:element maxOccurs="unbounded" name="item">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="title" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="item">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="title" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="identifier" type="xs:string" use="required" />
+                              <xs:attribute name="isvisible" type="xs:boolean" use="required" />
+                              <xs:attribute name="identifierref" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="identifier" type="xs:string" use="required" />
+                        <xs:attribute name="isvisible" type="xs:boolean" use="required" />
+                        <xs:attribute name="identifierref" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="identifier" type="xs:string" use="required" />
+                  <xs:attribute name="structure" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="default" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="resources">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="resource">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="file">
+                      <xs:complexType>
+                        <xs:attribute name="href" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="identifier" type="xs:string" use="required" />
+                  <xs:attribute name="type" type="xs:string" use="required" />
+                  <xs:attribute name="href" type="xs:string" use="required" />
+                  <xs:attribute ref="adlcp:scormtype" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="identifier" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

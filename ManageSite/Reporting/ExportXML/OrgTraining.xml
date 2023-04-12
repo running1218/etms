@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<titleItem>
+  <item indexNumber="0" titleKey="OrganizationName" titleValue="组织机构"></item>
+  <item indexNumber="1" titleKey="ItemNum" titleValue="项目数"></item>
+  <item indexNumber="2" titleKey="OnLineCourseNum" titleValue="在线课程数"></item>
+  <item indexNumber="3" titleKey="OnLineCourseHours" titleValue="在线课时数"></item>
+  <item indexNumber="4" titleKey="OffLineCourseNum" titleValue="非在线课程数"></item>
+  <item indexNumber="5" titleKey="OffLineCourseHours" titleValue="非在线课时数"></item>
+  <item indexNumber="6" titleKey="OnLineCourseHoursTotal" titleValue="总课时数"></item>
+  <item indexNumber="7" titleKey="ExamNum" titleValue="考试数"></item>
+  <item indexNumber="8" titleKey="AvgExam" titleValue="平均考试得分"></item>
+  <item indexNumber="9" titleKey="InnerTeacherNum" titleValue="内部导师数"></item>
+</titleItem>

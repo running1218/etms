@@ -1,0 +1,101 @@
+﻿html{overflow-x:auto;}
+body{ margin:0px; padding:0px; color:#000000;font:12px Verdana,Microsoft YaHei,Geneva,sans-serif;}
+div,form,ul,ol,li,img,dl,dt,dd,p{margin:0px; padding:0px; border:0;}
+ul,ol,li{list-style:none}
+div{width:auto}
+a,body,select,td,b{font-size:12px;text-decoration:none;}
+a:focus {outline:none;-moz-outline:none;}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block;zoom:1;  }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.hide{display:none;}
+
+.body-bg-login{background:#6699ff;position:relative;width:100%;height:100%;}
+.body-bg-login .login-bg1{height:80%;width:auto;position:absolute;top:20%;left:10%;}
+.body-bg-login .login-bg2{width:100%;position:FIXED;bottom:-125PX;left:0;}
+.page{width:100%;min-width:300px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<300?"300px":"");margin:0 auto;overflow:hidden;position:relative;color:#5b6b6d}
+.wrap{width:295px;margin-left:70%;position:relative;    padding: 20px 8px 10px;background-color: #fff;border-radius:2px;}
+#loginbg{padding-top:15%}
+.logo{       width: 180px;
+    height: 45px;
+    background: url(Images/login_logo.png) no-repeat;
+    /* text-indent: -9999px; */
+    margin: 0 auto;
+    background-size: 156.8px,34.4px;
+    color: #999;
+    line-height: 45px;
+    text-align: center;
+    font-size: 24px;}
+
+
+.login{width:295px;height:240px;margin:0 auto;padding-top:10px;}
+.login ul{padding:0px 0 0 25px;zoom:1;}
+.login li{padding:7px 0;height:36px; overflow:hidden; position:relative}
+.li-end{padding:22px 0 !important;}
+.login li.btn-login{
+    padding:15px 0 0 0px;        
+} 
+.login li *{ vertical-align:middle;}
+.login li a{}
+.login input{     width: 215px;
+    height: 18px;
+    border: 1px solid #dcdcdc;
+    padding: 9px 0 10px 30px;
+    font-size: 14px;
+    font-family: Microsoft Yahei;
+    color: #333;
+    border-radius: 2px;
+    box-shadow: 0px 0px 13px #ececec inset;}
+.login input.selectedInput{background-position:-260px -47px;}
+/*
+.inputsp{display:inline-block;width:198px;height:27px;padding:3px 5px 0px 42px;overflow:hidden;background-image:url("Images/form.png");background-repeat:no-repeat;}
+
+#sp_username{background-position:0px 0px;}
+#sp_username.inputsp-focus,#sp_username:hover{background-position:-254px 0px;}
+#sp_password{background-position:0px -50px;width:138px;}
+#sp_password.inputsp-focus,#sp_password:hover{background-position:-254px -50px;}
+#sp_validcode{background-position:0px -100px;width:82px;}
+#sp_validcode.inputsp-focus,#sp_validcode:hover{background-position:-254px -100px;}
+
+.input_username,.input_password,.input_validcode,.input_repassword
+{border:none 0;width:100%;height:21px;*height:18px;padding:2px 0 3px;line-height:18px;color: #333;font-size:14px;outline: none;font-family:Microsoft YaHei;width:99%;background-image:url("Images/form.png");background-repeat:no-repeat;}
+.input_username{background-position:-510px -3px;}
+.input_password{background-position:-510px -53px;}
+.input_validcode{}
+.input_repassword{background-position:-510px -103px;width:70px;}
+.selectedInput{background:#fff;}
+*/
+
+.imgValidate{ position:absolute;left:130px;top:14px;}
+.nextValidNumber{position:absolute;left:200px;top:18px;color:#333}
+
+.btn-login{display:inline-block;width:250px;height:40px;background-color:#5186f0;background-repeat:no-repeat;background-position:0px 0px; line-height: 40px;    
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    /* font-weight: 700; */
+    letter-spacing: 6px;}
+.btn-login:hover{filter:alpha(opacity=90);opacity:.9;}
+.btn-login:focus{filter:alpha(opacity=90);opacity:.9;}
+.btn-login:active{background-position:0px -50px;outline:none;}
+
+.icon{display:inline-block;width:22px; height:19px;background-repeat:no-repeat;}
+.login .icon{     position: absolute;left: 11px;top: 18px;background-size: 14px;}
+.icon-user{background-image:url(Images/login_user.png);}
+.icon-password{background-image:url(Images/login_password.png);}
+.login .icon-validcode{background-image:url(Images/login_verification.png);top: 21px; background-size: 16px;}
+
+ 
+.forgotpass{color:blue;left:190px;position:absolute;top:6px;text-decoration:underline}
+.login-text
+{
+    font-size:16px;
+    font-family:'Microsoft YaHei' SimSun;
+    color:#fff;
+    line-height:40px;
+    text-align:center;
+    display:block;
+    width:100%;
+    letter-spacing:5px;
+}

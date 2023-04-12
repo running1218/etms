@@ -1,0 +1,43 @@
+﻿  /*答题卡*/
+ footer{
+    display:none;
+}
+.answerSheet div{
+     display:none;
+}
+.answerSheet h2{
+     font-size:1.6rem;
+     padding:3rem 1.5rem 1rem;
+
+ }
+.answerSheet li{
+     width:20%;
+     float: left;
+     margin-bottom:1rem;
+ }
+.answerSheet li span{
+    display:block;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border:1px solid #ccc;
+    font-size:2rem;
+    margin:0 auto;
+    border-radius:50%;
+ }
+ 
+.answerSheet .blure{
+    color:#fff!important;
+    background-color:#4185ff!important;
+ }
+ .commit{
+    line-height:4rem;
+    width:100%;
+    font-size:2rem;
+    text-align:center;
+    color:#fff;
+    background-color:#4185ff;
+    position:fixed;
+    bottom:0;
+    z-index:999999999;
+}

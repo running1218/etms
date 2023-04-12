@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<titleItem>
+  <item indexNumber="0" titleKey="OrganizationName" titleValue="组织机构"></item>
+  <item indexNumber="1" titleKey="DepartmentName" titleValue="部门"></item>
+  <item indexNumber="2" titleKey="RealName" titleValue="学员姓名"></item>
+  <item indexNumber="3" titleKey="WorkNo" titleValue="工号"></item>
+  <item indexNumber="4" titleKey="PostName" titleValue="岗位"></item>
+  <item indexNumber="5" titleKey="PostTypeName" titleValue="岗位类别"></item>
+  <item indexNumber="6" titleKey="RankName" titleValue="职级"></item>
+  <item indexNumber="7" titleKey="ItemName" titleValue="项目名称"></item>
+  <item indexNumber="8" titleKey="ItemCourseCode" titleValue="课程编码"></item>
+  <item indexNumber="9" titleKey="ItemCourseName" titleValue="课程名称"></item>
+  <item indexNumber="10" titleKey="ItemCourseTypeName" titleValue="课程类型"></item>
+  <item indexNumber="11" titleKey="ItemCourseAttrName" titleValue="课程属性"></item>
+  <item indexNumber="12" titleKey="ItemCourseBeginTime" titleValue="课程开始时间"></item>
+  <item indexNumber="13" titleKey="ItemCourseEndTime" titleValue="课程结束时间"></item>
+  <item indexNumber="14" titleKey="ItemCourseHours" titleValue="课程标准课时（小时）"></item>
+  <item indexNumber="15" titleKey="ItemCourseSumGrade" titleValue="课程成绩"></item>
+  <item indexNumber="16" titleKey="ItemCourseTestName" titleValue="在线测试名称"></item>
+  <item indexNumber="17" titleKey="ItemCourseTestScore" titleValue="在线测试成绩"></item>
+  <item indexNumber="18" titleKey="CoursewareName" titleValue="课件名称"></item>
+  <item indexNumber="19" titleKey="ShowHoures" titleValue="课件时长"></item>
+  <item indexNumber="20" titleKey="StudyProcess" titleValue="课件学习进度%"></item>
+  <item indexNumber="21" titleKey="ActualStudyTime" titleValue="实际在线学习时间（小时）"></item>
+  <item indexNumber="22" titleKey="CompleteStatus" titleValue="课件完成状态"></item>
+</titleItem>

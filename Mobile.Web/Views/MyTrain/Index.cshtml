@@ -1,0 +1,116 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "优博";
+}
+@section head{
+<link  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/iscroll.css" rel="stylesheet" />
+<link  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/pullToRefresh.css" rel="stylesheet" />
+<link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/swiper/dist/css/swiper.min.css" />
+<script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/iscroll2.js"></script>
+<script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/pullToRefresh.js"></script>
+<script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/swiper/dist/js/swiper.min.js"></script>
+<link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Style/myTrain/main.css" />
+<script src="@ETMS.Utility.WebUtility.AppPath/Scripts/myTrain/main.js"></script>
+}
+<article class="main_content">
+    <section class="user-info">
+        <div class="info-box"><img src=""  onerror="this.src = AppPath+'/Images/head.png'"/><p class="user-name"></p></div>
+        <span onclick="exit_out()" class="exit_out"><i class="icon iconfont icon-iconfont-out"></i></span>
+    </section>
+    <section>
+       <ul class="nav_bar tab">
+           <li class="item"><p class="choose">我的课程</p></li>
+           <li class="item hide"><p>直播课程</p></li>
+           <li class="item hide"><p>我的测评</p></li>
+       </ul>
+    </section>
+    <section class="coursebox">
+           <div class="swiper-container" id="MyTrain_List">
+               <div class="swiper-wrapper">
+                   @* 我的点播课程 *@
+                   <div class="swiper-slide">
+                       <img src='@ETMS.Utility.WebUtility.AppPath/Images/nocontent.png' class='searchNone search1' />
+                       <div id="iscroller_one">
+                           <ul id="course_list"></ul>
+                       </div>
+                   </div>
+                   @*我的直播课程*@
+                   <div class="swiper-slide hide">
+                       <img src='@ETMS.Utility.WebUtility.AppPath/Images/nocontent.png' class='searchNone search1' />
+                       <div id="iscroller_one">
+                           <ul id="living_course_list"></ul>
+                       </div>
+                   </div>
+                   @* 我的评测 *@
+                   <div class="swiper-slide hide">
+                       <img src='@ETMS.Utility.WebUtility.AppPath/Images/nocontent.png' class='searchNone search2' />
+                       <div id="iscroller_two">
+                       <ul id="evaluation_list"></ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+      </section>
+</article>
+<script id="tmpl_course_list" type="text/x-handlebars-template">
+    {{#each Data}}
+    <li class="course-obj clearfix">
+        <a href="#" onclick="common.date_compare('{{#Equa2 CourseBeginTime CourseEndTime TrainingItemCourseID}}{{/Equa2}}','{{CourseModel}}', '{{CourseID}}')" class="clearfix">
+            <div class="course_img"><img src={{ThumbnailURL}} onerror="this.src='@ETMS.Utility.WebUtility.AppPath/Images/error_pic.jpg'" /></div>
+        </a>
+           
+             <div class="course_info">
+                <h4 class="course_name">{{CourseName}}</h4>
+                <p class="course_times">周期:{{CourseBeginTime}}至{{CourseEndTime}}</p>
+                <p class="course_project"data-TrainingItemID="{{TrainingItemID}}">项目:{{TrainingItemName}}</p>
+                <div class="bar_box" style="display:none;">
+                    <div style="width:{{StudyProcessPercent}}%" class="bar"></div><span>{{StudyProcessPercent}}%</span>
+                </div>
+            </div>
+    </li>
+    {{/each}}
+</script>
+<script id="tmpl_evaluation_list" type="text/x-handlebars-template">
+    {{#each Data}}
+    <li class="evaluation-obj">
+        <i class="atatusSelect {{TrainTestClass CourseResTypeID}}"></i>
+        <h4 class="evaluation_name">{{TestName}}</h4>
+        <div>
+            <span class="evaluation_times">{{ResBeginTime}}至{{ResEndTime}}&nbsp;&nbsp;</span>
+            {{#Equal CourseResTypeID 2}}
+            <span class="evaluation_status">&nbsp;&nbsp;&nbsp;{{TestStatus}}&nbsp;&nbsp;&nbsp;</span>
+            {{else}}
+            {{#Equal CourseResTypeID 5}}
+            <span class="evaluation_status">&nbsp;&nbsp;&nbsp;时长{{limitTime}}分钟&nbsp;&nbsp;&nbsp;</span>
+            {{/Equal}}
+            {{/Equal}}
+            <span class="evaluation_score">&nbsp;&nbsp;&nbsp;{{Score}}分&nbsp;</span>
+        </div>
+        {{#Equal CourseResTypeID 5}}
+        <div>
+            <span class="evaluation_comit">允许提交{{TestCount}}次&nbsp;&nbsp;&nbsp;</span>
+            <span class="evaluation_score">&nbsp;&nbsp;已提交{{UserTestCount}}次&nbsp;</span>
+        </div>
+        {{/Equal}}
+        <p class="evaluation_courseName">课程:{{CourseName}}</p>
+       {{#Equal CourseResTypeID 2}}
+           {{#compare ResEndTime TestStatus}}
+           <a class="evaluation-btn" href="@ETMS.Utility.WebUtility.AppPath/Paper/TestResult?TrainingItemCourseID={{TrainingItemCourseID}}&TestPaperID={{TestPaperID}}&UserExamID={{UserExamID}}&TestType={{CourseResTypeID}}">查看作业</a>
+           {{else}}     
+           <a class="evaluation-btn" href="@ETMS.Utility.WebUtility.AppPath/Paper/HomeWork?TrainingItemCourseID={{TrainingItemCourseID}}&TestPaperID={{TestPaperID}}&OnlineTestID={{TestID}}&StudentCourseID={{StudentCourseID}}&TestType={{CourseResTypeID}}&CourseName={{CourseName}}&MOrC=1">做作业</a>
+           {{/compare}}
+      {{/Equal}}
+       {{#Equal CourseResTypeID 5}}
+        {{#compare1 ResEndTime TestCount UserTestCount}}
+        <a class="evaluation-btn" href="@ETMS.Utility.WebUtility.AppPath/Paper/TestResult?TrainingItemCourseID={{TrainingItemCourseID}}&TestPaperID={{TestPaperID}}&UserExamID={{UserExamID}}&TestType={{CourseResTypeID}}">查看测试</a>
+        {{else}}
+       <a class="evaluation-btn" href="@ETMS.Utility.WebUtility.AppPath/Paper/Test?TrainingItemCourseID={{TrainingItemCourseID}}&TestPaperID={{TestPaperID}}&OnlineTestID={{TestID}}&StudentCourseID={{StudentCourseID}}&TestType={{CourseResTypeID}}&CourseName={{CourseName}}&MOrC=1">开始测试</a>
+       {{/compare1}}
+       {{/Equal}}
+    </li>
+{{/each}}
+
+
+</script>
+

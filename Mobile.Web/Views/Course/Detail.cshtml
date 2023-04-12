@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "优博";
+}
+@section head{
+<link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Style/course/detail.css"  />
+ <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/course/detail.js"></script>
+
+}
+ <article>
+     <section class="coursebox"id="PlayerBox">
+     </section>
+     <section class="courseContent">
+       <ul class="object_list"></ul> 
+     </section>
+ </article>
+<script id="tmpl_CourseDetailNoneUser" type="text/x-handlebars-template">
+    {{#each Data}}
+    <li data-ContentID="{{ContentID}}" data-IsOpen="{{IsOpen}}"><i class="icon iconfont {{TypeIcon Type}}"></i>{{Name}}</li>
+    {{/each}}
+</script>

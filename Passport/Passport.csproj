@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD4A3296-3560-404D-B3BC-85D67956BF3E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Passport</RootNamespace>
+    <AssemblyName>Passport</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivationPassword.aspx.cs">
+      <DependentUpon>ActivationPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActivationPassword.aspx.designer.cs">
+      <DependentUpon>ActivationPassword.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\ComponentsAssemble.cs" />
+    <Content Include="App_Code\DesArithmetic.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginToLearn.aspx.cs">
+      <DependentUpon>LoginToLearn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginToLearn.aspx.designer.cs">
+      <DependentUpon>LoginToLearn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginToStudying.aspx.cs">
+      <DependentUpon>LoginToStudying.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginToStudying.aspx.designer.cs">
+      <DependentUpon>LoginToStudying.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notice.aspx.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Skip.aspx.cs">
+      <DependentUpon>Skip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Skip.aspx.designer.cs">
+      <DependentUpon>Skip.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActivationPassword.aspx" />
+    <Content Include="App_Themes\ThemeDefault\default.css" />
+    <Content Include="App_Themes\ThemeDefault\Images\alert-ico.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\an-biut.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\arrow-left.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\aui.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\banner-2.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\banner-3.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\bg1_03.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\bjlad.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\bj_searchs.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\bj_searchs.jpg" />
+    <Content Include="App_Themes\ThemeDefault\Images\body-bg-login.jpg" />
+    <Content Include="App_Themes\ThemeDefault\Images\border_table_left.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\border_table_right.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn-import.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn-ok.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn-return.jpg" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn-Search.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btns.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_add.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_agree.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_close.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_del.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_deny.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_examination.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_Exit.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_export.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_gray_6.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_guide.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_login-click.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_login-over.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_Nopass.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_repassword.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_save.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_selectteacher.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_Send.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_subjectPj.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\btn_unapproved.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\close.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\copyright-bj.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\copyright.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\default.jpg" />
+    <Content Include="App_Themes\ThemeDefault\Images\expand.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\file.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\flash-pen.swf" />
+    <Content Include="App_Themes\ThemeDefault\Images\flash-zoo.swf" />
+    <Content Include="App_Themes\ThemeDefault\Images\folder-closed.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\folder.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\form.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\grabjdot.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\gray-bj.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\ico-1.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\ico-2.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\ico-find-down.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\ico-find-up.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\ico-path.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\img_btn_add.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\img_btn_bg_yellow_01.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\img_btn_bg_yellow_02.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\img_btn_bg_yellow_03.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\img_icon_close-s.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\img_icon_close.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\img_icon_file.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\img_title_bg_01.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\left-bj.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\loading.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\login-icon.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\login-red.jpg" />
+    <Content Include="App_Themes\ThemeDefault\Images\login_bg.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\login_logo.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\login_password.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\login_user.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\login_verification.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\logo.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\logo_60x210.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\losdi.jpg" />
+    <Content Include="App_Themes\ThemeDefault\Images\menu-1.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\menu-2.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\menu-select_12.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\menu-select_13.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\menu-select_13.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\menu_arrow_close.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\menu_arrow_open.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\menu_bg_2.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\menu_bg_3.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\menu_bg_head.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\menu_btn_bg.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\minus.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\msg-alert.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\msg-failed.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\msg-question.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\msg-success.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\navator-bj.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\navtor-arrow.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\open.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\page-first.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\page-last.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\page-next.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\page-prev.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\pageCircle-gray.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\pageCircle.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\pbar-ani.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\pinpu.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\plus.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\popwindow-close.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\popwindow_arrow.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\popwindow_b1.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\popwindow_b1.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\popwindow_b2.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\popwindow_b2.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\popwindow_b3.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\popwindow_b3.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\popwindow_b4.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\popwindow_b4.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\popwindow_r1.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\popwindow_r1.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\service-right_1.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\service-right_left.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\service-right_repeat.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\service_yellow_1.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\service_yellow_2.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\service_yellow_3.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\space.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\split.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\star1.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\star2.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\su-ico.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\subment-bj.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\title2.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\title_bg_center.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\title_bg_center.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\title_bg_left.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\title_bg_left.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\title_bg_right.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\title_bg_right.png" />
+    <Content Include="App_Themes\ThemeDefault\Images\top_bj.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\top_header.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\top_menu.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\user.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\userlogin.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\USR0014.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\waiter.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\welcome.gif" />
+    <Content Include="App_Themes\ThemeDefault\Images\yun2_03.png" />
+    <Content Include="App_Themes\ThemeDefault\login.css" />
+    <Content Include="App_Themes\ThemeDefault\media.css" />
+    <Content Include="App_Themes\ThemeDefault\media\01.jpg" />
+    <Content Include="App_Themes\ThemeDefault\media\media_logo_70.png" />
+    <Content Include="App_Themes\ThemeDefault\media\notice-bg.png" />
+    <Content Include="App_Themes\ThemeDefault\media\notice-calendar.png" />
+    <Content Include="App_Themes\ThemeDefault\public.css" />
+    <Content Include="App_Themes\ThemeDefault\ymPrompt.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Index.aspx" />
+    <Content Include="JScript\index.js" />
+    <Content Include="JScript\jquery-1.11.1.min.js" />
+    <Content Include="JScript\jquery-1.6.min.js" />
+    <Content Include="JScript\jquery.tmpl.js" />
+    <Content Include="JScript\jquery_1_3_2_min.js" />
+    <Content Include="JScript\JSFunction.js" />
+    <Content Include="JScript\layer.min.js" />
+    <Content Include="JScript\login.js" />
+    <Content Include="JScript\notice.scroll.js" />
+    <Content Include="JScript\skin\default\icon_ext.png" />
+    <Content Include="JScript\skin\default\textbg.png" />
+    <Content Include="JScript\skin\default\xubox_ico0.png" />
+    <Content Include="JScript\skin\default\xubox_loading0.gif" />
+    <Content Include="JScript\skin\default\xubox_loading1.gif" />
+    <Content Include="JScript\skin\default\xubox_loading2.gif" />
+    <Content Include="JScript\skin\default\xubox_loading3.gif" />
+    <Content Include="JScript\skin\default\xubox_title0.png" />
+    <Content Include="JScript\skin\exporting.js" />
+    <Content Include="JScript\skin\layer.css" />
+    <Content Include="JScript\skin\layer.ext.css" />
+    <Content Include="JScript\ymPromptYuan.js" />
+    <Content Include="login.aspx" />
+    <Content Include="LoginToLearn.aspx" />
+    <Content Include="LoginToStudying.aspx" />
+    <Content Include="Notice.aspx" />
+    <Content Include="Skip.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AuthHandler.ashx" />
+    <Content Include="NoticeService.ashx" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\AppSettings.config" />
+    <Content Include="Config\BizCache.config" />
+    <Content Include="Config\dataBaseSettings.config" />
+    <Content Include="Config\log4Net.config" />
+    <Content Include="Config\service-plugins-notify-config.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETMS.AppContext\ETMS.AppContext.csproj">
+      <Project>{9b71cef6-8d67-4714-8ce3-29cbee5b7975}</Project>
+      <Name>ETMS.AppContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Basic.API\ETMS.Components.Basic.API.csproj">
+      <Project>{3d9c3cd3-fd0a-420c-9b59-4352cf173d6f}</Project>
+      <Name>ETMS.Components.Basic.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Basic.Implement\ETMS.Components.Basic.Implement.csproj">
+      <Project>{4248fe86-6d0e-4250-8b1a-3a110e0fcd0c}</Project>
+      <Name>ETMS.Components.Basic.Implement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Security\ETMS.Security.csproj">
+      <Project>{2b974479-eb50-46d1-a812-58bb45447d65}</Project>
+      <Name>ETMS.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Utility\ETMS.Utility.csproj">
+      <Project>{92d62b7c-b9eb-4086-9d18-11cd36f1ca28}</Project>
+      <Name>ETMS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>45654</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8107/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

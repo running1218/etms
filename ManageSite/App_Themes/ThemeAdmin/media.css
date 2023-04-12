@@ -1,0 +1,59 @@
+﻿.media-box
+{
+    width:100%;
+    border-top:3px solid #FF8A2B;
+    
+    overflow-y:auto;
+}
+
+.media-instance
+{
+    width:200px;
+    height:128px;
+    margin:5px 5px 5px 0px;
+    border:1px solid #ccc;
+    overflow:hidden;
+    float:left;
+    cursor:pointer;
+}
+.media-img
+{
+    width:100%;
+    position:relative;
+}
+    .media-img img
+    {
+        width:100%;
+        height:100px;
+    }
+.media-name
+{
+    line-height:28px;
+    text-indent:5px;
+    text-align:center;
+    
+}
+.media-time
+{
+    position:absolute;
+    top:82px;
+    right:2px;
+    line-height:20px;
+}
+.media-action
+{
+    display:none;
+    line-height:28px;
+    text-align:right;
+}
+    .media-action a
+    {
+        margin-right:5px;
+        text-decoration:none;
+        color:#ff9900;
+    }
+        .media-action a:hover
+        {
+            text-decoration:none;
+            cursor:pointer;
+        }

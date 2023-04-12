@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BC1B84A-EEF5-4142-B7BD-C5495332165C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mobile.Web</RootNamespace>
+    <AssemblyName>Mobile.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Images\arrows-down.png" />
+    <Content Include="Images\arrows-up.png" />
+    <Content Include="Images\course-current.png" />
+    <Content Include="Images\course.png" />
+    <Content Include="Images\edit_discuss.png" />
+    <Content Include="Images\error_pic.jpg" />
+    <Content Include="Images\head.png" />
+    <Content Include="Images\home-current.png" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\icon-sideslip.png" />
+    <Content Include="Images\load.jpg" />
+    <Content Include="Images\loader.gif" />
+    <Content Include="Images\login.png" />
+    <Content Include="Images\my-current.png" />
+    <Content Include="Images\my.png" />
+    <Content Include="Images\nocontent.png" />
+    <Content Include="Images\no_content.png" />
+    <Content Include="Images\reply.png" />
+    <Content Include="Images\title-icon-activate.png" />
+    <Content Include="Images\title-icon.png" />
+    <Content Include="Images\video-bg.jpg" />
+    <Content Include="Images\video-bg.png" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\course\livingdetail.js" />
+    <Content Include="Scripts\course\detail.js" />
+    <Content Include="Scripts\course\main.js" />
+    <Content Include="Scripts\HandlebarsRegisterHelper.js" />
+    <Content Include="Scripts\home\main.js" />
+    <Content Include="Scripts\jquery.livequery.js" />
+    <Content Include="Scripts\lib\documentPlay\hammer.js" />
+    <Content Include="Scripts\lib\documentPlay\hammer.min.js" />
+    <Content Include="Scripts\lib\documentPlay\handlebars.js" />
+    <Content Include="Scripts\lib\documentPlay\handlebars.min.js" />
+    <Content Include="Scripts\lib\documentPlay\hash.js" />
+    <Content Include="Scripts\lib\documentPlay\ieBetter-min.js" />
+    <Content Include="Scripts\lib\documentPlay\ieBetter.js" />
+    <Content Include="Scripts\lib\documentPlay\jgestures.min.js" />
+    <Content Include="Scripts\lib\documentPlay\jquery-ui-1.8.20.custom.min.js" />
+    <Content Include="Scripts\lib\documentPlay\jquery.min.1.7.js" />
+    <Content Include="Scripts\lib\documentPlay\jquery.mousewheel.min.js" />
+    <Content Include="Scripts\lib\documentPlay\lazyloadImg.js" />
+    <Content Include="Scripts\lib\documentPlay\lazyloadImg.min.js" />
+    <Content Include="Scripts\lib\documentPlay\modernizr.2.5.3.min.js" />
+    <Content Include="Scripts\lib\documentPlay\scissor.js" />
+    <Content Include="Scripts\lib\documentPlay\scissor.min.js" />
+    <Content Include="Scripts\lib\documentPlay\turn.html4.js" />
+    <Content Include="Scripts\lib\documentPlay\turn.html4.min.js" />
+    <Content Include="Scripts\lib\documentPlay\turn.js" />
+    <Content Include="Scripts\lib\documentPlay\turn.min.js" />
+    <Content Include="Scripts\lib\documentPlay\zoom.js" />
+    <Content Include="Scripts\lib\documentPlay\zoom.min.js" />
+    <Content Include="Scripts\lib\flickity\flickity.css" />
+    <Content Include="Scripts\lib\flickity\flickity.min.js" />
+    <Content Include="Scripts\lib\font\demo.css" />
+    <Content Include="Scripts\lib\font\demo_fontclass.html" />
+    <Content Include="Scripts\lib\font\demo_symbol.html" />
+    <Content Include="Scripts\lib\font\demo_unicode.html" />
+    <Content Include="Scripts\lib\font\iconfont.css" />
+    <Content Include="Scripts\lib\font\iconfont.js" />
+    <Content Include="Scripts\lib\font\iconfont.svg" />
+    <Content Include="Scripts\lib\handlebars\handlebars.amd.js" />
+    <Content Include="Scripts\lib\handlebars\handlebars.amd.min.js" />
+    <Content Include="Scripts\lib\handlebars\handlebars.js" />
+    <Content Include="Scripts\lib\handlebars\handlebars.min.js" />
+    <Content Include="Scripts\lib\handlebars\handlebars.runtime.amd.js" />
+    <Content Include="Scripts\lib\handlebars\handlebars.runtime.amd.min.js" />
+    <Content Include="Scripts\lib\handlebars\handlebars.runtime.js" />
+    <Content Include="Scripts\lib\handlebars\handlebars.runtime.min.js" />
+    <Content Include="Scripts\lib\iscroll\iscroll.css" />
+    <Content Include="Scripts\lib\iscroll\iscroll.js" />
+    <Content Include="Scripts\lib\iscroll\iscroll2.js" />
+    <Content Include="Scripts\lib\iscroll\pullToRefresh.css" />
+    <Content Include="Scripts\lib\iscroll\pullToRefresh.js" />
+    <Content Include="Scripts\lib\jquery\jquery.min.js" />
+    <Content Include="Scripts\lib\js-cookie\MIT-LICENSE.txt" />
+    <Content Include="Scripts\lib\js-cookie\src\js.cookie.js" />
+    <Content Include="Scripts\lib\layer\layer-2.4.js" />
+    <Content Include="Scripts\lib\layer\layer-2.4.min.js" />
+    <Content Include="Scripts\lib\layer\layer.js" />
+    <Content Include="Scripts\lib\layer\layer.min.js" />
+    <Content Include="Scripts\lib\layer\skin1\default\icon_ext.png" />
+    <Content Include="Scripts\lib\layer\skin1\default\textbg.png" />
+    <Content Include="Scripts\lib\layer\skin1\default\xubox_ico0.png" />
+    <Content Include="Scripts\lib\layer\skin1\default\xubox_ico01.png" />
+    <Content Include="Scripts\lib\layer\skin1\default\xubox_loading0.gif" />
+    <Content Include="Scripts\lib\layer\skin1\default\xubox_loading1.gif" />
+    <Content Include="Scripts\lib\layer\skin1\default\xubox_loading2.gif" />
+    <Content Include="Scripts\lib\layer\skin1\default\xubox_loading3.gif" />
+    <Content Include="Scripts\lib\layer\skin1\default\xubox_title0.png" />
+    <Content Include="Scripts\lib\layer\skin1\exporting.js" />
+    <Content Include="Scripts\lib\layer\skin1\layer.css" />
+    <Content Include="Scripts\lib\layer\skin1\layer.ext.css" />
+    <Content Include="Scripts\lib\layer\skin\default\icon-ext.png" />
+    <Content Include="Scripts\lib\layer\skin\default\icon.png" />
+    <Content Include="Scripts\lib\layer\skin\default\loading-0.gif" />
+    <Content Include="Scripts\lib\layer\skin\default\loading-1.gif" />
+    <Content Include="Scripts\lib\layer\skin\default\loading-2.gif" />
+    <Content Include="Scripts\lib\layer\skin\layer.css" />
+    <Content Include="Scripts\lib\layer_new\layer_new.js" />
+    <Content Include="Scripts\lib\layer_new\mobile\layer.js" />
+    <Content Include="Scripts\lib\layer_new\mobile\need\layer.css" />
+    <Content Include="Scripts\lib\layer_new\skin\default\icon-ext.png" />
+    <Content Include="Scripts\lib\layer_new\skin\default\icon.png" />
+    <Content Include="Scripts\lib\layer_new\skin\default\layer.css" />
+    <Content Include="Scripts\lib\layer_new\skin\default\loading-0.gif" />
+    <Content Include="Scripts\lib\layer_new\skin\default\loading-1.gif" />
+    <Content Include="Scripts\lib\layer_new\skin\default\loading-2.gif" />
+    <Content Include="Scripts\lib\lodash\dist\lodash.core.js" />
+    <Content Include="Scripts\lib\lodash\dist\lodash.core.min.js" />
+    <Content Include="Scripts\lib\lodash\dist\lodash.fp.js" />
+    <Content Include="Scripts\lib\lodash\dist\lodash.fp.min.js" />
+    <Content Include="Scripts\lib\lodash\dist\lodash.js" />
+    <Content Include="Scripts\lib\lodash\dist\lodash.min.js" />
+    <Content Include="Scripts\lib\lodash\dist\mapping.fp.js" />
+    <Content Include="Scripts\lib\lodash\fp\_baseConvert.js" />
+    <Content Include="Scripts\lib\lodash\fp\_convertBrowser.js" />
+    <Content Include="Scripts\lib\lodash\fp\_mapping.js" />
+    <Content Include="Scripts\lib\lodash\lib\common\minify.js" />
+    <Content Include="Scripts\lib\lodash\lib\common\uglify.options.js" />
+    <Content Include="Scripts\lib\lodash\lib\common\util.js" />
+    <Content Include="Scripts\lib\lodash\lib\fp\build-dist.js" />
+    <Content Include="Scripts\lib\lodash\lib\fp\build-doc.js" />
+    <Content Include="Scripts\lib\lodash\lib\fp\build-modules.js" />
+    <Content Include="Scripts\lib\lodash\lib\main\build-dist.js" />
+    <Content Include="Scripts\lib\lodash\lib\main\build-doc.js" />
+    <Content Include="Scripts\lib\lodash\lib\main\build-modules.js" />
+    <Content Include="Scripts\lib\lodash\lodash.js" />
+    <Content Include="Scripts\lib\lodash\perf\asset\perf-ui.js" />
+    <Content Include="Scripts\lib\lodash\perf\index.html" />
+    <Content Include="Scripts\lib\lodash\perf\perf.js" />
+    <Content Include="Scripts\lib\lodash\test\asset\test-ui.js" />
+    <Content Include="Scripts\lib\lodash\test\asset\worker.js" />
+    <Content Include="Scripts\lib\lodash\test\backbone.html" />
+    <Content Include="Scripts\lib\lodash\test\fp.html" />
+    <Content Include="Scripts\lib\lodash\test\index.html" />
+    <Content Include="Scripts\lib\lodash\test\remove.js" />
+    <Content Include="Scripts\lib\lodash\test\saucelabs.js" />
+    <Content Include="Scripts\lib\lodash\test\test-fp.js" />
+    <Content Include="Scripts\lib\lodash\test\test.js" />
+    <Content Include="Scripts\lib\lodash\test\underscore.html" />
+    <Content Include="Scripts\lib\lodash\vendor\backbone\backbone.js" />
+    <Content Include="Scripts\lib\lodash\vendor\backbone\test\collection.js" />
+    <Content Include="Scripts\lib\lodash\vendor\backbone\test\events.js" />
+    <Content Include="Scripts\lib\lodash\vendor\backbone\test\model.js" />
+    <Content Include="Scripts\lib\lodash\vendor\backbone\test\noconflict.js" />
+    <Content Include="Scripts\lib\lodash\vendor\backbone\test\router.js" />
+    <Content Include="Scripts\lib\lodash\vendor\backbone\test\setup\dom-setup.js" />
+    <Content Include="Scripts\lib\lodash\vendor\backbone\test\setup\environment.js" />
+    <Content Include="Scripts\lib\lodash\vendor\backbone\test\sync.js" />
+    <Content Include="Scripts\lib\lodash\vendor\backbone\test\view.js" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\license.txt" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\blank.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\buttonBg.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\buttonBgHover.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\debugger.css" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\detach.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\detachHover.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\disable.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\disable.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\disableHover.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\disableHover.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\down.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\downActive.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\downHover.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\errorIcon-sm.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\errorIcon.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\errorIcon.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\firebug-1.3a2.css" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\firebug.css" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\firebug.html" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\firebug.IE6.css" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\firebug.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\group.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\html.css" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\infoIcon.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\infoIcon.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\loading_16.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\min.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\minHover.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\off.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\offHover.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\pixel_transparent.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\roundCorner.svg" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\search.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\search.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\shadow.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\shadow2.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\shadowAlpha.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\sprite.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\tabHoverLeft.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\tabHoverMid.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\tabHoverRight.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\tabLeft.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\tabMenuCheckbox.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\tabMenuPin.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\tabMenuRadio.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\tabMenuTarget.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\tabMenuTargetHover.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\tabMid.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\tabRight.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\textEditorBorders.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\textEditorBorders.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\textEditorCorners.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\textEditorCorners.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\titlebarMid.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\toolbarMid.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\tree_close.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\tree_open.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\twistyClosed.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\twistyOpen.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\up.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\upActive.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\upHover.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\warningIcon.gif" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\skin\xp\warningIcon.png" />
+    <Content Include="Scripts\lib\lodash\vendor\firebug-lite\src\firebug-lite-debug.js" />
+    <Content Include="Scripts\lib\lodash\vendor\json-js\json2.js" />
+    <Content Include="Scripts\lib\lodash\vendor\underscore\test\arrays.js" />
+    <Content Include="Scripts\lib\lodash\vendor\underscore\test\chaining.js" />
+    <Content Include="Scripts\lib\lodash\vendor\underscore\test\collections.js" />
+    <Content Include="Scripts\lib\lodash\vendor\underscore\test\cross-document.js" />
+    <Content Include="Scripts\lib\lodash\vendor\underscore\test\functions.js" />
+    <Content Include="Scripts\lib\lodash\vendor\underscore\test\objects.js" />
+    <Content Include="Scripts\lib\lodash\vendor\underscore\test\utility.js" />
+    <Content Include="Scripts\lib\lodash\vendor\underscore\underscore-min.js" />
+    <Content Include="Scripts\lib\lodash\vendor\underscore\underscore.js" />
+    <Content Include="Scripts\lib\normalize-css\normalize.css" />
+    <Content Include="Scripts\lib\sweetalert\css\sweet.css" />
+    <Content Include="Scripts\lib\sweetalert\dist\sweetalert-dev.js" />
+    <Content Include="Scripts\lib\sweetalert\dist\sweetalert.css" />
+    <Content Include="Scripts\lib\sweetalert\dist\sweetalert.min.js" />
+    <Content Include="Scripts\lib\sweetalert\lib\modules\default-params.js" />
+    <Content Include="Scripts\lib\sweetalert\lib\modules\handle-click.js" />
+    <Content Include="Scripts\lib\sweetalert\lib\modules\handle-dom.js" />
+    <Content Include="Scripts\lib\sweetalert\lib\modules\handle-key.js" />
+    <Content Include="Scripts\lib\sweetalert\lib\modules\handle-swal-dom.js" />
+    <Content Include="Scripts\lib\sweetalert\lib\modules\injected-html.js" />
+    <Content Include="Scripts\lib\sweetalert\lib\modules\set-params.js" />
+    <Content Include="Scripts\lib\sweetalert\lib\modules\utils.js" />
+    <Content Include="Scripts\lib\sweetalert\lib\sweetalert.js" />
+    <Content Include="Scripts\lib\sweetalert\themes\facebook\facebook.css" />
+    <Content Include="Scripts\lib\sweetalert\themes\google\google.css" />
+    <Content Include="Scripts\lib\sweetalert\themes\twitter\twitter.css" />
+    <Content Include="Scripts\lib\swiper\dist\css\swiper.css" />
+    <Content Include="Scripts\lib\swiper\dist\css\swiper.min.css" />
+    <Content Include="Scripts\lib\swiper\dist\js\swiper.jquery.js" />
+    <Content Include="Scripts\lib\swiper\dist\js\swiper.jquery.min.js" />
+    <Content Include="Scripts\lib\swiper\dist\js\swiper.jquery.umd.js" />
+    <Content Include="Scripts\lib\swiper\dist\js\swiper.jquery.umd.min.js" />
+    <Content Include="Scripts\lib\swiper\dist\js\swiper.js" />
+    <Content Include="Scripts\lib\swiper\dist\js\swiper.min.js" />
+    <Content Include="Scripts\lib\swiper\gulpfile.js" />
+    <Content Include="Scripts\lib\swiper\package.js" />
+    <Content Include="Scripts\lib\swiper\src\js\a11y.js" />
+    <Content Include="Scripts\lib\swiper\src\js\amd.js" />
+    <Content Include="Scripts\lib\swiper\src\js\controller.js" />
+    <Content Include="Scripts\lib\swiper\src\js\core.js" />
+    <Content Include="Scripts\lib\swiper\src\js\dom-plugins.js" />
+    <Content Include="Scripts\lib\swiper\src\js\dom.js" />
+    <Content Include="Scripts\lib\swiper\src\js\effects.js" />
+    <Content Include="Scripts\lib\swiper\src\js\emitter.js" />
+    <Content Include="Scripts\lib\swiper\src\js\get-dom-lib.js" />
+    <Content Include="Scripts\lib\swiper\src\js\get-jquery.js" />
+    <Content Include="Scripts\lib\swiper\src\js\hashnav.js" />
+    <Content Include="Scripts\lib\swiper\src\js\init.js" />
+    <Content Include="Scripts\lib\swiper\src\js\keyboard.js" />
+    <Content Include="Scripts\lib\swiper\src\js\lazy-load.js" />
+    <Content Include="Scripts\lib\swiper\src\js\mousewheel.js" />
+    <Content Include="Scripts\lib\swiper\src\js\parallax.js" />
+    <Content Include="Scripts\lib\swiper\src\js\plugins.js" />
+    <Content Include="Scripts\lib\swiper\src\js\scrollbar.js" />
+    <Content Include="Scripts\lib\swiper\src\js\swiper-intro-f7.js" />
+    <Content Include="Scripts\lib\swiper\src\js\swiper-intro.js" />
+    <Content Include="Scripts\lib\swiper\src\js\swiper-outro.js" />
+    <Content Include="Scripts\lib\swiper\src\js\swiper-proto.js" />
+    <Content Include="Scripts\lib\swiper\src\js\wrap-end-umd.js" />
+    <Content Include="Scripts\lib\swiper\src\js\wrap-end.js" />
+    <Content Include="Scripts\lib\swiper\src\js\wrap-start-umd.js" />
+    <Content Include="Scripts\lib\swiper\src\js\wrap-start.js" />
+    <Content Include="Scripts\lib\video\lang\en.js" />
+    <Content Include="Scripts\lib\video\lang\zh-CN.js" />
+    <Content Include="Scripts\lib\video\video-js.css" />
+    <Content Include="Scripts\lib\video\video.min.js" />
+    <Content Include="Scripts\lib\video\videojs-open.css" />
+    <Content Include="Scripts\lib\video\videojs-open.js" />
+    <Content Include="Scripts\living\main.js" />
+    <Content Include="Scripts\login\main.js" />
+    <Content Include="Scripts\myTrain\AnswerList.js" />
+    <Content Include="Scripts\myTrain\livingStudy.js" />
+    <Content Include="Scripts\myTrain\detail.js" />
+    <Content Include="Scripts\myTrain\documentPlay.js" />
+    <Content Include="Scripts\myTrain\documentPlayMain.js" />
+    <Content Include="Scripts\myTrain\main.js" />
+    <Content Include="Scripts\myTrain\note.js" />
+    <Content Include="Scripts\Paper\answerSheet.js" />
+    <Content Include="Scripts\Paper\HomeWork.js" />
+    <Content Include="Scripts\notice\detail.js" />
+    <Content Include="Scripts\notice\main.js" />
+    <Content Include="Scripts\Paper\testResult.js" />
+    <Content Include="Scripts\Paper\main.js" />
+    <Content Include="Scripts\Paper\Test.js" />
+    <Content Include="Style\course\livingdetail.css" />
+    <Content Include="Style\course\detail.css" />
+    <Content Include="Style\course\main.css" />
+    <Content Include="Style\css.css" />
+    <Content Include="Style\documentPlay\main.css" />
+    <Content Include="Style\font\demo.css" />
+    <Content Include="Style\font\demo_fontclass.html" />
+    <Content Include="Style\font\demo_symbol.html" />
+    <Content Include="Style\font\demo_unicode.html" />
+    <Content Include="Style\font\iconfont.css" />
+    <Content Include="Style\font\iconfont.js" />
+    <Content Include="Style\font\iconfont.svg" />
+    <Content Include="Style\home\main.css" />
+    <Content Include="Style\living\main.css" />
+    <Content Include="Style\login\main.css" />
+    <Content Include="Style\myTrain\AnswerList.css" />
+    <Content Include="Style\myTrain\detail.css" />
+    <Content Include="Style\myTrain\main.css" />
+    <Content Include="Style\notice\main.css" />
+    <Content Include="Style\Paper\answerSheet.css" />
+    <Content Include="Style\Paper\Test.css" />
+    <Content Include="Style\Paper\testResult.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AuthAttribute.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Code\BaseUtility.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LivingController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MyTrainController.cs" />
+    <Compile Include="Controllers\NoticeController.cs" />
+    <Compile Include="Controllers\PaperController.cs" />
+    <Compile Include="Controllers\StudyController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Config\AppSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Course\Index.cshtml" />
+    <Content Include="Views\Course\Detail.cshtml" />
+    <Content Include="Scripts\lib\handlebars\.bower.json" />
+    <Content Include="Scripts\lib\handlebars\.gitignore" />
+    <Content Include="Scripts\lib\handlebars\bower.json" />
+    <Content Include="Scripts\lib\handlebars\component.json" />
+    <Content Include="Scripts\lib\handlebars\composer.json" />
+    <Content Include="Scripts\lib\handlebars\handlebars-source.gemspec" />
+    <Content Include="Scripts\lib\handlebars\handlebars.js.nuspec" />
+    <Content Include="Scripts\lib\handlebars\lib\handlebars\source.rb" />
+    <Content Include="Scripts\lib\handlebars\package.json" />
+    <Content Include="Scripts\lib\handlebars\README.md" />
+    <Content Include="Scripts\lib\js-cookie\.bower.json" />
+    <Content Include="Scripts\lib\js-cookie\bower.json" />
+    <Content Include="Scripts\lib\js-cookie\CONTRIBUTING.md" />
+    <Content Include="Scripts\lib\js-cookie\README.md" />
+    <Content Include="Scripts\lib\js-cookie\SERVER_SIDE.md" />
+    <Content Include="Scripts\lib\lodash\.bower.json" />
+    <Content Include="Scripts\lib\lodash\.editorconfig" />
+    <Content Include="Scripts\lib\lodash\.gitattributes" />
+    <Content Include="Scripts\lib\lodash\.github\CONTRIBUTING.md" />
+    <Content Include="Scripts\lib\lodash\.gitignore" />
+    <Content Include="Scripts\lib\lodash\.jscsrc" />
+    <Content Include="Scripts\lib\lodash\.travis.yml" />
+    <Content Include="Scripts\lib\lodash\CODE_OF_CONDUCT.md" />
+    <Content Include="Scripts\lib\lodash\doc\README.md" />
+    <Content Include="Scripts\lib\lodash\lib\fp\template\doc\wiki.jst" />
+    <Content Include="Scripts\lib\lodash\lib\fp\template\modules\alias.jst" />
+    <Content Include="Scripts\lib\lodash\lib\fp\template\modules\category.jst" />
+    <Content Include="Scripts\lib\lodash\lib\fp\template\modules\convert.jst" />
+    <Content Include="Scripts\lib\lodash\lib\fp\template\modules\fp.jst" />
+    <Content Include="Scripts\lib\lodash\lib\fp\template\modules\module.jst" />
+    <Content Include="Scripts\lib\lodash\lib\fp\template\modules\thru.jst" />
+    <Content Include="Scripts\lib\lodash\lib\fp\template\modules\_util.jst" />
+    <Content Include="Scripts\lib\lodash\LICENSE" />
+    <Content Include="Scripts\lib\lodash\package.json" />
+    <Content Include="Scripts\lib\lodash\README.md" />
+    <Content Include="Scripts\lib\lodash\vendor\backbone\LICENSE" />
+    <Content Include="Scripts\lib\lodash\vendor\underscore\LICENSE" />
+    <Content Include="Scripts\lib\normalize-css\.bower.json" />
+    <Content Include="Scripts\lib\normalize-css\bower.json" />
+    <Content Include="Scripts\lib\normalize-css\LICENSE.md" />
+    <Content Include="Scripts\lib\normalize-css\README.md" />
+    <Content Include="Scripts\lib\swiper\.bower.json" />
+    <Content Include="Scripts\lib\swiper\bower.json" />
+    <Content Include="Scripts\lib\swiper\CHANGELOG.md" />
+    <Content Include="Scripts\lib\swiper\component.json" />
+    <Content Include="Scripts\lib\swiper\dist\js\maps\swiper.jquery.min.js.map" />
+    <Content Include="Scripts\lib\swiper\dist\js\maps\swiper.jquery.umd.min.js.map" />
+    <Content Include="Scripts\lib\swiper\dist\js\maps\swiper.js.map" />
+    <Content Include="Scripts\lib\swiper\dist\js\maps\swiper.min.js.map" />
+    <Content Include="Scripts\lib\swiper\LICENSE" />
+    <Content Include="Scripts\lib\swiper\README.md" />
+    <Content Include="Scripts\lib\swiper\src\less\core.less" />
+    <Content Include="Scripts\lib\swiper\src\less\effects.less" />
+    <Content Include="Scripts\lib\swiper\src\less\mixins.less" />
+    <Content Include="Scripts\lib\swiper\src\less\navigation-f7.less" />
+    <Content Include="Scripts\lib\swiper\src\less\navigation.less" />
+    <Content Include="Scripts\lib\swiper\src\less\preloader-f7.less" />
+    <Content Include="Scripts\lib\swiper\src\less\preloader.less" />
+    <Content Include="Scripts\lib\swiper\src\less\scrollbar.less" />
+    <Content Include="Scripts\lib\swiper\src\less\swiper.less" />
+    <Content Include="Views\Notice\Index.cshtml" />
+    <Content Include="Views\Notice\Detail.cshtml" />
+    <Content Include="Views\MyTrain\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\MyTrain\Detail.cshtml" />
+    <Content Include="Views\Paper\Test.cshtml" />
+    <Content Include="Views\Paper\HomeWork.cshtml" />
+    <Content Include="Scripts\lib\sweetalert\themes\facebook\facebook.scss" />
+    <Content Include="Scripts\lib\sweetalert\themes\google\google.scss" />
+    <Content Include="Scripts\lib\sweetalert\themes\twitter\twitter.scss" />
+    <Content Include="Views\MyTrain\AnswerList.cshtml" />
+    <Content Include="Views\Paper\AnswerSheet.cshtml" />
+    <Content Include="Views\Paper\TestResult.cshtml" />
+    <Content Include="Scripts\lib\font\iconfont.eot" />
+    <Content Include="Scripts\lib\font\iconfont.ttf" />
+    <Content Include="Scripts\lib\font\iconfont.woff" />
+    <Content Include="Views\Study\Index.cshtml" />
+    <Content Include="Views\MyTrain\Note.cshtml" />
+    <None Include="Properties\PublishProfiles\ETMS.Mobile.Web.pubxml" />
+    <Content Include="Views\MyTrain\DocumentPlay.cshtml" />
+    <Content Include="Style\documentPlay\main.scss" />
+    <Content Include="Views\Course\DocumentPlay.cshtml" />
+    <None Include="Properties\PublishProfiles\Mobile.pubxml" />
+    <None Include="Properties\PublishProfiles\Mobile.Web.pubxml" />
+    <Content Include="Views\Living\Index.cshtml" />
+    <Content Include="Style\font\iconfont.eot" />
+    <Content Include="Style\font\iconfont.ttf" />
+    <Content Include="Style\font\iconfont.woff" />
+    <None Include="Properties\PublishProfiles\MobileWeb.pubxml" />
+    <Content Include="Views\Course\LivingDetail.cshtml" />
+    <Content Include="Views\MyTrain\LivingStudy.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETMS.Components.Basic.API\ETMS.Components.Basic.API.csproj">
+      <Project>{3D9C3CD3-FD0A-420C-9B59-4352CF173D6F}</Project>
+      <Name>ETMS.Components.Basic.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Exam.API\ETMS.Components.Exam.API.csproj">
+      <Project>{90FA7A74-4FC6-40BA-88A1-A885F1F4A8BF}</Project>
+      <Name>ETMS.Components.Exam.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.NoteQuestion.API\ETMS.Components.NoteQuestion.API.csproj">
+      <Project>{5D67CC20-1638-40E1-892E-73C35A159307}</Project>
+      <Name>ETMS.Components.NoteQuestion.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.NoteQuestion.Implement\ETMS.Components.NoteQuestion.Implement.csproj">
+      <Project>{5D0EE7E8-6B48-4C42-9A3C-0EABF76FEEE5}</Project>
+      <Name>ETMS.Components.NoteQuestion.Implement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Utility\ETMS.Utility.csproj">
+      <Project>{92d62b7c-b9eb-4086-9d18-11cd36f1ca28}</Project>
+      <Name>ETMS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6848</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6849/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

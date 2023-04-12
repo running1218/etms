@@ -1,0 +1,32 @@
+﻿.activity-box {
+    margin:0px auto;
+    width:1200px;
+    min-height:500px;
+}
+.activity-list-box {
+    
+}
+.activity-block {
+    width:368px;
+    float:left;
+    margin:0px 12px 24px 12px;
+}
+.activity-image img{
+    width:100%;
+    height:212px;
+    cursor:pointer;
+}
+.activity-title span {
+    overflow-x:hidden;
+    word-break: keep-all;
+    line-height: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+.activity-time span {
+    font-size:11px;
+    color:#808080;
+    background:url(../styles/images/timer_16x16.png) no-repeat;
+    padding-left:20px;
+}

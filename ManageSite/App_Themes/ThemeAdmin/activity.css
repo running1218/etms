@@ -1,0 +1,148 @@
+﻿
+.marking-box
+{
+    margin-bottom:15px;
+    border:1px solid #eaeaea;
+}
+.apprisal-num span{
+    margin-right:20px;
+}
+.apprisal-num-blue {
+    color:#5db3e7;
+}
+.apprisal-num-red {
+    color:#dc1717;
+}
+.apprisal-box {
+    background:#efefef;
+    padding:5px;
+    line-height:28px;
+}
+.apprisal-title {
+    font-size:14px;
+    font-weight:700;
+}
+.group-marking table {
+    margin:5px 0px!important;
+}
+
+    .group-marking table tr td {
+        width:120px !important;
+    }
+.group-marking-action {
+    display:block;
+    width:80px;
+    height:25px;
+    line-height:25px;
+    background:#5db3e7;
+    text-decoration:none;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+
+
+
+/*活动评阅*/
+.admin-marking-box {
+    margin:0px auto;
+    width:1240px;
+}
+.admin-marking-content {
+}
+    .marking-group-type {
+        display:block;
+        width:100%;
+        text-align:center;
+        margin-top:20px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+.admin-marking-production {
+    margin-top:20px;
+}
+.production-left {
+    float:left;
+    background:#efefef;
+    width:150px;
+    padding:10px 10px 10px 10px;
+    height:570px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.production-left ul li{
+    line-height:28px;
+    cursor:pointer;
+}
+    .production-left ul li .siginup-no {
+        float:left;
+        font-size: 14px;
+    }
+    .production-left ul li:hover {
+        background:#5db3e7;
+    }
+.production-right {
+    float:right;
+    width:1050px;
+}
+.production-title span{
+    float:left;
+    font-size:14px;
+}
+.production-content {
+}
+.production-action {
+    padding:15px 0px 8px 0px;
+    background:#5db3e7;
+}
+.production-next-pre {
+}
+.production-title a {
+    overflow:hidden;
+    float:right;
+    cursor:pointer;
+    color:#5db3e7;
+}
+.production-action input {
+    line-height:24px;    
+}
+.production-title {
+    display:block;
+    height:22px;    
+}
+.comment-title {
+    width:70px;
+    color:#ffffff;
+    font-size:13px;
+    text-align:right;
+}
+.comment-score {
+
+}
+.comment-content input{
+   width:500px;
+}
+.comment-submit input{
+    width:80px;
+    color:#5db3e7;
+    cursor:pointer;
+}
+.marking-completed {
+    background: url(Images/prod-completed.png) no-repeat;
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 5px 0px 0px 8px;
+}
+
+.rule-box{
+    padding:10px;
+}
+.selected {
+    color:#5db3e7;
+}
+.marking-video-box {
+    padding:2px 0px;
+    background:#000000;
+}

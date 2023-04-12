@@ -1,0 +1,185 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "优博";
+}
+@section head{
+
+    <link href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/iscroll.css" rel="stylesheet" />
+    <link href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/pullToRefresh.css" rel="stylesheet" />
+    <link rel="stylesheet" href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/swiper/dist/css/swiper.min.css" />
+    <link href="@ETMS.Utility.WebUtility.AppPath/Style/font/iconfont.css" rel="stylesheet" />
+    <link href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/video/videojs-open.css" rel="stylesheet" />
+    <link href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/video/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="@ETMS.Utility.WebUtility.AppPath/Style/myTrain/detail.css" />
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/swiper/dist/js/swiper.min.js"></script>
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/iscroll2.js"></script>
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/pullToRefresh.js"></script>
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/jquery.livequery.js"></script>
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/layer/layer.min.js"></script>
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/video/video.min.js"></script>
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/video/videojs-open.js"></script>
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/video/lang/zh-CN.js"></script>
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/myTrain/detail.js"></script>
+
+}
+<article>
+    <section class="coursebox" id="PlayerBox"></section>
+    <section>
+        <ul class="nav_bar tab">
+            <li class="item"><p class="choose">课程目录</p></li>
+            <li class="item hide"><p>公告</p></li>
+            <li class="item hide"><p>测评</p></li>
+            <li class="item hide"><p>问答</p></li>
+            <li class="item hide"><p>笔记</p></li>
+        </ul>
+    </section>
+    <section class="swiper-container">
+        <div class="swiper-wrapper">
+            @*学习*@
+            <div class="swiper-slide courseContent  myTrainCourseContent" id="myTrainStudy">
+                <ul class="object_list" id="object_list"></ul>
+            </div>
+            @*公告*@
+            <div class="swiper-slide hide" id="noticeDetail">
+                <ul class="noticeDetail" id="notice_list"></ul>
+            </div>
+            @*测评*@
+            <div class="swiper-slide hide" id="evaluationList">
+                <ul class="evaluation_list" id="evaluation_list"></ul>
+            </div>
+            @*问答*@
+            <div class="swiper-slide hide">
+                <img src='@ETMS.Utility.WebUtility.AppPath/Images/no_content.png' class='question_nocontent' />
+                <div id="question_wrapper">
+                    <ul class="question_list" id="question_list"></ul>
+                </div>
+
+                <div class="create_question">
+                    <p><span class="cancel">取消</span><label>新增问答</label><span class="send">发送</span></p>
+                    <input type="text" placeholder="请输入主题" class="discuss_theme title" />
+                    <textarea autofocus placeholder="请输入内容" class="discuss_content content"></textarea>
+                </div>
+            </div>
+            @*笔记*@
+            <div class="swiper-slide hide">
+                <img src='@ETMS.Utility.WebUtility.AppPath/Images/no_content.png' class='note_nocontent' />
+                <div id="note_wrapper">
+                    <ul class="text_list" id="note_list"></ul>
+                </div>
+                @*<img class="insert_note" src="@ETMS.Utility.WebUtility.AppPath/Images/edit_discuss.png" />*@
+                <div class="create_note">
+                    <p><span class="cancel">取消</span><label>新增笔记</label><span class="send">发送</span></p>
+                    <input type="text" placeholder="请输入主题" class="discuss_theme title" />
+                    <textarea autofocus placeholder="请输入内容" class="discuss_content content"></textarea>
+                    <input type="checkbox" id="note_share" class="share" checked="checked" /><label for="note_share">分享</label>
+                </div>
+            </div>
+
+        </div>
+        <img class="insert_question" hidden src="@ETMS.Utility.WebUtility.AppPath/Images/edit_discuss.png" />
+
+    </section>
+</article>
+<script id="tmpl_CourseDetailStudy" type="text/x-handlebars-template">
+    {{#each Data}}
+    <li data-ContentID="{{ContentID}}" data-Type="{{Type}}"><i class="icon iconfont  {{StudyStatusJudge StudyStatus Type}}"></i>{{Name}}</li>
+    {{/each}}
+</script>
+<script id="tmpl_CourseDetailNotice" type="text/x-handlebars-template">
+    {{#each Data}}
+    <li>
+        <h2 class="title">{{{MainHead}}}</h2>
+        <div class="content">{{{ArticleContent}}}</div>
+        <p class="time">{{CreateTime}}</p>
+    </li>
+    {{/each}}
+</script>
+<script id="tmpl_evaluation_list" type="text/x-handlebars-template">
+    {{#each Data}}
+    <li class="evaluation-obj">
+        <i class="atatusSelect {{TrainTestClass CourseResTypeID}}"></i>
+        <h4 class="evaluation_name">{{TestName}}</h4>
+        <div>
+            <span class="evaluation_times">{{ResBeginTime}}至{{ResEndTime}}&nbsp;&nbsp;</span>
+            {{#Equal CourseResTypeID 2}}
+            <span class="evaluation_status">&nbsp;&nbsp;&nbsp;{{TestStatus}}&nbsp;&nbsp;&nbsp;</span>
+            {{else}}
+            {{#Equal CourseResTypeID 5}}
+            <span class="evaluation_status">&nbsp;&nbsp;&nbsp;时长{{limitTime}}分钟&nbsp;&nbsp;&nbsp;</span>
+            {{/Equal}}
+            {{/Equal}}
+            <span class="evaluation_score">&nbsp;&nbsp;&nbsp;{{Score}}分&nbsp;</span>
+        </div>
+        {{#Equal CourseResTypeID 5}}
+        <div>
+            <span class="evaluation_comit">允许提交{{TestCount}}次&nbsp;&nbsp;&nbsp;</span>
+            <span class="evaluation_score">&nbsp;&nbsp;已提交{{UserTestCount}}次&nbsp;</span>
+        </div>
+        {{/Equal}}
+        <p class="evaluation_courseName">课程:{{CourseName}}</p>
+        {{#Equal CourseResTypeID 2}}
+        {{#compare ResEndTime TestStatus}}
+        <a class="evaluation-btn" href="@ETMS.Utility.WebUtility.AppPath/Paper/TestResult?TrainingItemCourseID={{TrainingItemCourseID}}&TestPaperID={{TestPaperID}}&UserExamID={{UserExamID}}&TestType={{CourseResTypeID}}">查看作业</a>
+        {{else}}
+        <a class="evaluation-btn" href="@ETMS.Utility.WebUtility.AppPath/Paper/HomeWork?TrainingItemCourseID={{TrainingItemCourseID}}&TestPaperID={{TestPaperID}}&OnlineTestID={{TestID}}&StudentCourseID={{StudentCourseID}}&TestType={{CourseResTypeID}}&CourseName={{CourseName}}&MOrC=0">做作业</a>
+        {{/compare}}
+        {{/Equal}}
+        {{#Equal CourseResTypeID 5}}
+        {{#compare1 ResEndTime TestCount UserTestCount}}
+        <a class="evaluation-btn" href="@ETMS.Utility.WebUtility.AppPath/Paper/TestResult?TrainingItemCourseID={{TrainingItemCourseID}}&TestPaperID={{TestPaperID}}&UserExamID={{UserExamID}}&TestType={{CourseResTypeID}}">查看测试</a>
+        {{else}}
+        <a class="evaluation-btn" href="@ETMS.Utility.WebUtility.AppPath/Paper/Test?TrainingItemCourseID={{TrainingItemCourseID}}&TestPaperID={{TestPaperID}}&OnlineTestID={{TestID}}&StudentCourseID={{StudentCourseID}}&TestType={{CourseResTypeID}}&CourseName={{CourseName}}&MOrC=0">开始测试</a>
+        {{/compare1}}
+        {{/Equal}}
+    </li>
+    {{/each}}
+
+
+</script>
+<script type="text/x-handlebars-template" id="tmpl_question_list">
+    {{#each Data}}
+    <li class="discuss_question" QuestionID="{{QuestionID}}" UserID="{{UserID}}">
+        <div class="discuss_main">
+            <div class="discuss_title">
+                {{{QuestionTitle}}}
+            </div>
+            <div class="discuss_cont ellipsis">
+                {{{removeLabel QuestionContent}}}
+            </div>
+            <div class="discuss_foot">
+                <p class="discuss_release">{{LoginName}}&nbsp;<span class="discuss_time">{{formate CreateTime}}</span></p><p class="discuss_num">
+                    {{#compareValue UserID CurrentUserID}}
+                    <i class="discuss_num_i icon iconfont icon-iconfont-delete question_remove"></i>
+                    {{/compareValue}}
+                    <i class="discuss_num_i icon iconfont icon-iconfont-comment answer_list"></i>
+                    {{AnswerCount}}
+                </p>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>
+<script type="text/x-handlebars-template" id="tmpl_note_list">
+    {{#each Data}}
+    <li class="discuss_note" NoteID="{{NotesID}}" UserID="{{CurrentUserID}}">
+        <div class="discuss_main">
+            <div class="discuss_title note_detail">
+                {{{Title}}}
+            </div>
+            <div class="discuss_cont ellipsis note_detail">
+                {{{removeLabel NoteContent}}}
+            </div>
+            <div class="discuss_foot">
+                <p class="discuss_release">{{LoginName}}&nbsp;<span class="discuss_time">{{formate CreateTime}}</span></p>
+                {{#compareValue UserID CurrentUserID}}
+                <p class="discuss_num">
+                    <i class="discuss_num_i iconfont icon-iconfont-delete  note_remove"></i>
+                    <i class="discuss_num_i iconfont icon-iconfont-edit  note_edit"></i>
+                </p>
+                {{/compareValue}}
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>

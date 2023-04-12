@@ -1,0 +1,68 @@
+﻿
+    @{
+        Layout = "~/Views/Shared/_Layout.cshtml";
+        ViewBag.Title = "优博";
+    }
+@section head{
+    <link  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/iscroll.css" rel="stylesheet" />
+    <link  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/pullToRefresh.css" rel="stylesheet" />
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/layer_new/layer_new.js"></script>
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/iscroll2.js"></script>
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/pullToRefresh.js"></script>
+    <link  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/swiper/dist/css/swiper.css" rel="stylesheet" />
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/swiper/dist/js/swiper.js"></script>
+    <link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Style/living/main.css" />
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/living/main.js"></script>
+}
+<ul class="nav_bar" style="display:none;">
+    <li class="item"><p class="choose">直播预告</p></li>
+    <li class="item"><p>精彩回放</p></li>
+</ul>
+<section class="coursebox">
+    <div class="swiper-container" id="MyTrain_List">
+        <div class="swiper-wrapper">
+            @* 直播预告 *@
+            <div class="swiper-slide living_list">
+                <img src='@ETMS.Utility.WebUtility.AppPath/Images/nocontent.png' class='searchNone search1' hidden />
+                <div id="iscroller_one">
+                    <ul id="living_list" class="list_data" typeof="living">
+                    </ul>
+                </div>
+            </div>
+            @* 精彩回放 *@
+            <div class="swiper-slide">
+                <img src='@ETMS.Utility.WebUtility.AppPath/Images/nocontent.png' class='searchNone search2' hidden />
+                <div id="iscroller_two">
+                    <ul id="playback_list" class="list_data" typeof="playBack">
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script id="tmpl_living_list" type="text/x-handlebars-template">
+    {{#each Data.DataList}}
+    <li livingID ="{{CourseID}}" onclick="validClick('{{CourseID}}')">
+        <div class="course_img">
+            <img src="@System.Configuration.ConfigurationManager.AppSettings["UrlRoot"]/CourseLogo/{{ThumbnailURL}}" />
+            <div class="time">{{TimeString}}</div>
+        </div>
+        <h2>{{CourseName}}</h2>
+        <p class="teacher"><span>{{TeacherOneLimit}}</span> <span style="float:right;">{{FocusCount}}学习</span></p>
+    </li>
+    {{/each}}
+</script>
+@* onclick="historyClick({{LivingID}})" *@
+<script id="tmpl_playBack_list" type="text/x-handlebars-template">
+    {{#each Data.DataList}}
+    <li livingID ="{{LivingID}}" onclick="historyClick({{LivingID}})">
+        <div class="course_img">
+            <img src="@System.Configuration.ConfigurationManager.AppSettings["UrlRoot"]/CourseLogo/{{ThumbnailURL}}" />
+            <div class="time">{{Date}}&nbsp;{{SHHMM}} -{{EHHMM}}</div>
+        </div>
+        <h2>{{LivingName}}</h2>
+        <p class="teacher">主讲 <span>{{TeacherName}}</span></p>
+    </li>
+    {{/each}}
+</script>

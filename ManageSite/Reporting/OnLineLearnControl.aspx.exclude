@@ -1,0 +1,134 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/MReport.master" AutoEventWireup="true"
+    CodeFile="OnLineLearnControl.aspx.cs" Inherits="Reporting_OnLineLearnControl" %>
+
+<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+    Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
+
+<%@ Register Assembly="ETMS.Controls" Namespace="ETMS.Controls" TagPrefix="cc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContentPlaceHolder" runat="Server">
+    <title>在线学习情况监控</title>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div class="dv_HeaderTitle">
+        <h2 class="h_titleName1">
+            在线学习情况监控</h2>
+    </div>
+    <div class="dv_reports">
+        <div class="dv_searchbox">
+            <table class="GridviewGray" border="0" cellpadding="0" cellspacing="0" runat="server"
+                id="tableQueryControlList">
+                <tr>
+                    <th style="width: 120px">
+                        项目名称（编码）：
+                    </th>
+                    <td style="width: 300px">
+                        <asp:TextBox ID="txtItemNameCode" runat="server" CssClass="inputbox_120"></asp:TextBox>
+                    </td>
+                    <th style="width: 120px">
+                        课程名称（编码）：
+                    </th>
+                    <td class="Search_Area">
+                        <asp:TextBox ID="txtCourseNameCode" runat="server" CssClass="inputbox_120 floatleft"></asp:TextBox>
+                        <asp:Button ID="btnSearch" CssClass="btn_Search" runat="server" Text="查询" OnClick="btnSearch_Click" />
+                        <a href="javascript:hideGridview()" class="dropdownico" id="Highsearch">高级搜索</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        课程属性：
+                    </th>
+                    <td>
+                        <cc1:DictionaryDropDownList runat="server" ID="ddlCourseAttrID" DictionaryType="Dic_Sys_CourseAttr"
+                            IsShowAll="true" />
+                    </td>
+                    <th>
+                        课程类型：
+                    </th>
+                    <td>
+                        <cc1:DictionaryDropDownList runat="server" ID="ddl_CourseTypeID" DictionaryType="Dic_Sys_CourseType"
+                            IsShowAll="true" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        课程开始时间：
+                    </th>
+                    <td>
+                        <cc1:DateTimeTextBox ID="ttbCourseBeginTime" runat="server" EndTimeControlID="ttbCourseEndTime"
+                            ValidationGroup="Saves"></cc1:DateTimeTextBox>至<cc1:DateTimeTextBox ID="ttbCourseEndTime"
+                                runat="server" BeginTimeControlID="ttbCourseBeginTime" ValidationGroup="Saves"></cc1:DateTimeTextBox>
+                    </td>
+                    <th>
+                        课程成绩：
+                    </th>
+                    <td>
+                        <asp:DropDownList ID="ddlItemCourseScoreStatus" runat="server">
+                            <asp:ListItem Value="-1">全部</asp:ListItem>
+                            <asp:ListItem Value="1">未考试</asp:ListItem>
+                            <asp:ListItem Value="2">及格</asp:ListItem>
+                            <asp:ListItem Value="3">不及格</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr runat="server" id="trOrg">
+                    <th>
+                        组织机构：
+                    </th>
+                    <td colspan="3">
+                        <cc1:DictionaryDropDownList runat="server" ID="ddl_OrganizationID" DictionaryType="Dic_CurrentAndSubOrganization"
+                            IsShowAll="true" AutoPostBack="True" CssClass="select_390" OnSelectedIndexChanged="ddl_OrganizationID_SelectedIndexChanged" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;门：
+                    </th>
+                    <td>
+                        <asp:DropDownList runat="server" ID="ddl_DepartmentID" CssClass="select_120">
+                        </asp:DropDownList>
+                    </td>
+                    <th>
+                        岗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位：
+                    </th>
+                    <td>
+                        <asp:DropDownList runat="server" ID="ddl_PostID" CssClass="select_120">
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        岗位类别：
+                    </th>
+                    <td>
+                        <cc1:DictionaryDropDownList runat="server" ID="ddlPostType" DictionaryType="Dic_SYS_PostType"
+                            IsShowAll="true" />
+                    </td>
+                    <th>
+                        职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级：
+                    </th>
+                    <td>
+                        <cc1:DictionaryDropDownList runat="server" ID="ddlRank" DictionaryType="vw_Dic_Sys_Rank"
+                            IsShowAll="true" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        学员姓名：
+                    </th>
+                    <td colspan="3">
+                        <asp:TextBox ID="txtRankName" runat="server" CssClass="inputbox_120"></asp:TextBox>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--查找结果-->
+        <div>
+            <div class="dv_pagePanel">
+                <div class="dv_pageControl">
+                    <rsweb:ReportViewer ID="ReportViewer1" runat="server">
+                    </rsweb:ReportViewer>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>

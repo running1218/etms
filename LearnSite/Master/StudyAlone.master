@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master/Site.master" AutoEventWireup="true" CodeBehind="StudyAlone.master.cs" Inherits="ETMS.Studying.Master.StudyAlone" %>
+<%@ Import Namespace="ETMS.Utility.Service.FileUpload" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SitePlaceHolder" runat="server">
+    <link href="<%=ETMS.Utility.WebUtility.AppPath%>/Styles/courseSpace.css" type="text/css" rel="stylesheet" />
+    <script>
+        var Current_UserID = '<%=CurrentUserID%>';
+        var StudyProgress = '<%=StudyProgress%>';
+    </script>
+    <div class="view-area">
+        <div class="myCourse_block" style="margin-top:15px;">
+            <asp:Image CssClass="course_img" ID="CourseImg" runat="server" />
+      <%--      <img class="course_img" src="../Styles/images/del-img/001.png">--%>
+            <div class="course_info">
+                <h1><asp:Literal ID="CourseName" runat="server"></asp:Literal></h1>
+                <ul class="teacher">
+                    <asp:Repeater ID="TeacherList" runat="server">
+                                <ItemTemplate>
+                                    <li>
+                                        <img src="<%# StaticResourceUtility.GetFullPathByFileType(FileUploadFunctionType.UserIcon, string.IsNullOrEmpty(Eval("PhotoUrl").ToString())?"default.gif":Eval("PhotoUrl").ToString())%>">
+                                        <p><%# Eval("RealName") %></p>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                </ul>
+                <div class="study_time">
+                    <p>开课时间：<span><asp:Literal ID="lit_Start" runat="server"></asp:Literal> 至 <asp:Literal ID="lit_End" runat="server"></asp:Literal></span></p>
+                    <p>总时长：<span><asp:Literal ID="lit_CourseTime" runat="server"></asp:Literal></span></p>
+                    <p>学习时长：<span><asp:Literal ID="lit_StudyTime" runat="server"></asp:Literal></span></p>
+                </div>
+                <div class="progress">
+                    <span class="scaleBox">
+                        <asp:Literal ID="lit_StudyProgressBox" runat="server"></asp:Literal>
+                    </span>
+                    <span class="scaleNum"><asp:Literal ID="lit_StudyProgress" runat="server"></asp:Literal>%</span>
+                </div>
+            </div>
+        </div>
+        <ul class="study_modular">
+            <li class="cur"><a href="../Study/CourseStudyAlone.aspx?trainingItemCourseID=<%=TrainingItemCourseID %>">课程学习</a></li>
+            <li class="hide"><a href="../Study/CourseNotice.aspx?trainingItemCourseID=<%=TrainingItemCourseID %>"><%= ETMS.Studying.BaseUtility.CourseNoticeMark %></a></li>
+            <li class=""><a href="../Study/CourseGuidanceAlone.aspx?trainingItemCourseID=<%=TrainingItemCourseID %>">课程资料</a></li>
+            <li class="hide"><a href="../Study/Evaluation.aspx?trainingItemCourseID=<%=TrainingItemCourseID %>"><%= ETMS.Studying.BaseUtility.EvaluationMark %></a></li>
+            <li class="hide"><a href="../Study/Questions.aspx?TrainingItemCourseID=<%=TrainingItemCourseID %>">问答</a></li>
+            <li class="hide"><a href="../Study/Notes.aspx?TrainingItemCourseID=<%=TrainingItemCourseID %>">笔记</a></li>
+            <li class="hide"><a href="../Study/StudyProgress.aspx?TrainingItemCourseID=<%=TrainingItemCourseID %>">学习进度</a></li>
+            <li class="hide"><a href="../Study/StudyCertificate.aspx?TrainingItemCourseID=<%=TrainingItemCourseID %>">课程证书</a></li>
+        </ul>
+        <img class="no_content hide"  src="<%=ETMS.Utility.WebUtility.AppPath%>/Styles/images/common/no_content.png" />
+        <script>
+            //$('.header-menu a').eq(4).addClass('cur').siblings().removeClass('cur');
+        </script>
+        <asp:ContentPlaceHolder ID="StudyPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+    </div>
+</asp:Content>

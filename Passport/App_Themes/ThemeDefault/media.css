@@ -1,0 +1,207 @@
+﻿body {
+    font-family:'Microsoft YaHei';
+    font-size:14px !important;
+    color:#666;
+}
+
+.login-body
+{
+    
+}
+.login-header
+{
+    width:100%;
+    /*background:url(media/header-bg.jpg) repeat-x;*/
+}
+.login-logo
+{
+    padding: 5px 0px;
+    margin:0 auto;
+    width:1024px;
+    height:65px;    
+    background:url(media/media_logo_70.png) no-repeat left center;
+}
+.login-middle
+{
+    height:400px;
+    width:100%;
+    background:url(media/01.jpg) no-repeat;
+    background-position: 50% 50%;
+}
+.logo-chs
+{
+    margin: 30px 0px 0px 70px;
+    font-size:20px;
+    font-weight:bold;
+    font-family:'Microsoft YaHei';
+    color:#555;
+    letter-spacing:4px;
+    display:none;
+}
+.logo-en
+{
+    margin: 0px 0px 0px 70px;
+    font-size:15px;
+    font-weight:bold;
+    font-family:'Microsoft YaHei';
+    color:#666;
+}
+.login-notice
+{
+    overflow:hidden;
+    width:100%;
+    padding-top:10px;
+    height:100%;
+}
+.login-notice-box
+{
+    margin:0 auto;
+    width:1024px;
+    /*text-align:center;  
+    padding:0;  
+    clear:both;*/  
+}
+.notice-instance
+{
+    width:300px;
+    margin:10px;
+    padding:8px;
+    height:180px;
+    overflow:hidden;
+    border:1px solid #dbdbdb;
+    float:left;
+    position:relative;
+    background-color:#fff;
+    /*display:inline-block;  
+    _display:inline;  
+    *display:inline;*/  
+}
+
+.notice-title
+{
+    padding:5px 0px 8px 0px;
+    border-bottom:1px solid #dbdbdb;    
+}
+    .notice-title a
+    {
+        font-size:16px;
+        color:#555;
+        font-family:'Microsoft YaHei';
+        font-weight:700;
+        height:21px;
+        overflow:hidden;
+        display:block;
+    }
+        .notice-title a:hover
+        {
+            font-size:16px;
+            color:#444;
+            font-family:'Microsoft YaHei';
+            font-weight:700;
+            cursor:pointer;
+        }
+.notice-content
+{
+    font-size:14px !important;
+    color:#666;
+    font-family:'Microsoft YaHei';
+    padding: 5px 0px;
+    text-indent:24px;
+    line-height:24px;
+    height:120px;  
+    overflow:hidden;
+}
+    .notice-content:hover
+    {
+        cursor:pointer;
+        color:#222;
+    }
+    .notice-content p, .notice-content a, .notice-content span, .notice-content h, .notice-content div, .notice-content li
+    {
+        font-size:12px !important;
+        color:#666;
+        font-family:'Microsoft YaHei';       
+    }
+    .notice-content p:hover, .notice-content a:hover, .notice-content span:hover, .notice-content h:hover, .notice-content div:hover, .notice-content li:hover
+    {
+        font-size:12px !important;
+        color:#444;
+        font-family:'Microsoft YaHei';       
+    }
+.notice-time
+{
+    text-align:right;
+    padding-right:5px;
+    color:#666;
+    font-family:'Microsoft YaHei';
+}
+.login-box
+{
+    margin:0 auto;
+    width:1024px;
+}
+.login-block
+{
+    overflow:hidden;
+    float:right;
+    margin: 15px 5px 0px 0px;
+    width:300px;
+    height:300px;
+    background:#A7CCE7;
+    filter:alpha(opacity=50);
+    /*opacity:0.7;*/
+}
+.forget-password
+{
+    color: #fff;
+    left: 190px;
+    position: absolute;
+    top: 6px;
+    text-decoration: underline;
+}
+.notice-more
+{
+    overflow:hidden;
+    width:100%;
+    text-align:center;
+    padding-top:20px;
+    margin-bottom:10px;
+}
+
+    .notice-more a
+    {
+        display:inline-block;
+        width:1004px;
+        line-height:36px;
+        cursor:pointer;
+        background:#dbdbdb;
+        color:#777;
+        font-size:14px;
+    }
+
+.notice-detail-title
+{
+    padding:5px 0px 2px 0px;
+    border-bottom:1px solid #dbdbdb;
+    font-size:24px;
+    color:#555;
+    font-family:'Microsoft YaHei';
+    font-weight:700;
+}
+
+.notice-read-num
+{
+    font-size:11px;
+    display:block;
+    overflow:hidden;  
+    text-align:right;
+}
+.notice-detail-time
+{
+    margin-right:20px;
+    color:#a3a3a3;
+}
+.read-num
+{
+     color:#d82f2f;
+}

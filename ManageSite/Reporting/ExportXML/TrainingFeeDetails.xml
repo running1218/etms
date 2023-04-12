@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Columns>
+  <Column FieldName="ItemCode" TitleName="项目编码" CellIndex="0"></Column>
+  <Column FieldName="ItemName" TitleName="项目名称" CellIndex="1"></Column>
+  <Column FieldName="CourseCode" TitleName="课程编码" CellIndex="2"></Column>
+  <Column FieldName="CourseName" TitleName="课程名称" CellIndex="3"></Column>
+  <Column FieldName="TrainingDateFormat" TitleName="培训日期" CellIndex="4"></Column>
+  <Column FieldName="TrainingCourseTime" TitleName="培训时间" CellIndex="5"></Column>
+  <Column FieldName="TeacherName" TitleName="讲师" CellIndex="6"></Column>
+  <Column FieldName="RealCourseHours" TitleName="课时数" CellIndex="7"></Column>
+  <Column FieldName="CourseFee" TitleName="课酬标准" CellIndex="8"></Column>
+  <Column FieldName="RealCourseFee" TitleName="课酬" CellIndex="9"></Column>
+</Columns>

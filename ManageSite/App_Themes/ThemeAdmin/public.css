@@ -1,0 +1,2984 @@
+﻿*
+{
+    margin: 0px;
+    padding: 0px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, form
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, '宋体';
+    font-size: 12px;
+}
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+html
+{
+    overflow: auto;
+}
+body
+{
+    font: 12px/1.5 Arial , "宋体";
+    font-weight: normal;
+    color: #313131;
+    margin: 0px;
+    padding: 0px;
+    background: white;
+    line-height: 20px;
+    background:#fff;
+}
+a
+{
+    outline: none;
+}
+ol
+{
+    list-style: none;
+}
+h2
+{
+    font-family: "Microsoft YaHei" , "宋体";
+    font-weight: bold;
+    font-size: 14px;
+}
+select
+{
+    font-family: "宋体";
+    font-size: 12px;
+}
+em
+{
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+a img
+{
+    border: 0;
+}
+img
+{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+ul li
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.padleft10
+{
+    margin-left: 10px;
+}
+.padright10
+{
+    margin-right: 10px;
+}
+.font-14
+{
+    font-size: 14px;
+}
+
+/****-------------表单样式-----------***/
+table
+{
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 0px;
+    width: 100%;
+    margin-bottom: 7px;
+}
+th
+{
+    font-weight: normal;
+    text-align: right;
+    font-weight: bold;
+    height: 20px;
+    padding: 4px 4px;
+}
+td
+{
+    height: 28px;
+    padding: 0px 4px;
+}
+
+textarea
+{
+    font-size: 12px;
+    color: #525252;
+    margin: 4px 0px;
+}
+input
+{
+    margin-right: 4px;
+    background: white;
+    font-size: 12px;
+}
+select
+{
+    margin-left: 4px;
+}
+.floatleft
+{
+    float: left;
+}
+.floatright
+{
+    float: right;
+}
+/****-------------各种文本输入框样式-----------***/
+.inputbox_40
+{
+    width: 36px !important;
+    width: 40px;
+    border: 1px solid #a7a6aa;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+
+.inputbox_60
+{
+    width: 56px !important;
+    width: 60px;
+    border: 1px solid #a7a6aa;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+
+.inputbox_70
+{
+    width: 66px !important;
+    width: 70px;
+    border: 1px solid #a7a6aa;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+
+.inputbox_80
+{
+    width: 76px !important;
+    width: 76px;
+    border: 1px solid #a7a6aa;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+
+.inputbox_90
+{
+    width: 86px !important;
+    width: 86px;
+    border: 1px solid #a7a6aa;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+
+.inputbox_100
+{
+    width: 96px !important;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+.inputbox_120
+{
+    width: 116px !important;
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+
+.inputbox_140
+{
+    width: 136px !important;
+    width: 140px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+
+.inputbox_160
+{
+    width: 156px !important;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+
+.inputbox_190
+{
+    width: 186px !important;
+    width: 190px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+.inputbox_210
+{
+    width: 206px !important;
+    width: 210px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+.inputbox_300
+{
+    width: 296px !important;
+    width: 300px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+.inputbox_490
+{
+    width: 490px;
+    width: 488px !important;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+.inputbox_620
+{
+    width: 620px;
+    width: 488px !important;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+.inputbox_440
+{
+    width: 440px;
+    width: 438px !important;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 0px 4px;
+    padding-left: 4px;
+    background: White;
+}
+
+.inputbox_area190
+{
+    width: 190px;
+    height: 118px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    background: white url(Images/text-gray.gif) repeat-x;
+    margin: 4px;
+    padding-left: 4px;
+}
+.inputbox_area360
+{
+    width: 360px;
+    height: 118px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    background: white url(Images/text-gray.gif) repeat-x;
+    margin: 4px;
+    padding-left: 4px;
+}
+.inputbox_area360_hight
+{
+    height: 28px;
+    line-height: 24px;
+}
+.inputbox_area300
+{
+    height: 118px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 4px;
+    padding-left: 4px;
+    background: white url(Images/text-gray.gif) repeat-x;
+    width: 300px;
+}
+.inputbox_area380
+{
+    height: 100px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 4px;
+    padding-left: 4px;
+    background: white url(Images/text-gray.gif) repeat-x;
+    width: 380px;
+}
+.inputbox_area349
+{
+    width: 349px;
+    height: 118px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 4px;
+    padding-left: 4px;
+    background: white url(Images/text-gray.gif) repeat-x;
+}
+.inputbox_area520
+{
+    width: 520px;
+    height: 100px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    padding-left: 4px;
+}
+.inputbox_area750
+{
+    width: 750px;
+    height: 100px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    padding-left: 4px;
+}
+.inputbox_area440
+{
+    width: 440px;
+    height: 118px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    margin: 4px;
+    background: white url(Images/text-gray.gif) repeat-x;
+}
+
+.inputbox_area490
+{
+    width: 490px;
+    height: 80px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    background: white url(Images/text-gray.gif) repeat-x;
+    margin: 4px;
+}
+.inputbox_area619
+{
+    width: 619px;
+    height: 118px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    background: white url(Images/text-gray.gif) repeat-x;
+    margin: 4px;
+}
+.inputbox_area600
+{
+    width: 600px;
+    height: 100px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    background: white url(Images/text-gray.gif) repeat-x;
+    margin: 4px;
+}
+.inputbox_area210
+{
+    width: 210px;
+    height: 80px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    background: white url(Images/text-gray.gif) repeat-x;
+    margin: 4px;
+}
+.inputbox_areaError
+{
+    width: 300px;
+    height: 68px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    background: white url(Images/text-gray.gif) repeat-x;
+    margin: 4px;
+}
+.inputbox_aprise
+{
+    width: 548px;
+    height: 68px;
+    line-height: 20px;
+    border: 1px solid #a7a6aa;
+    background: white url(Images/text-gray.gif) repeat-x;
+}
+.inputtext_bj1
+{
+    background: white url(Images/text-gray.gif) repeat-x 0 -3px;
+    border: 1px solid #8a8a8a;
+}
+.inputtext_over
+{
+    border: 1px solid #FF8A2B;
+}
+.inputtext_focus
+{
+    border: 1px solid #f60;
+    background: white;
+}
+.select_60
+{
+    width: 60px !important;
+    width: 65px;
+    margin-right: 10px;
+    background: white;
+    border: 1px solid #a7a6aa;
+    height: 22px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.select_100
+{
+    width: 100px !important;
+    width: 105px;
+    margin-right: 10px;
+    background: white;
+    border: 1px solid #a7a6aa;
+    height: 22px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.select_120
+{
+    width: 120px !important;
+    width: 125px;
+    margin-right: 10px;
+    background: white;
+    border: 1px solid #a7a6aa;
+    height: 22px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.select_150
+{
+    width: 150px;
+    margin-right: 10px;
+    background: white;
+    border: 1px solid #a7a6aa;
+    height: 22px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.select_160
+{
+    width: 160px !important;
+    width: 165px;
+    background: white;
+    border: 1px solid #a7a6aa;
+    height: 22px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.select_190
+{
+    width: 190px !important;
+    width: 195px;
+    background: white;
+    border: 1px solid #a7a6aa;
+    height: 22px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.select_210
+{
+    width: 210px !important;
+    width: 215px;
+    background: white;
+    border: 1px solid #a7a6aa;
+    height: 22px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.select_390
+{
+    width: 370px;
+    background: white;
+    border: 1px solid #a7a6aa;
+    height: 22px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+
+
+/****-------------文字加粗-----------***/
+.fontBold
+{
+    font-weight: bold;
+}
+/****-------------各种颜色值-----------***/
+.colorWhite
+{
+    color: White;
+}
+.colorRed
+{
+    color: #C03219;
+}
+
+.colorYellow
+{
+    color: #C03219;
+}
+.colorGray
+{
+    color: #999999;
+}
+.colorDeepGray
+{
+    color: #525252;
+}
+.colorBlue
+{
+    color: #0072cf;
+}
+.colorGreen
+{
+    color: #48ac13;
+}
+.RightAnswer
+{
+    color: #c40808;
+}
+
+/****-------------文字链接颜色-----------***/
+a, a:link, a:hover, a:active, a:visited
+{
+    font-family: 宋体;
+    font-weight: normal;
+    text-decoration: underline;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+a.link_colorRed, a.link_colorRed:active, a.link_colorRed:visited
+{
+    color: #C03219;
+    text-decoration: underline;
+}
+a.link_colorRed:hover
+{
+    color: #007eff;
+    text-decoration: none;
+}
+
+a.link_colorBlue, a.link_colorBlue:active, a.link_colorBlue:visited
+{
+    color: #007eff;
+}
+
+a.link_colorBlue:hover
+{
+    color: #E44A0E;
+}
+
+a.link_colorGray, a.link_colorGray:active, a.link_colorGray:visited
+{
+    color: #a3a3a3;
+}
+
+a.link_colorGray:hover
+{
+    color: #E44A0E;
+}
+
+a.link_colorWhite, a.link_colorWhite:active, a.link_colorWhite:visited
+{
+    color: white;
+}
+a.link_colorWhite:hover
+{
+    color: black;
+}
+a.link_colorYellow, a.link_colorYellow:active, a.link_colorYellow:visited
+{
+    color: #FF8A2B;
+}
+a.link_colorYellow:hover
+{
+    color: black;
+}
+a.link_colorGreen, a.link_colorGreen:active, a.link_colorGreen:visited
+{
+    color: #48ac13;
+}
+a.link_colorGreen:hover
+{
+    color: black;
+}
+a.link_colorBlack, a.link_colorBlack:active, a.link_colorBlack:visited
+{
+    color: #000;
+}
+
+a.link_colorBlack:hover
+{
+    color: #E44A0E;
+}
+
+/****-------------白色边框的表格-----------***/
+table.GridviewGray
+{
+    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+    border: 0px;
+    margin-bottom: 10px;
+    table-layout: fixed;
+}
+.dv_searchlist table.GridviewGray
+{
+    table-layout: fixed;
+}
+
+.dv_searchlist table.GridviewGray tr td
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+table.cancelTablelayout, .dv_searchlist table.cancelTablelayout
+{
+    table-layout: auto;
+}
+
+.dv_searchlist table tr td.visibleS
+{
+    overflow: visible;
+}
+table.GridviewGray tr th
+{
+    text-align: center;
+}
+
+.dv_searchbox table.GridviewGray tr th
+{
+    text-align: right;
+    width: 120px;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+.dv_searchbox table.GridviewGray tr th.thleft
+{
+    text-align: left;
+}
+.dv_searchbox table.GridviewGray tr th.center
+{
+    text-align: center;
+}
+table.GridviewGray tr th, table.GridviewGray tr td
+{
+    border: 1px solid #ccc;
+}
+/****-------------清除表格边框-----------***/
+table.noborder
+{
+    border: none;
+}
+
+/****-------------密码重置图标按钮-----------***/
+.btn_Repassword
+{
+    background: url(Images/btn_repassword.png) no-repeat;
+    color: #333;
+    width: 85px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    text-indent: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------移动到左边图标按钮-----------***/
+.move_left
+{
+    background: url(Images/arror_1.gif) no-repeat;
+    color: #333;
+    width: 28px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    text-indent: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------移动到右边图标按钮-----------***/
+.move_right
+{
+    background: url(Images/arror_1.gif) left -23px no-repeat;
+    color: #333;
+    width: 28px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    text-indent: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/****-------------选择讲师图标按钮-----------***/
+.btn_SelectTeacher
+{
+    background: url(Images/btn_selectteacher.png) no-repeat;
+    color: #333;
+    width: 85px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    text-indent: 22px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------添加全部图标按钮-----------***/
+.btn_AllStudent
+{
+    background: url(Images/AllStudent.png) no-repeat;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    text-indent: 22px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------审核通过图标按钮-----------***/
+.btn_Agree
+{
+    background: url(Images/btn_agree.png) no-repeat;
+    color: #333;
+    width: 90px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    text-indent: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/****-------------审核没通过图标按钮-----------***/
+.btn_Deny
+{
+    background: url(Images/btn_deny.png) no-repeat;
+    color: #333;
+    width: 90px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    text-indent: 23px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/****-------------提交审核图标按钮-----------***/
+.btn_SubmetPj
+{
+    background: url(Images/btn_subjectPj.png) no-repeat;
+    color: #333;
+    width: 90px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    text-indent: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------取消审核图标按钮-----------***/
+.btn_Unapproved
+{
+    background: url(Images/btn_unapproved.png) no-repeat;
+    color: #333;
+    width: 90px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    text-indent: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------审核不通过图标按钮-----------***/
+.btn_Nopass
+{
+    background: url(Images/btn_Nopass.png) no-repeat;
+    color: #333;
+    width: 90px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    text-indent: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------上传文件图标按钮-----------***/
+.btn_upload
+{
+    background: url(Images/btn_upload.png) no-repeat;
+    color: #333;
+    width: 85px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn_upload_enabled
+{
+    background: url(Images/btn_upload.png) no-repeat;
+    color: #a3a3a3;
+    width: 85px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------审核没通过图标按钮-----------***/
+.btn_Exit
+{
+    background: url(Images/btn_Exit.gif) 5px center no-repeat;
+    color: #fff;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    padding-left: 20px;
+    display: inline-block;
+    text-decoration: none;
+    width:22px;
+    padding:3px;
+    overflow:hidden;
+    text-indent:-99999px;
+    border-radius:3px;
+}
+a.btn_Exit:hover{background:#333 url(Images/btn_Exit.gif) 5px center no-repeat;}
+a.btn_Exit, a.btn_Exit:active, a.btn_Exit:visited
+{
+    color: White;
+    text-decoration: none;
+    
+}
+/****-------------计算积分图标按钮-----------***/
+.btn_Calculation
+{
+    background: url(Images/buttonslist.png) left 0 no-repeat;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_Calculation, a.btn_Calculation:active, a.btn_Calculation:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+/****-------------新增授课图标按钮-----------***/
+.btn_addlessons
+{
+    background: url(Images/addlessons.png) left -30px no-repeat;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_addlessons, a.btn_addlessons:active, a.btn_addlessons:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+/****-------------取消授课图标按钮-----------***/
+.btn_cancellessons
+{
+    background: url(Images/addlessons.png) left 0 no-repeat;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_cancellessons, a.btn_cancellessons:active, a.btn_cancellessons:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+/****-------------计划归档图标按钮-----------***/
+.btn_schedulled
+{
+    background: url(Images/buttonslist.png) left -37px no-repeat;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_schedulled, a.btn_schedulled:active, a.btn_schedulled:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+/****-------------批量签到图标按钮-----------***/
+.btn_batch
+{
+    background: url(Images/buttonslist.png) left -77px no-repeat;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_batch, a.btn_batch:active, a.btn_batch:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+/****-------------全部签到图标按钮-----------***/
+.btn_Allsignedin
+{
+    background: url(Images/buttonslist.png) left -117px no-repeat;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_Allsignedin, a.btn_Allsignedin:active, a.btn_Allsignedin:visited
+{
+    color: #333;
+    text-decoration: none;
+    padding-left: 24px;
+    text-align: left;
+    text-indent: 0px;
+    width: 54px !important;
+}
+/****-------------清除签到图标按钮-----------***/
+.btn_Clearsignin
+{
+    background: url(Images/buttonslist.png) left -148px no-repeat;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_Clearsignin, a.btn_Clearsignin:active, a.btn_Clearsignin:visited
+{
+    color: #333;
+    text-decoration: none;
+    padding-left: 24px;
+    text-align: left;
+    text-indent: 0px;
+    width: 54px !important;
+}
+/****-------------积分管理图标按钮-----------***/
+.btn_integral
+{
+    background: url(Images/buttonslist.png) left -210px no-repeat;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_integral, a.btn_integral:active, a.btn_integral:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+/****-------------更新理图标按钮-----------***/
+.btn_update
+{
+    background: url(Images/buttonlist2.png) left -202px no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_update, a.btn_update:active, a.btn_update:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+/****-------------SCORM标准图标按钮-----------***/
+.btn_SCORMbutton
+{
+    background: url(Images/buttonlist2.png) left 0 no-repeat;
+    color: #333;
+    width: 105px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_SCORMbutton, a.btn_SCORMbutton:active, a.btn_SCORMbutton:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+/****-------------非SCORM标准图标按钮-----------***/
+.btn_NOTSCORMbutton
+{
+    background: url(Images/buttonlist2.png) left -25px no-repeat;
+    color: #333;
+    width: 105px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_NOTSCORMbutton, a.btn_NOTSCORMbutton:active, a.btn_NOTSCORMbutton:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+/****-------------单选图标按钮-----------***/
+.btn_SingleSelection
+{
+    background: url(Images/buttonlist2.png) left -82px no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_SingleSelection, a.btn_SingleSelectionn:active, a.btn_SingleSelection:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+/****-------------多选图标按钮-----------***/
+.btn_Multi-Choice
+{
+    background: url(Images/buttonlist2.png) left -112px no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_Multi-Choice, a.btn_Multi-Choice:active, a.btn_Multi-Choice:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+/****-------------简答图标按钮-----------***/
+.btn_EssayQuestions
+{
+    background: url(Images/buttonlist2.png) left -142px no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_EssayQuestions, a.btn_EssayQuestions:active, a.btn_EssayQuestions:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+/****-------------批量新增图标按钮-----------***/
+.btn_Batchnew
+{
+    background: url(Images/buttonslist.png) left -117px no-repeat;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_Batchnew, a.btn_Batchnew:active, a.btn_Batchnew:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+/****-------------选择题目图标按钮-----------***/
+.btn_Choosing
+{
+    background: url(Images/buttonChoosing-.png) no-repeat;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_Choosing, a.btn_Choosing:active, a.btn_Choosing:visited
+{
+    color: #333;
+    text-decoration: none;
+    padding-left: 26px;
+    text-align: left;
+    text-indent: 0px;
+    width: 52px !important;
+}
+/****-------------增加图标按钮-----------***/
+.btn_AddLong
+{
+    background: url(Images/btn_add1.png) no-repeat;
+    color: #333;
+    width: 78px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn_Add
+{
+    background: url(Images/btn_add.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_Add
+{
+    padding-left: 5px;
+}
+/****-------------增加图标按钮6个字-----------***/
+.btn_AddNew
+{
+    background: url(Images/btn_gray_6.png) no-repeat;
+    color: #333;
+    width: 103px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding-left: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------项目归档图标按钮4个字-----------***/
+.btn_Pache
+{
+    background: url(Images/btn_solkd.png) no-repeat;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+}
+/****-------------删除图标按钮-----------***/
+.btn_Del
+{
+    background: url(Images/btn_del.png) left top no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn_Del_eanbled
+{
+    background: url(Images/btn_del.png) left top no-repeat;
+    color: #a3a3a3;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn_DelAll
+{
+    background: url(Images/btn_DelAll.png) left top no-repeat;
+    color: #333;
+    width: 105px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_Del
+{
+    padding-left: 9px;
+}
+/****-------------发布图标按钮-----------***/
+.btn_Deploy
+{
+    background: url(Images/btn_Send.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+}
+/****-------------选择试卷图标按钮-----------***/
+.btn_SelectExam
+{
+    background: url(Images/btn_examination.png) no-repeat;
+    color: #333;
+    width: 85px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------查找图标按钮-----------***/
+.btn_Search
+{
+    background: url(Images/btn-Search.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+.Search_Area div
+{
+    float: left;
+    width: 58px;
+}
+.Search_Area .btn_Search
+{
+    float: left;
+}
+/****-------------支付图标按钮-----------***/
+.btn_Addmoney
+{
+    background: url(Images/btn_addmoney.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 22px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------重置图标按钮-----------***/
+.btn_Clear
+{
+    background: url(Images/refouces.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 18px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------取消支付图标按钮-----------***/
+.btn_Cancelmoney
+{
+    background: url(Images/btn_cancelmoney.png) no-repeat;
+    color: #333;
+    width: 85px;
+    height: 22px;
+    line-height: 22px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------刷新图标按钮-----------***/
+.btn_refresh
+{
+    background: url(Images/buttonlist3.png) no-repeat left 0;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 22px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------清除选中图标按钮-----------***/
+.btn_clearselected
+{
+    background: url(Images/buttonlist3.png) no-repeat left -27px;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 22px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------清除全部图标按钮-----------***/
+.btn_clearall
+{
+    background: url(Images/buttonlist3.png) no-repeat left -55px;
+    color: #333;
+    width: 80px;
+    height: 22px;
+    line-height: 22px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/****-------------选择课时按排图标按钮-----------***/
+.btn_SeclectTime
+{
+    background: url(Images/btn_selectTime.png) no-repeat;
+    color: #333;
+    width: 103px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/****-------------导入图标按钮-----------***/
+.btn_Export
+{
+    background: url(Images/btn_export.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn_ExportAll
+{
+    background: url(Images/btn_ExportAll.png) no-repeat;
+    color: #333;
+    width: 105px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------增加模板图标按钮-----------***/
+.btn_Addmodel
+{
+    background: url(Images/btn_sa.png) no-repeat;
+    color: #333;
+    width: 93px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------导出图标按钮-----------***/
+.btn_Import
+{
+    background: url(Images/btn_guide.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn_Import_enabled
+{
+    background: url(Images/btn_guide.png) no-repeat;
+    color: #a3a3a3;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------审核图标按钮-----------***/
+.btn_Verify
+{
+    background: url(Images/btn_verify.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn_Verify_4
+{
+    background: url(Images/btn_verify_4.png) no-repeat;
+    color: #333;
+    width: 85px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------保存图标按钮-----------***/
+.btn_Save
+{
+    background: url(Images/btn_save.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 18px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------调整图标按钮-----------***/
+.btn_Tiao
+{
+    background: url(Images/btn_tiao.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 18px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------保存4个字图标按钮-----------***/
+.btn_SaveFour
+{
+    background: url(Images/btn_savesix.png) no-repeat;
+    color: #333;
+    width: 85px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 18px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------上一步图标按钮-----------***/
+.btn_NextStep
+{
+    background: url(Images/btn_prevstep.png) no-repeat;
+    color: #333;
+    width: 67px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 18px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------下一步图标按钮-----------***/
+.btn_PrevStep
+{
+    background: url(Images/btn_nextstep.png) no-repeat;
+    color: #333;
+    width: 67px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 18px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------设置图标按钮-----------***/
+.btn_Configer
+{
+    background: url(Images/btn_setapp.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 18px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------修改图标按钮-----------***/
+.btn_Edit
+{
+    background: url(Images/btn_edit.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 18px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------关闭图标按钮-----------***/
+.btn_Close
+{
+    background: url(Images/btn_close.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------修改资源学习周期图标按钮-----------***/
+.btn_amendperiod
+{
+    background: url(Images/btn_amendperiod.png) no-repeat;
+    color: #333;
+    width: 135px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+table.GridviewGray a.btn_Close, table.GridviewGray a.btn_Save, table.GridviewGray a.btn_Search, table.GridviewGray a.btn_Import, table.GridviewGray a.btn_Export, table.GridviewGray a.btn_Edit, table.GridviewGray a.btn_Ok, table.GridviewGray a.btn_Cancel
+{
+    text-decoration: none;
+    color: #313131;
+}
+table.GridviewGray a.btn_Close:hover, table.GridviewGray a.btn_Save:hover, table.GridviewGray a.btn_Cancel:hover, table.GridviewGray a.btn_Import:hover, table.GridviewGray a.btn_Export:hover, table.GridviewGray a.btn_Ok:hover
+{
+    text-decoration: none;
+    color: #313131;
+}
+
+a.btn_Close, a.btn_Save, a.btn_Search, a.btn_Import, a.btn_Export, a.btn_Edit, a.btn_Ok, a.btn_Cancel, a.btn_Add, a.btn_Del, a.btn_SeclectTime, a.btn_Deny, a.btn_Agree, a.btn_Verify
+{
+    text-decoration: none;
+    color: #313131;
+}
+a.btn_Close:hover, a.btn_Save:hover, a.btn_Cancel:hover, a.btn_Import:hover, a.btn_Export:hover, a.btn_Ok:hover
+{
+    text-decoration: none;
+    color: #313131;
+}
+/****-------------移动图标按钮-----------***/
+.btn_Move
+{
+    background: url(Images/btns.png) left -97px no-repeat;
+    color: #333;
+    width: 89px;
+    height: 23px;
+    line-height: 22px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------确定图标按钮-----------***/
+.btn_Ok
+{
+    background: url(Images/buttonlist2.png) left -52px no-repeat;
+    color: #333;
+    width: 58px;
+    height: 23px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-indent: 19px;
+}
+a.btn_Ok, a.btn_Ok:active, a.btn_Ok:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+a.btn_Ok:hover
+{
+    color: #333;
+}
+/****-------------取消图标按钮-----------***/
+.btn_Cancel
+{
+    background: url(Images/btn_close.png) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-indent: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_Cancel, a.btn_Cancel:active, a.btn_Cancel:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+a.btn_Cancel:hover
+{
+    color: #333;
+}
+/****-------------启用图标按钮-----------***/
+.btn_Start
+{
+    background: url(Images/btns.png) -134px -9px no-repeat;
+    color: #333;
+    width: 28px;
+    height: 17px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+/****-------------停用图标按钮-----------***/
+.btn_Stop2
+{
+    background: url(Images/buttonlist2.png) left -172px no-repeat;
+    color: #333;
+    width: 58px;
+    height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-indent: 19px;
+}
+/****-------------启用图标按钮-----------***/
+.btn_start_2
+{
+    background: url(Images/start.png) left 0 no-repeat;
+    color: #333;
+    width: 58px;
+    height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-indent: 19px;
+}
+/****-------------项目学员开放所有课程-----------***/
+.btn_Open_Course
+{
+    background: url(Images/btn_Open-Course.gif) left 0 no-repeat;
+    color: #333;
+    width: 157px;
+    height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-indent: 19px;
+}
+/****-------------清除学员开放课程信息-----------***/
+.btn_Clear_Course
+{
+    background: url(Images/btn_Clear-course.gif) left 0 no-repeat;
+    color: #333;
+    width: 157px;
+    height: 23px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-indent: 19px;
+}
+
+
+/****-------------2个字数的普通按钮-----------***/
+.btn_2
+{
+    background: url(Images/btns.png) -138px -69px no-repeat;
+    color: #333;
+    width: 60px;
+    height: 23px;
+    line-height: 22px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_2, a.btn_2:active, a.btn_2:visited
+{
+    color: #313131;
+    text-decoration: none;
+}
+a.btn_2:hover
+{
+    color: #313131;
+}
+/****-------------4个字数的普通按钮-----------***/
+.btn_4
+{
+    background: url(Images/btns.png) -120px -107px no-repeat;
+    color: #333;
+    width: 80px;
+    height: 23px;
+    line-height: 22px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_4, a.btn_4:active, a.btn_4:visited
+{
+    color: #313131;
+    text-decoration: none;
+}
+a.btn_4:hover
+{
+    color: #313131;
+}
+/****-------------6个字数的普通按钮-----------***/
+.btn_6
+{
+    background: url(Images/btns.png) -104px -146px no-repeat;
+    color: #333;
+    width: 94px;
+    height: 23px;
+    line-height: 22px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_6, a.btn_6:active, a.btn_6:visited
+{
+    color: #313131;
+    text-decoration: none;
+}
+a.btn_6:hover
+{
+    color: #313131;
+}
+/****-------------8个字数的普通按钮-----------***/
+.btn_8
+{
+    background: url(Images/btns.png) -73px -187px no-repeat;
+    color: #333;
+    width: 125px;
+    height: 23px;
+    line-height: 22px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn_8, a.btn_8:active, a.btn_8:visited
+{
+    color: #313131;
+}
+a.btn_8:hover
+{
+    color: #313131;
+}
+/****-------------不限字数按钮-----------***/
+span.btn
+{
+    padding-left: 5px;
+    background: url(Images/an-biut.png) no-repeat;
+    height: 22px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+span.btn a
+{
+    padding-right: 5px;
+    background: url(Images/an-biut.png) right -22px no-repeat;
+    height: 22px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+span.btn span.bj
+{
+    background: url(Images/an-biut.png) left -44px repeat-x;
+    padding: 0px 10px;
+    height: 22px;
+    line-height: 22px;
+    color: White;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-decoration: none;
+}
+.dv_path
+{
+    margin-bottom: 10px;
+    height: 35px;
+    line-height: 36px;
+    text-indent: 4px;
+    color: #515151;
+    text-indent: 39px;
+    font-weight: bold;
+    display: none;
+}
+
+.dv_nav
+{
+    
+    height: 36px;
+    line-height: 37px; 
+    text-indent: 4px;
+    color: #515151;
+    text-indent: 15px;
+    width: 80%;
+    float: left;
+    font-family:SimSun;
+}
+
+.dv_back_area
+{
+    text-indent: 4px;
+    color: #515151;
+    text-indent: 30px;
+    font-weight: bold;
+    width: 20%;
+    float: right;
+}
+.dv_nav_layer
+{
+    overflow: hidden;
+    background:#f0f0f0/* url(Images/navator-bj.gif) repeat-x*/;
+    _float: left;
+    margin-bottom: 15px;
+    border-bottom:1px solid #dedee0;
+}
+h2.dv_title
+{
+    margin-bottom: 30px;
+    color: #d64d02;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #ddd;
+    width: 88%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: url(Images/ico-path.gif) left 6px no-repeat;
+    padding-left: 15px;
+    display: none;
+}
+.dv_submit
+{
+    text-align: center;
+    height: 40px;
+    padding-top: 9px;
+    background: url(Images/dv_repeat-ba.gif) repeat-x;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 14px;
+}
+.dv_information table.GridviewGray
+{
+    width: 96%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.dv_information table.GridviewGray td
+{
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    width: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.info .dv_information table.GridviewGray
+{
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.dv_information table.GridviewGray
+{
+    table-layout: auto;
+}
+.dv_searchbox table
+{
+    margin: 0 auto;
+    table-layout: auto;
+}
+.dv_searchbox table.fixedTable, .dv_information table.fixedTable
+{
+    table-layout: fixed;
+}
+.dv_information
+{
+    width: 98%;
+    margin: 0px auto;
+    /*height: 320px;*/
+    overflow: auto;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+.dv_information table tr th
+{
+    text-align: right;
+    background: #f1f1f1;
+    white-space: nowrap;
+    word-break: keep-all;
+    width: 80px;
+}
+.dv_marist table tr th
+{
+    width: auto;
+}
+.dv_information table.GridviewGray tr th
+{
+    width: 100px;
+}
+.dv_information .dv_searchlist table.GridviewGray tr th
+{
+    text-align: center;
+    width: auto;
+}
+.dv_information table tr th.center
+{
+    text-align: center;
+}
+.dv_information table tr th.thleft
+{
+    text-align: left;
+}
+
+.dv_information .dv_searchbox table th
+{
+    background: none;
+}
+.dv_searchbox, .dv_GradeviewList
+{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: #fefefe;
+    border: 1px solid #dedede;
+    width: 98%;
+    padding:5px 0;
+}
+.dv_searchbox2
+{
+    background: #fefefe url(Images/bj_searchs.gif) left bottom repeat-x;
+    border: 1px solid #DDDDDD;
+    padding: 6px;
+}
+.dv_GradeviewList table
+{
+    margin: 0px;
+    table-layout: fixed;
+}
+.dv_searchbox table.GridviewGray th
+{
+    border: 0px;
+    overflow: visible;
+    white-space: nowrap;
+    word-break: break-all;
+}
+.dv_searchbox table.GridviewGray td
+{
+    overflow: visible;
+    border: 0px;
+    width: auto;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.center
+{
+    text-align: center;
+}
+.dv_searchlist
+{
+    margin-bottom: 10px;
+    width: 98%;
+    margin: 0 auto;
+}
+.dv_information .dv_searchlist, .dv_information .dv_searchbox
+{
+    width: 96%;
+}
+.dv_searchlist table td
+{
+    text-align: center;
+}
+.dv_GradeviewList table th
+{
+    text-align: right;
+    width: 120px;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+.dv_searchlist table.GridviewGray th
+{
+    background: url(Images/gray-bj.gif) bottom repeat-x;
+    border-top: 3px solid #FF8A2B;
+    border-bottom: 1px solid #FF8A2B;
+    border-left: 0px;
+    border-right: 0px;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.dv_searchlist table.GridviewGray td
+{
+    border: none;
+}
+.dv_searchlist table.GridviewGray
+{
+    border: none;
+    table-layout: fixed;
+}
+.dv_searchlist table td.alignleft, .dv_searchlist table th.alignleft
+{
+    text-align: left;
+}
+.dv_searchlist table td.alignright, .dv_searchlist table th.alignright
+{
+    text-align: right;
+}
+.dv_GridviewGray table td.alignleft, .dv_GridviewGray table th.alignleft
+{
+    text-align: left;
+    text-indent: 5px;
+}
+.dv_information .dv_searchlist table tr th.alignleft, .GridviewGray table th.alignleft, .GridviewGray table td.alignleft
+{
+    text-align: left;
+    text-indent: 5px;
+}
+
+.dv_information table td.alignleft, .dv_information table th.alignleft
+{
+    text-align: left;
+    text-indent: 5px;
+}
+/****-------------翻页区-----------***/
+.dv_pagePanel
+{
+    overflow: hidden;
+    clear: both;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.btn_prev
+{
+    background:url(Images/icons.png) 0px -174px no-repeat;
+    width: 10px;
+    height: 24px;
+    border: none;
+    margin-right: 2px;
+    margin-left: 2px;
+    display: inline-block;
+    float: left;
+}
+.btn_next
+{
+    background:url(Images/icons.png) 0px -204px no-repeat;
+    width: 10px;
+    height: 24px;
+    border: none;
+    margin-right: 2px;
+    margin-left: 2px;
+    display: inline-block;
+    float: left;
+}
+.btn_first
+{
+    background:url(Images/icons.png) -25px -174px no-repeat;
+    width: 11px;
+    height: 24px;
+    border: none;
+    margin-right: 2px;
+    margin-left: 2px;
+    display: inline-block;
+    float: left;
+}
+.btn_last
+{
+    background:url(Images/icons.png) -25px -204px no-repeat;
+    width: 11px;
+    height: 24px;
+    border: none;
+    margin-right: 2px;
+    margin-left: 0spx;
+    display: inline-block;
+    float: left;
+}
+
+.dv_pageControl
+{
+    float: right;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+}
+.dv_pagePanel a.pageNumber, .dv_pagePanel apageNumber:link, .dv_pagePanel apageNumber:visited, .dv_pagePanel apageNumber:active
+{
+    display: inline-block;
+    text-align: center;
+    margin-top: 3px;
+    color: #333;
+    margin-right: 4px;
+    background:#ccc;
+    float: left;
+    width: 16px;
+    height: 16px;
+    line-height: 17px;
+    text-decoration: none;
+    padding:1px;
+    font-family:arial;
+}
+.dv_pagePanel a.pageNumber:hover
+{
+    color: white;
+    background:#FF7301;
+    text-decoration: none;
+}
+.dv_pagePanel a.pageSelected, .dv_pagePanel a.pageSelected:active, .dv_pagePanel a.pageSelected:visited
+{
+    background:#ff7301;
+    color:#fff;
+}
+.dv_pagePanel a.selected, .dv_pagePanel a.selected:active, .dv_pagePanel a.selected:visited
+{
+    color: #ff5500;
+    background: #ffeee5;
+    border: 1px solid #ff5500;
+    font-weight: bold;
+}
+.pageTotal
+{
+    float: left;
+    margin-right: 4px;
+    display: inline-block;
+    margin-top: 2px;
+}
+.dv_selectAll
+{
+    float: left;
+    overflow: hidden;
+    display: inline-block;
+    padding-left: 5px;
+}
+.dv_selectAll input
+{
+    float: left;
+}
+.dv_selectAll input.selectCheckbox
+{
+    display: inline-block;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+}
+.dv_selectAll label
+{
+    display: inline-block;
+    float: left;
+    margin-right: 12px;
+    height: 22px;
+    line-height: 24px;
+}
+/*----切换卡的样式--------*/
+.dv_serviceTab .dv_Tabmenus
+{
+    position: relative;
+    height: 24px;
+    border-bottom: 2px solid #FF8A2B;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 98%;
+}
+
+.dv_serviceTab .dv_Tabmenus ul
+{
+    position: absolute;
+    left: 10px;
+    top: 1px;
+}
+
+.dv_serviceTab .dv_Tabmenus li
+{
+    
+    height: 24px;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 2px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.dv_serviceTab .dv_Tabmenus li a
+{
+    display: inline-block;
+    line-height: 24px;
+    height: 24px;
+    padding-right: 5px;
+
+    text-decoration: none;
+}
+
+.dv_serviceTab .dv_Tabmenus li span.bj
+{
+    display: inline-block;
+    background:#eee;
+    padding: 0px 15px;
+    height: 23px;
+    line-height: 23px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+    border-radius:3px 3px 0 0;
+}
+.dv_serviceTab .dv_Tabmenus li.selected
+{
+    
+}
+.dv_serviceTab .dv_Tabmenus li.selected a
+{
+    text-decoration: none;
+}
+.dv_serviceTab .dv_Tabmenus li.selected span.bj
+{
+    background:#FF8A2B;
+    font-weight: bold;
+    color: White;
+}
+
+.dv_serviceTab .dv_Tabmenus li.selected a, .dv_serviceTab .dv_Tabmenus li.selected a:active, .dv_serviceTab .dv_Tabmenus li.selected a:visited
+{
+    color: #D7000F;
+    font-weight: bold;
+    line-height: 41px;
+    text-decoration: none;
+}
+.dv_serviceTab .dv_Tabmenus li.selected a:hover
+{
+    color: #D7000F;
+    line-height: 41px;
+}
+
+.GridviewGray table.noborder
+{
+    width: auto;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.GridviewGray table.noborder th, .GridviewGray table.noborder td
+{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+.GridviewGray .tdleft {
+ text-align:left;
+}
+.hide
+{
+    display: none;
+}
+.hide_norm
+{
+    display: none;
+}
+.graybj
+{
+    background: #ececec;
+}
+.pinkbj
+{
+    background-color: #ff9900;
+    cursor: pointer;
+}
+.split
+{
+    border-bottom: 3px solid #CACACA;
+    width: 90%;
+    margin: 0 auto;
+}
+.dv_questionManage
+{
+    margin-bottom: 10px;
+}
+.dv_information table.Questionview th
+{
+    width: 40px;
+}
+
+table.GridviewGrayboder
+{
+    margin: 0;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+table.GridviewGrayboder tr th
+{
+    background: url(Images/gray-bj.gif) repeat-x;
+    height: 20px;
+}
+table.GridviewGrayboder tr th, table.GridviewGrayboder tr td
+{
+    border: 1px solid #ddd;
+    text-align: center;
+}
+table.GridviewGray td.selectAnswer
+{
+    width: 30px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+a.btn_Return
+{
+    float: right;
+    display: inline-block;
+    background: url(Images/btn-return.gif) left center no-repeat;
+    text-decoration: none;
+    height: 24px;
+    line-height: 24px;
+    color: #313131;
+    margin-top: 8px;
+    margin-right: 20px;
+}
+.btn_Return
+{
+    float: right;
+    display: inline-block;
+    background: url(Images/btn-return.gif) left center no-repeat;
+    text-decoration: none;
+    height: 24px;
+    border: 0px;
+    cursor: pointer;
+    color: #313131;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+.btn_file
+{
+    background: url(Images/btn_file.png) no-repeat;
+    width: 54px;
+    height: 21px;
+}
+
+.code_tool
+{
+    float: right;
+    margin-right: 20px;
+    color: #666666;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hide_control
+{
+    display: none;
+}
+
+.ol-style ol
+{
+    margin-left: 18px;
+}
+
+.date_format
+{
+    width: 80px;
+}
+a.btn-upload-file, a.btn-upload-file:active, a.btn-upload-file:visited
+{
+    text-decoration: none;
+}
+.dv_GradeviewListtop
+{
+    margin-top: 20px;
+}
+.dv_searchlist_w
+{
+    width: 100%;
+}
+
+.import_status
+{
+    background: url(Images/import_status_1.gif) no-repeat;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-left: 120px;
+}
+.open_filelist .filelist .send_ok a.link_colorBlue12
+{
+    background: url(Images/delete.png) no-repeat;
+    display: inline-block;
+    text-decoration: none;
+    color: #333333;
+    width: 56px;
+    padding-left: 26px !important;
+}
+.dv_searchlist2
+{
+    width: 100%;
+}
+table th.alignright, table.GridviewGray tr th.alignright
+{
+    text-align: right;
+}
+table td.alignright, table.GridviewGray tr td.alignright
+{
+    text-align: right;
+}
+
+.dv_GradeviewList table td
+{
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    width: auto;
+}
+
+.wrap_lable, .wrap_span
+{
+    word-break: break-all;
+    word-wrap: break-word;
+}
+td.clearpad
+{
+    padding: 0px;
+    margin: 0px;
+}
+.dv_searchbox table.th100 tr th, .dv_information table.th100 tr th
+{
+    width: 100px;
+}
+.dv_searchbox table.th120 tr th, .dv_information table.th120 tr th
+{
+    width: 120px;
+}
+.dv_searchbox table.th70 tr th, .dv_information table.th70 tr th, .dv_information .dv_GradeviewList table.th70 tr th, .dv_GradeviewList table.th70 tr th
+{
+    width: 70px;
+}
+.dv_searchbox table.th80 tr th, .dv_information table.th80 tr th
+{
+    width: 80px;
+}
+.dv_information table.GridviewGray.th140 tr th
+{
+    width: 140px;
+}
+.dv_information table.GridviewGray.th80 tr th
+{
+    width: 80px;
+}
+.dv_information table.GridviewGray.th120 tr th
+{
+    width: 120px;
+}
+.dv_pageInformation table.GridviewGray.th160 tr th
+{
+    width: 160px;
+}
+
+.dv_pageInformation table.GridviewGray td
+{
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.dv_pageInformation .dv_searchlist table.GridviewGray td
+{
+    white-space: nowrap;
+    word-wrap: normal;
+    word-break: normal;
+}
+table.GridveiwFixed, .dv_information table.GridveiwFixed
+{
+    table-layout: fixed;
+}
+.dv_information .dv_GradeviewList table th
+{
+    text-align: right;
+    white-space: nowrap;
+    width: 80px;
+    background: none;
+}
+.field8, .dv_information .dv_searchlist table.GridviewGray tr th.field8, .dv_pageInformation table.GridviewGray tr th.field8, .dv_searchbox table.GridviewGray tr th.field8
+{
+    width: 80px;
+}
+.field10, .dv_information .dv_searchlist table.GridviewGray tr th.field10, .dv_pageInformation table.GridviewGray tr th.field10, .dv_searchbox table.GridviewGray tr th.field10
+{
+    width: 90px;
+}
+.field12, .dv_information .dv_searchlist table.GridviewGray tr th.field12, .dv_pageInformation table.GridviewGray tr th.field12, .dv_searchbox table.GridviewGray tr th.field12
+{
+    width: 100px;
+}
+.field14, .dv_information .dv_searchlist table.GridviewGray tr th.field14, .dv_pageInformation table.GridviewGray tr th.field14, .dv_searchbox table.GridviewGray tr th.field14
+{
+    width: 120px;
+}
+.field17, .dv_information .dv_searchlist table.GridviewGray tr th.field17, .dv_pageInformation table.GridviewGray tr th.field17, .dv_searchbox table.GridviewGray tr th.field17
+{
+    width: 170px;
+}
+.field18, .dv_information .dv_searchlist table.GridviewGray tr th.field18, .dv_pageInformation table.GridviewGray tr th.field18, .dv_searchbox table.GridviewGray tr th.field18
+{
+    width: 220px;
+}
+.dv_pageInformation table.GridviewGray th.aligncenter
+{
+    text-align: center;
+}
+.dv_information table.marginb
+{
+    margin-bottom: 0;
+}
+.dv_searchlist a.GridviewGraya
+{
+    text-decoration: none;
+}
+.dv_searchlist a.GridviewGraya:hover
+{
+    text-decoration: none;
+}
+
+.padding10
+{
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+}
+/*----表格变色的样式--------*/
+tr.even td
+{
+    background: #ffffff;
+}
+tr.odd td
+{
+    background: #f3f3f3;
+}
+th.over, tr.even th.over, tr.odd th.over
+{
+    background: #ffffee;
+}
+th.down, tr.even th.down, tr.odd th.down
+{
+    background: #ffcc66;
+}
+th.selected, tr.even th.selected, tr.odd th.selected
+{
+    background: #fff2b4;
+}
+
+td.over, tr.even td.over, tr.odd td.over
+{
+    background: #ffffee;
+}
+td.down, tr.even td.down, tr.odd td.down
+{
+    background: #fff2b4;
+    color: #555;
+}
+td.selected, tr.even td.selected, tr.odd td.selected
+{
+    background: #fff2b4;
+    color: #555;
+}
+.modalBackground
+{
+    background-color: Gray;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+.modalBox
+{
+    background-color: #f5f5f5;
+    border-width: 3px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+}
+.modalBox caption
+{
+    background-repeat: repeat-x;
+}
+.modalBox table
+{
+    border-width: 0px;
+}
+/*增加了普通按钮,上移，下移，置顶置底的样式 add 2013-1-22 hjy*/
+select.list-box
+{
+    background: white;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    line-height: 1.8;
+    height: 260px;
+    margin: 0 auto;
+    padding: 8px;
+}
+select.list-box option
+{
+    margin: 4px 0;
+    line-height: 2.0;
+    display: block;
+}
+.btn
+{
+    border: none;
+    background: url(images/2_03.gif) no-repeat;
+    width: 30px;
+    height: 27px;
+    color: White;
+    display: block;
+    cursor: pointer;
+    margin: 10px;
+}
+.btn.move-up
+{
+    background-position: -7px -8px;
+}
+.btn.move-top
+{
+    background-position: -7px -41px;
+}
+.btn.move-down
+{
+    background-position: -7px -74px;
+}
+.btn.move-bottom
+{
+    background-position: -7px -107px;
+}
+.btn.move-up:hover
+{
+    background-position: -46px -8px;
+}
+.btn.move-top:hover
+{
+    background-position: -46px -41px;
+}
+.btn.move-down:hover
+{
+    background-position: -46px -74px;
+}
+.btn.move-bottom:hover
+{
+    background-position: -46px -107px;
+}
+/****-------------排序的图标和样式-----------***/
+.btn_Sort
+{
+    background: url(Images/btn-sort.jpg) no-repeat;
+    color: #333;
+    width: 56px;
+    height: 22px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 19px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/****-------------选择负责人图标按钮-----------***/
+.btn_SelectUser
+{
+    background: url(Images/user.gif) no-repeat;
+    color: #333;
+    width: 13px;
+    height: 14px;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+    text-indent: 22px;
+    display: inline-block;
+    text-decoration: none;
+}
+table.nostyletable{ border:none;float:left;}
+table.nostyletable td{ border:none!important; text-align:left!important;padding:0!important; line-height:18px!important;}
+table.nostyletable td{ }
+
+.upFile{
+    width: 320px;
+    margin-right: 1px;
+    height: 24px;
+}
+.upControl
+{
+    width:297px;
+    height:24px;
+    position:absolute;
+    background:red;
+    opacity:0.0;
+    filter:alpha(opacity=0);
+    left:0px;
+    z-index:-1;    
+}
+
+.button{background:#f60;border-width:1px;border-style:solid;border-color:#ffcc99 #cc3300 #cc3300 #ffcc99;display:inline-block;padding:3px 30px;line-height:20px;color:#fff;*border-width:0px;*padding:2px 20px;}
+.button:hover{background:#f90;}
+.button:focus{background:#f60;}
+
+.margin0{ margin-left:0;}
+.btnWhite
+{
+    width:100px;
+    line-height:25px;
+    border:1px solid #dbdbdb;
+    cursor:pointer;
+}
+.standard-rata {
+    width:40px;
+    height: 18px;
+    margin-left: 20px;
+}
+.datetimepicker-icon {
+    background:url(Images/datePicker.gif) no-repeat 173px 0px !important;
+}
+.org-info-block {
+    padding:5px 0px 0px 15px;
+}

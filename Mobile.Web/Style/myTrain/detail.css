@@ -1,0 +1,422 @@
+﻿footer{
+    display:none;
+}
+.swiper-slide {
+    overflow-y: auto;
+}
+/*视频区域*/
+ .coursebox{
+    width: 100%;
+    background: #000;
+}
+#videojs{
+    width:100%;
+    min-height:52%;
+}
+/*导航*/
+.nav_bar {
+    width: 100%;
+    background-image: -webkit-linear-gradient(#d9d9d9 50%,transparent 50%);
+    background-image: -moz-linear-gradient(#d9d9d9 50%,transparent 50%);
+    background-image: -o-linear-gradient(#d9d9d9 50%,transparent 50%);
+    background-image: linear-gradient(#d9d9d9 50%,transparent 50%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+    .nav_bar li {
+        width: 22%;
+        line-height: 54px;
+        /*padding: 0 1%;*/
+        text-align: center;
+        color: #999;
+        display: inline-block;
+        font-size:2.4rem;
+    }
+
+        .nav_bar li p {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.7rem;
+        }
+
+    .nav_bar .choose {
+        color: #4B809D;
+        /*border-bottom: 1px solid #76a6ef;*/
+    }
+
+.searchNone {
+    width: 22vw;
+    position: absolute;
+    left: 40%;
+    top: 20vh;
+    display: none;
+}
+ 
+/*未登录课程内容*/
+.courseContent{
+    padding: 0rem 0 2rem 6vw;
+    width: 92% !important;
+     /*border-left: 1px solid rgba(232,232,232,1);*/
+}
+.courseContent .object_list{
+     padding:0 1rem 0 0rem ;
+}
+.courseContent .object_list li{
+     padding:1.2rem 0;
+     font-size:1.6rem;
+   border-bottom: 1px solid rgba(232,232,232,1);
+   position:relative;
+   min-height:0 !important;
+}
+.courseContent .object_list li:last-child{
+    border-bottom: none;
+    padding-bottom:5rem;
+}
+.courseContent .object_list li:first-child{
+   padding-top:0;
+}
+.courseContent .object_list li i {
+font-size:2.4rem;
+color:#ccc;
+left:-1.5rem;
+top: 2px;
+background-color:#fff;
+position:relative;
+    text-indent: -4px;
+}
+ .courseContent .object_list li.on ,.courseContent .object_list li.on i{
+     color:#4B809D;
+ }
+
+ .courseContent .object_list li i:after  {
+content:'';
+display:block;
+height:5rem;
+border-left:1px solid rgba(232,232,232,1);
+position:absolute;
+left:11px;
+top: 24px;
+}
+  .courseContent .object_list li:last-child i:after  {
+border-left:none;
+}
+  /*学习*/
+ 
+.myTrainCourseContent li i {
+    display: inline-block;
+    /*width: 1.5rem;
+    height: 1.5rem;*/
+}
+.myTrainCourseContent  .pullDown,.myTrainCourseContent .pullUp{
+    position:relative;
+    left:-11vw;
+}
+
+    .myTrainCourseContent li i.endStatus,.myTrainCourseContent li i.studyingStatus {
+        /*background-color: #4185ff !important;*/
+        /*border: none;*/
+        color:#4B809D;
+    }
+
+    /*.myTrainCourseContent li i.studyingStatus {
+        border: 1px solid #4185ff;
+        background: linear-gradient(to right, #4185ff 50%, #fff 50%);
+    }*/
+
+    .myTrainCourseContent li i:after {
+        height: 2.3rem !important;
+left: 7px !important;
+top: 19px;
+    }
+    .living-catalog li i:after {
+        height: 6rem !important;
+        left: 7px !important;
+        top: 19px;
+    }
+    .myTrainCourseContent li.on {
+        color: #4185ff;
+    }
+/*公告/资讯详情*/
+.noticeDetail {
+    /*padding: 1rem 1.7rem 3rem;*/
+}
+.noticeDetail img{
+    max-width:100%;
+    height:auto;
+}
+    .noticeDetail li {
+        border-bottom: 1px solid rgba(232,232,232,1);
+            margin: 5px 1rem;
+    }
+
+        .noticeDetail li .title {
+            padding: 1rem 0;
+            font-weight: 400;
+            font-size: 2rem;
+        }
+
+        .noticeDetail li .time {
+            padding-bottom: 1.5rem;
+            font-size: 1.2rem;
+            color: #999;
+        }
+
+        .noticeDetail li .content {
+            padding-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: #666;
+        }
+/*评测*/
+.evaluation_list {
+    padding: 0 .5rem;
+}
+
+.evaluation-obj {
+    padding: 1.4rem 0rem 2rem 3.5rem !important ;
+    position: relative;
+    background-image: -webkit-linear-gradient(#d9d9d9 50%,transparent 50%);
+    background-image: -moz-linear-gradient(#d9d9d9 50%,transparent 50%);
+    background-image: -o-linear-gradient(#d9d9d9 50%,transparent 50%);
+    background-image: linear-gradient(#d9d9d9 50%,transparent 50%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.evaluation_name {
+    font-size: 1.6rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-bottom: 1rem;
+}
+
+.atatusSelect {
+font-size: 2.1rem;
+font-style: normal;
+color: #fff;
+line-height: 2rem;
+text-align: center;
+display: inline-block;
+width: 2.1rem;
+height: 2.1rem;
+border-radius: 50%;
+background-color: #4185ff;
+margin-right: .5rem;
+position: absolute;
+left: 12px;
+top: 16px;
+}
+
+.test {
+    background-color: #2ccc59;
+}
+
+.evaluation_times, .evaluation_status, .evaluation_score, .evaluation_courseName, .evaluation_comit {
+    font-size: 1rem;
+    color: #999;
+}
+
+    .evaluation_status:before, .evaluation_status:after, evaluation_comit:after {
+        content: '';
+        display: inline-block;
+        height: 8px;
+        border-left: 1px solid #999;
+    }
+
+.evaluation_courseName {
+    font-size: 1rem;
+    color: #999;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: .5rem 0 2rem 0;
+}
+
+.evaluation-btn {
+    display: block;
+    width: 7rem;
+    line-height: 2.3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+}
+
+.discuss_question，.discuss_note {
+    width: 98vw;
+    display: block;
+    margin: 0 auto;
+    padding-left: 2vw;
+    margin-top: 2vh;
+}
+
+.discuss_main {
+    padding: 0 5vw;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.discuss_title {
+    width: 95%;
+    text-align: left;
+    font-size: 1.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+    .discuss_title a {
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+.discuss_cont {
+    font-size: 1.5rem;
+    margin: 2vh 0;
+}
+
+    .discuss_cont a {
+        color: #999;
+    }
+
+.discuss_foot {
+    height: 30px;
+    margin-top: 1vh;
+}
+
+.ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.discuss_release {
+    float: left;
+    color: #999;
+    width: 70%;
+     font-size: 1.4rem;
+}
+
+/*.discuss_time {
+    font-size: 1rem;
+}*/
+
+.discuss_num {
+    float: right;
+    color: #999;
+    width: 30%;
+    text-align: right;
+}
+
+.discuss_num_i {
+    color: #acacac;
+    font-size: 2.5rem;
+    display: inline-block;
+    vertical-align: sub;
+    margin-left: 1vw;
+}
+
+.insert_question, .insert_note {
+    width: 18vw;
+    position: fixed;
+    left: 40vw;
+    bottom: 3rem;
+    z-index: 2;
+}
+
+.create_question, .create_note {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    background: #efefef;
+    padding: 0 5%;
+    display: none;
+}
+
+    .create_question p, .create_note p {
+        height: 35px;
+        color: #333;
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 2vh;
+    }
+
+    .create_question span:nth-child(1), .create_note span:nth-child(1) {
+        float: left;
+    }
+
+    .create_question span:nth-child(3), .create_note span:nth-child(3) {
+        float: right;
+    }
+
+.discuss_theme {
+    width: 94%;
+    height: 23px;
+    padding: 3%;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    margin: 2vh 0;
+    font-size: 1.6rem;
+}
+
+.discuss_content {
+    width: 94%;
+    height: 20vh;
+    padding: 3%;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    font-size: 1.6rem;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+/**/
+.object_list .NULL_BOX {
+    position: relative;
+    left: -2rem;
+}
+.note_nocontent, .question_nocontent{
+        margin: auto;
+    width: 10rem !important ;
+    height: auto;
+    margin-top: 3rem;
+}
+
+  .pictureBox{
+      display:block;position:relative;width:100%;height:18rem;
+  }
+   .pictureBox i {
+        display:block;
+        width:4rem;
+        height:4rem;
+        line-height:4rem;
+        border-radius:50%;
+        border:2px solid #fff;
+        color:#fff;
+        font-size:3rem;
+        text-align:center;
+        position:absolute;
+        top:7rem;
+        left:43%;
+        background-color:rgba(22, 21, 21,.7);
+    }
+
+/*直播课程*/
+.living-header-img img{
+    width:100%;
+    height:18rem;
+}
+.living-time-teacher {
+    text-indent: 2.3rem;
+    line-height: 3rem;
+    color: #aaa;
+}

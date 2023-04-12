@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "回复列表";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section head{
+    <link  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/iscroll.css" rel="stylesheet" />
+    <link  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/pullToRefresh.css" rel="stylesheet" />
+    <link  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/font/iconfont.css" rel="stylesheet" />
+    <link  href="@ETMS.Utility.WebUtility.AppPath/Style/myTrain/AnswerList.css" rel="stylesheet" />
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/iscroll2.js"></script>
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/iscroll/pullToRefresh.js"></script>
+    <script>
+        var QuestionID = '@ViewBag.QuestionID';
+        var UserID = '@ViewBag.UserID';
+    </script>
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/myTrain/AnswerList.js"></script>
+}
+@* 回复 *@
+<div class="reply_theme">
+    <p><span class="cancel">取消</span>回复<span class="send">发送</span></p>
+    <textarea autofocus placeholder="请输入内容" class="reply_content" id="RepContent"></textarea>
+</div>
+<div class="main-content">
+    <div id="wrapper">
+        <ul class="bottom_content">
+            <li>
+                <img src='@ETMS.Utility.WebUtility.AppPath/Images/nocontent.png' class='searchNone' />
+            </li>
+        </ul>
+    </div>
+    <img class="reply" src="@ETMS.Utility.WebUtility.AppPath/Images/reply.png" />
+</div>
+
+<script id="Question_Detail" type="text/x-handlebars-template">
+    {{#each Question}}
+    <div class="top_content" QuestionID="{{QuestionID}}">
+        <div class="question">
+            <div class="question_detail">
+                <h2 class="title">{{QuestionTitle}}</h2>
+                <p class="que_describe">{{{QuestionContent}}}</p>
+                <p id="message"><span><b style="color:#666">{{LoginName}}</b> {{formatDate CreateTime}}</span><span class="right_in"><i class="icon iconfont icon-iconfontdiscuss"></i></span></p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script id="Answer_List" type="text/x-handlebars-template">
+    {{#each Answer}}
+    <li class="answer" AnswerID={{AnswerID}}>
+        <div class="answer_detail">
+            <p class="answer_describe">{{removeLabel AnswerContent}}</p>
+            <p>
+                <span><b class="creatorName" style="color:#666">{{LoginName}}</b> {{formatDate CreateTime}} </span>
+                <span>
+                    <i class="discuss_num_i icon iconfont icon-iconfonttrash answer_remove"></i>
+                </span>
+            </p>
+        </div>
+    </li>
+    {{/each}}
+</script>

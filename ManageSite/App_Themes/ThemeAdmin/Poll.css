@@ -1,0 +1,132 @@
+﻿/*********问卷调查预览页面css定义***********/
+.thirdPageCon
+{ margin:0 auto;
+  width:800px;
+  min-width:800px; 
+  _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<800?"800px":"800");
+}
+.thirdPageCon .infoTit .infoComments
+{ 
+ font-weight:normal;
+ margin-bottom:10px;
+ color:#b92001;
+}
+.thirdPageCon .infoTit .infoMainTit
+{ font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  margin-bottom:20px;
+}
+.thirdPageCon  .survey
+{ border:1px solid #e1c9ca;
+}
+.thirdPageCon .surveyUl
+{
+  padding:10px 0;
+  padding-left:12px;
+  border-bottom: 1px solid #e1c9ca;
+  background:#f9edee;
+}
+.thirdPageCon .surveyUl .surveyTit
+{ font-weight:normal;
+  color:#313131;
+  font-weight:bold;
+}
+.thirdPageCon .surveyUl  li
+{ margin-bottom:2px;
+}
+.thirdPageCon .okDiv
+{text-align:center;
+ padding-top:15px;
+}
+.thirdPageCon .infoTitUl
+{ padding-top:20px;
+}
+.okDiv .btn_Export
+{ margin-right:15px;
+}
+.surveyUl h1
+{ color:#B92001;
+  font-size:12px;  
+}
+.diaochaProgress {
+	WIDTH: 600px;
+	LINE-HEIGHT: 15px;
+	POSITION: relative;
+	HEIGHT: 15px
+}
+.diaochaProgressBgLeft {
+	BACKGROUND: url(Images/blueBar1.gif) 50% top;
+	FLOAT: left;
+	WIDTH: 2px;
+	LINE-HEIGHT: 15px;
+	HEIGHT: 15px
+}
+.diaochaProgressBg {
+	BACKGROUND: url(Images/blueBarBg.gif) repeat-x 50% top;
+	FLOAT: left;
+	WIDTH: 496px;
+	LINE-HEIGHT: 15px;
+	HEIGHT: 15px
+}
+.diaochaProgressBgRight {
+	BACKGROUND: url(Images/blueBar2.gif) 50% top;
+	FLOAT: left;
+	WIDTH: 2px;
+	LINE-HEIGHT: 15px;
+	HEIGHT: 15px
+}
+.tipProgress {
+	PADDING-LEFT: 20px;
+	FLOAT: left
+}
+.diaochaProgressGreenLeft {
+	BACKGROUND: url(Images/greenBar1.gif) 50% top;
+	FLOAT: left;
+	WIDTH: 2px;
+	LINE-HEIGHT: 15px;
+	HEIGHT: 15px
+}
+.diaochaProgressGreenBg {
+	BACKGROUND: url(Images/greenBarBg2.gif) repeat-x 50% top;
+	FLOAT: left;
+	LINE-HEIGHT: 15px;
+	HEIGHT: 15px
+}
+.diaochaProgressGreenRight {
+	BACKGROUND: url(Images/greenBar2.gif) 50% top;
+	FLOAT: left;
+	WIDTH: 2px;
+	LINE-HEIGHT: 15px;
+	HEIGHT: 15px
+}
+.diaochaProgressBgShow {
+	LEFT: 0px;
+	WIDTH: 500px;
+	LINE-HEIGHT: 15px;
+	POSITION: absolute;
+	TOP: 0px;
+	HEIGHT: 15px
+}
+#divFooter ,#divMsg
+{ width:380px;
+  margin:0 auto;
+  background:#F9EDEE;
+  border:1px solid #E1C9CA;
+  padding-bottom:15px;
+  margin-bottom:15px;
+}
+.inputCircle
+{ display:inline-block;
+  float:left;
+  margin-top:2px;
+  background:none;
+}
+.inputSpan
+{ display:inline-block;
+  float:left;
+  width:15px;
+}
+.surveyUl li
+{ clear:both;
+}

@@ -1,0 +1,89 @@
+﻿.view-area {
+    margin: 0 auto;
+    width: 1200px;
+}
+.myCourse_block {
+    background: #f5f5f5;
+    border-bottom: none;
+    padding: 12px;
+    margin-top: 90px;
+}
+.myCourse_block .course_img{
+    width: 220px;
+    height: 124px;
+    display:inline-block;
+}
+.course_info{
+    width: 830px;
+    padding: 0 15px;
+    display:inline-block;
+    vertical-align: top;
+}
+.course_info h1{
+    font-size:17px;
+}
+.course_info .teacher{
+    margin:5px 0;
+    min-height:50px;
+}
+.course_info .teacher li{
+    margin-right: 5px;
+    text-align: center;
+    display:inline-block;
+}
+.course_info .teacher li img{
+    width:30px;
+    height:30px;
+    display:block;
+    margin:0 auto;
+    border-radius:100%;
+}
+.course_info .study_time p{
+    display:inline-block;
+    margin-right:10px;
+    color:#999;
+}
+.course_info .study_time p span{
+    color:#333;
+}
+.course_info .progress .scaleBox{
+    display: inline-block;
+    width: 169px;
+    height: 4px;
+    background: #e5e5e5;
+    position: relative;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+.course_info .progress .scale{
+    display: inline-block;
+    height: 4px;
+    background: #3988fb;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.study_modular{
+    padding:0 15px;
+}
+.study_modular li{
+    display:inline-block;
+    margin-top:20px;
+    line-height:30px;
+   
+    margin-right:35px;
+    cursor:pointer;
+}
+.study_modular li a{
+    display:block;
+     font-size:16px;
+}
+.study_modular .cur{
+    border-bottom:2px solid #3984ea;
+}
+.study_modular .cur a{
+    color:#3984ea;
+}

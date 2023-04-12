@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "优博";
+}
+@section head{
+<link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Style/Paper/test.css" />
+    <link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/swiper/dist/css/swiper.min.css" />
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/lib/swiper/dist/js/swiper.min.js"></script>
+}
+<article class="main_content">
+    @*试卷*@
+   <section id="paperContent">
+       <div class="worknav">
+           <div class="clearfix">
+               <div class="l">
+                   <span>课程:</span><span class="courseName"></span>
+               </div>
+               <div class="r" srtle="font-size:1rem;">
+                   <span class="totalscore">共<span class="topicNum"></span>题</span><span class="totalscore">共<span class="exercisetotalscore"></span>分</span>
+               </div>
+           </div>
+           <div class="clearfix">
+               <div class="l">
+                   <span class="exercisetype"></span><span class="green exerciseindex">1</span><span class="totalwork">/<span class="exercisecount"></span></span>
+                   <span class="countTimer">--:--:--</span>
+               </div>
+               <div class="r">
+                   @*<span class="savework"id="savework">暂存</span>*@  <span class="savework" id="paperSheet">答题卡</span><span class="submitwork" id="submitwork">交卷</span>
+               </div>
+           </div>
+       </div>
+       <div class="workbody">
+           <div class="swiper-container">
+               <div class="swiper-wrapper exerciselist">
+               </div>
+           </div>
+
+       </div>
+   </section>
+  
+</article>
+<script id="exerciselistTPLT" type="text/x-handlebars-template">
+    {{#each Data}}
+    <div class="swiper-slide hide-item {{tfTopicType QuestionType}}" topicid="{{QuestionID}}">
+        <div class="worktitle">
+            {{{QuestionTitle}}}
+        </div><span class="exercisetypename">{{typeName QuestionType}}</span>
+        {{#each QuestionOption}}
+        <div class="workoption"><div class="{{#answerClass ../UserAnswer OptionID @@index}}{{/answerClass}}"data-OptionID="{{OptionID}}">{{OptionCode}}</div><div class="optiontxt">{{{OptionContent}}}</div></div>
+        {{/each}}
+    </div>
+    {{/each}}
+</script>
+<script src="@ETMS.Utility.WebUtility.AppPath/Scripts/Paper/main.js"></script>
+<script src="@ETMS.Utility.WebUtility.AppPath/Scripts/Paper/test.js"></script>
+
+ 

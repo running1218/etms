@@ -1,0 +1,338 @@
+﻿.view-area {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.con_hd {
+    height: 355px;
+}
+
+.con_title {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.con_left1 {
+    float: left;
+    width: 50%;
+    background: #f8f8f8;
+}
+
+    .con_left1 img {
+        height: 327px;
+        width: 590px;
+        margin: 5px 5px 1px 5px;
+    }
+
+.con_right1 {
+    background-color: #f8f8f8;
+    float: left;
+    width: 580px;
+    height: 317px;
+    padding: 10px;
+    border: 0px solid #000000;
+}
+
+    .con_right1 .title {
+        font-size: 20px;
+        height: 25px;
+        line-height: 25px;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .con_right1 .content {
+        font-size: 14px;
+        line-height: 25px;
+        height:180px;
+        overflow: hidden;
+    }
+
+    .con_right1 .info {
+        font-size: 14px;
+        line-height: 30px;
+        padding-top:10px;
+        color:#9A9791;
+    }
+        .con_right1 .info span {
+            padding-right:20px;
+        }
+    .con_right1 ul {
+        margin-left: 20px;
+    }
+
+        .con_right1 ul li {
+            font-size: 14px;
+            height: 26px;
+            line-height: 26px;
+            list-style-type: disc;
+        }
+.act_l1 {
+    width:100%;
+    height:30px;
+    line-height:30px;
+    font-size:16px;
+    padding-left:20px;
+}
+.act_l1 img{padding-right:5px;padding-left:10px;}
+.con-x1 {
+    width: 100%;
+    height: 1px;
+    border-bottom: #b9b9b9 1px dashed;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.con-div1 {
+    padding-left: 450px;
+    padding-top: 10px;
+}
+
+.con-bm {
+    background: #f18523;
+    color: #ffffff;
+    border: 1px solid #f18523;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    width: 115px;
+    height: 40px;
+    font-size: 18px;
+}
+.con-bm_n {
+    background: #CCCCCC;
+    color: #ffffff;
+    border: 1px solid #CCCCCC;
+}
+.con-area {
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    padding-left:5px;
+    padding-right:5px;
+    height: 40px;
+    font-size: 14px;
+    margin-right:10px;
+}
+
+.con_hd2 {
+    height: 120px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.con-b1 {
+    background: url("../Styles/images/Activity/activityindex1.png") no-repeat;
+    width: 380px;
+    height: 119px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.con-b2 {
+    background: url("../Styles/images/Activity/activityzs2.png") no-repeat;
+    width: 380px;
+    height: 119px;
+    border: 0px;
+    margin-left: 25px;
+    margin-right: 26px;
+    cursor: pointer;
+}
+
+.con-b3 {
+    background: url("../Styles/images/Activity/activitygs2.png") no-repeat;
+    width: 380px;
+    height: 119px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.con_hd3 {
+    padding-top: 20px;
+    width: 100%;
+    padding-bottom:20px;
+}
+
+.act_ad {
+    width: 50%;
+    float: left;
+    border: 0px solid #000000;
+    cursor: pointer;
+}
+
+    .act_ad .img1 {
+        height: 270px;
+        width: 480px;
+    }
+
+    .act_ad .img2 {
+        height: 270px;
+        width: 480px;
+    }
+
+.act_name1 {
+    background-color: #f8f8f8;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 580px;
+    font-size: 16px;
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.act_time1 {
+    background-color: #f8f8f8;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.act_tab3 {
+    width: 600px;
+    float: left;
+    border: 0px solid #000000;
+    padding-bottom:40px;
+    /*padding-left:70px;*/
+}
+
+.act_list_title {
+    width: 500px;
+    height: 99px;
+    background: url("../Styles/images/Activity/phb.png") no-repeat;
+    /*position:absolute;
+    top:20px;
+    left:20px;*/
+    line-height:99px;
+    text-align:center;
+    color:#ffffff;
+    font-size:20px;
+}
+
+.act_list {
+    background-color: #FFF9ED;
+    width: 500px;
+    height: 390px;
+}
+
+.act_tablelist {
+    width: 480px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border:0px solid #000000;
+}
+
+    .act_tablelist th {
+        font-size:18px;
+        color:#D4940F;
+        border-bottom:1px solid #F4E5CD;
+        height:30px;
+        padding-top:10px;
+        padding-bottom:10px;
+        font-weight: 400;
+    }
+    .act_tablelist .th1 {
+        width:20%;
+    }
+    .act_tablelist .th2 {
+        width:20%;
+    }
+    .act_tablelist .th3 {
+        width:40%;
+    }
+    .act_tablelist td {
+        font-size:16px;
+        border-bottom:1px solid #F4E5CD;
+        height:30px;
+        padding-top:8px;
+        padding-bottom:8px;
+        text-align:center;
+        color:#C08A35;
+    }
+.act_tablelist .act_golden {
+    color:#D4940F;
+}
+.act_more {
+    width:470px;
+    color:#D4940F;
+    height:40px;
+    line-height:40px;
+    text-align:right;
+    padding-right:10px;
+}
+.act_more a {
+    font-size: 16px;
+    cursor: pointer;
+    color: #C08A35;
+    text-decoration: none;
+}
+.act_opus_t {
+    padding-top: 20px;
+    width: 100%;
+    height:30px;
+    padding-left:20px;
+}
+.act_oups_i {
+    padding-top: 10px;
+    width: 1180px;
+    padding-left:20px;
+}
+.act_opus_title {
+    float:left;
+    width:900px;
+    font-size:20px;
+    font-weight:bold;
+    height:30px;
+    line-height:30px;
+    
+}
+.act_opus_more {
+    float:right;
+    font-size:14px;
+    height:30px;
+    line-height:30px;
+    width:290px;
+    text-align:right;
+    padding-right:10px;
+}
+.act_opus1 {
+    float:left;
+    width:300px;
+    border:0px solid #F4E5CD;
+}
+.act_opus1_m1 {
+    width: 282px;margin: 0 auto;
+}
+.act_opus_icon {
+    background: url("../Styles/images/Activity/opus.png") no-repeat;
+    width:282px;
+    height:160px;
+    text-align:center;
+    line-height:60px;
+}
+.act_opus_info {
+    font-size:14px;
+    height:40px;
+    line-height:40px;
+}
+.act_opus_info_l {
+    float:left;
+    height:40px;
+    line-height:40px;
+    padding-left:5px;
+}
+.act_opus_info_r {
+    float:right;
+    height:40px;
+    line-height:40px;
+}

@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Studying.Master.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%=ETMS.Studying.BaseUtility.Title %></title>   
+    <!--百度统计站长--> 
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?2762cd5b6948d36abb15205d94b83c6b";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+	<script type='text/javascript'>
+		!function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+		gio('init','923015a6e58e3389', {});
+		gio('send');
+	</script>
+</head>
+<body oncontextmenu="return false">
+    <script lang="javascript" type="text/javascript" src="<%=ETMS.Utility.WebUtility.AppPath%>/Scripts/library/jquery-3.1.1.min.js"></script>
+    <script lang="javascript" type="text/javascript" src="<%=ETMS.Utility.WebUtility.AppPath%>/Scripts/library/layer/layer.js"></script>
+    <script lang="javascript" type="text/javascript" src="<%=ETMS.Utility.WebUtility.AppPath%>/Scripts/library/jquery.tmpl.js"></script>
+    <script lang="javascript" type="text/javascript" src="<%=ETMS.Utility.WebUtility.AppPath%>/Scripts/common.js"></script>
+     <script lang="javascript" type="text/javascript" src="<%=ETMS.Utility.WebUtility.AppPath%>/Scripts/JSFunction.js"></script>
+    <script lang="javascript" type="text/javascript" src="<%=ETMS.Utility.WebUtility.AppPath%>/Scripts/CommonHelper.js"></script>
+    <script lang="javascript" type="text/javascript" src="<%=ETMS.Utility.WebUtility.AppPath%>/Scripts/uaredirect.js"></script>
+    <script>
+        var AppPath = "<%=ETMS.Utility.WebUtility.AppPath%>";
+        uaredirect('<%=string.Format("http://{0}/mobile/home/index", ETMS.Studying.BaseUtility.Domain)%>');
+    </script>
+        
+    <form id="form1" runat="server">
+         <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+        <div class="site-body">
+            <asp:ContentPlaceHolder ID="SitePlaceHolder" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <%--在线客服 
+    <script type="text/javascript" charset="utf-8"src="http://lead.soperson.com/20002446/10073493.js"></script>--%>
+</body>
+</html>
+<script>
+    var doumentHeight = $(document).height();
+    //$('.content-container').css({ 'min-height': doumentHeight - 152 - 110 + 'px'});
+</script>

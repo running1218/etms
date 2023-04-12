@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Columns>
+    <Column CellIndex="0" FieldName="OrganizationName" TitleName="组织机构"></Column>
+    <Column CellIndex="1" FieldName="DepartmentName" TitleName="部门"></Column>
+    <Column CellIndex="2" FieldName="RealName" TitleName="学员姓名"></Column>
+    <Column CellIndex="3" FieldName="WorkNo" TitleName="工号"></Column>
+    <Column CellIndex="4" FieldName="PostName" TitleName="岗位"></Column>
+    <Column CellIndex="5" FieldName="PostTypeName" TitleName="岗位类别"></Column>
+    <Column CellIndex="6" FieldName="RankName" TitleName="职级"></Column>
+    <Column CellIndex="7" FieldName="ItemName" TitleName="项目名称"></Column>
+    <Column CellIndex="8" FieldName="ItemCourseCode" TitleName="课程编码"></Column>
+    <Column CellIndex="9" FieldName="ItemCourseName" TitleName="课程名称"></Column>
+    <Column CellIndex="10" FieldName="ItemCourseTypeName" TitleName="课程类型"></Column>
+    <Column CellIndex="11" FieldName="ItemCourseAttrName" TitleName="课程属性"></Column>
+    <Column CellIndex="12" FieldName="ItemCourseTeacher" TitleName="课程讲师"></Column>
+    <Column CellIndex="13" FieldName="ItemCourseTrainingModelName" TitleName="培训方式"></Column>
+    <Column CellIndex="14" FieldName="ItemCourseBeginTime" TitleName="课程开始时间"></Column>
+    <Column CellIndex="15" FieldName="ItemCourseEndTime" TitleName="课程结束时间"></Column>
+    <Column CellIndex="16" FieldName="ItemCourseTeachModelName" TitleName="授课方式"></Column>
+    <Column CellIndex="17" FieldName="DisScormStandardTime" TitleName="非SCORM课件标准课时（小时）"></Column>
+    <Column CellIndex="18" FieldName="ScormStandardTime" TitleName="SCORM课件标准课时（小时）"></Column>
+    <Column CellIndex="19" FieldName="ScormActualTime" TitleName="SCORM课件实际学习课时（小时）"></Column>
+    <Column CellIndex="20" FieldName="ScormFinishRate" TitleName="SCORM课件完成率（％）"></Column>
+    <Column CellIndex="21" FieldName="FaceTrainingPlanTime" TitleName="计划面授时长（小时）"></Column>
+    <Column CellIndex="22" FieldName="FaceTrainingActualTime" TitleName="实际参加面授时长（小时）"></Column>
+    <Column CellIndex="23" FieldName="FaceTrainingFinishRate" TitleName="学员面授完成率（％）"></Column>
+    <Column CellIndex="24" FieldName="AvalableTotalStandardTime" TitleName="可计算总时长（小时）"></Column>
+    <Column CellIndex="25" FieldName="AvalableTotalActualTime" TitleName="可计算实际完成时长（小时）"></Column>
+    <Column CellIndex="26" FieldName="AvalableTotalFinishRate" TitleName="可计算总完成率（％）"></Column>
+    <Column CellIndex="27" FieldName="ItemStudentCourseFinishStatus" TitleName="课程完成状态"></Column>
+    <Column CellIndex="28" FieldName="ItemCourseSumGrade" TitleName="课程成绩"></Column>
+    <Column CellIndex="29" FieldName="ItemCourseTestName" TitleName="在线测试名称"></Column>
+    <Column CellIndex="30" FieldName="ItemCourseTestScore" TitleName="在线测试成绩"></Column>
+  <Column CellIndex="31" FieldName="IndexId" TitleName="序号"></Column>
+  
+</Columns>

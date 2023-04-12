@@ -1,0 +1,61 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1484797398200'); /* IE9*/
+  src: url('iconfont.eot?t=1484797398200#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1484797398200') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1484797398200') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1484797398200#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iconfont-Mag:before { content: "\e61f"; }
+
+.icon-iconfont-Practice:before { content: "\e621"; }
+
+.icon-iconfont-txt:before { content: "\e622"; }
+
+.icon-iconfont-out:before { content: "\e623"; }
+
+.icon-iconfont-Forward:before { content: "\e625"; }
+
+.icon-iconfont-jt:before { content: "\e626"; }
+
+.icon-iconfont-me:before { content: "\e627"; }
+
+.icon-iconfont-course:before { content: "\e628"; }
+
+.icon-iconfont-comment:before { content: "\e629"; }
+
+.icon-iconfont-home:before { content: "\e62a"; }
+
+.icon-iconfont-pen:before { content: "\e62b"; }
+
+.icon-iconfont-cs:before { content: "\e62c"; }
+
+.icon-iconfont-zy:before { content: "\e62d"; }
+
+.icon-iconfont-zb:before { content: "\e670"; }
+
+.icon-iconfont-File:before { content: "\e672"; }
+
+.icon-iconfont-video:before { content: "\e673"; }
+
+.icon-iconfont-videob:before { content: "\e675"; }
+
+.icon-iconfont-videoq:before { content: "\e676"; }
+
+.icon-iconfont-Filevq:before { content: "\e677"; }
+
+.icon-iconfont-Filevb:before { content: "\e678"; }
+
+.icon-iconfont-delete:before { content: "\e67d"; }
+
+.icon-iconfont-edit:before { content: "\e67e"; }
+

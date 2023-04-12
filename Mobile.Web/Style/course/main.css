@@ -1,0 +1,146 @@
+﻿
+body,html{
+    width:100%;
+    height:100%;
+    background-color:#f7f7f7;
+}
+footer{
+    opacity :1;
+}
+footer a:nth-child(2)  i,footer a:nth-child(2){
+     color:#4B809D;
+}
+    footer .icon-iconfont-course {
+        background:url(../../Images/course-current.png) !important;
+        background-repeat:no-repeat !important;
+        background-position:top center !important;
+    }
+.main_content{
+    padding-bottom:55px;
+}
+
+/*搜索框*/
+.search-box{
+    position:relative;
+    width: 90%;
+    margin:0 auto;
+}
+.search{
+display: block;
+width: 100%;
+color: #999;
+padding: 9px 0 7px 0;
+background-color: #fff;
+line-height: 1.6rem;
+text-indent: 2.7rem;
+border-radius: 6px;
+border: 1px solid #dfdfdf;
+margin-top: 2rem;
+font-size: 1.5rem;
+
+}
+ 
+.search-icon{
+      font-size: 2.2rem;
+    color: #999;
+    position: absolute;
+    top: 0.8rem;
+    left: .5rem;
+}
+/*课程分类*/
+.course_type{
+     background-color:#f7f7f7;
+}
+.course_type>div{
+    height:2rem;
+    background-color:#fff;
+}
+.course_type .type_list{
+        margin: 3rem 0 2rem;
+        padding:0 1rem;
+}
+
+.course_type li{
+    float: left;
+    padding: .6rem .9rem;
+    border: 1px solid #dfdfdf;
+    margin-left:1rem;
+    color: #999;
+    font-size: 1.5rem;
+        margin-bottom: 1rem;
+}
+ 
+.course_type li.on{
+    color:#333;
+    position:relative;
+}
+.course_type li.on:after{
+   content:'';
+   display:block;
+   width:1rem;
+   position:absolute;
+   top:0;
+   left:0;
+  -webkit-box-shadow:0 0 1px rgba(0,0,0,0.3),0 0 1px rgba(0,0,0,.1);  
+
+}
+ 
+/*课程列表*/
+.course_list,.new-notice{
+    background:#fff;
+    padding:0 1rem;
+}
+.course_list {
+ background-color:#fff;
+ position:relative;
+
+ }
+ .object_listBox{
+  padding-bottom: 3rem;
+ }
+  .object_list{
+          padding-bottom: 10rem !important ;
+ }
+ .object_list li{
+    width: 43%;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 0;/*消除插件样式*/
+    padding-left: 4.2%;
+    padding-bottom:5px;
+}
+ 
+  .object_list li a{
+      display:block;
+  }
+ .course_img{
+    width:100%;
+    height: 18vh;
+    border-radius: 5px;
+ }
+ .object_list li img{
+   width:100%;
+   height:100%;
+    
+}
+ .object_list li i{
+    font-size:2rem;
+    vertical-align:text-bottom
+}
+ .object_list li p{
+    color:#161616;
+    line-height:30px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+ .object_list li span{
+    color:#999;
+    font-size: 1.2rem;
+}
+  .object_list li span:nth-of-type(1){
+         float: left;
+ }
+ .object_list li span:last-child {
+         float: right;
+ }

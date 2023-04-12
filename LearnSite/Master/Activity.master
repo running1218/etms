@@ -1,0 +1,14 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master/Site.Master" AutoEventWireup="true" CodeBehind="Activity.master.cs" Inherits="ETMS.Studying.Master.Activity" %>
+<%@ Register Src="~/Controls/HeaderActivity.ascx" TagName="Header" TagPrefix="uc" %>
+<%@ Register Src="~/Controls/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="SitePlaceHolder" runat="server">
+    <div class="aheader-container">
+        <uc:Header ID="header" runat="server" />
+    </div>
+    <div class="content-container">
+        <asp:ContentPlaceHolder ID="DefaultPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <div class="footer-container">
+        <uc:Footer ID="footer" runat="server"></uc:Footer>
+    </div>
+</asp:Content>

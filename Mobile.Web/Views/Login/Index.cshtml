@@ -1,0 +1,20 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "优博";
+}
+@section head{
+    <link rel="stylesheet"  href="@ETMS.Utility.WebUtility.AppPath/Style/login/main.css" />
+    <script src="@ETMS.Utility.WebUtility.AppPath/Scripts/login/main.js"></script>
+}
+<article  class="main_content">
+    <section >
+        <img class="login-img" src="@ETMS.Utility.WebUtility.AppPath/Images/login.png" />
+        <h1 class="login-title">登录账户</h1>
+        <div class="email-box"><label style="margin-right:1rem;">用户名</label><input type="text" placeholder="请输入您的用户名" class="email-ipt" /></div>
+        <div class="password-box"><label style="margin-right:1rem;padding-left:1.7rem;">密码</label><input type="password" placeholder="请输入您的密码" value="" class="password-ipt" /></div>
+        <input class="login-btn"id="loginBtn" type="button" value="登 录" />
+    </section>
+</article>
+
+

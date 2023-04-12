@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Columns>
+<Column CellIndex="0" FieldName="OrganizationName" TitleName="组织机构"></Column>
+<Column CellIndex="1" FieldName="DepartmentName" TitleName="部门"></Column>
+<Column CellIndex="2" FieldName="RealName" TitleName="学员姓名"></Column>
+<Column CellIndex="3" FieldName="WorkNo" TitleName="工号"></Column>
+<Column CellIndex="4" FieldName="PostName" TitleName="岗位"></Column>
+<Column CellIndex="5" FieldName="PostTypeName" TitleName="岗位类别"></Column>
+<Column CellIndex="6" FieldName="RankName" TitleName="职级"></Column>
+<Column CellIndex="7" FieldName="ItemName" TitleName="项目名称"></Column>
+<Column CellIndex="8" FieldName="ItemCourseCode" TitleName="课程编码"></Column>
+<Column CellIndex="9" FieldName="ItemCourseName" TitleName="课程名称"></Column>
+<Column CellIndex="10" FieldName="ItemCourseTypeName" TitleName="课程类型"></Column>
+<Column CellIndex="11" FieldName="ItemCourseAttrName" TitleName="课程属性"></Column>
+<Column CellIndex="12" FieldName="ItemCourseBeginTime" TitleName="课程开始时间"></Column>
+<Column CellIndex="13" FieldName="ItemCourseEndTime" TitleName="课程结束时间"></Column>
+<Column CellIndex="14" FieldName="ItemCourseHours" TitleName="课程标准课时（小时）"></Column>
+<Column CellIndex="15" FieldName="ItemCourseSumGrade" TitleName="课程成绩"></Column>
+<Column CellIndex="16" FieldName="ItemCourseTestName" TitleName="在线测试名称"></Column>
+<Column CellIndex="17" FieldName="ItemCourseTestScore" TitleName="在线测试成绩"></Column>
+<Column CellIndex="18" FieldName="CoursewareName" TitleName="课件名称"></Column>
+<Column CellIndex="19" FieldName="ShowHoures" TitleName="课件时长"></Column>
+<Column CellIndex="20" FieldName="StudyProcess" TitleName="课件学习进度（%）"></Column>
+<Column CellIndex="21" FieldName="ActualStudyTime" TitleName="实际在线学习时间（小时）"></Column>
+<Column CellIndex="22" FieldName="CompleteStatus" TitleName="课件完成状态"></Column>
+</Columns>

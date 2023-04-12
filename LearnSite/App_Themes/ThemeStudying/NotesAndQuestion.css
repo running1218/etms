@@ -1,0 +1,778 @@
+﻿.Notes-Context {
+    width: 1160px;
+    background: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    height: auto;
+    padding: 15px;
+    color: #555;
+}
+
+.Notes-header {
+    height: 40px;
+    border-bottom: 1px solid #d2d2d2;
+    margin-bottom: 10px;
+}
+
+.Notes-header span {
+    float: left;
+    text-indent: 35px;
+    display: block;
+    background: url(../../Styles/images/common/manage-space.png) no-repeat 9px -143px;
+    width: 380px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 26px;
+
+}
+
+.Notes-header .Notes-search {
+    float: right;
+    height: 40px;
+}
+
+
+.Notes-header .Notes-search .Notes-search-text {
+    border: 1px solid #c8c8c8;
+    height: 30px;
+    width: 320px;
+}
+
+.Notes-header .Notes-search .Notes-search-button {
+    border: 1px solid #c8c8c8;
+    height: 32px;
+    width: 32px;
+    margin-left: -4px;
+    border-left: none;
+    background: url(../../Styles/images/common/manage-space.png) no-repeat 9px -1218px;
+    cursor: pointer;
+}
+
+
+.Notes-Context-left {
+    width: 260px;
+    min-height: 600px;
+    float: left;
+    height: auto !important;
+}
+
+    .Notes-Context-left span {
+        color: #444;
+    }
+
+
+.Notes-query-container {
+    margin: 0 auto;
+    overflow: auto;
+    position: relative;
+    background: url(images/NotesAndQuestion/search-icon.png) no-repeat;
+    height: 50px;
+}
+
+    .Notes-query-container ul {
+        margin-left: 10px;
+    }
+
+    .Notes-query-container li {
+        float: left;
+    }
+
+    .Notes-query-container input {
+        width: 230px;
+        background: none;
+        border: 0px;
+        outline: none;
+        margin-top: 15px;
+    }
+
+    .Notes-query-container .Notes-query-button input {
+        cursor: pointer;
+        height: 32px;
+        padding: 0;
+        width: 40px;
+        margin-top: 10px;
+        margin-left: 9px;
+    }
+
+.Notes-Course-Chapter {
+    border: 1px solid #d1d1d1;
+    border-bottom: none;
+    background-color: #ebebeb;
+    width: 298px;
+    padding-bottom: 32767px;
+    margin-bottom: -32767px;
+}
+
+.Notes-Course-title {
+    border-bottom: 1px solid #d1d1d1;
+    box-shadow: 0 1px 0 rgba(255, 255, 255,0.5) inset;
+}
+
+    .Notes-Course-title span {
+        display: block;
+        background: url(../../Styles/images/common/manage-space.png) no-repeat 6px -750px;
+        cursor: pointer;
+        line-height: 25px;
+        padding: 10px 10px 10px 28px;
+    }
+
+    .Notes-Course-title .selectspan {
+        color: #ee580d;
+    }
+
+
+.Notes-box {
+    position: relative;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0 1px 0 rgba(255, 255, 255,0.5) inset;
+    color: #555;
+}
+.Notes-box li{
+    padding: 0 20px;
+    height:40px;
+    line-height:40px;
+    cursor:pointer;
+}
+.Notes-box li p{
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+}
+.Notes-box .video_icon{
+    width:15px;
+    height:15px;
+    display:inline-block;
+    vertical-align: sub;
+    margin-right:8px;
+    background:url('../../Styles/images/common/vodeo_icon.jpg') no-repeat center;
+}
+.Notes-box .file_icon{
+    width:15px;
+    height:15px;
+    display:inline-block;
+    vertical-align: sub;
+    margin-right:8px;
+    background:url('../../Styles/images/common/word_icon.jpg') no-repeat center;
+}
+/*.Notes-box li:hover{
+    background:#737373;
+}
+.Notes-box li:hover p{
+    color:#fff;
+}
+.Notes-box li:hover .video_icon{
+    background:url('../../Styles/images/common/vodeo_iconH.jpg') no-repeat center;
+}
+.Notes-box li:hover .file_icon{
+    background:url('../../Styles/images/common/word_iconH.jpg') no-repeat center;
+}*/
+
+.Notes-selected-li{
+    background:#e8f2fe;
+}
+
+.file_iconH{
+    background:url('../../Styles/images/common/word_iconH.jpg') no-repeat center !important;
+}
+.video_iconH{
+    background:url('../../Styles/images/common/vodeo_iconH.jpg') no-repeat center !important;
+}
+
+
+.Notes-box span {
+    display: block;
+    line-height: 25px;
+    padding: 5px 6px 5px 28px;
+}
+
+.Notes-box-open {
+    background: url(images/study/u-studying-directory-open.png) no-repeat 6px 12px;
+    cursor: pointer;
+}
+
+.Notes-box-close {
+    background: url(images/study/u-studying-directory-close.png) no-repeat 6px 12px;
+    cursor: pointer;
+}
+
+.Notes-text {
+    line-height: 22px;
+    display: none;
+    background-color: #fdfdfd;
+    border-top: 1px solid #d1d1d1;
+    padding: 5px 0px;
+}
+
+    .Notes-text li {
+        padding: 4px 10px 4px 30px;
+        line-height: 24px;
+        cursor: pointer;
+    }
+
+        .Notes-text li:hover {
+            background: #E9FAE4;
+        }
+
+
+.Notes-Context-right {
+    float: right;
+    padding: 0px 0px 0px 0px;
+    width: 850px;
+}
+
+.Notes-Context-bottom {
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+.Notes-More {
+    background-color: #eee;
+    background-image: linear-gradient(to bottom, #f5f5f5, #eee);
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+    cursor: pointer;
+    margin: 6px 25px 10px 0;
+    padding: 8px 22px;
+}
+
+    .Notes-More:hover {
+        background-image: linear-gradient(to bottom, #f1f1f1, #e5e5e5);
+        border: 1px #bbb solid;
+        color: #333;
+    }
+
+.Notes-coursmenu {
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+    .Notes-coursmenu .Notes-split {
+        height: 20px;
+        margin-top: 15px;
+        border-right: 1px solid #c7c7c7;
+        margin-right: 7px;
+    }
+
+    .Notes-coursmenu li {
+        float: left;
+    }
+
+        .Notes-coursmenu li a {
+            width: 105px;
+            height: 48px;
+            line-height: 48px;
+            font-size: 16px;
+            color: #777;
+            display: inline-block;
+            text-indent: 10px;
+        }
+
+            .Notes-coursmenu li a:hover {
+                color: #444;
+                font-weight: bold;
+            }
+
+    .Notes-coursmenu .Notes-add {
+        float: right;
+        text-indent: 31px;
+        display: block;
+        background: url(../../Styles/images/common/manage-space.png) no-repeat 2px -1089px;
+        padding-top: 20px;
+        padding-right: 3px;
+
+        height: 32px;
+    }
+
+    .Notes-coursmenu .activemenu {
+        color: #444;
+        font-weight: bold;
+        border-bottom: 3px solid #FF833C;
+    }
+
+    .Notes-coursmenu .coursecontentbutton {
+        background-position: -95px 0px !important;
+    }
+
+    .Notes-coursmenu .coursesettingbutton {
+        background-position: -130px 0px !important;
+    }
+
+.Notes-sort {
+    height: 40px;
+}
+
+.Notes-sort-Context {
+    float: right;
+    padding-top: 12px;
+    line-height: 23px;
+}
+
+    .Notes-sort-Context span {
+        float: left;
+    }
+
+.Notes-sort-column {
+    float: left;
+}
+
+    .Notes-sort-column li {
+        float: left;
+        margin-right: 7px;
+        width: 55px;
+        height: 24px;
+        cursor: pointer;
+        text-indent: 5px;
+    }
+
+    .Notes-sort-column .selectup {
+        border: 1px solid #cbcbcb;
+        border-radius: 3px;
+        background: url(../../Styles/images/common/manage-space.png) no-repeat 41px -1179px #f8f8f8;
+    }
+
+    .Notes-sort-column .selectdown {
+        border: 1px solid #cbcbcb;
+        border-radius: 3px;
+        background: url(../../Styles/images/common/manage-space.png) no-repeat 41px -1144px;
+    }
+
+.Notes-list {
+    font-size: 14px;
+    padding: 0;
+    margin-top: -5px;
+}
+
+.Notes-item {
+    border-bottom: 1px dashed #c8c8c8;
+    padding: 15px 0 8px;
+}
+
+    .Notes-item img {
+        border-radius: 50%;
+        float: left;
+        height: 48px;
+        vertical-align: middle;
+        width: 48px;
+        padding-top: 5px;
+        margin-right: 5px;
+    }
+
+.Notes-item-add {
+    text-align: left;
+    font-size: 14px;
+    height: 270px;
+    background-color: #f0faef;
+    border: 1px solid #c0ceb4;
+
+    padding: 10px 0px 10px 11px;
+    display: none;
+    border-top: 0px;
+}
+
+.Notes-item-edit {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 12px;
+    overflow: hidden;
+    background-color: #f0faef;
+    border: 1px solid #c0ceb4;
+    display: none;
+}
+
+.Notes-item-edit-title {
+    width: 825px;
+    height: 35px;
+    background-color: #ffffff;
+    margin-top: 12px;
+}
+
+    .Notes-item-edit-title .txt-title {
+        width: 818px;
+        height: 100%;
+        font-size: 14px;
+        color: #414141;
+        border: 1px #ccc solid;
+        padding-left: 5px;
+    }
+
+.Notes-item-edit-content {
+    width: 825px;
+    height: 135px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.Notes-item-content-operating {
+    overflow: auto;
+}
+
+    .Notes-item-content-operating .bnt-share {
+        margin-right: 5px;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+
+    .Notes-item-content-operating span {
+        color: #3e3e3e;
+        line-height: 30px;
+    }
+
+    .Notes-item-content-operating a {
+        float: right;
+        margin-right: 10px;
+        text-align: center;
+        color: #3e3e3e;
+    }
+
+    .Notes-item-content-operating .save, .Notes-item-content-operating .cancel {
+        background-color: #f0f0f0;
+        background-color: #eee;
+        background-image: linear-gradient(to bottom, #f5f5f5, #eee);
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+        cursor: pointer;
+        margin: 6px 10px 10px 0;
+        padding: 4px 20px;
+    }
+
+
+
+.Notes-item-content {
+    text-align: left;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+    .Notes-item-content .Notes-item-title {
+        float: left;
+        width: 100%;
+        color: #414141;
+        height: 35px;
+        font-size: 14px;
+        text-indent: 12px;
+        line-height: 32px;
+        background-color: #f7f7f7;
+        border: 1px solid #e2e2e2;
+        margin-bottom: 5px;
+        width: 848px;
+    }
+
+    .Notes-item-content .content {
+        float: left;
+        width: 100%;
+        color: #555;
+    }
+
+    .Notes-item-content .source {
+        float: left;
+        width: 95%;
+        font-size: 12px;
+        color: #777;
+        padding-top: 8px;
+    }
+
+.Notes-item-operating {
+    margin-top: 5px;
+    overflow: auto;
+}
+
+    .Notes-item-operating li {
+        background: url("../../Styles/images/common/u-answer.png") no-repeat;
+        cursor: pointer;
+        border-right: 1px solid #c8c8c8;
+        float: right;
+        height: 15px;
+        padding: 0 20px;
+    }
+    .Notes-item-operating li:first-child{
+        border:none;
+    }
+
+
+    .Notes-item-operating .title {
+        background-image: none;
+        cursor: default;
+        width: 480px;
+        height: 25px;
+        margin: 0px;
+        font-size: 12px;
+        color: #777;
+    }
+
+
+    .Notes-item-operating .refresh {
+        background-position: 10px -573px;
+        float: right;
+    }
+
+    .Notes-item-operating .share {
+        background-position: 10px -615px;
+        float: right;
+    }
+
+    .Notes-item-operating .shared {
+        background-position: 10px -653px;
+        float: right;
+    }
+
+    .Notes-item-operating .Applaud {
+        background: url("../../Styles/images/common/u-answer.png") no-repeat;
+        background-position: 12px -370px;
+        float: right;
+        padding-left: 30px;
+        line-height: 12px;
+        border: 0px;
+    }
+
+    .Notes-item-operating .update {
+        background-position: 10px -557px;
+    }
+
+    .Notes-item-operating .remove {
+        background-position: 13px -245px;
+    }
+
+    .Notes-item-operating .collect {
+        background: url("../../Styles/images/common/u-answer.png") no-repeat;
+        background-position: 5px -701px;
+        padding-right: 10px;
+    }
+
+
+.Question-list {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.Question-item {
+    border-bottom: 1px solid #c8c8c8;
+    padding: 15px 0 8px;
+    margin-left: 24px;
+    margin-right: 15px;
+}
+
+    .Question-item img {
+        border-radius: 50%;
+        float: left;
+        height: 48px;
+        vertical-align: middle;
+        width: 48px;
+        padding-top: 5px;
+        margin-right: 5px;
+    }
+
+.Question-item-content {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 7px;
+    overflow: hidden;
+}
+
+    .Question-item-content .content {
+        float: left;
+        width: 95%;
+        color: #555;
+    }
+
+    .Question-item-content .source {
+        float: left;
+        width: 99%;
+        font-size: 12px;
+        color: #777;
+        padding-top: 8px;
+    }
+
+.Question-item-operating {
+    float: left;
+    margin-top: 9px;
+    width: 800px;
+}
+
+    .Question-item-operating li {
+        background: url(../../Styles/images/common/manage-space.png) no-repeat;
+        float: left;
+        cursor: pointer;
+        width: 35px;
+        height: 20px;
+        margin: 5px 0px 0px 15px;
+    }
+
+
+    .Question-item-operating .title {
+        background-image: none;
+        cursor: default;
+        width: 480px;
+        height: 25px;
+        margin: 0px;
+        font-size: 12px;
+        color: #777;
+    }
+
+    .Question-item-operating .Applaud {
+        background-position: 5px -606px;
+        float: right;
+    }
+
+        .Question-item-operating .Applaud:hover {
+            background-position: 5px -607px;
+            float: right;
+        }
+
+    .Question-item-operating .remove {
+        background-position: 5px -298px;
+        float: right;
+    }
+
+
+.Question-Answer-item {
+    border-bottom: 1px dashed #c8c8c8;
+    padding: 15px 0 8px;
+    margin-left: 24px;
+    margin-right: 15px;
+
+}
+
+    .Question-Answer-item img {
+        border-radius: 50%;
+        float: left;
+        height: 48px;
+        vertical-align: middle;
+        width: 48px;
+        margin-right: 5px;
+        margin-left: 48px;
+        background: url(Images/user/default-avatar.png) no-repeat;
+    }
+
+.Question-Answer-item-content {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 7px;
+    overflow: hidden;
+}
+
+
+.Question-Answer-item-operating {
+    float: left;
+    margin-top: 9px;
+    width: 750px;
+}
+
+    .Question-Answer-item-operating li {
+        background: url(../../Styles/images/common/manage-space.png) no-repeat;
+        float: left;
+        cursor: pointer;
+        width: 35px;
+        height: 20px;
+        margin: 5px 0px 0px 15px;
+    }
+
+    .Question-Answer-item-operating .title {
+        background-image: none;
+        cursor: default;
+        width: 480px;
+        height: 25px;
+        margin: 0px;
+        font-size: 12px;
+        color: #777;
+    }
+
+
+    .Question-Answer-item-operating .Applaud {
+        background-position: 5px -606px;
+        margin-right: 10px;
+        float: right;
+    }
+
+        .Question-Answer-item-operating .Applaud:hover {
+            background-position: 5px -607px;
+            float: right;
+        }
+
+.question_answer_operation_a {
+    cursor: pointer;
+    font-size: 12px;
+    color: #777;
+    float: right;
+}
+
+    .question_answer_operation_a span {
+        cursor: pointer;
+        font-size: 12px;
+        color: #777;
+    }
+
+.question_answer_text {
+    margin-left: 76px;
+    margin-top: 10px;
+    display: none;
+}
+
+    .question_answer_text input {
+        background-color: #ff833c;
+        margin: 5px;
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 30px;
+        border: 0px;
+        cursor: pointer;
+    }
+
+.content p {
+    font-size: 12px;
+    line-height: 25px;
+    color: #444;
+    word-break:break-all;
+}
+
+.u-notes-release {
+    font-size: 12px;
+    padding: 8px 0px  0px 5px;
+}
+
+.Applaud span {
+    font-size: 12px;
+}
+.u-studying-note-bottom {
+        overflow: auto;
+        margin-top:10px;
+    }
+    .u-studying-note-bottom-time {
+        float: left;
+        padding: 0px;
+        border: #b7b7b7 1px solid;
+        cursor: pointer;
+        background: url(../../App_Themes/Theme/Images/study/u-studying-note-bottom-time.png)  7px  5px  no-repeat #b7b7b7;
+        margin-left:3px;
+    }
+        .u-studying-note-bottom-time:hover {
+        
+         background: url(../../App_Themes/Theme/Images/study/u-studying-note-bottom-time.png)  7px  5px  no-repeat #FF833C;
+         border: #FF833C 1px solid;
+        }
+        .u-studying-note-bottom-time span {
+            font-size: 12px;
+            color: #555;
+            margin-left: 20px;
+            line-height: 12px;
+            padding: 3px 7px;
+            display: block;
+            background: #fff;
+        }
+        .note_none {
+    background: url(../../Styles/images/common/u-note-none.png) no-repeat;
+    width: 228px;
+    height: 179px;
+    margin-left: 326px;
+    margin-top: 100px;
+}
+

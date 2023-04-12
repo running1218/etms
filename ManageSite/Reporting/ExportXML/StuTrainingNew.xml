@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Columns>
+  <Column FieldName="DepartmentName" TitleName="部门" CellIndex="0"></Column>
+  <Column FieldName="RealName" TitleName="学员姓名" CellIndex="1"></Column>
+  <Column FieldName="WorkerNo" TitleName="工号" CellIndex="2"></Column>
+  <Column FieldName="ItemNum" TitleName="项目数" CellIndex="3"></Column>  
+  <Column FieldName="OnLineCourseNum" TitleName="在线课程数" CellIndex="4"></Column>
+  <Column FieldName="OnLineCourseHours" TitleName="在线课时数" CellIndex="5"></Column>
+  <Column FieldName="OffLineCourseNum" TitleName="非在线课程数" CellIndex="6"></Column>
+  <Column FieldName="OffLineCourseHours" TitleName="非在线课时数" CellIndex="7"></Column>
+  <Column FieldName="OnLineCourseHoursTotal" TitleName="总课时数" CellIndex="8"></Column>
+  <Column FieldName="JoinExamNum" TitleName="参加考试数" CellIndex="9"></Column>
+  <Column FieldName="AvgExam" TitleName="平均考试得分" CellIndex="10"></Column>
+</Columns>

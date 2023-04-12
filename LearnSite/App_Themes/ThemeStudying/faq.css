@@ -1,0 +1,287 @@
+﻿.question_tab{
+    height:45px;
+    line-height:45px;
+    margin:0 auto;
+}
+.question_tab span{
+    text-align:center;
+    width:50%;
+    float:left;
+    cursor:pointer;
+}
+.question_tab .cur{
+    color:#3e87ee;
+}
+.u-studying-faq-new {
+    background: #f2f2f2;
+    border-bottom: 1px #c8c8c8 solid;
+    padding: 10px;
+    margin-top: -1px;
+}
+
+.u-studying-faq-new span {
+    background: url('../../Styles/images/common/u-studying-faq-new.png') no-repeat;
+    width: 290px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    line-height: 35px;
+    text-indent: 130px;
+    cursor: pointer;
+}
+
+.u-studying-faq-box {
+    padding: 6px;
+    line-height: 25px;
+    background: #f9f9f9;
+    margin: 10px 0px;
+}
+
+.u-studying-faq-box:hover {
+    background: #F3FCF1;
+}
+
+.u-studying-faq-text span {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.u-studying-faq-text-title {
+    color: #444;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.u-studying-faq-top {
+    font-size: 12px;
+    overflow: auto;
+}
+
+.u-studying-faq-top-teacherpic {
+     background: url('/Styles/images/common/u-answer.png') no-repeat;
+    background-position: 0px -752px;
+        cursor: default;
+}
+
+.u-studying-faq-bottom ul {
+    overflow: auto;
+    height: 20px;
+}
+
+    .u-studying-faq-bottom ul li {
+        float: right;
+        height: 14px;
+        border-right: 1px #c8c8c8 solid;
+        padding: 0px 10px 0px 10px;
+    }
+
+        .u-studying-faq-bottom ul li span {
+            background: url('../../Styles/images/common/u-answer.png') no-repeat;
+            display: block;
+            width: 15px;
+            cursor: pointer;
+            height: 15px;
+            font-size: 12px;
+        }
+
+.u-studying-faq-time {
+    font-size: 12px;
+    float: right;
+}
+
+.u-studying-faq-bottom ul .u-studying-faq-delete {
+    background-position: 0px -245px;
+}
+
+.u-studying-faq-bottom ul .u-studying-faq-reply {
+    background-position: 0px -64px;
+    padding-left: 20px;
+    line-height: 15px;
+}
+.u-studying-faq-bottom ul .u-studying-faq-reply-closereply {
+    background-position: 5px -31px;
+    padding-left: 20px;
+    line-height: 15px;
+}
+
+.u-studying-faq-bottom ul .u-studying-faq-noborder {
+    border: 0px;
+    padding-right: 0px;
+}
+.u-studying-faq-bottom ul .u-studying-faq-noborder-questionitem {
+    border: 0px;
+    padding-right: 0px;
+}
+
+.u-studying-faq-bottom ul .u-studying-faq-good {
+    background-position: 0px -99px;
+}
+.u-studying-faq-bottom ul .u-studying-faq-verygood{
+    background-position: 0px -135px;
+}
+.u-studying-faq-bottom ul .u-studying-faq-answer-delete {
+    background-position: 0px -245px;
+}
+.u-studying-faq-bottom ul .good-cancel {
+    background-position: 0px -102px;
+}
+
+.u-studying-faq-bottom ul .u-studying-faq-praise {
+    background-position: 0px -370px;
+    padding-left: 20px;
+    line-height: 15px;
+    border: 0px;
+}
+
+.u-studying-faq-open {
+    position: relative;
+    display: none;
+}
+
+.u-studying-faq-up {
+    display: block;
+    background: url('/Styles/images/common/u-answer-up.png') no-repeat;
+    height: 8px;
+    width: 17px;
+    position: absolute;
+    top: -7px;
+    right: 15px;
+}
+
+.u-studying-faq-open-box {
+    border: 1px #e0e0e0 solid;
+    background: #f9f9f9;
+    padding: 5px 2px 5px 2px;
+}
+
+.u-studying-faq-best-icon {
+    background: url('/Styles/images/common/u-answer.png') no-repeat 0px 0px;
+    background-position: 0px -169px;
+    padding-left: 22px;
+    display: block;
+    height: 18px;
+    margin: 5px 0px 10px 0px;
+    font-size: 14px;
+    color: #444;
+    line-height: 15px;
+}
+
+.u-studying-faq-best {
+   padding-left:15px;
+}
+
+.u-studying-faq-best-text {
+    border: 1px #EBC894 solid;
+    background: #FBF2E6;
+    font-size: 12px;
+    text-justify: inter-ideograph;
+    padding: 4px;
+}
+
+.u-studying-faq-one-reply {
+    border-top: 1px #e0e0e0 dashed;
+    margin: 15px 0px;
+    padding: 10px 5px 0px 15px;
+}
+
+.u-studying-faq-new-title {
+    border: 1px #d1d1d1 solid;
+    margin: 10px 0px 10px 0px;
+    background: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #444;
+    width: 319px;
+}
+
+.u-studying-faq-new-title input {
+    border: 1px;
+    background: none;
+    color: #444;
+    font-size: 14px;
+    width: 275px;
+}
+
+.u-studying-faq-new-submit {
+    text-align: right;
+}
+
+.u-studying-faq-new-submit input {
+    background-color: #eee;
+    background-image: linear-gradient(to bottom, #f5f5f5, #eee);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+    margin: 6px 0px 0px 8px;
+    padding: 4px 20px;
+    cursor: pointer;
+}
+
+.u-studying-faq-new-box {
+    display: none;
+}
+
+.u-studying-faq-text-content {
+    max-height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+.u-studying-faq-text-content-show {
+    overflow: hidden;
+    position: relative;
+}
+.u-studying-faq-text-content-show p{
+    font-size:12px;
+    line-height:23px;
+    padding:3px 0px;
+    }
+.u-studying-faq-text-content p{
+    font-size:12px;
+    line-height:23px;
+    padding:3px 0px;
+    }
+
+.u-questioncontent_show_hide {
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    line-height: 23px;
+    background-color:#f9f9f9;
+    position: absolute;
+    color: #ec580c;
+    width: 40px;
+    right: 0px;
+    bottom: 5px;
+}
+    .u-questioncontent_show_hide span {
+        background: url('/Styles/images/common/u-answer.png') no-repeat;
+    }
+    .u-questioncontent_show_hide .span-show-pic {
+        background-position: 2px -342px;
+    }
+    .u-questioncontent_show_hide .span-hide-pic {
+        background-position: 2px -320px;
+    }
+
+.u_question_none {
+    background: url('../../Styles/images/common/u-answer-none.png') no-repeat;
+    width: 228px;
+    height: 179px;
+    margin-left:70px;
+    margin-top:50px;
+}
+.u-question-answer-operating-add {
+    text-align: right;
+    margin: 5px 0px 2px 5px;
+}
+
+    .u-question-answer-operating-add input {
+  background-color: #eee;
+    background-image: linear-gradient(to bottom, #f2f2f2, #eee);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+    cursor: pointer;
+    margin: 2px 0px 2px 0;
+    padding: 4px 20px;
+    }
