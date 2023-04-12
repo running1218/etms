@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B974479-EB50-46D1-A812-58BB45447D65}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETMS.Security</RootNamespace>
+    <AssemblyName>ETMS.Security</AssemblyName>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Autumn.Business.Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Autumn.Business.Bin\ETMS.Security.xml</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>Migrated rules for MCS.Library.Passport.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\MCS.Framework.Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DELUXEWORKSTEST|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\TestDebug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DELUXEWORKSTEST</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autumn.Core">
+      <HintPath>..\Reference\Autumn.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MCS.Library">
+      <HintPath>..\Reference\MCS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AuthenticateException.cs" />
+    <Compile Include="Common\AuthorizationException.cs" />
+    <Compile Include="Common\InValidRequestException.cs" />
+    <Compile Include="Configuration\AuthenticateDirSettings.cs" />
+    <Compile Include="Configuration\PassportClientSettings.cs" />
+    <Compile Include="Configuration\PassportEncryptionSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\PassportSignInSettings.cs" />
+    <Compile Include="Crypto\StringEncryptor.cs" />
+    <Compile Include="Crypto\TicketEncryptor.cs" />
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="DataObjects\SignInInfo.cs" />
+    <Compile Include="DataObjects\SignInPageData.cs" />
+    <Compile Include="DataObjects\Ticket.cs" />
+    <Compile Include="HttpHandlers\DefaultHandler.cs" />
+    <Compile Include="HttpModules\DefaultSecurityModule.cs" />
+    <Compile Include="HttpModules\ImpersonateUserContextHttpModule.cs" />
+    <Compile Include="HttpModules\UrlSecurityModule.cs" />
+    <Compile Include="Interfaces\AppLogOffCallBackUrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Encryption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\SignInInfoAndTicket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mechanism\DefaultAuthenticator.cs" />
+    <Compile Include="Mechanism\PassportManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signInControlScript.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\signin.gif" />
+    <EmbeddedResource Include="Resources\signout.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fail.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changePasswordScript.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETMS.AppContext\ETMS.AppContext.csproj">
+      <Project>{9B71CEF6-8D67-4714-8CE3-29CBEE5B7975}</Project>
+      <Name>ETMS.AppContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Basic.API\ETMS.Components.Basic.API.csproj">
+      <Project>{3D9C3CD3-FD0A-420C-9B59-4352CF173D6F}</Project>
+      <Name>ETMS.Components.Basic.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Basic.Implement\ETMS.Components.Basic.Implement.csproj">
+      <Project>{4248FE86-6D0E-4250-8B1A-3A110E0FCD0C}</Project>
+      <Name>ETMS.Components.Basic.Implement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Utility\ETMS.Utility.csproj">
+      <Project>{92D62B7C-B9EB-4086-9D18-11CD36F1CA28}</Project>
+      <Name>ETMS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+    <!--<Copy SourceFiles="@(BinFiles)" DestinationFolder="..\..\Bin" SkipUnchangedFiles="True" />-->
+  </Target>
+  <PropertyGroup>
+    <PreBuildEvent>eco "remove files readonly attrib"
+attrib -r "..\Autumn.Business.Bin\*.*"  /s</PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

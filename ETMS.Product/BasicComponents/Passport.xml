@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+
+<objects xmlns="http://www.autumnframework.net" default-lazy-init="true">
+  <description>
+    统一认证模块
+  </description>
+
+  <!-- 课程-在线课件模块 -->
+  <object id="Basic.Passport"
+          type="ETMS.Components.Basic.Implement.DefaultPassportFacade,ETMS.Components.Basic.Implement">
+    <!-- 组件ID（可以相同ID可以作为分组依据） -->
+    <property name="ID" value="IPassportFacade"/>
+    <!-- 组件名称 -->
+    <property name="Name" value="统一认证与授权"/>
+    <!-- 组件描述 -->
+    <property name="Description" value="向Security模块提供对,统一认证与授权的基本操作支持"/>
+  </object>
+</objects>

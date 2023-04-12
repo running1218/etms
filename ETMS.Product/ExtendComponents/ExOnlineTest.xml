@@ -1,0 +1,42 @@
+﻿<?xml version="1.0"?>
+
+<objects xmlns="http://www.autumnframework.net" default-lazy-init="true">
+  <description>
+    在线测试组件，项目在线测试组件
+    注意：两个模块成对出现，缺一不可。
+  </description>
+  <!-- 课程-在线测试模块 -->
+  <object id="Course.ExOnlineTest" 
+          type="ETMS.Components.ExOnlineTest.Implement.ExOnlineTestFacade,ETMS.Components.ExOnlineTest.Implement">
+    <!-- 组件GroupID -->
+    <property name="GroupID" value="ICourseResourcesFacade"/>
+    <!-- 组件ID -->
+    <property name="ID" value="Course.ExOnlineTest"/>
+    <!-- 组件名称 -->
+    <property name="Name" value="在线测试"/>
+    <!-- 组件描述 -->
+    <property name="Description" value="在线测试资源"/>
+    <!-- 组内顺序 -->
+    <property name="OrderNo" value="3"/>
+    <!-- 应用入口 -->
+    <property name="ManageAppHome" value="~/QuestionDB/ExOnlineHomework/ResourceExerciseList.aspx?CourseID={0}"/>
+  </object>
+  <!-- 培训项目-在线测试模块 -->
+  <object id="TrainingItem.ExOnlineTest"
+       type="ETMS.Components.ExOnlineTest.Implement.ExOnlineTestFacade,ETMS.Components.ExOnlineTest.Implement">
+    <!-- 组件GroupID -->
+    <property name="GroupID" value="ITrainingItemCourseResourcesFacade"/>
+    <!-- 组件ID -->
+    <property name="ID" value="TrainingItem.ExOnlineTest"/>
+    <!-- 组件名称 -->
+    <property name="Name" value="在线测试"/>
+    <!-- 组件描述 -->
+    <property name="Description" value="培训项目在线测试资源"/>
+    <!-- 组内顺序 -->
+    <property name="OrderNo" value="3"/>
+    <!-- 管理应用入口 -->
+    <property name="ManageAppHome" value="~/TraningImplement/ProjectCourseResource/OnLineTest.aspx?TrainingItemCourseID={0}"/>
+    <!-- 列表查看应用入口 -->
+    <property name="ListAppHome" value="~/TraningImplement/ProjectCourseResourceQuery/OnLineTest.aspx?TrainingItemCourseID={0}"/>
+  </object>
+</objects>

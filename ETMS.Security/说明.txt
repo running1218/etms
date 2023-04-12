@@ -1,0 +1,6 @@
+﻿1、ETMS.Security 前身是来自MCS.Library.Passport
+   结合自身的项目特点进行改造，使其能够方便与Web应用进行集成！
+   职责：仅负责web安全验证、授权验证，剔除之前的登录相关的功能
+模块依赖的外部接口：
+Autumn.Business.AppContext.ServiceRepository.PassportAuthenticateService 类型===>Autumn.Business.Interface.SSO.IPassportAuthenticateLogic  认证需要
+Autumn.Business.AppContext.ServiceRepository.PassportPermissionService 类型===>Autumn.Business.Interface.SSO.IPassportPermissionLogic  权限认证需要

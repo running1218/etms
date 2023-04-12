@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+
+<objects xmlns="http://www.autumnframework.net" default-lazy-init="true">
+  <description>
+    项目离线作业组件
+  </description>
+  <!-- 培训项目-离线作业模块 -->
+  <object id="TrainingItem.OfflineJob"
+       type="ETMS.Components.ExOfflineHomework.Implement.ItemCourseOffLineJobFacade,ETMS.Components.ExOfflineHomework.Implement">
+    <!-- 组件GroupID -->
+    <property name="GroupID" value="ITrainingItemCourseResourcesFacade"/>
+    <!-- 组件ID -->
+    <property name="ID" value="TrainingItem.OfflineJob"/>
+    <!-- 组件名称 -->
+    <property name="Name" value="离线作业"/>
+    <!-- 组件描述 -->
+    <property name="Description" value="离线作业"/>
+    <!-- 组内顺序 -->
+    <property name="OrderNo" value="4"/>
+    <!-- 管理应用入口 -->
+    <property name="ManageAppHome" value="~/TraningImplement/ProjectCourseResource/OffLineHomeWork.aspx?TrainingItemCourseID={0}"/>
+    <!-- 列表查看应用入口 -->
+    <property name="ListAppHome" value="~/TraningImplement/ProjectCourseResourceQuery/OffLineHomeWork.aspx?TrainingItemCourseID={0}"/>
+  </object>
+</objects>

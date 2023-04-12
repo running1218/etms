@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+
+<objects xmlns="http://www.autumnframework.net" default-lazy-init="true">
+  <description>
+    费用组件模块
+  </description>
+  <object id="Fee"
+          type="ETMS.Components.Fee.Implement.FeeFacade,ETMS.Components.Fee.Implement">
+    <!-- 组件ID -->
+    <property name="ID" value="IFeeFacade"/>
+    <!-- 组件名称 -->
+    <property name="Name" value="费用"/>
+    <!-- 组件描述 -->
+    <property name="Description" value="费用"/>
+  </object>
+</objects>

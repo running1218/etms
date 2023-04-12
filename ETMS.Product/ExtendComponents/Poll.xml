@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+
+<objects xmlns="http://www.autumnframework.net" default-lazy-init="true">
+  <description>
+    调查问卷组件模块
+  </description>
+  <object id="Poll"
+          type="ETMS.Components.Poll.Implement.DefaultPollFacade,ETMS.Components.Poll.Implement">
+    <!-- 组件ID -->
+    <property name="ID" value="IPollFacade"/>
+    <!-- 组件名称 -->
+    <property name="Name" value="调查问卷"/>
+    <!-- 组件描述 -->
+    <property name="Description" value="调查问卷，提供用户所能看到的问卷列表集合！"/>
+  </object>
+</objects>

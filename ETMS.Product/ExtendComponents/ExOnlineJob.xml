@@ -1,0 +1,42 @@
+﻿<?xml version="1.0"?>
+
+<objects xmlns="http://www.autumnframework.net" default-lazy-init="true">
+  <description>
+    在线作业组件，项目在线作业组件
+    注意：两个模块成对出现，缺一不可。
+  </description>
+  <!-- 课程-在线作业模块 -->
+  <object id="Course.ExOnlineJob"
+          type="ETMS.Components.ExOnlineJob.Implement.ExOnLineJobFacade, ETMS.Components.ExOnlineJob.Implement">
+    <!-- 组件GroupID -->
+    <property name="GroupID" value="ICourseResourcesFacade"/>
+    <!-- 组件ID -->
+    <property name="ID" value="Course.ExOnlineJob"/>
+    <!-- 组件名称 -->
+    <property name="Name" value="在线作业"/>
+    <!-- 组件描述 -->
+    <property name="Description" value="在线作业资源"/>
+    <!-- 组内顺序 -->
+    <property name="OrderNo" value="2"/>
+    <!-- 管理应用入口 -->
+    <property name="ManageAppHome" value="~/QuestionDB/ExOnlineTest/ResourceExerciseList.aspx?CourseID={0}"/>
+  </object>
+  <!-- 培训项目-在线作业模块 -->
+  <object id="TrainingItem.ExOnlineJob"
+       type="ETMS.Components.ExOnlineJob.Implement.ExOnLineJobFacade, ETMS.Components.ExOnlineJob.Implement">
+    <!-- 组件GroupID -->
+    <property name="GroupID" value="ITrainingItemCourseResourcesFacade"/>
+    <!-- 组件ID -->
+    <property name="ID" value="TrainingItem.ExOnlineJob"/>
+    <!-- 组件名称 -->
+    <property name="Name" value="在线作业"/>
+    <!-- 组件描述 -->
+    <property name="Description" value="培训项目在线作业资源"/>
+    <!-- 组内顺序 -->
+    <property name="OrderNo" value="2"/>
+    <!-- 管理应用入口 -->
+    <property name="ManageAppHome" value="~/TraningImplement/ProjectCourseResource/OnLineHomeWork.aspx?TrainingItemCourseID={0}"/>
+    <!-- 列表查看应用入口 -->
+    <property name="ListAppHome" value="~/TraningImplement/ProjectCourseResourceQuery/OnLineHomeWork.aspx?TrainingItemCourseID={0}"/>
+  </object>
+</objects>

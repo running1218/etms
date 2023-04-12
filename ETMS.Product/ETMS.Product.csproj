@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BE29DAC-3F7B-4A7A-8690-92963B6A6F43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETMS.Product</RootNamespace>
+    <AssemblyName>ETMS.Product</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autumn.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Autumn.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExtendComponentsAssemble.cs" />
+    <Compile Include="ExtendComponentType.cs" />
+    <Compile Include="ProductComponentStrategy.cs" />
+    <Compile Include="ProductConfigLevel.cs" />
+    <Compile Include="ProductDefine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BasicComponentType.cs" />
+    <Compile Include="BasicComponentsAssemble.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETMS.AppContext\ETMS.AppContext.csproj">
+      <Project>{9B71CEF6-8D67-4714-8CE3-29CBEE5B7975}</Project>
+      <Name>ETMS.AppContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Courseware.API\ETMS.Components.Courseware.API.csproj">
+      <Project>{2C8BDD39-8996-43B2-BC4D-69D70FFB1C0E}</Project>
+      <Name>ETMS.Components.Courseware.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Evaluation.API\ETMS.Components.Evaluation.API.csproj">
+      <Project>{F2A8CA5E-6AEF-4F00-A612-B89F832B139E}</Project>
+      <Name>ETMS.Components.Evaluation.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Exam.API\ETMS.Components.Exam.API.csproj">
+      <Project>{90FA7A74-4FC6-40BA-88A1-A885F1F4A8BF}</Project>
+      <Name>ETMS.Components.Exam.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.ExContest.API\ETMS.Components.ExContest.API.csproj">
+      <Project>{99D08C46-2167-48C9-B442-BF2F962ACA4A}</Project>
+      <Name>ETMS.Components.ExContest.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.ExOfflineHomework.API\ETMS.Components.ExOfflineHomework.API.csproj">
+      <Project>{E81EEC16-5DD3-4FE3-BC1D-83ADA9185297}</Project>
+      <Name>ETMS.Components.ExOfflineHomework.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.ExOnlineJob.API\ETMS.Components.ExOnlineJob.API.csproj">
+      <Project>{6E9380BD-F8B6-4A87-8726-D57D6708D105}</Project>
+      <Name>ETMS.Components.ExOnlineJob.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.ExOnlineTest.API\ETMS.Components.ExOnlineTest.API.csproj">
+      <Project>{24B8FFDA-9013-49C0-B777-6229796816A8}</Project>
+      <Name>ETMS.Components.ExOnlineTest.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Fee.API\ETMS.Components.Fee.API.csproj">
+      <Project>{32D9DA92-590D-4360-8A43-FACAEAEE1461}</Project>
+      <Name>ETMS.Components.Fee.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.IDP.API\ETMS.Components.IDP.API.csproj">
+      <Project>{E6C6DE86-37F9-4B7E-A3C9-BC0B59538509}</Project>
+      <Name>ETMS.Components.IDP.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Mentor.API\ETMS.Components.Mentor.API.csproj">
+      <Project>{C9BABB06-5AD4-4AEA-8A96-47A44D89340D}</Project>
+      <Name>ETMS.Components.Mentor.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Point.API\ETMS.Components.Point.API.csproj">
+      <Project>{8199B295-3212-4EC9-9FC6-161245276A1B}</Project>
+      <Name>ETMS.Components.Point.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Poll.API\ETMS.Components.Poll.API.csproj">
+      <Project>{8FD43AE4-1371-467F-8D1C-2BDE3E567320}</Project>
+      <Name>ETMS.Components.Poll.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Reporting.API\ETMS.Components.Reporting.API.csproj">
+      <Project>{2EF2AB35-07B0-4CB1-868D-2B093C500642}</Project>
+      <Name>ETMS.Components.Reporting.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.Scrom.API\ETMS.Components.Scrom.API.csproj">
+      <Project>{039C7631-62A7-4E1E-A40A-787B696A834E}</Project>
+      <Name>ETMS.Components.Scrom.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETMS.Components.StudyClass.API\ETMS.Components.StudyClass.API.csproj">
+      <Project>{C47FA0F3-43DE-431B-9DAB-93F50D0F18D4}</Project>
+      <Name>ETMS.Components.StudyClass.API</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExtendComponents\ExOnlineTest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExtendComponents\ExOnlineJob.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExtendComponents\CourseWare.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BasicComponents\Passport.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExtendComponents\Poll.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExtendComponents\OfflineJob.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExtendComponents\Guidance.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExtendComponents\Fee.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExtendComponents\CourseGuidance.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

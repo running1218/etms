@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+
+<objects xmlns="http://www.autumnframework.net" default-lazy-init="true">
+  <description>
+    在线课件模块，项目在线课件模块
+    注意：两个模块成对出现，缺一不可。
+  </description>
+
+  <!-- 课程-在线课件模块 -->
+  <object id="Course.CourseWare"
+          type="ETMS.Components.Courseware.Implement.CourseCoursewareFacade,ETMS.Components.Courseware.Implement">
+    <!-- 组件GroupID -->
+    <property name="GroupID" value="ICourseResourcesFacade"/>
+    <!-- 组件ID -->
+    <property name="ID" value="Course.CourseWare"/>
+    <!-- 组件名称 -->
+    <property name="Name" value="在线课件"/>
+    <!-- 组件描述 -->
+    <property name="Description" value="在线课件资源"/>
+    <!-- 组内顺序 -->
+    <property name="OrderNo" value="1"/>
+    <!-- 管理应用入口 -->
+    <property name="ManageAppHome" value="~/Resource/CoursewareManage/ResourceCoursewareList.aspx?CourseID={0}"/>
+  </object>
+
+  <!-- 培训项目-在线课件模块 -->
+  <object id="TrainingItem.CourseWare"
+        type="ETMS.Components.Courseware.Implement.CourseCoursewareFacade,ETMS.Components.Courseware.Implement">
+    <!-- 组件GroupID -->
+    <property name="GroupID" value="ITrainingItemCourseResourcesFacade"/>
+    <!-- 组件ID -->
+    <property name="ID" value="TrainingItem.CourseWare"/>
+    <!-- 组件名称 -->
+    <property name="Name" value="在线课件"/>
+    <!-- 组件描述 -->
+    <property name="Description" value="培训项目在线课件资源"/>
+    <!-- 组内顺序 -->
+    <property name="OrderNo" value="1"/>
+    <!-- 管理应用入口 -->
+    <property name="ManageAppHome" value="~/TraningImplement/ProjectCourseResource/CourseWareList.aspx?TrainingItemCourseID={0}"/>
+    <!-- 列表查看应用入口 -->
+    <property name="ListAppHome" value="~/TraningImplement/ProjectCourseResourceQuery/CourseWareList.aspx?TrainingItemCourseID={0}"/>
+  </object>
+</objects>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+
+<objects xmlns="http://www.autumnframework.net" default-lazy-init="true">
+  <description>
+    项目导学资料组件
+  </description>
+  <!-- 培训项目-导学资料模块 -->
+  <object id="TrainingItem.CourseGuidance"
+       type="ETMS.Components.Basic.Implement.ItemCourseGuidanceFacade,ETMS.Components.Basic.Implement">
+    <!-- 组件GroupID -->
+    <property name="GroupID" value="ITrainingItemCourseResourcesFacade"/>
+    <!-- 组件ID -->
+    <property name="ID" value="TrainingItem.CourseGuidance"/>
+    <!-- 组件名称 -->
+    <property name="Name" value="导学资料"/>
+    <!-- 组件描述 -->
+    <property name="Description" value="培训项目课程导学资料"/>
+    <!-- 组内顺序 -->
+    <property name="OrderNo" value="6"/>
+    <!-- 管理应用入口 -->
+    <property name="ManageAppHome" value="~/TraningImplement/ProjectCourseResource/GuidanceList.aspx?TrainingItemCourseID={0}"/>
+    <!-- 列表查看应用入口 -->
+    <property name="ListAppHome" value="~/TraningImplement/ProjectCourseResourceQuery/GuidanceList.aspx?TrainingItemCourseID={0}"/>
+  </object>
+</objects>
