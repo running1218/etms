@@ -12,6 +12,7 @@ using System.Data;
 using ETMS.Utility.Logging;
 using ETMS.Components.Basic.API.Entity.Security;
 using ETMS.Components.Basic.Implement.DAL.Security;
+using System.Transactions;
 namespace ETMS.Components.Basic.Implement.BLL.Security
 {
     /// <summary>

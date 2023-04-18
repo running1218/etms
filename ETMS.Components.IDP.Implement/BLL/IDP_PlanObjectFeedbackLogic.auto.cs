@@ -56,18 +56,10 @@ namespace ETMS.Components.IDP.Implement.BLL
 		/// </summary>
 		public void Remove(Guid[] iDPPlanObjectFeedbackIDs)
 		{
-#if !DEBUG
-			using (TransactionScope ts = new TransactionScope())
-			{
-#endif
 				foreach (Guid id in iDPPlanObjectFeedbackIDs  )
 				{
 					Remove(id);
 				}
-#if !DEBUG
-				ts.Complete();
-			}
-#endif
 		} 
     
     

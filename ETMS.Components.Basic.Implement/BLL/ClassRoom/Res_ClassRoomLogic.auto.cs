@@ -13,6 +13,7 @@ using System.Data;
 using ETMS.Utility.Logging;
 using ETMS.Components.Basic.API.Entity.ClassRoom;
 using ETMS.Components.Basic.Implement.DAL.ClassRoom;
+using System.Transactions;
 namespace ETMS.Components.Basic.Implement.BLL.ClassRoom
 {
     /// <summary>

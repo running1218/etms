@@ -56,18 +56,10 @@ namespace ETMS.Components.IDP.Implement.BLL.NotCourseData
 		/// </summary>
 		public void Remove(Guid[] iDP_NotCourseDataIDs)
 		{
-#if !DEBUG
-			using (TransactionScope ts = new TransactionScope())
-			{
-#endif
 				foreach (Guid id in iDP_NotCourseDataIDs  )
 				{
 					Remove(id);
 				}
-#if !DEBUG
-				ts.Complete();
-			}
-#endif
 		} 
     
     

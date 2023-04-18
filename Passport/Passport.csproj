@@ -357,6 +357,7 @@
     <Content Include="Config\dataBaseSettings.config" />
     <Content Include="Config\log4Net.config" />
     <Content Include="Config\service-plugins-notify-config.config" />
+    <None Include="Properties\PublishProfiles\Passport.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

@@ -6,7 +6,7 @@ using ETMS.AppContext;
 using ETMS.Utility.Logging;
 using ETMS.Components.Basic.API.Entity.Dictionary;
 using ETMS.Components.Basic.Implement.DAL.Dictionary;
-
+using System.Transactions;
 namespace ETMS.Components.Basic.Implement.BLL.Dictionary
 {
     /// <summary>

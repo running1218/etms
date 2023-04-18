@@ -13,6 +13,7 @@ using System.Data;
 using ETMS.Utility.Logging;
 using ETMS.Components.QS.API.Entity;
 using ETMS.Components.QS.Implement.DAL;
+using System.Transactions;
 namespace ETMS.Components.QS.Implement.BLL
 {
     /// <summary>

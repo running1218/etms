@@ -49,26 +49,18 @@ namespace ETMS.Components.Basic.Implement.BLL.TrainingItem.Course.Hours
 		public void Remove(Guid itemCourseHoursID)
 		{
             doRemove(itemCourseHoursID);
-		} 
+		}
 
-		/// <summary>
-		/// 批量删除(主键ID数组）
-		/// </summary>
-		public void Remove(Guid[] itemCourseHoursIDs)
-		{
-#if !DEBUG
-			using (TransactionScope ts = new TransactionScope())
-			{
-#endif
-				foreach (Guid id in itemCourseHoursIDs  )
-				{
-					Remove(id);
-				}
-#if !DEBUG
-				ts.Complete();
-			}
-#endif
-		} 
+        /// <summary>
+        /// 批量删除(主键ID数组）
+        /// </summary>
+        public void Remove(Guid[] itemCourseHoursIDs)
+        {
+            foreach (Guid id in itemCourseHoursIDs)
+            {
+                Remove(id);
+            }
+        }
     
     
 		/// <summary>

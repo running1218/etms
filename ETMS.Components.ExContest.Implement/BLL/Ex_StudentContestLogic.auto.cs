@@ -56,18 +56,10 @@ namespace ETMS.Components.ExContest.Implement.BLL.StudentContest
 		/// </summary>
 		public void Remove(Guid[] studentContestIDs)
 		{
-#if !DEBUG
-			using (TransactionScope ts = new TransactionScope())
-			{
-#endif
 				foreach (Guid id in studentContestIDs  )
 				{
 					Remove(id);
 				}
-#if !DEBUG
-				ts.Complete();
-			}
-#endif
 		} 
     
     

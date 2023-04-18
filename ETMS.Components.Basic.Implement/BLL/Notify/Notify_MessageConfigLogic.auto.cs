@@ -13,6 +13,7 @@ using System.Data;
 using ETMS.Utility.Logging;
 using ETMS.Components.Basic.API.Entity.Notify;
 using ETMS.Components.Basic.Implement.DAL.Notify;
+using System.Transactions;
 namespace ETMS.Components.Basic.Implement.BLL.Notify
 {
     /// <summary>

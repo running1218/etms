@@ -12,7 +12,7 @@ using System.Data;
 using ETMS.Utility.Logging;
 using ETMS.Components.Basic.API.Entity.TrainingItem.Course.Teacher;
 using ETMS.Components.Basic.Implement.DAL.TrainingItem.Course.Teacher;
-
+using System.Transactions;
 namespace ETMS.Components.Basic.Implement.BLL.TrainingItem.Course.Teacher
 {
     /// <summary>

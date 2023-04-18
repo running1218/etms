@@ -56,18 +56,10 @@ namespace ETMS.Components.Point.Implement.BLL
 		/// </summary>
 		public void Remove(Guid[] studentCoursePointRoleIDs)
 		{
-#if !DEBUG
-			using (TransactionScope ts = new TransactionScope())
-			{
-#endif
 				foreach (Guid id in studentCoursePointRoleIDs  )
 				{
 					Remove(id);
 				}
-#if !DEBUG
-				ts.Complete();
-			}
-#endif
 		} 
     
     

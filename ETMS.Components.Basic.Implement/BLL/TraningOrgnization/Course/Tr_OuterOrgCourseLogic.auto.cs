@@ -13,6 +13,7 @@ using System.Data;
 using ETMS.Utility.Logging;
 using ETMS.Components.Basic.API.Entity.TraningOrgnization.Course;
 using ETMS.Components.Basic.Implement.DAL.TraningOrgnization.Course;
+using System.Transactions;
 namespace ETMS.Components.Basic.Implement.BLL.TraningOrgnization.Course
 {
     /// <summary>

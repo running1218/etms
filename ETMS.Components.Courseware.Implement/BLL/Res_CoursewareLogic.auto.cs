@@ -45,18 +45,10 @@ namespace ETMS.Components.Courseware.Implement.BLL
         /// </summary>
         public void Remove(Guid[] coursewareIDs)
         {
-#if !DEBUG
-			using (TransactionScope ts = new TransactionScope())
-			{
-#endif
             foreach (Guid id in coursewareIDs)
             {
                 Remove(id);
             }
-#if !DEBUG
-				ts.Complete();
-			}
-#endif
         }
 
         /// <summary>

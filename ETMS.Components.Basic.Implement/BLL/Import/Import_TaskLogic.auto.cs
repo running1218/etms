@@ -12,6 +12,8 @@ using System.Data;
 using ETMS.Utility.Logging;
 using ETMS.Components.Basic.API.Entity.Import;
 using ETMS.Components.Basic.Implement.DAL.Import;
+using System.Transactions;
+
 namespace ETMS.Components.Basic.Implement.BLL.Import
 {
     /// <summary>
@@ -43,6 +45,7 @@ namespace ETMS.Components.Basic.Implement.BLL.Import
 		/// </summary>
 		public void Remove(Int32[] taskIDs)
 		{
+
 #if !DEBUG
 			using (TransactionScope ts = new TransactionScope())
 			{

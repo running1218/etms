@@ -12,6 +12,7 @@ using System.Data;
 using ETMS.Utility.Logging;
 using ETMS.Components.Basic.API.Entity.TrainingPlan;
 using ETMS.Components.Basic.Implement.DAL.TrainingPlan;
+using System.Transactions;
 namespace ETMS.Components.Basic.Implement.BLL.TrainingPlan
 {
     /// <summary>

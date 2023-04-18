@@ -12,6 +12,7 @@ using System.Data;
 using ETMS.Utility.Logging;
 using ETMS.Components.Basic.API.Entity.Notify;
 using ETMS.Components.Basic.Implement.DAL.Notify;
+using System.Transactions;
 namespace ETMS.Components.Basic.Implement.BLL.Notify
 {
     /// <summary>
@@ -43,18 +44,10 @@ namespace ETMS.Components.Basic.Implement.BLL.Notify
 		/// </summary>
 		public void Remove(Int16[] messageTypeIDs)
 		{
-#if !DEBUG
-			using (TransactionScope ts = new TransactionScope())
+			foreach (Int16 id in messageTypeIDs  )
 			{
-#endif
-				foreach (Int16 id in messageTypeIDs  )
-				{
-					Remove(id);
-				}
-#if !DEBUG
-				ts.Complete();
+				Remove(id);
 			}
-#endif
 		} 
     
 		/// <summary>

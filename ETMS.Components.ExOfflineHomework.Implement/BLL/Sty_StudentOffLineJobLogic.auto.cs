@@ -12,6 +12,7 @@ using System.Data;
 using ETMS.Utility.Logging;
 using ETMS.Components.ExOfflineHomework.API.Entity;
 using ETMS.Components.ExOfflineHomework.Implement.DAL;
+using System.Transactions;
 namespace ETMS.Components.ExOfflineHomework.Implement.BLL
 {
     /// <summary>

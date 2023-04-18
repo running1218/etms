@@ -43,18 +43,10 @@ namespace ETMS.Components.ExOnlineJob.Implement.BLL.ExOnlineJob
 		/// </summary>
 		public void Remove(Guid[] onLineJobIDs)
 		{
-#if !DEBUG
-			using (TransactionScope ts = new TransactionScope())
-			{
-#endif
 				foreach (Guid id in onLineJobIDs  )
 				{
 					Remove(id);
 				}
-#if !DEBUG
-				ts.Complete();
-			}
-#endif
 		} 
     
 		/// <summary>

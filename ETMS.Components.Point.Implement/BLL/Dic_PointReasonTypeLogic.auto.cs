@@ -56,18 +56,10 @@ namespace ETMS.Components.Point.Implement.BLL
 		/// </summary>
 		public void Remove(Int32[] pointReasonTypeIDs)
 		{
-#if !DEBUG
-			using (TransactionScope ts = new TransactionScope())
-			{
-#endif
 				foreach (Int32 id in pointReasonTypeIDs  )
 				{
 					Remove(id);
 				}
-#if !DEBUG
-				ts.Complete();
-			}
-#endif
 		} 
     
     

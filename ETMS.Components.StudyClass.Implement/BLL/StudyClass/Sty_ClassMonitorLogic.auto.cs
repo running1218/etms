@@ -56,18 +56,10 @@ namespace ETMS.Components.StudyClass.Implement.BLL.StudyClass
 		/// </summary>
 		public void Remove(Guid[] classMonitorIDs)
 		{
-#if !DEBUG
-			using (TransactionScope ts = new TransactionScope())
-			{
-#endif
 				foreach (Guid id in classMonitorIDs  )
 				{
 					Remove(id);
 				}
-#if !DEBUG
-				ts.Complete();
-			}
-#endif
 		} 
     
     

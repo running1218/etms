@@ -56,18 +56,10 @@ namespace ETMS.Components.Fee.Implement.BLL
 		/// </summary>
 		public void Remove(Guid[] feeCostDetailIDs)
 		{
-#if !DEBUG
-			using (TransactionScope ts = new TransactionScope())
-			{
-#endif
 				foreach (Guid id in feeCostDetailIDs  )
 				{
 					Remove(id);
 				}
-#if !DEBUG
-				ts.Complete();
-			}
-#endif
 		} 
     
     

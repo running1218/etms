@@ -13,6 +13,7 @@ using System.Data;
 using ETMS.Utility.Logging;
 using ETMS.Components.Basic.API.Entity;
 using ETMS.Components.Basic.Implement.DAL;
+using System.Transactions;
 namespace ETMS.Components.Basic.Implement.BLL
 {
     /// <summary>
@@ -56,18 +57,10 @@ namespace ETMS.Components.Basic.Implement.BLL
 		/// </summary>
 		public void Remove(Guid[] mediaIDs)
 		{
-#if !DEBUG
-			using (TransactionScope ts = new TransactionScope())
+			foreach (Guid id in mediaIDs  )
 			{
-#endif
-				foreach (Guid id in mediaIDs  )
-				{
-					Remove(id);
-				}
-#if !DEBUG
-				ts.Complete();
+				Remove(id);
 			}
-#endif
 		} 
     
     

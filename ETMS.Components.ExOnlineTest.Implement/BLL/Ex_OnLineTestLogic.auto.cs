@@ -43,18 +43,10 @@ namespace ETMS.Components.ExOnlineTest.Implement.BLL
         /// </summary>
         public void Remove(Guid[] onLineTestIDs)
         {
-#if !DEBUG
-			using (TransactionScope ts = new TransactionScope())
-			{
-#endif
             foreach (Guid id in onLineTestIDs)
             {
                 Remove(id);
             }
-#if !DEBUG
-				ts.Complete();
-			}
-#endif
         }
 
         /// <summary>

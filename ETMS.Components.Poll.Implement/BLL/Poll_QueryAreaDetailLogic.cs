@@ -12,6 +12,7 @@ using System.Data;
 using ETMS.Utility;
 using ETMS.Utility.Logging;
 using ETMS.Components.Poll.API.Entity;
+using System.Transactions;
 namespace ETMS.Components.Poll.Implement.BLL
 {
     /// <summary>

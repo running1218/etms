@@ -4,6 +4,7 @@ using System.Data;
 using ETMS.Utility.Logging;
 using ETMS.Components.Basic.API.Entity.Course.Resources;
 using ETMS.Components.Basic.Implement.DAL.Course.Resources;
+using System.Transactions;
 namespace ETMS.Components.Basic.Implement.BLL.Course.Resources
 {
     /// <summary>

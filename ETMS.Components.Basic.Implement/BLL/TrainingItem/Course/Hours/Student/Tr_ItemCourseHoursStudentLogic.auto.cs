@@ -13,6 +13,7 @@ using System.Data;
 using ETMS.Utility.Logging;
 using ETMS.Components.Basic.API.Entity.TrainingItem.Course.Hours.Student;
 using ETMS.Components.Basic.Implement.DAL.TrainingItem.Course.Hours.Student;
+using System.Transactions;
 namespace ETMS.Components.Basic.Implement.BLL.TrainingItem.Course.Hours.Student
 {
     /// <summary>
