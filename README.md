@@ -19,3 +19,5 @@
 # H5移动端
 ![图片](https://user-images.githubusercontent.com/121936622/233589064-58c46c87-23ef-4c06-83dd-e4dd7b686ac8.png)
 
+# 沟通交流
+ E妹儿：2041948988@qq.com, Q同邮箱号
