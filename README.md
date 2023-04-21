@@ -1,5 +1,7 @@
 # etms
 在线培训、学习平台，是一个管理、组织、培训、学员学习的平台，是一个集培训需求、 培训计划、培训实施、培训评估与一体的符合培训标准的全流程管控与服务的平台。
+releases版本通过：https://github.com/running1218/etms/releases/download/etms/etms-releases-1.0.1.rar 下载
+
   ## 培训团体模式
   ![图片](https://user-images.githubusercontent.com/121936622/233590429-b4a52668-dc01-464f-816b-eb0a8883ef6c.png)
 
