@@ -9,7 +9,7 @@ releases版本通过：https://github.com/running1218/etms/releases/download/etm
   ![图片](https://user-images.githubusercontent.com/121936622/233590051-3d59bccc-7071-466b-96b9-00005d41c382.png)
   
   ## 业务架构图
-  ![图片](https://user-images.githubusercontent.com/121936622/233591919-e2390a58-ebd2-4a59-8926-ee041f01cc40.png)
+ ![图片](https://user-images.githubusercontent.com/121936622/233594821-7b8bbc75-0a4c-4634-91a1-c53ad9d1836c.png)
 
   
 # 管理端
